@@ -1,0 +1,125 @@
+[06-Jul-2023 11:25:00 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/vr488025/yapposushi.com/www/wp-content/plugins/webvision-webhook/inc/pipedrive-webhook.php:274
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/webvision-webhook/webvision-webhook.php(106): require_once()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/rest-api/class-wp-rest-server.php(1181): webvision_webhook_endpoint_callback_pipedrive(Object(WP_REST_Request))
+#2 /home/vr488025/yapposushi.com/www/wp-includes/rest-api/class-wp-rest-server.php(1028): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/webhook/v1/pip...', Array, NULL)
+#3 /home/vr488025/yapposushi.com/www/wp-includes/rest-api/class-wp-rest-server.php(442): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#4 /home/vr488025/yapposushi.com/www/wp-includes/rest-api.php(410): WP_REST_Server->serve_request('/webhook/v1/pip...')
+#5 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(308): rest_api_loaded(Object(WP))
+#6 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#7 /home/vr488025/yapposushi.com/www/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#8 /home/vr488025/yapposushi.com/www/wp-includes/class-wp.php(399): do_action_ref_array('parse_request', Array)
+#9 /home/vr488025/yapposushi.com/www/wp-includes/class-wp.php(780): WP->parse_request('')
+#10 /home/vr488025/yapposushi.com/www/wp-includes/functions.php(1334): WP->main('')
+#11 /home/vr488025/yapposushi.com/www/wp-blog-header.php(16): wp()
+#12 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#13 {main}
+  thrown in /home/vr488025/yapposushi.com/www/wp-content/plugins/webvision-webhook/inc/pipedrive-webhook.php on line 274
+[06-Jul-2023 11:25:07 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/vr488025/yapposushi.com/www/wp-content/plugins/webvision-webhook/inc/pipedrive-webhook.php:274
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/webvision-webhook/webvision-webhook.php(106): require_once()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/rest-api/class-wp-rest-server.php(1181): webvision_webhook_endpoint_callback_pipedrive(Object(WP_REST_Request))
+#2 /home/vr488025/yapposushi.com/www/wp-includes/rest-api/class-wp-rest-server.php(1028): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/webhook/v1/pip...', Array, NULL)
+#3 /home/vr488025/yapposushi.com/www/wp-includes/rest-api/class-wp-rest-server.php(442): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#4 /home/vr488025/yapposushi.com/www/wp-includes/rest-api.php(410): WP_REST_Server->serve_request('/webhook/v1/pip...')
+#5 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(308): rest_api_loaded(Object(WP))
+#6 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#7 /home/vr488025/yapposushi.com/www/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#8 /home/vr488025/yapposushi.com/www/wp-includes/class-wp.php(399): do_action_ref_array('parse_request', Array)
+#9 /home/vr488025/yapposushi.com/www/wp-includes/class-wp.php(780): WP->parse_request('')
+#10 /home/vr488025/yapposushi.com/www/wp-includes/functions.php(1334): WP->main('')
+#11 /home/vr488025/yapposushi.com/www/wp-blog-header.php(16): wp()
+#12 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#13 {main}
+  thrown in /home/vr488025/yapposushi.com/www/wp-content/plugins/webvision-webhook/inc/pipedrive-webhook.php on line 274
+[06-Jul-2023 11:25:42 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/vr488025/yapposushi.com/www/wp-content/plugins/webvision-webhook/inc/pipedrive-webhook.php:274
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/webvision-webhook/webvision-webhook.php(106): require_once()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/rest-api/class-wp-rest-server.php(1181): webvision_webhook_endpoint_callback_pipedrive(Object(WP_REST_Request))
+#2 /home/vr488025/yapposushi.com/www/wp-includes/rest-api/class-wp-rest-server.php(1028): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/webhook/v1/pip...', Array, NULL)
+#3 /home/vr488025/yapposushi.com/www/wp-includes/rest-api/class-wp-rest-server.php(442): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#4 /home/vr488025/yapposushi.com/www/wp-includes/rest-api.php(410): WP_REST_Server->serve_request('/webhook/v1/pip...')
+#5 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(308): rest_api_loaded(Object(WP))
+#6 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#7 /home/vr488025/yapposushi.com/www/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#8 /home/vr488025/yapposushi.com/www/wp-includes/class-wp.php(399): do_action_ref_array('parse_request', Array)
+#9 /home/vr488025/yapposushi.com/www/wp-includes/class-wp.php(780): WP->parse_request('')
+#10 /home/vr488025/yapposushi.com/www/wp-includes/functions.php(1334): WP->main('')
+#11 /home/vr488025/yapposushi.com/www/wp-blog-header.php(16): wp()
+#12 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#13 {main}
+  thrown in /home/vr488025/yapposushi.com/www/wp-content/plugins/webvision-webhook/inc/pipedrive-webhook.php on line 274
+[06-Jul-2023 11:28:00 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/vr488025/yapposushi.com/www/wp-content/plugins/webvision-webhook/inc/pipedrive-webhook.php:275
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/webvision-webhook/webvision-webhook.php(106): require_once()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/rest-api/class-wp-rest-server.php(1181): webvision_webhook_endpoint_callback_pipedrive(Object(WP_REST_Request))
+#2 /home/vr488025/yapposushi.com/www/wp-includes/rest-api/class-wp-rest-server.php(1028): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/webhook/v1/pip...', Array, NULL)
+#3 /home/vr488025/yapposushi.com/www/wp-includes/rest-api/class-wp-rest-server.php(442): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#4 /home/vr488025/yapposushi.com/www/wp-includes/rest-api.php(410): WP_REST_Server->serve_request('/webhook/v1/pip...')
+#5 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(308): rest_api_loaded(Object(WP))
+#6 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#7 /home/vr488025/yapposushi.com/www/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#8 /home/vr488025/yapposushi.com/www/wp-includes/class-wp.php(399): do_action_ref_array('parse_request', Array)
+#9 /home/vr488025/yapposushi.com/www/wp-includes/class-wp.php(780): WP->parse_request('')
+#10 /home/vr488025/yapposushi.com/www/wp-includes/functions.php(1334): WP->main('')
+#11 /home/vr488025/yapposushi.com/www/wp-blog-header.php(16): wp()
+#12 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#13 {main}
+  thrown in /home/vr488025/yapposushi.com/www/wp-content/plugins/webvision-webhook/inc/pipedrive-webhook.php on line 275
+[06-Jul-2023 11:28:07 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/vr488025/yapposushi.com/www/wp-content/plugins/webvision-webhook/inc/pipedrive-webhook.php:275
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/webvision-webhook/webvision-webhook.php(106): require_once()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/rest-api/class-wp-rest-server.php(1181): webvision_webhook_endpoint_callback_pipedrive(Object(WP_REST_Request))
+#2 /home/vr488025/yapposushi.com/www/wp-includes/rest-api/class-wp-rest-server.php(1028): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/webhook/v1/pip...', Array, NULL)
+#3 /home/vr488025/yapposushi.com/www/wp-includes/rest-api/class-wp-rest-server.php(442): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#4 /home/vr488025/yapposushi.com/www/wp-includes/rest-api.php(410): WP_REST_Server->serve_request('/webhook/v1/pip...')
+#5 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(308): rest_api_loaded(Object(WP))
+#6 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#7 /home/vr488025/yapposushi.com/www/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#8 /home/vr488025/yapposushi.com/www/wp-includes/class-wp.php(399): do_action_ref_array('parse_request', Array)
+#9 /home/vr488025/yapposushi.com/www/wp-includes/class-wp.php(780): WP->parse_request('')
+#10 /home/vr488025/yapposushi.com/www/wp-includes/functions.php(1334): WP->main('')
+#11 /home/vr488025/yapposushi.com/www/wp-blog-header.php(16): wp()
+#12 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#13 {main}
+  thrown in /home/vr488025/yapposushi.com/www/wp-content/plugins/webvision-webhook/inc/pipedrive-webhook.php on line 275
+[06-Jul-2023 11:28:16 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/vr488025/yapposushi.com/www/wp-content/plugins/webvision-webhook/inc/pipedrive-webhook.php:275
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/webvision-webhook/webvision-webhook.php(106): require_once()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/rest-api/class-wp-rest-server.php(1181): webvision_webhook_endpoint_callback_pipedrive(Object(WP_REST_Request))
+#2 /home/vr488025/yapposushi.com/www/wp-includes/rest-api/class-wp-rest-server.php(1028): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/webhook/v1/pip...', Array, NULL)
+#3 /home/vr488025/yapposushi.com/www/wp-includes/rest-api/class-wp-rest-server.php(442): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#4 /home/vr488025/yapposushi.com/www/wp-includes/rest-api.php(410): WP_REST_Server->serve_request('/webhook/v1/pip...')
+#5 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(308): rest_api_loaded(Object(WP))
+#6 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#7 /home/vr488025/yapposushi.com/www/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#8 /home/vr488025/yapposushi.com/www/wp-includes/class-wp.php(399): do_action_ref_array('parse_request', Array)
+#9 /home/vr488025/yapposushi.com/www/wp-includes/class-wp.php(780): WP->parse_request('')
+#10 /home/vr488025/yapposushi.com/www/wp-includes/functions.php(1334): WP->main('')
+#11 /home/vr488025/yapposushi.com/www/wp-blog-header.php(16): wp()
+#12 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#13 {main}
+  thrown in /home/vr488025/yapposushi.com/www/wp-content/plugins/webvision-webhook/inc/pipedrive-webhook.php on line 275
+[06-Jul-2023 11:28:41 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/vr488025/yapposushi.com/www/wp-content/plugins/webvision-webhook/inc/pipedrive-webhook.php:275
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/webvision-webhook/webvision-webhook.php(106): require_once()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/rest-api/class-wp-rest-server.php(1181): webvision_webhook_endpoint_callback_pipedrive(Object(WP_REST_Request))
+#2 /home/vr488025/yapposushi.com/www/wp-includes/rest-api/class-wp-rest-server.php(1028): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/webhook/v1/pip...', Array, NULL)
+#3 /home/vr488025/yapposushi.com/www/wp-includes/rest-api/class-wp-rest-server.php(442): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#4 /home/vr488025/yapposushi.com/www/wp-includes/rest-api.php(410): WP_REST_Server->serve_request('/webhook/v1/pip...')
+#5 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(308): rest_api_loaded(Object(WP))
+#6 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#7 /home/vr488025/yapposushi.com/www/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#8 /home/vr488025/yapposushi.com/www/wp-includes/class-wp.php(399): do_action_ref_array('parse_request', Array)
+#9 /home/vr488025/yapposushi.com/www/wp-includes/class-wp.php(780): WP->parse_request('')
+#10 /home/vr488025/yapposushi.com/www/wp-includes/functions.php(1334): WP->main('')
+#11 /home/vr488025/yapposushi.com/www/wp-blog-header.php(16): wp()
+#12 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#13 {main}
+  thrown in /home/vr488025/yapposushi.com/www/wp-content/plugins/webvision-webhook/inc/pipedrive-webhook.php on line 275
+[06-Jul-2023 12:18:12 UTC] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in /home/vr488025/yapposushi.com/www/wp-content/plugins/webvision-webhook/inc/pipedrive-webhook.php on line 252
+[06-Jul-2023 12:18:32 UTC] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in /home/vr488025/yapposushi.com/www/wp-content/plugins/webvision-webhook/inc/pipedrive-webhook.php on line 252
+[06-Jul-2023 12:19:00 UTC] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in /home/vr488025/yapposushi.com/www/wp-content/plugins/webvision-webhook/inc/pipedrive-webhook.php on line 252
+[06-Jul-2023 12:20:16 UTC] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in /home/vr488025/yapposushi.com/www/wp-content/plugins/webvision-webhook/inc/pipedrive-webhook.php on line 252
+[06-Jul-2023 12:21:37 UTC] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in /home/vr488025/yapposushi.com/www/wp-content/plugins/webvision-webhook/inc/pipedrive-webhook.php on line 252
+[10-Jul-2023 19:36:24 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/vr488025/yapposushi.com/www/wp-content/plugins/webvision-webhook/inc/pipedrive-webhook.php on line 50

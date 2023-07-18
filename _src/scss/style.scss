@@ -1,0 +1,66 @@
+@use 'sass:math';
+@use 'sass:color';
+
+@import 'config';
+@import 'media';
+@import 'general';
+@import 'header';
+@import 'footer';
+@import 'product';
+@import 'page-404';
+@import 'burger';
+@import 'menu-mob';
+
+@import 'widget-btns';
+@import 'fix-cart-btn';
+
+
+@import 'filter';
+@import 'modal-search';
+@import 'added-success';
+@import 'we-got-success';
+@import 'modal-city';
+
+
+//include main
+
+@import 'include-for-main/top-slider';
+@import 'include-for-main/main-product';
+@import 'include-for-main/section-delivery';
+@import 'include-for-main/section-pay';
+
+
+
+
+//product-page
+
+@import 'product-page';
+@import 'category-page';
+@import 'categories-business-lunch';
+
+//about us
+@import 'about-us';
+
+//menu-page
+@import 'menu-page';
+
+//contacts
+@import 'contacts';
+
+//accordion
+@import 'accordion';
+
+//privacy-policy,return-policy,public-offer
+@import 'text-pages';
+
+//news
+@import 'news-blogs';
+@import 'news-page';
+
+
+@import 'discount-sale-page';
+
+
+//cart
+@import 'cart';
+@import 'cart-page.scss';

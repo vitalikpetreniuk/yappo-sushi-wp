@@ -1,0 +1,86 @@
+.page-404{
+    text-align: center;
+    padding: 50px 0 50px;
+    min-height: calc(100% - 150px);
+
+    @include media-for (2047px, null){
+        min-height: 65vh;
+        height: 65vh;
+        
+    }
+
+    @include media-for (null, 1025px){
+        min-height: 63vh;
+        height: 74vh;
+        
+    }
+
+    @include media-for (null, $tablet){
+        min-height: 60vh;
+        height: 60vh;
+        
+    }
+
+    @include media-for (null, $sm){
+        padding: 50px 0 30px;
+        height: 80vh;
+    }
+    @media (min-height: 0px) and (max-height: 843px){
+        padding: 15px 0 30px;
+        height: 100vh;
+    }
+
+    h1{
+        font-weight: 400;
+        color: $orange;
+        font-family: 'DelaGothicOne';
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 22px;
+
+        span{
+            font-size: 48px;
+            display: block;
+        }
+    }
+
+    p{
+        color: $text-black;
+        font-weight: 400;
+        font-size: 14px;
+        margin: 0 0 30px;
+
+        @include media-for (null, $sm){
+            margin: 35px 0 55px;
+        }
+
+        @media (min-height: 0px) and (max-height: 843px){
+            margin: 25px 0 30px;
+        }
+    }
+
+    .img-wrap{
+        position: relative;
+        height: 285px;
+
+        div{
+            display: flex;
+            justify-content: center;
+            margin-bottom: .4rem;
+        }
+
+        @include media-for (null, $tablet){
+            height: 160px
+        }
+
+        @include media-for (null, $sm){
+            height: 70px
+        }
+
+        svg{
+            cursor: pointer;
+        }
+    }
+
+
+}

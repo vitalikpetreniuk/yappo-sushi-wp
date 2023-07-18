@@ -1,0 +1,1272 @@
+[WP STAGING Shutdown Function][E_ERROR][2023-07-03 19:17:02] Uncaught WC_Data_Exception: Хибний або продубльований артикул (SKU). in /home/vr488025/yapposushi.com/www/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-data.php:900
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-product.php(829): WC_Data->error('product_invalid...', '\xD0\xA5\xD0\xB8\xD0\xB1\xD0\xBD\xD0\xB8\xD0\xB9 \xD0\xB0...', 400, Array)
+#1 /home/vr488025/yapposushi.com/www/update_shop_products.php(42): WC_Product->set_sku('296_1')
+#2 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-data.php Line: 900 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_COMPILE_ERROR][2023-07-04 12:39:18] Cannot redeclare wp_cache_add() (previously declared in /home/vr488025/yapposushi.com/www/wp-includes/cache.php:41) - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/memcached/object-cache.php Line: 19 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_COMPILE_ERROR][2023-07-04 12:39:20] Cannot redeclare wp_cache_add() (previously declared in /home/vr488025/yapposushi.com/www/wp-includes/cache.php:41) - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/memcached/object-cache.php Line: 19 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_COMPILE_ERROR][2023-07-04 12:39:20] Cannot redeclare wp_cache_add() (previously declared in /home/vr488025/yapposushi.com/www/wp-includes/cache.php:41) - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/memcached/object-cache.php Line: 19 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_COMPILE_ERROR][2023-07-05 11:12:25] Cannot redeclare send_order_to_pipedrive() (previously declared in /home/vr488025/yapposushi.com/www/wp-content/plugins/pipedrive-crm.php:14) - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/functions-crm.php Line: 6 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_COMPILE_ERROR][2023-07-05 11:12:31] Cannot redeclare send_order_to_pipedrive() (previously declared in /home/vr488025/yapposushi.com/www/wp-content/plugins/pipedrive-crm.php:14) - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/functions-crm.php Line: 6 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_COMPILE_ERROR][2023-07-05 11:12:32] Cannot redeclare send_order_to_pipedrive() (previously declared in /home/vr488025/yapposushi.com/www/wp-content/plugins/pipedrive-crm.php:14) - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/functions-crm.php Line: 6 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_COMPILE_ERROR][2023-07-05 11:12:32] Cannot redeclare send_order_to_pipedrive() (previously declared in /home/vr488025/yapposushi.com/www/wp-content/plugins/pipedrive-crm.php:14) - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/functions-crm.php Line: 6 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_COMPILE_ERROR][2023-07-05 11:12:33] Cannot redeclare send_order_to_pipedrive() (previously declared in /home/vr488025/yapposushi.com/www/wp-content/plugins/pipedrive-crm.php:14) - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/functions-crm.php Line: 6 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_COMPILE_ERROR][2023-07-05 11:12:34] Cannot redeclare send_order_to_pipedrive() (previously declared in /home/vr488025/yapposushi.com/www/wp-content/plugins/pipedrive-crm.php:14) - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/functions-crm.php Line: 6 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_COMPILE_ERROR][2023-07-05 11:12:44] Cannot redeclare send_order_to_pipedrive() (previously declared in /home/vr488025/yapposushi.com/www/wp-content/plugins/pipedrive-crm.php:14) - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/functions-crm.php Line: 6 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_COMPILE_ERROR][2023-07-05 11:12:46] Cannot redeclare send_order_to_pipedrive() (previously declared in /home/vr488025/yapposushi.com/www/wp-content/plugins/pipedrive-crm.php:14) - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/functions-crm.php Line: 6 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_COMPILE_ERROR][2023-07-05 11:12:48] Cannot redeclare send_order_to_pipedrive() (previously declared in /home/vr488025/yapposushi.com/www/wp-content/plugins/pipedrive-crm.php:14) - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/functions-crm.php Line: 6 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_COMPILE_ERROR][2023-07-05 11:12:49] Cannot redeclare send_order_to_pipedrive() (previously declared in /home/vr488025/yapposushi.com/www/wp-content/plugins/pipedrive-crm.php:14) - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/functions-crm.php Line: 6 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_COMPILE_ERROR][2023-07-05 11:12:49] Cannot redeclare send_order_to_pipedrive() (previously declared in /home/vr488025/yapposushi.com/www/wp-content/plugins/pipedrive-crm.php:14) - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/functions-crm.php Line: 6 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_COMPILE_ERROR][2023-07-05 11:12:54] Cannot redeclare send_order_to_pipedrive() (previously declared in /home/vr488025/yapposushi.com/www/wp-content/plugins/pipedrive-crm.php:14) - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/functions-crm.php Line: 6 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_COMPILE_ERROR][2023-07-05 11:12:54] Cannot redeclare send_order_to_pipedrive() (previously declared in /home/vr488025/yapposushi.com/www/wp-content/plugins/pipedrive-crm.php:14) - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/functions-crm.php Line: 6 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_COMPILE_ERROR][2023-07-05 11:13:02] Cannot redeclare send_order_to_pipedrive() (previously declared in /home/vr488025/yapposushi.com/www/wp-content/plugins/pipedrive-crm.php:14) - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/functions-crm.php Line: 6 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_COMPILE_ERROR][2023-07-05 11:13:04] Cannot redeclare send_order_to_pipedrive() (previously declared in /home/vr488025/yapposushi.com/www/wp-content/plugins/pipedrive-crm.php:14) - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/functions-crm.php Line: 6 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Manual Logging][info][2023-07-05 14:44:59] Queue count: The table wp_wpstg_queue does not exist for count.
+[WP STAGING Manual Logging][info][2023-07-05 14:44:59] Queue count: The table wp_wpstg_queue does not exist for count.
+[WP STAGING Manual Logging][info][2023-07-05 14:44:59] Queue count: The table wp_wpstg_queue does not exist for count.
+[WP STAGING Manual Logging][info][2023-07-05 14:44:59] Queue count: The table wp_wpstg_queue does not exist for count.
+[WP STAGING Manual Logging][info][2023-07-05 14:44:59] Queue count: The table wp_wpstg_queue does not exist for count.
+[WP STAGING Shutdown Function][E_ERROR][2023-07-05 22:16:08] Uncaught TypeError: Argument 1 passed to WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository::createFromQueryResult() must be of the type array, null given, called in /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php on line 29 and defined in /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php:101
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php(29): WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository->createFromQueryResult(NULL)
+#1 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Service/BackgroundTaskService.php(54): WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository- - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php Line: 101 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-06 08:08:30] Uncaught TypeError: Argument 1 passed to WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository::createFromQueryResult() must be of the type array, null given, called in /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php on line 29 and defined in /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php:101
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php(29): WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository->createFromQueryResult(NULL)
+#1 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Service/BackgroundTaskService.php(54): WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository- - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php Line: 101 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-06 11:40:37] Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/taxonomy-product_cat-sale.php:109
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include()
+#1 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#2 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#3 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/taxonomy-product_cat-sale.php Line: 109 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-06 11:40:57] Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/taxonomy-product_cat-sale.php:109
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include()
+#1 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#2 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#3 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/taxonomy-product_cat-sale.php Line: 109 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-06 11:41:42] Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/taxonomy-product_cat-sale.php:109
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include()
+#1 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#2 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#3 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/taxonomy-product_cat-sale.php Line: 109 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-06 11:42:36] Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/taxonomy-product_cat-sale.php:109
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include()
+#1 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#2 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#3 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/taxonomy-product_cat-sale.php Line: 109 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-06 11:50:28] Uncaught TypeError: WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository::createFromQueryResult(): Argument #1 ($data) must be of type array, null given, called in /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php on line 29 and defined in /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php:101
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php(29): WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository->createFromQueryResult(NULL)
+#1 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Service/BackgroundTaskService.php(54): WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository->getByTaskId(NULL)
+#2 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/classes/background-task/AbstractTaskEndpoint.php(62): WPML\Core\BackgroundTask\Service\BackgroundTaskService->startByTaskId(NULL)
+#3 [internal function]: WPML\BackgroundTask\AbstractTaskEndpoint->run(Object(WPML\Collect\Support\Collection))
+#4 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/otgs/auryn/lib/Executable.php(42): ReflectionMethod->invokeArgs(Object(WPML\TM\ATE\Sitekey\Endpoint), Array)
+#5 [internal function]: WPML\Auryn\Executable->__invoke(Object(WPML\Collect\Support\Collection))
+#6 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/otgs/auryn/lib/Injector.php(641): call_user_func_array(Array, Array)
+#7 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/classes/container/class-wpml-container.php(110): WPML\Auryn\Injector->execute(Array, Array)
+#8 [internal function]: WPML\Container\Container::execute(Array, Array)
+#9 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/functions.php(154): call_user_func_array(Array, Array)
+#10 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/Maybe.php(106): WPML\FP\{closure}(Array)
+#11 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/classes/ajax/Factory.php(38): WPML\FP\Just->map(Object(Closure))
+#12 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/Either.php(207): WPML\Ajax\Factory->WPML\Ajax\{closure}(Object(WPML\Collect\Support\Collection))
+#13 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/Either.php(257): WPML\FP\Right->map(Object(Closure))
+#14 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/Promise.php(24): WPML\FP\Right->chain(Object(Closure))
+#15 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/Promise.php(30): WPML\FP\Promise->resolve(Object(WPML\FP\Right))
+#16 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/Promise.php(30): WPML\FP\Promise->resolve(Object(WPML\FP\Right))
+#17 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/Promise.php(30): WPML\FP\Promise->resolve(Object(WPML\FP\Right))
+#18 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/Promise.php(30): WPML\FP\Promise->resolve(Object(WPML\FP\Right))
+#19 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/Promise.php(30): WPML\FP\Promise->resolve(Object(WPML\FP\Right))
+#20 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/wp/classes/Hooks.php(50): WPML\FP\Promise->resolve(Object(WPML\FP\Right))
+#21 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(308): WPML\LIB\WP\Hooks::WPML\LIB\WP\{closure}('')
+#22 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#23 /home/vr488025/yapposushi.com/www/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#24 /home/vr488025/yapposushi.com/www/wp-admin/admin-ajax.php(188): do_action('wp_ajax_wpml_ac...')
+#25 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php Line: 101 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-06 11:59:43] Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/taxonomy-product_cat-sale.php:109
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include()
+#1 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#2 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#3 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/taxonomy-product_cat-sale.php Line: 109 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-06 12:06:56] Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/taxonomy-product_cat-sale.php:109
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include()
+#1 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#2 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#3 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/taxonomy-product_cat-sale.php Line: 109 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-06 12:20:34] Uncaught TypeError: WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository::createFromQueryResult(): Argument #1 ($data) must be of type array, null given, called in /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php on line 29 and defined in /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php:101
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php(29): WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository->createFromQueryResult(NULL)
+#1 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Service/BackgroundTaskService.php(54): WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository->getByTaskId(NULL)
+#2 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/classes/background-task/AbstractTaskEndpoint.php(62): WPML\Core\BackgroundTask\Service\BackgroundTaskService->startByTaskId(NULL)
+#3 [internal function]: WPML\BackgroundTask\AbstractTaskEndpoint->run(Object(WPML\Collect\Support\Collection))
+#4 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/otgs/auryn/lib/Executable.php(42): ReflectionMethod->invokeArgs(Object(WPML\TM\ATE\Sitekey\Endpoint), Array)
+#5 [internal function]: WPML\Auryn\Executable->__invoke(Object(WPML\Collect\Support\Collection))
+#6 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/otgs/auryn/lib/Injector.php(641): call_user_func_array(Array, Array)
+#7 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/classes/container/class-wpml-container.php(110): WPML\Auryn\Injector->execute(Array, Array)
+#8 [internal function]: WPML\Container\Container::execute(Array, Array)
+#9 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/functions.php(154): call_user_func_array(Array, Array)
+#10 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/Maybe.php(106): WPML\FP\{closure}(Array)
+#11 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/classes/ajax/Factory.php(38): WPML\FP\Just->map(Object(Closure))
+#12 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/Either.php(207): WPML\Ajax\Factory->WPML\Ajax\{closure}(Object(WPML\Collect\Support\Collection))
+#13 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/Either.php(257): WPML\FP\Right->map(Object(Closure))
+#14 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/Promise.php(24): WPML\FP\Right->chain(Object(Closure))
+#15 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/Promise.php(30): WPML\FP\Promise->resolve(Object(WPML\FP\Right))
+#16 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/Promise.php(30): WPML\FP\Promise->resolve(Object(WPML\FP\Right))
+#17 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/Promise.php(30): WPML\FP\Promise->resolve(Object(WPML\FP\Right))
+#18 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/Promise.php(30): WPML\FP\Promise->resolve(Object(WPML\FP\Right))
+#19 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/Promise.php(30): WPML\FP\Promise->resolve(Object(WPML\FP\Right))
+#20 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/wp/classes/Hooks.php(50): WPML\FP\Promise->resolve(Object(WPML\FP\Right))
+#21 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(308): WPML\LIB\WP\Hooks::WPML\LIB\WP\{closure}('')
+#22 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#23 /home/vr488025/yapposushi.com/www/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#24 /home/vr488025/yapposushi.com/www/wp-admin/admin-ajax.php(188): do_action('wp_ajax_wpml_ac...')
+#25 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php Line: 101 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-06 12:31:18] Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/taxonomy-product_cat-sale.php:109
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include()
+#1 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#2 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#3 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/taxonomy-product_cat-sale.php Line: 109 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-06 12:44:47] Uncaught InvalidArgumentException: Невідома дія 5201 in /home/vr488025/yapposushi.com/www/wp-content/plugins/woocommerce/packages/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php:1001
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueCleaner.php(127): ActionScheduler_DBStore->mark_failure('5201')
+#1 /home/vr488025/yapposushi.com/www/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueCleaner.php(141): ActionScheduler_QueueCleaner->mark_failures(300)
+#2 /home/vr488025/yapposushi.com/www/wp-content/plugins/woocommerce/packages/action-scheduler/classes/abstracts/ActionScheduler_Abstract_QueueRunner.php(160): ActionScheduler_QueueCleaner->clean(300)
+#3 /home/vr488025/yapposushi.com/www/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_QueueRunner.php(130): ActionScheduler_Abstract_QueueRunner->run_cleanup()
+#4 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(308): ActionScheduler_QueueRunner->run('Async Request')
+#5 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#6 /home/vr488025/yapposushi.com/www/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#7 /home/vr488025/yapposushi.com/www/wp-content/plugins/woocommerce/packages/action-scheduler/classes/ActionScheduler_AsyncRequest_QueueRunner.php(52): do_action('action_schedule...', 'Async Request')
+#8 /home/vr488025/yapposushi.com/www/wp-content/plugins/woocommerce/includes/libraries/wp-async-request.php(147): ActionScheduler_AsyncRequest_QueueRunner->handle()
+#9 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(308): WP_Async_Request->maybe_handle('')
+#10 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#11 /home/vr488025/yapposushi.com/www/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#12 /home/vr488025/yapposushi.com/www/wp-admin/admin-ajax.php(188): do_action('wp_ajax_as_asyn...')
+#13 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/woocommerce/packages/action-scheduler/classes/data-stores/ActionScheduler_DBStore.php Line: 1001 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-06 12:47:13] Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/taxonomy-product_cat-sale.php:109
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include()
+#1 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#2 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#3 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/taxonomy-product_cat-sale.php Line: 109 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-06 12:51:25] Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/taxonomy-product_cat-sale.php:109
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include()
+#1 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#2 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#3 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/taxonomy-product_cat-sale.php Line: 109 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-06 12:51:25] Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/taxonomy-product_cat-sale.php:109
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include()
+#1 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#2 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#3 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/taxonomy-product_cat-sale.php Line: 109 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-06 13:02:54] Uncaught ArgumentCountError: Too few arguments to function remove_menu_page(), 0 passed in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/shop-functions.php on line 571 and exactly 1 expected in /home/vr488025/yapposushi.com/www/wp-admin/includes/plugin.php:1777
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/shop-functions.php(571): remove_menu_page()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(308): remove_menus('')
+#2 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#3 /home/vr488025/yapposushi.com/www/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/vr488025/yapposushi.com/www/wp-admin/includes/menu.php(155): do_action('admin_menu', '')
+#5 /home/vr488025/yapposushi.com/www/wp-admin/menu.php(420): require_once('/home/vr488025/...')
+#6 /home/vr488025/yapposushi.com/www/wp-admin/admin.php(158): require('/home/vr488025/...')
+#7 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-admin/includes/plugin.php Line: 1777 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-06 13:08:13] Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/taxonomy-product_cat-sale.php:109
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include()
+#1 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#2 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#3 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/taxonomy-product_cat-sale.php Line: 109 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-06 13:09:40] Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/taxonomy-product_cat-sale.php:109
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include()
+#1 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#2 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#3 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/taxonomy-product_cat-sale.php Line: 109 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-06 13:10:35] Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/taxonomy-product_cat-sale.php:109
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include()
+#1 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#2 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#3 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/taxonomy-product_cat-sale.php Line: 109 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-06 13:10:36] Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/taxonomy-product_cat-sale.php:109
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include()
+#1 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#2 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#3 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/taxonomy-product_cat-sale.php Line: 109 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-06 13:12:37] Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/taxonomy-product_cat-sale.php:109
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include()
+#1 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#2 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#3 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/taxonomy-product_cat-sale.php Line: 109 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-06 13:12:37] Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/taxonomy-product_cat-sale.php:109
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include()
+#1 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#2 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#3 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/taxonomy-product_cat-sale.php Line: 109 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-06 13:14:34] Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/taxonomy-product_cat-sale.php:109
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include()
+#1 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#2 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#3 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/taxonomy-product_cat-sale.php Line: 109 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-06 13:21:30] Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/taxonomy-product_cat-sale.php:109
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include()
+#1 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#2 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#3 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/taxonomy-product_cat-sale.php Line: 109 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-06 13:25:41] Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/taxonomy-product_cat-sale.php:109
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include()
+#1 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#2 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#3 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/taxonomy-product_cat-sale.php Line: 109 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-06 13:32:26] Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/taxonomy-product_cat-sale.php:109
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include()
+#1 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#2 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#3 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/taxonomy-product_cat-sale.php Line: 109 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-06 13:44:41] Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/taxonomy-product_cat-sale.php:109
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include()
+#1 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#2 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#3 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/taxonomy-product_cat-sale.php Line: 109 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-06 14:00:24] Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/taxonomy-product_cat-sale.php:109
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include()
+#1 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#2 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#3 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/taxonomy-product_cat-sale.php Line: 109 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-06 14:11:12] Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/taxonomy-product_cat-sale.php:109
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include()
+#1 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#2 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#3 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/taxonomy-product_cat-sale.php Line: 109 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-06 14:13:41] Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/taxonomy-product_cat-sale.php:109
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include()
+#1 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#2 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#3 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/taxonomy-product_cat-sale.php Line: 109 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-06 14:18:02] Uncaught Error: Class "Installer_Dependencies" not found in /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/otgs/installer/includes/class-wp-installer.php:133
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(308): WP_Installer->init('')
+#1 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#2 /home/vr488025/yapposushi.com/www/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /home/vr488025/yapposushi.com/www/wp-settings.php(623): do_action('init')
+#4 /home/vr488025/yapposushi.com/www/wp-config.php(113): require_once('/home/vr488025/...')
+#5 /home/vr488025/yapposushi.com/www/wp-load.php(50): require_once('/home/vr488025/...')
+#6 /home/vr488025/yapposushi.com/www/wp-blog-header.php(13): require_once('/home/vr488025/...')
+#7 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#8 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/otgs/installer/includes/class-wp-installer.php Line: 133 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-06 14:18:02] Uncaught Error: Class "Installer_Dependencies" not found in /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/otgs/installer/includes/class-wp-installer.php:133
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(308): WP_Installer->init('')
+#1 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#2 /home/vr488025/yapposushi.com/www/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /home/vr488025/yapposushi.com/www/wp-settings.php(623): do_action('init')
+#4 /home/vr488025/yapposushi.com/www/wp-config.php(113): require_once('/home/vr488025/...')
+#5 /home/vr488025/yapposushi.com/www/wp-load.php(50): require_once('/home/vr488025/...')
+#6 /home/vr488025/yapposushi.com/www/wp-blog-header.php(13): require_once('/home/vr488025/...')
+#7 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#8 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/otgs/installer/includes/class-wp-installer.php Line: 133 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-06 14:18:03] Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, class "OTGS\Installer\Rest\Push" not found in /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php:308
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#1 /home/vr488025/yapposushi.com/www/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /home/vr488025/yapposushi.com/www/wp-includes/rest-api.php(577): do_action('rest_api_init', Object(WP_REST_Server))
+#3 /home/vr488025/yapposushi.com/www/wp-includes/rest-api.php(403): rest_get_server()
+#4 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(308): rest_api_loaded(Object(WP))
+#5 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#6 /home/vr488025/yapposushi.com/www/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#7 /home/vr488025/yapposushi.com/www/wp-includes/class-wp.php(399): do_action_ref_array('parse_request', Array)
+#8 /home/vr488025/yapposushi.com/www/wp-includes/class-wp.php(780): WP->parse_request('')
+#9 /home/vr488025/yapposushi.com/www/wp-includes/functions.php(1334): WP->main('')
+#10 /home/vr488025/yapposushi.com/www/wp-blog-header.php(16): wp()
+#11 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#12 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php Line: 308 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-06 14:18:03] Uncaught Error: Failed opening required '/home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/otgs/icons/register.php' (include_path='.:/usr/local/pear/php82') in /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/otgs/icons/loader.php:59
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(308): otgs_icons_register('')
+#1 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#2 /home/vr488025/yapposushi.com/www/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /home/vr488025/yapposushi.com/www/wp-settings.php(623): do_action('init')
+#4 /home/vr488025/yapposushi.com/www/wp-config.php(113): require_once('/home/vr488025/...')
+#5 /home/vr488025/yapposushi.com/www/wp-load.php(50): require_once('/home/vr488025/...')
+#6 /home/vr488025/yapposushi.com/www/wp-blog-header.php(13): require_once('/home/vr488025/...')
+#7 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#8 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/otgs/icons/loader.php Line: 59 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-06 14:18:03] Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, class "OTGS\Installer\Rest\Push" not found in /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php:308
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#1 /home/vr488025/yapposushi.com/www/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /home/vr488025/yapposushi.com/www/wp-includes/rest-api.php(577): do_action('rest_api_init', Object(WP_REST_Server))
+#3 /home/vr488025/yapposushi.com/www/wp-includes/rest-api.php(403): rest_get_server()
+#4 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(308): rest_api_loaded(Object(WP))
+#5 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#6 /home/vr488025/yapposushi.com/www/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#7 /home/vr488025/yapposushi.com/www/wp-includes/class-wp.php(399): do_action_ref_array('parse_request', Array)
+#8 /home/vr488025/yapposushi.com/www/wp-includes/class-wp.php(780): WP->parse_request('')
+#9 /home/vr488025/yapposushi.com/www/wp-includes/functions.php(1334): WP->main('')
+#10 /home/vr488025/yapposushi.com/www/wp-blog-header.php(16): wp()
+#11 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#12 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php Line: 308 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-06 14:21:10] Uncaught TypeError: WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository::createFromQueryResult(): Argument #1 ($data) must be of type array, null given, called in /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php on line 29 and defined in /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php:101
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php(29): WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository->createFromQueryResult(NULL)
+#1 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Service/BackgroundTaskService.php(54): WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository->getByTaskId(NULL)
+#2 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/classes/background-task/AbstractTaskEndpoint.php(62): WPML\Core\BackgroundTask\Service\BackgroundTaskService->startByTaskId(NULL)
+#3 [internal function]: WPML\BackgroundTask\AbstractTaskEndpoint->run(Object(WPML\Collect\Support\Collection))
+#4 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/otgs/auryn/lib/Executable.php(42): ReflectionMethod->invokeArgs(Object(WPML\TM\ATE\Sitekey\Endpoint), Array)
+#5 [internal function]: WPML\Auryn\Executable->__invoke(Object(WPML\Collect\Support\Collection))
+#6 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/otgs/auryn/lib/Injector.php(641): call_user_func_array(Array, Array)
+#7 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/classes/container/class-wpml-container.php(110): WPML\Auryn\Injector->execute(Array, Array)
+#8 [internal function]: WPML\Container\Container::execute(Array, Array)
+#9 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/functions.php(154): call_user_func_array(Array, Array)
+#10 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/Maybe.php(106): WPML\FP\{closure}(Array)
+#11 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/classes/ajax/Factory.php(38): WPML\FP\Just->map(Object(Closure))
+#12 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/Either.php(207): WPML\Ajax\Factory->WPML\Ajax\{closure}(Object(WPML\Collect\Support\Collection))
+#13 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/Either.php(257): WPML\FP\Right->map(Object(Closure))
+#14 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/Promise.php(24): WPML\FP\Right->chain(Object(Closure))
+#15 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/Promise.php(30): WPML\FP\Promise->resolve(Object(WPML\FP\Right))
+#16 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/Promise.php(30): WPML\FP\Promise->resolve(Object(WPML\FP\Right))
+#17 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/Promise.php(30): WPML\FP\Promise->resolve(Object(WPML\FP\Right))
+#18 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/Promise.php(30): WPML\FP\Promise->resolve(Object(WPML\FP\Right))
+#19 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/fp/core/Promise.php(30): WPML\FP\Promise->resolve(Object(WPML\FP\Right))
+#20 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/wp/classes/Hooks.php(50): WPML\FP\Promise->resolve(Object(WPML\FP\Right))
+#21 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(308): WPML\LIB\WP\Hooks::WPML\LIB\WP\{closure}('')
+#22 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#23 /home/vr488025/yapposushi.com/www/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#24 /home/vr488025/yapposushi.com/www/wp-admin/admin-ajax.php(188): do_action('wp_ajax_wpml_ac...')
+#25 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php Line: 101 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-06 14:25:00] Uncaught Error: Cannot use object of type stdClass as array in /home/vr488025/yapposushi.com/www/wp-content/plugins/webvision-webhook/inc/pipedrive-webhook.php:274
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/webvision-webhook/webvision-webhook.php(106): require_once()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/rest-api/class-wp-rest-server.php(1181): webvision_webhook_endpoint_callback_pipedrive(Object(WP_REST_Request))
+#2 /home/vr488025/yapposushi.com/www/wp-includes/rest-api/class-wp-rest-server.php(1028): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/webhook/v1/pip...', Array, NULL)
+#3 /home/vr488025/yapposushi.com/www/wp-includes/rest-api/class-wp-rest-server.php(442): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#4 /home/vr488025/yapposushi.com/www/wp-includes/rest-api.php(410): WP_REST_Server->serve_request('/webhook/v1/pip...')
+#5 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(308): rest_api_loaded(Object(WP))
+#6 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#7 /home/vr488025/yapposushi.com/www/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#8 /home/vr488025/yapposushi.com/www/wp-includes/class-wp.php(399): do_action_ref_array('parse_request', Array)
+#9 /home/vr488025/yapposushi.com/www/wp-includes/class-wp.php(780): WP->parse_request('')
+#10 /home/vr488025/yapposushi.com/www/wp-includes/functions.php(1334): WP->main('')
+#11 /home/vr488025/yapposushi.com/www/wp-blog-header.php(16): wp()
+#12 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#13 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/webvision-webhook/inc/pipedrive-webhook.php Line: 274 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-06 14:25:07] Uncaught Error: Cannot use object of type stdClass as array in /home/vr488025/yapposushi.com/www/wp-content/plugins/webvision-webhook/inc/pipedrive-webhook.php:274
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/webvision-webhook/webvision-webhook.php(106): require_once()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/rest-api/class-wp-rest-server.php(1181): webvision_webhook_endpoint_callback_pipedrive(Object(WP_REST_Request))
+#2 /home/vr488025/yapposushi.com/www/wp-includes/rest-api/class-wp-rest-server.php(1028): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/webhook/v1/pip...', Array, NULL)
+#3 /home/vr488025/yapposushi.com/www/wp-includes/rest-api/class-wp-rest-server.php(442): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#4 /home/vr488025/yapposushi.com/www/wp-includes/rest-api.php(410): WP_REST_Server->serve_request('/webhook/v1/pip...')
+#5 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(308): rest_api_loaded(Object(WP))
+#6 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#7 /home/vr488025/yapposushi.com/www/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#8 /home/vr488025/yapposushi.com/www/wp-includes/class-wp.php(399): do_action_ref_array('parse_request', Array)
+#9 /home/vr488025/yapposushi.com/www/wp-includes/class-wp.php(780): WP->parse_request('')
+#10 /home/vr488025/yapposushi.com/www/wp-includes/functions.php(1334): WP->main('')
+#11 /home/vr488025/yapposushi.com/www/wp-blog-header.php(16): wp()
+#12 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#13 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/webvision-webhook/inc/pipedrive-webhook.php Line: 274 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-06 14:25:42] Uncaught Error: Cannot use object of type stdClass as array in /home/vr488025/yapposushi.com/www/wp-content/plugins/webvision-webhook/inc/pipedrive-webhook.php:274
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/webvision-webhook/webvision-webhook.php(106): require_once()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/rest-api/class-wp-rest-server.php(1181): webvision_webhook_endpoint_callback_pipedrive(Object(WP_REST_Request))
+#2 /home/vr488025/yapposushi.com/www/wp-includes/rest-api/class-wp-rest-server.php(1028): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/webhook/v1/pip...', Array, NULL)
+#3 /home/vr488025/yapposushi.com/www/wp-includes/rest-api/class-wp-rest-server.php(442): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#4 /home/vr488025/yapposushi.com/www/wp-includes/rest-api.php(410): WP_REST_Server->serve_request('/webhook/v1/pip...')
+#5 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(308): rest_api_loaded(Object(WP))
+#6 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#7 /home/vr488025/yapposushi.com/www/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#8 /home/vr488025/yapposushi.com/www/wp-includes/class-wp.php(399): do_action_ref_array('parse_request', Array)
+#9 /home/vr488025/yapposushi.com/www/wp-includes/class-wp.php(780): WP->parse_request('')
+#10 /home/vr488025/yapposushi.com/www/wp-includes/functions.php(1334): WP->main('')
+#11 /home/vr488025/yapposushi.com/www/wp-blog-header.php(16): wp()
+#12 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#13 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/webvision-webhook/inc/pipedrive-webhook.php Line: 274 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-06 14:28:00] Uncaught Error: Cannot use object of type stdClass as array in /home/vr488025/yapposushi.com/www/wp-content/plugins/webvision-webhook/inc/pipedrive-webhook.php:275
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/webvision-webhook/webvision-webhook.php(106): require_once()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/rest-api/class-wp-rest-server.php(1181): webvision_webhook_endpoint_callback_pipedrive(Object(WP_REST_Request))
+#2 /home/vr488025/yapposushi.com/www/wp-includes/rest-api/class-wp-rest-server.php(1028): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/webhook/v1/pip...', Array, NULL)
+#3 /home/vr488025/yapposushi.com/www/wp-includes/rest-api/class-wp-rest-server.php(442): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#4 /home/vr488025/yapposushi.com/www/wp-includes/rest-api.php(410): WP_REST_Server->serve_request('/webhook/v1/pip...')
+#5 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(308): rest_api_loaded(Object(WP))
+#6 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#7 /home/vr488025/yapposushi.com/www/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#8 /home/vr488025/yapposushi.com/www/wp-includes/class-wp.php(399): do_action_ref_array('parse_request', Array)
+#9 /home/vr488025/yapposushi.com/www/wp-includes/class-wp.php(780): WP->parse_request('')
+#10 /home/vr488025/yapposushi.com/www/wp-includes/functions.php(1334): WP->main('')
+#11 /home/vr488025/yapposushi.com/www/wp-blog-header.php(16): wp()
+#12 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#13 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/webvision-webhook/inc/pipedrive-webhook.php Line: 275 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-06 14:28:07] Uncaught Error: Cannot use object of type stdClass as array in /home/vr488025/yapposushi.com/www/wp-content/plugins/webvision-webhook/inc/pipedrive-webhook.php:275
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/webvision-webhook/webvision-webhook.php(106): require_once()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/rest-api/class-wp-rest-server.php(1181): webvision_webhook_endpoint_callback_pipedrive(Object(WP_REST_Request))
+#2 /home/vr488025/yapposushi.com/www/wp-includes/rest-api/class-wp-rest-server.php(1028): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/webhook/v1/pip...', Array, NULL)
+#3 /home/vr488025/yapposushi.com/www/wp-includes/rest-api/class-wp-rest-server.php(442): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#4 /home/vr488025/yapposushi.com/www/wp-includes/rest-api.php(410): WP_REST_Server->serve_request('/webhook/v1/pip...')
+#5 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(308): rest_api_loaded(Object(WP))
+#6 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#7 /home/vr488025/yapposushi.com/www/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#8 /home/vr488025/yapposushi.com/www/wp-includes/class-wp.php(399): do_action_ref_array('parse_request', Array)
+#9 /home/vr488025/yapposushi.com/www/wp-includes/class-wp.php(780): WP->parse_request('')
+#10 /home/vr488025/yapposushi.com/www/wp-includes/functions.php(1334): WP->main('')
+#11 /home/vr488025/yapposushi.com/www/wp-blog-header.php(16): wp()
+#12 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#13 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/webvision-webhook/inc/pipedrive-webhook.php Line: 275 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-06 14:28:16] Uncaught Error: Cannot use object of type stdClass as array in /home/vr488025/yapposushi.com/www/wp-content/plugins/webvision-webhook/inc/pipedrive-webhook.php:275
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/webvision-webhook/webvision-webhook.php(106): require_once()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/rest-api/class-wp-rest-server.php(1181): webvision_webhook_endpoint_callback_pipedrive(Object(WP_REST_Request))
+#2 /home/vr488025/yapposushi.com/www/wp-includes/rest-api/class-wp-rest-server.php(1028): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/webhook/v1/pip...', Array, NULL)
+#3 /home/vr488025/yapposushi.com/www/wp-includes/rest-api/class-wp-rest-server.php(442): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#4 /home/vr488025/yapposushi.com/www/wp-includes/rest-api.php(410): WP_REST_Server->serve_request('/webhook/v1/pip...')
+#5 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(308): rest_api_loaded(Object(WP))
+#6 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#7 /home/vr488025/yapposushi.com/www/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#8 /home/vr488025/yapposushi.com/www/wp-includes/class-wp.php(399): do_action_ref_array('parse_request', Array)
+#9 /home/vr488025/yapposushi.com/www/wp-includes/class-wp.php(780): WP->parse_request('')
+#10 /home/vr488025/yapposushi.com/www/wp-includes/functions.php(1334): WP->main('')
+#11 /home/vr488025/yapposushi.com/www/wp-blog-header.php(16): wp()
+#12 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#13 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/webvision-webhook/inc/pipedrive-webhook.php Line: 275 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-06 14:28:41] Uncaught Error: Cannot use object of type stdClass as array in /home/vr488025/yapposushi.com/www/wp-content/plugins/webvision-webhook/inc/pipedrive-webhook.php:275
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/webvision-webhook/webvision-webhook.php(106): require_once()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/rest-api/class-wp-rest-server.php(1181): webvision_webhook_endpoint_callback_pipedrive(Object(WP_REST_Request))
+#2 /home/vr488025/yapposushi.com/www/wp-includes/rest-api/class-wp-rest-server.php(1028): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/webhook/v1/pip...', Array, NULL)
+#3 /home/vr488025/yapposushi.com/www/wp-includes/rest-api/class-wp-rest-server.php(442): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#4 /home/vr488025/yapposushi.com/www/wp-includes/rest-api.php(410): WP_REST_Server->serve_request('/webhook/v1/pip...')
+#5 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(308): rest_api_loaded(Object(WP))
+#6 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#7 /home/vr488025/yapposushi.com/www/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#8 /home/vr488025/yapposushi.com/www/wp-includes/class-wp.php(399): do_action_ref_array('parse_request', Array)
+#9 /home/vr488025/yapposushi.com/www/wp-includes/class-wp.php(780): WP->parse_request('')
+#10 /home/vr488025/yapposushi.com/www/wp-includes/functions.php(1334): WP->main('')
+#11 /home/vr488025/yapposushi.com/www/wp-blog-header.php(16): wp()
+#12 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#13 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/webvision-webhook/inc/pipedrive-webhook.php Line: 275 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-07 10:36:23] Uncaught Error: Call to a member function get_billing_state() on null in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php:185
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php(207): yappo_get_chosen_region()
+#1 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/header.php(94): yappo_get_chosen_header_adress()
+#2 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once('/home/vr488025/...')
+#3 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#4 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#5 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/404.php(10): get_header()
+#6 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#7 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#8 /home/vr488 - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php Line: 185 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-07 10:36:23] Uncaught Error: Call to a member function get_billing_state() on null in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php:185
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php(207): yappo_get_chosen_region()
+#1 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/header.php(94): yappo_get_chosen_header_adress()
+#2 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once('/home/vr488025/...')
+#3 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#4 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#5 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/404.php(10): get_header()
+#6 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#7 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#8 /home/vr488 - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php Line: 185 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-07 10:36:23] Uncaught Error: Call to a member function get_billing_state() on null in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php:185
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php(207): yappo_get_chosen_region()
+#1 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/header.php(94): yappo_get_chosen_header_adress()
+#2 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once('/home/vr488025/...')
+#3 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#4 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#5 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/404.php(10): get_header()
+#6 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#7 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#8 /home/vr488 - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php Line: 185 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-07 10:36:23] Uncaught Error: Call to a member function get_billing_state() on null in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php:185
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php(207): yappo_get_chosen_region()
+#1 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/header.php(94): yappo_get_chosen_header_adress()
+#2 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once('/home/vr488025/...')
+#3 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#4 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#5 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/404.php(10): get_header()
+#6 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#7 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#8 /home/vr488 - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php Line: 185 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-07 10:44:44] Uncaught TypeError: Argument 1 passed to WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository::createFromQueryResult() must be of the type array, null given, called in /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php on line 29 and defined in /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php:101
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php(29): WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository->createFromQueryResult(NULL)
+#1 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Service/BackgroundTaskService.php(54): WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository- - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php Line: 101 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-07 10:45:01] Uncaught TypeError: Argument 1 passed to WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository::createFromQueryResult() must be of the type array, null given, called in /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php on line 29 and defined in /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php:101
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php(29): WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository->createFromQueryResult(NULL)
+#1 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Service/BackgroundTaskService.php(54): WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository- - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php Line: 101 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-07 12:30:28] Uncaught Error: Call to a member function get_billing_state() on null in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php:185
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php(207): yappo_get_chosen_region()
+#1 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/header.php(94): yappo_get_chosen_header_adress()
+#2 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once('/home/vr488025/...')
+#3 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#4 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#5 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/404.php(10): get_header()
+#6 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#7 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#8 /home/vr488 - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php Line: 185 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-07 12:30:31] Uncaught Error: Call to a member function get_billing_state() on null in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php:185
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php(207): yappo_get_chosen_region()
+#1 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/header.php(94): yappo_get_chosen_header_adress()
+#2 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once('/home/vr488025/...')
+#3 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#4 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#5 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/404.php(10): get_header()
+#6 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#7 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#8 /home/vr488 - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php Line: 185 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-07 12:30:31] Uncaught Error: Call to a member function get_billing_state() on null in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php:185
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php(207): yappo_get_chosen_region()
+#1 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/header.php(94): yappo_get_chosen_header_adress()
+#2 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once('/home/vr488025/...')
+#3 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#4 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#5 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/404.php(10): get_header()
+#6 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#7 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#8 /home/vr488 - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php Line: 185 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-07 12:30:31] Uncaught Error: Call to a member function get_billing_state() on null in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php:185
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php(207): yappo_get_chosen_region()
+#1 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/header.php(94): yappo_get_chosen_header_adress()
+#2 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once('/home/vr488025/...')
+#3 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#4 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#5 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/404.php(10): get_header()
+#6 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#7 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#8 /home/vr488 - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php Line: 185 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-07 12:30:31] Uncaught Error: Call to a member function get_billing_state() on null in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php:185
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php(207): yappo_get_chosen_region()
+#1 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/header.php(94): yappo_get_chosen_header_adress()
+#2 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once('/home/vr488025/...')
+#3 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#4 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#5 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/404.php(10): get_header()
+#6 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#7 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#8 /home/vr488 - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php Line: 185 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-07 12:35:05] Uncaught TypeError: Argument 1 passed to WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository::createFromQueryResult() must be of the type array, null given, called in /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php on line 29 and defined in /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php:101
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php(29): WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository->createFromQueryResult(NULL)
+#1 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Service/BackgroundTaskService.php(54): WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository- - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php Line: 101 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-07 12:35:51] Uncaught TypeError: Argument 1 passed to WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository::createFromQueryResult() must be of the type array, null given, called in /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php on line 29 and defined in /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php:101
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php(29): WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository->createFromQueryResult(NULL)
+#1 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Service/BackgroundTaskService.php(54): WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository- - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php Line: 101 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-07 12:39:11] Uncaught TypeError: Argument 1 passed to WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository::createFromQueryResult() must be of the type array, null given, called in /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php on line 29 and defined in /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php:101
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php(29): WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository->createFromQueryResult(NULL)
+#1 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Service/BackgroundTaskService.php(54): WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository- - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php Line: 101 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-07 12:57:37] Uncaught Error: Call to a member function get_billing_state() on null in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php:185
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php(207): yappo_get_chosen_region()
+#1 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/header.php(94): yappo_get_chosen_header_adress()
+#2 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once('/home/vr488025/...')
+#3 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#4 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#5 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/404.php(10): get_header()
+#6 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#7 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#8 /home/vr488 - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php Line: 185 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-07 12:57:39] Uncaught Error: Call to a member function get_billing_state() on null in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php:185
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php(207): yappo_get_chosen_region()
+#1 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/header.php(94): yappo_get_chosen_header_adress()
+#2 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once('/home/vr488025/...')
+#3 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#4 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#5 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/404.php(10): get_header()
+#6 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#7 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#8 /home/vr488 - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php Line: 185 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-07 12:57:40] Uncaught Error: Call to a member function get_billing_state() on null in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php:185
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php(207): yappo_get_chosen_region()
+#1 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/header.php(94): yappo_get_chosen_header_adress()
+#2 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once('/home/vr488025/...')
+#3 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#4 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#5 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/404.php(10): get_header()
+#6 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#7 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#8 /home/vr488 - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php Line: 185 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-07 12:57:40] Uncaught Error: Call to a member function get_billing_state() on null in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php:185
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php(207): yappo_get_chosen_region()
+#1 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/header.php(94): yappo_get_chosen_header_adress()
+#2 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once('/home/vr488025/...')
+#3 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#4 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#5 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/404.php(10): get_header()
+#6 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#7 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#8 /home/vr488 - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php Line: 185 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-07 12:57:40] Uncaught Error: Call to a member function get_billing_state() on null in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php:185
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php(207): yappo_get_chosen_region()
+#1 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/header.php(94): yappo_get_chosen_header_adress()
+#2 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once('/home/vr488025/...')
+#3 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#4 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#5 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/404.php(10): get_header()
+#6 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#7 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#8 /home/vr488 - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php Line: 185 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-07 12:57:47] Uncaught Error: Call to a member function get_billing_state() on null in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php:185
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php(207): yappo_get_chosen_region()
+#1 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/header.php(94): yappo_get_chosen_header_adress()
+#2 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once('/home/vr488025/...')
+#3 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#4 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#5 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/404.php(10): get_header()
+#6 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#7 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#8 /home/vr488 - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php Line: 185 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-07 12:57:49] Uncaught Error: Call to a member function get_billing_state() on null in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php:185
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php(207): yappo_get_chosen_region()
+#1 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/header.php(94): yappo_get_chosen_header_adress()
+#2 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once('/home/vr488025/...')
+#3 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#4 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#5 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/404.php(10): get_header()
+#6 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#7 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#8 /home/vr488 - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php Line: 185 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-07 12:57:50] Uncaught Error: Call to a member function get_billing_state() on null in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php:185
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php(207): yappo_get_chosen_region()
+#1 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/header.php(94): yappo_get_chosen_header_adress()
+#2 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once('/home/vr488025/...')
+#3 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#4 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#5 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/404.php(10): get_header()
+#6 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#7 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#8 /home/vr488 - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php Line: 185 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-07 12:57:50] Uncaught Error: Call to a member function get_billing_state() on null in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php:185
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php(207): yappo_get_chosen_region()
+#1 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/header.php(94): yappo_get_chosen_header_adress()
+#2 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once('/home/vr488025/...')
+#3 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#4 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#5 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/404.php(10): get_header()
+#6 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#7 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#8 /home/vr488 - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php Line: 185 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-07 12:57:50] Uncaught Error: Call to a member function get_billing_state() on null in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php:185
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php(207): yappo_get_chosen_region()
+#1 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/header.php(94): yappo_get_chosen_header_adress()
+#2 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once('/home/vr488025/...')
+#3 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#4 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#5 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/404.php(10): get_header()
+#6 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#7 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#8 /home/vr488 - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php Line: 185 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-07 12:58:02] Uncaught Error: Call to a member function get_billing_state() on null in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php:185
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php(207): yappo_get_chosen_region()
+#1 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/header.php(94): yappo_get_chosen_header_adress()
+#2 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once('/home/vr488025/...')
+#3 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#4 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#5 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/404.php(10): get_header()
+#6 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#7 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#8 /home/vr488 - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php Line: 185 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-07 12:58:03] Uncaught Error: Call to a member function get_billing_state() on null in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php:185
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php(207): yappo_get_chosen_region()
+#1 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/header.php(94): yappo_get_chosen_header_adress()
+#2 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once('/home/vr488025/...')
+#3 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#4 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#5 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/404.php(10): get_header()
+#6 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#7 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#8 /home/vr488 - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php Line: 185 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-07 12:58:04] Uncaught Error: Call to a member function get_billing_state() on null in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php:185
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php(207): yappo_get_chosen_region()
+#1 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/header.php(94): yappo_get_chosen_header_adress()
+#2 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once('/home/vr488025/...')
+#3 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#4 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#5 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/404.php(10): get_header()
+#6 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#7 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#8 /home/vr488 - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php Line: 185 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-07 12:58:04] Uncaught Error: Call to a member function get_billing_state() on null in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php:185
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php(207): yappo_get_chosen_region()
+#1 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/header.php(94): yappo_get_chosen_header_adress()
+#2 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once('/home/vr488025/...')
+#3 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#4 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#5 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/404.php(10): get_header()
+#6 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#7 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#8 /home/vr488 - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php Line: 185 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-07 12:58:04] Uncaught Error: Call to a member function get_billing_state() on null in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php:185
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php(207): yappo_get_chosen_region()
+#1 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/header.php(94): yappo_get_chosen_header_adress()
+#2 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once('/home/vr488025/...')
+#3 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#4 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#5 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/404.php(10): get_header()
+#6 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#7 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#8 /home/vr488 - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php Line: 185 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-07 12:58:50] Uncaught Error: Call to a member function get_billing_state() on null in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php:185
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php(207): yappo_get_chosen_region()
+#1 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/header.php(94): yappo_get_chosen_header_adress()
+#2 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once('/home/vr488025/...')
+#3 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#4 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#5 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/404.php(10): get_header()
+#6 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#7 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#8 /home/vr488 - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php Line: 185 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-07 12:58:51] Uncaught Error: Call to a member function get_billing_state() on null in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php:185
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php(207): yappo_get_chosen_region()
+#1 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/header.php(94): yappo_get_chosen_header_adress()
+#2 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once('/home/vr488025/...')
+#3 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#4 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#5 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/404.php(10): get_header()
+#6 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#7 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#8 /home/vr488 - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php Line: 185 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-07 12:58:52] Uncaught Error: Call to a member function get_billing_state() on null in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php:185
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php(207): yappo_get_chosen_region()
+#1 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/header.php(94): yappo_get_chosen_header_adress()
+#2 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once('/home/vr488025/...')
+#3 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#4 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#5 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/404.php(10): get_header()
+#6 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#7 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#8 /home/vr488 - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php Line: 185 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-07 12:58:52] Uncaught Error: Call to a member function get_billing_state() on null in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php:185
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php(207): yappo_get_chosen_region()
+#1 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/header.php(94): yappo_get_chosen_header_adress()
+#2 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once('/home/vr488025/...')
+#3 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#4 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#5 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/404.php(10): get_header()
+#6 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#7 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#8 /home/vr488 - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php Line: 185 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-07 12:58:54] Uncaught Error: Call to a member function get_billing_state() on null in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php:185
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php(207): yappo_get_chosen_region()
+#1 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/header.php(94): yappo_get_chosen_header_adress()
+#2 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once('/home/vr488025/...')
+#3 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#4 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#5 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/404.php(10): get_header()
+#6 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#7 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#8 /home/vr488 - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/inc/checkout.php Line: 185 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-07 15:30:39] Uncaught TypeError: Argument 1 passed to WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository::createFromQueryResult() must be of the type array, null given, called in /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php on line 29 and defined in /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php:101
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php(29): WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository->createFromQueryResult(NULL)
+#1 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Service/BackgroundTaskService.php(54): WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository- - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php Line: 101 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-07 15:30:45] Uncaught TypeError: Argument 1 passed to WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository::createFromQueryResult() must be of the type array, null given, called in /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php on line 29 and defined in /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php:101
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php(29): WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository->createFromQueryResult(NULL)
+#1 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Service/BackgroundTaskService.php(54): WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository- - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php Line: 101 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-08 08:10:40] Uncaught Error: Call to a member function get_items() on bool in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php:76
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#2 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(92): locate_template(Array, true, true, Array)
+#3 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/page.php(37): get_footer()
+#4 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#5 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#6 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#7 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php Line: 76 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-08 13:17:51] Uncaught Error: Call to a member function get_items() on bool in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php:76
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#2 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(92): locate_template(Array, true, true, Array)
+#3 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/page.php(37): get_footer()
+#4 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#5 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#6 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#7 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php Line: 76 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-08 13:19:40] Uncaught Error: Call to a member function get_items() on bool in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php:76
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#2 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(92): locate_template(Array, true, true, Array)
+#3 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/page.php(37): get_footer()
+#4 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#5 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#6 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#7 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php Line: 76 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-09 18:17:48] Uncaught Error: Call to a member function get_items() on bool in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php:76
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#2 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(92): locate_template(Array, true, true, Array)
+#3 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/page.php(37): get_footer()
+#4 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#5 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#6 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#7 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php Line: 76 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-09 18:17:49] Uncaught Error: Call to a member function get_items() on bool in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php:76
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#2 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(92): locate_template(Array, true, true, Array)
+#3 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/page.php(37): get_footer()
+#4 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#5 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#6 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#7 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php Line: 76 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-09 18:31:54] Uncaught Error: Call to a member function get_items() on bool in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php:76
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#2 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(92): locate_template(Array, true, true, Array)
+#3 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/page.php(37): get_footer()
+#4 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#5 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#6 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#7 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php Line: 76 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-09 19:19:42] Uncaught Error: Call to a member function get_items() on bool in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php:76
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#2 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(92): locate_template(Array, true, true, Array)
+#3 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/page.php(37): get_footer()
+#4 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#5 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#6 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#7 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php Line: 76 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-09 19:47:23] Uncaught Error: Call to a member function get_items() on bool in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php:76
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#2 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(92): locate_template(Array, true, true, Array)
+#3 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/page.php(37): get_footer()
+#4 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#5 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#6 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#7 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php Line: 76 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-09 21:52:33] Uncaught Error: Call to a member function get_items() on bool in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php:76
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#2 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(92): locate_template(Array, true, true, Array)
+#3 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/page.php(37): get_footer()
+#4 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#5 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#6 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#7 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php Line: 76 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-10 03:28:09] Uncaught Error: Call to a member function get_items() on bool in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php:76
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#2 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(92): locate_template(Array, true, true, Array)
+#3 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/page.php(37): get_footer()
+#4 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#5 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#6 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#7 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php Line: 76 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-10 10:42:56] Uncaught TypeError: Argument 1 passed to WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository::createFromQueryResult() must be of the type array, null given, called in /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php on line 29 and defined in /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php:101
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php(29): WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository->createFromQueryResult(NULL)
+#1 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Service/BackgroundTaskService.php(54): WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository- - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php Line: 101 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-10 12:02:16] Uncaught Error: Call to a member function get_items() on bool in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php:76
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#2 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(92): locate_template(Array, true, true, Array)
+#3 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/page.php(37): get_footer()
+#4 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#5 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#6 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#7 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php Line: 76 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-10 12:02:16] Uncaught Error: Call to a member function get_items() on bool in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php:76
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#2 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(92): locate_template(Array, true, true, Array)
+#3 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/page.php(37): get_footer()
+#4 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#5 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#6 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#7 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php Line: 76 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-10 12:02:16] Uncaught Error: Call to a member function get_items() on bool in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php:76
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#2 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(92): locate_template(Array, true, true, Array)
+#3 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/page.php(37): get_footer()
+#4 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#5 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#6 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#7 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php Line: 76 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-10 12:02:16] Uncaught Error: Call to a member function get_items() on bool in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php:76
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#2 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(92): locate_template(Array, true, true, Array)
+#3 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/page.php(37): get_footer()
+#4 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#5 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#6 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#7 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php Line: 76 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-10 12:02:17] Uncaught Error: Call to a member function get_items() on bool in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php:76
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#2 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(92): locate_template(Array, true, true, Array)
+#3 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/page.php(37): get_footer()
+#4 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#5 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#6 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#7 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php Line: 76 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-10 12:02:17] Uncaught Error: Call to a member function get_items() on bool in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php:76
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#2 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(92): locate_template(Array, true, true, Array)
+#3 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/page.php(37): get_footer()
+#4 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#5 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#6 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#7 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php Line: 76 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-10 12:02:17] Uncaught Error: Call to a member function get_items() on bool in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php:76
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#2 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(92): locate_template(Array, true, true, Array)
+#3 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/page.php(37): get_footer()
+#4 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#5 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#6 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#7 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php Line: 76 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-10 12:02:18] Uncaught Error: Call to a member function get_items() on bool in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php:76
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#2 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(92): locate_template(Array, true, true, Array)
+#3 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/page.php(37): get_footer()
+#4 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#5 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#6 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#7 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php Line: 76 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-10 12:18:11] Uncaught Error: Call to a member function get_items() on bool in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php:76
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#2 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(92): locate_template(Array, true, true, Array)
+#3 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/page.php(37): get_footer()
+#4 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#5 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#6 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#7 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php Line: 76 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-10 14:16:29] Uncaught TypeError: Argument 1 passed to WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository::createFromQueryResult() must be of the type array, null given, called in /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php on line 29 and defined in /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php:101
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php(29): WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository->createFromQueryResult(NULL)
+#1 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Service/BackgroundTaskService.php(54): WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository- - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php Line: 101 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-10 14:35:27] Uncaught TypeError: Argument 1 passed to WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository::createFromQueryResult() must be of the type array, null given, called in /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php on line 29 and defined in /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php:101
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php(29): WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository->createFromQueryResult(NULL)
+#1 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Service/BackgroundTaskService.php(54): WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository- - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php Line: 101 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-10 15:00:00] Uncaught TypeError: Argument 1 passed to WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository::createFromQueryResult() must be of the type array, null given, called in /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php on line 29 and defined in /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php:101
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php(29): WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository->createFromQueryResult(NULL)
+#1 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Service/BackgroundTaskService.php(54): WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository- - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php Line: 101 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-10 15:04:46] Uncaught TypeError: Argument 1 passed to WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository::createFromQueryResult() must be of the type array, null given, called in /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php on line 29 and defined in /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php:101
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php(29): WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository->createFromQueryResult(NULL)
+#1 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Service/BackgroundTaskService.php(54): WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository- - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php Line: 101 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-10 15:53:22] Uncaught Error: Object of class WP_Error could not be converted to string in /home/vr488025/yapposushi.com/www/wp-content/plugins/custom-gutenberg-plugin/blocks/Menu/template.php:56
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(678): include()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(308): acf_block_render_template(Array, '', false, 2394, Object(WP_Block), Array)
+#2 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#3 /home/vr488025/yapposushi.com/www/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/vr488025/yapposushi.com/www/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(652): do_action('acf_block_rende...', Array, '', false, 2394, Object(WP_Block), Array)
+#5 /home/vr488025/yapposushi.com/www/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(569): acf_render_block(Array, '', false, 2394, Object(WP_Block), Array)
+#6 /home/vr48 - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/custom-gutenberg-plugin/blocks/Menu/template.php Line: 56 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-10 17:08:38] Uncaught Error: Object of class WP_Error could not be converted to string in /home/vr488025/yapposushi.com/www/wp-content/plugins/custom-gutenberg-plugin/blocks/Menu/template.php:56
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(678): include()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(308): acf_block_render_template(Array, '', false, 2394, Object(WP_Block), Array)
+#2 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#3 /home/vr488025/yapposushi.com/www/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/vr488025/yapposushi.com/www/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(652): do_action('acf_block_rende...', Array, '', false, 2394, Object(WP_Block), Array)
+#5 /home/vr488025/yapposushi.com/www/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(569): acf_render_block(Array, '', false, 2394, Object(WP_Block), Array)
+#6 /home/vr48 - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/custom-gutenberg-plugin/blocks/Menu/template.php Line: 56 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-10 17:09:12] Uncaught Error: Object of class WP_Error could not be converted to string in /home/vr488025/yapposushi.com/www/wp-content/plugins/custom-gutenberg-plugin/blocks/Menu/template.php:56
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(678): include()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(308): acf_block_render_template(Array, '', false, 2394, Object(WP_Block), Array)
+#2 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#3 /home/vr488025/yapposushi.com/www/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/vr488025/yapposushi.com/www/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(652): do_action('acf_block_rende...', Array, '', false, 2394, Object(WP_Block), Array)
+#5 /home/vr488025/yapposushi.com/www/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(569): acf_render_block(Array, '', false, 2394, Object(WP_Block), Array)
+#6 /home/vr48 - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/custom-gutenberg-plugin/blocks/Menu/template.php Line: 56 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-10 17:09:32] Uncaught Error: Object of class WP_Error could not be converted to string in /home/vr488025/yapposushi.com/www/wp-content/plugins/custom-gutenberg-plugin/blocks/Menu/template.php:56
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(678): include()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(308): acf_block_render_template(Array, '', false, 2394, Object(WP_Block), Array)
+#2 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#3 /home/vr488025/yapposushi.com/www/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/vr488025/yapposushi.com/www/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(652): do_action('acf_block_rende...', Array, '', false, 2394, Object(WP_Block), Array)
+#5 /home/vr488025/yapposushi.com/www/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(569): acf_render_block(Array, '', false, 2394, Object(WP_Block), Array)
+#6 /home/vr48 - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/custom-gutenberg-plugin/blocks/Menu/template.php Line: 56 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-10 17:10:07] Uncaught Error: Object of class WP_Error could not be converted to string in /home/vr488025/yapposushi.com/www/wp-content/plugins/custom-gutenberg-plugin/blocks/Menu/template.php:56
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(678): include()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(308): acf_block_render_template(Array, '', false, 2394, Object(WP_Block), Array)
+#2 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#3 /home/vr488025/yapposushi.com/www/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/vr488025/yapposushi.com/www/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(652): do_action('acf_block_rende...', Array, '', false, 2394, Object(WP_Block), Array)
+#5 /home/vr488025/yapposushi.com/www/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(569): acf_render_block(Array, '', false, 2394, Object(WP_Block), Array)
+#6 /home/vr48 - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/custom-gutenberg-plugin/blocks/Menu/template.php Line: 56 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-10 17:10:24] Uncaught Error: Object of class WP_Error could not be converted to string in /home/vr488025/yapposushi.com/www/wp-content/plugins/custom-gutenberg-plugin/blocks/Menu/template.php:56
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(678): include()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(308): acf_block_render_template(Array, '', false, 2394, Object(WP_Block), Array)
+#2 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#3 /home/vr488025/yapposushi.com/www/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/vr488025/yapposushi.com/www/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(652): do_action('acf_block_rende...', Array, '', false, 2394, Object(WP_Block), Array)
+#5 /home/vr488025/yapposushi.com/www/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(569): acf_render_block(Array, '', false, 2394, Object(WP_Block), Array)
+#6 /home/vr48 - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/custom-gutenberg-plugin/blocks/Menu/template.php Line: 56 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-10 17:10:31] Uncaught Error: Object of class WP_Error could not be converted to string in /home/vr488025/yapposushi.com/www/wp-content/plugins/custom-gutenberg-plugin/blocks/Menu/template.php:56
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(678): include()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(308): acf_block_render_template(Array, '', false, 2394, Object(WP_Block), Array)
+#2 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#3 /home/vr488025/yapposushi.com/www/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/vr488025/yapposushi.com/www/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(652): do_action('acf_block_rende...', Array, '', false, 2394, Object(WP_Block), Array)
+#5 /home/vr488025/yapposushi.com/www/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(569): acf_render_block(Array, '', false, 2394, Object(WP_Block), Array)
+#6 /home/vr48 - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/custom-gutenberg-plugin/blocks/Menu/template.php Line: 56 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-10 17:10:51] Uncaught Error: Object of class WP_Error could not be converted to string in /home/vr488025/yapposushi.com/www/wp-content/plugins/custom-gutenberg-plugin/blocks/Menu/template.php:56
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(678): include()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(308): acf_block_render_template(Array, '', false, 127, Object(WP_Block), Array)
+#2 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#3 /home/vr488025/yapposushi.com/www/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/vr488025/yapposushi.com/www/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(652): do_action('acf_block_rende...', Array, '', false, 127, Object(WP_Block), Array)
+#5 /home/vr488025/yapposushi.com/www/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(569): acf_render_block(Array, '', false, 127, Object(WP_Block), Array)
+#6 /home/vr48802 - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/custom-gutenberg-plugin/blocks/Menu/template.php Line: 56 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-10 17:11:11] Uncaught Error: Object of class WP_Error could not be converted to string in /home/vr488025/yapposushi.com/www/wp-content/plugins/custom-gutenberg-plugin/blocks/Menu/template.php:56
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(678): include()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(308): acf_block_render_template(Array, '', false, 2394, Object(WP_Block), Array)
+#2 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#3 /home/vr488025/yapposushi.com/www/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/vr488025/yapposushi.com/www/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(652): do_action('acf_block_rende...', Array, '', false, 2394, Object(WP_Block), Array)
+#5 /home/vr488025/yapposushi.com/www/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(569): acf_render_block(Array, '', false, 2394, Object(WP_Block), Array)
+#6 /home/vr48 - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/custom-gutenberg-plugin/blocks/Menu/template.php Line: 56 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-10 17:11:42] Uncaught Error: Object of class WP_Error could not be converted to string in /home/vr488025/yapposushi.com/www/wp-content/plugins/custom-gutenberg-plugin/blocks/Menu/template.php:56
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(678): include()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(308): acf_block_render_template(Array, '', false, 2394, Object(WP_Block), Array)
+#2 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#3 /home/vr488025/yapposushi.com/www/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/vr488025/yapposushi.com/www/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(652): do_action('acf_block_rende...', Array, '', false, 2394, Object(WP_Block), Array)
+#5 /home/vr488025/yapposushi.com/www/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(569): acf_render_block(Array, '', false, 2394, Object(WP_Block), Array)
+#6 /home/vr48 - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/custom-gutenberg-plugin/blocks/Menu/template.php Line: 56 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-10 17:12:11] Uncaught Error: Object of class WP_Error could not be converted to string in /home/vr488025/yapposushi.com/www/wp-content/plugins/custom-gutenberg-plugin/blocks/Menu/template.php:56
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(678): include()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(308): acf_block_render_template(Array, '', false, 2394, Object(WP_Block), Array)
+#2 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#3 /home/vr488025/yapposushi.com/www/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/vr488025/yapposushi.com/www/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(652): do_action('acf_block_rende...', Array, '', false, 2394, Object(WP_Block), Array)
+#5 /home/vr488025/yapposushi.com/www/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(569): acf_render_block(Array, '', false, 2394, Object(WP_Block), Array)
+#6 /home/vr48 - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/custom-gutenberg-plugin/blocks/Menu/template.php Line: 56 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-10 17:12:16] Uncaught TypeError: Argument 1 passed to WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository::createFromQueryResult() must be of the type array, null given, called in /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php on line 29 and defined in /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php:101
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php(29): WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository->createFromQueryResult(NULL)
+#1 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Service/BackgroundTaskService.php(54): WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository- - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php Line: 101 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-10 17:18:47] Uncaught Error: Object of class WP_Error could not be converted to string in /home/vr488025/yapposushi.com/www/wp-content/plugins/custom-gutenberg-plugin/blocks/Menu/template.php:56
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(678): include()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(308): acf_block_render_template(Array, '', false, 2394, Object(WP_Block), Array)
+#2 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#3 /home/vr488025/yapposushi.com/www/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/vr488025/yapposushi.com/www/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(652): do_action('acf_block_rende...', Array, '', false, 2394, Object(WP_Block), Array)
+#5 /home/vr488025/yapposushi.com/www/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(569): acf_render_block(Array, '', false, 2394, Object(WP_Block), Array)
+#6 /home/vr48 - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/custom-gutenberg-plugin/blocks/Menu/template.php Line: 56 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-10 17:20:07] Uncaught Error: Object of class WP_Error could not be converted to string in /home/vr488025/yapposushi.com/www/wp-content/plugins/custom-gutenberg-plugin/blocks/Menu/template.php:56
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(678): include()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(308): acf_block_render_template(Array, '', false, 127, Object(WP_Block), Array)
+#2 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#3 /home/vr488025/yapposushi.com/www/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/vr488025/yapposushi.com/www/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(652): do_action('acf_block_rende...', Array, '', false, 127, Object(WP_Block), Array)
+#5 /home/vr488025/yapposushi.com/www/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(569): acf_render_block(Array, '', false, 127, Object(WP_Block), Array)
+#6 /home/vr48802 - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/custom-gutenberg-plugin/blocks/Menu/template.php Line: 56 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-10 17:20:24] Uncaught Error: Object of class WP_Error could not be converted to string in /home/vr488025/yapposushi.com/www/wp-content/plugins/custom-gutenberg-plugin/blocks/Menu/template.php:56
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(678): include()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(308): acf_block_render_template(Array, '', false, 127, Object(WP_Block), Array)
+#2 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#3 /home/vr488025/yapposushi.com/www/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/vr488025/yapposushi.com/www/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(652): do_action('acf_block_rende...', Array, '', false, 127, Object(WP_Block), Array)
+#5 /home/vr488025/yapposushi.com/www/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(569): acf_render_block(Array, '', false, 127, Object(WP_Block), Array)
+#6 /home/vr48802 - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/custom-gutenberg-plugin/blocks/Menu/template.php Line: 56 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-10 17:20:38] Uncaught Error: Object of class WP_Error could not be converted to string in /home/vr488025/yapposushi.com/www/wp-content/plugins/custom-gutenberg-plugin/blocks/Menu/template.php:56
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(678): include()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(308): acf_block_render_template(Array, '', false, 2394, Object(WP_Block), Array)
+#2 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#3 /home/vr488025/yapposushi.com/www/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/vr488025/yapposushi.com/www/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(652): do_action('acf_block_rende...', Array, '', false, 2394, Object(WP_Block), Array)
+#5 /home/vr488025/yapposushi.com/www/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(569): acf_render_block(Array, '', false, 2394, Object(WP_Block), Array)
+#6 /home/vr48 - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/custom-gutenberg-plugin/blocks/Menu/template.php Line: 56 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-10 17:21:01] Uncaught Error: Object of class WP_Error could not be converted to string in /home/vr488025/yapposushi.com/www/wp-content/plugins/custom-gutenberg-plugin/blocks/Menu/template.php:56
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(678): include()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(308): acf_block_render_template(Array, '', false, 2394, Object(WP_Block), Array)
+#2 /home/vr488025/yapposushi.com/www/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#3 /home/vr488025/yapposushi.com/www/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /home/vr488025/yapposushi.com/www/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(652): do_action('acf_block_rende...', Array, '', false, 2394, Object(WP_Block), Array)
+#5 /home/vr488025/yapposushi.com/www/wp-content/plugins/advanced-custom-fields-pro/pro/blocks.php(569): acf_render_block(Array, '', false, 2394, Object(WP_Block), Array)
+#6 /home/vr48 - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/custom-gutenberg-plugin/blocks/Menu/template.php Line: 56 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-10 17:26:53] Uncaught TypeError: Argument 1 passed to WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository::createFromQueryResult() must be of the type array, null given, called in /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php on line 29 and defined in /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php:101
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php(29): WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository->createFromQueryResult(NULL)
+#1 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Service/BackgroundTaskService.php(54): WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository- - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php Line: 101 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-10 17:41:47] Uncaught TypeError: Argument 1 passed to WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository::createFromQueryResult() must be of the type array, null given, called in /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php on line 29 and defined in /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php:101
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php(29): WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository->createFromQueryResult(NULL)
+#1 /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Service/BackgroundTaskService.php(54): WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository- - File: /home/vr488025/yapposushi.com/www/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php Line: 101 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-11 12:35:30] Uncaught Error: Call to a member function get_items() on bool in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php:81
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#2 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(92): locate_template(Array, true, true, Array)
+#3 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/page.php(37): get_footer()
+#4 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#5 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#6 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#7 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php Line: 81 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-11 15:26:48] Uncaught Error: Call to a member function get_items() on bool in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php:81
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#2 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(92): locate_template(Array, true, true, Array)
+#3 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/page.php(37): get_footer()
+#4 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#5 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#6 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#7 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php Line: 81 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-11 22:41:51] Uncaught Error: Call to a member function get_items() on bool in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php:81
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#2 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(92): locate_template(Array, true, true, Array)
+#3 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/page.php(37): get_footer()
+#4 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#5 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#6 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#7 {main}
+  thrown - File: /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php Line: 81 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No

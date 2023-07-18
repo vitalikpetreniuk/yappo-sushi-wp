@@ -1,0 +1,132 @@
+
+.contacts{
+    text-align: center;
+    padding: 50px 0 94px;
+
+
+    @include media-for (null, $tablet){
+        padding: 50px 0 50px;
+    }
+
+    @include media-for (null, $sm){
+        padding: 35px 0 50px;
+    }
+
+
+    .img-wrap-map{
+
+        @include media-for (null, $tablet){
+            margin-bottom: 50px;
+        }
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .local-block-contacts{
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        text-align: left;
+        margin-bottom: 30px;
+
+
+        h5{
+            color: $accent;
+            font-weight: 700;
+            margin-bottom: 0;
+            font-size: 14px;
+        }
+
+        p{
+            font-weight: 300;
+            color: $text-black;
+            font-size: 14px;
+            white-space: nowrap;
+        }
+
+        .svg-wrap{
+            margin-right: 10px;
+            width: 30px;
+
+            svg{
+                
+            }
+        }
+        
+    }
+
+    .tel{
+        margin-top: 20px;
+        a{
+            display: flex;
+            align-items: center;
+            color: $accent;
+
+            svg{
+                margin-top: .2rem;
+                margin-right: .4rem;
+            }
+
+            span{
+                text-decoration: underline;
+                font-size: 14px;
+                font-weight: 700;
+                color: $accent;
+            }
+        }
+    }
+
+
+    .form-wrap{
+        margin: 240px 20px 30px;
+
+        @include media-for (null, 1417px){
+            margin: 240px 0px 30px;
+        }
+
+        @include media-for (null, $tablet){
+            margin: 100px 0px 45px;
+        }
+
+        @include media-for (null, $sm){
+            margin: 70px 0px 20px;
+        }
+
+        .form-top{
+            display: flex;
+            justify-content: space-between;
+        }
+        .form-bottom{
+            .select-dropdown{
+                width: 100%;
+                &__button{
+                    width: 100%;
+                }
+            }
+        }
+        .select-dropdown {
+            width: 170px;
+            @include media-for (null, $sm){
+                width: 155px;
+            }
+
+            &__button {
+                width: 170px;
+                @include media-for (null, $sm){
+                    width: 155px;
+                }
+            }
+        }
+
+        .form-bottom{
+            .select-dropdown{
+                @include media-for (null, $sm){
+                    margin-bottom: 7rem;
+                }
+            }
+        }
+
+    }
+}

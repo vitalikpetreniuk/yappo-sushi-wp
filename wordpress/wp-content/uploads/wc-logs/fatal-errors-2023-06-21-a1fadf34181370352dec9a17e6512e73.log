@@ -1,0 +1,44 @@
+2023-06-21T14:22:28+00:00 CRITICAL Uncaught Error: Call to a member function get_permalink() on bool in /home/shypelyk/ninesquares.studio/yappo/wp-content/themes/yappo/asp/isotopic.php:35
+Stack trace:
+#0 /home/shypelyk/ninesquares.studio/yappo/wp-content/plugins/ajax-search-pro/includes/classes/Utils/Search.php(128): include()
+#1 /home/shypelyk/ninesquares.studio/yappo/wp-content/plugins/ajax-search-pro/includes/classes/Hooks/Ajax/Search.php(92): WPDRMS\ASP\Utils\Search::generateHTMLResults(Array, Array, 1, '')
+#2 /home/shypelyk/ninesquares.studio/yappo/wp-includes/class-wp-hook.php(308): WPDRMS\ASP\Hooks\Ajax\Search->handle('')
+#3 /home/shypelyk/ninesquares.studio/yappo/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#4 /home/shypelyk/ninesquares.studio/yappo/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#5 /home/shypelyk/ninesquares.studio/yappo/wp-admin/admin-ajax.php(188): do_action('wp_ajax_ajaxsea...')
+#6 {main}
+  thrown у /home/shypelyk/ninesquares.studio/yappo/wp-content/themes/yappo/asp/isotopic.php доступно 35
+
+2023-06-21T14:22:28+00:00 CRITICAL Uncaught Error: Call to a member function get_permalink() on bool in /home/shypelyk/ninesquares.studio/yappo/wp-content/themes/yappo/asp/isotopic.php:35
+Stack trace:
+#0 /home/shypelyk/ninesquares.studio/yappo/wp-content/plugins/ajax-search-pro/includes/classes/Utils/Search.php(128): include()
+#1 /home/shypelyk/ninesquares.studio/yappo/wp-content/plugins/ajax-search-pro/includes/classes/Hooks/Ajax/Search.php(92): WPDRMS\ASP\Utils\Search::generateHTMLResults(Array, Array, 1, '')
+#2 /home/shypelyk/ninesquares.studio/yappo/wp-includes/class-wp-hook.php(308): WPDRMS\ASP\Hooks\Ajax\Search->handle('')
+#3 /home/shypelyk/ninesquares.studio/yappo/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#4 /home/shypelyk/ninesquares.studio/yappo/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#5 /home/shypelyk/ninesquares.studio/yappo/wp-admin/admin-ajax.php(188): do_action('wp_ajax_ajaxsea...')
+#6 {main}
+  thrown у /home/shypelyk/ninesquares.studio/yappo/wp-content/themes/yappo/asp/isotopic.php доступно 35
+
+2023-06-21T14:33:17+00:00 CRITICAL Uncaught Error: Call to a member function get_permalink() on bool in /home/shypelyk/ninesquares.studio/yappo/wp-content/themes/yappo/asp/isotopic.php:35
+Stack trace:
+#0 /home/shypelyk/ninesquares.studio/yappo/wp-content/plugins/ajax-search-pro/includes/classes/Utils/Search.php(128): include()
+#1 /home/shypelyk/ninesquares.studio/yappo/wp-content/plugins/ajax-search-pro/includes/classes/Hooks/Ajax/Search.php(92): WPDRMS\ASP\Utils\Search::generateHTMLResults(Array, Array, 1, '')
+#2 /home/shypelyk/ninesquares.studio/yappo/wp-includes/class-wp-hook.php(308): WPDRMS\ASP\Hooks\Ajax\Search->handle('')
+#3 /home/shypelyk/ninesquares.studio/yappo/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#4 /home/shypelyk/ninesquares.studio/yappo/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#5 /home/shypelyk/ninesquares.studio/yappo/wp-admin/admin-ajax.php(188): do_action('wp_ajax_ajaxsea...')
+#6 {main}
+  thrown у /home/shypelyk/ninesquares.studio/yappo/wp-content/themes/yappo/asp/isotopic.php доступно 35
+
+2023-06-21T14:33:17+00:00 CRITICAL Uncaught Error: Call to a member function get_permalink() on bool in /home/shypelyk/ninesquares.studio/yappo/wp-content/themes/yappo/asp/isotopic.php:35
+Stack trace:
+#0 /home/shypelyk/ninesquares.studio/yappo/wp-content/plugins/ajax-search-pro/includes/classes/Utils/Search.php(128): include()
+#1 /home/shypelyk/ninesquares.studio/yappo/wp-content/plugins/ajax-search-pro/includes/classes/Hooks/Ajax/Search.php(92): WPDRMS\ASP\Utils\Search::generateHTMLResults(Array, Array, 1, '')
+#2 /home/shypelyk/ninesquares.studio/yappo/wp-includes/class-wp-hook.php(308): WPDRMS\ASP\Hooks\Ajax\Search->handle('')
+#3 /home/shypelyk/ninesquares.studio/yappo/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#4 /home/shypelyk/ninesquares.studio/yappo/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#5 /home/shypelyk/ninesquares.studio/yappo/wp-admin/admin-ajax.php(188): do_action('wp_ajax_ajaxsea...')
+#6 {main}
+  thrown у /home/shypelyk/ninesquares.studio/yappo/wp-content/themes/yappo/asp/isotopic.php доступно 35
+

@@ -1,0 +1,92 @@
+[WP STAGING Shutdown Function][E_ERROR][2023-07-12 12:40:22] Uncaught TypeError: Argument 1 passed to WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository::createFromQueryResult() must be of the type array, null given, called in /home/vr488025/yapposushi.com/dev/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php on line 29 and defined in /home/vr488025/yapposushi.com/dev/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php:101
+Stack trace:
+#0 /home/vr488025/yapposushi.com/dev/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php(29): WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository->createFromQueryResult(NULL)
+#1 /home/vr488025/yapposushi.com/dev/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Service/BackgroundTaskService.php(54): WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository- - File: /home/vr488025/yapposushi.com/dev/wp-content/plugins/sitepress-multilingual-cms/vendor/wpml/core-api/core/BackgroundTask/Repository/BackgroundTaskRepository.php Line: 101 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-12 12:57:27] Uncaught Error: Call to a member function get_billing_state() on null in /home/vr488025/yapposushi.com/dev/wp-content/themes/yappo/inc/checkout.php:185
+Stack trace:
+#0 /home/vr488025/yapposushi.com/dev/wp-content/themes/yappo/inc/checkout.php(207): yappo_get_chosen_region()
+#1 /home/vr488025/yapposushi.com/dev/wp-content/themes/yappo/header.php(97): yappo_get_chosen_header_adress()
+#2 /home/vr488025/yapposushi.com/dev/wp-includes/template.php(783): require_once('/home/vr488025/...')
+#3 /home/vr488025/yapposushi.com/dev/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#4 /home/vr488025/yapposushi.com/dev/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#5 /home/vr488025/yapposushi.com/dev/wp-content/themes/yappo/404.php(10): get_header()
+#6 /home/vr488025/yapposushi.com/dev/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#7 /home/vr488025/yapposushi.com/dev/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#8 /home/vr488 - File: /home/vr488025/yapposushi.com/dev/wp-content/themes/yappo/inc/checkout.php Line: 185 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-12 12:57:30] Uncaught Error: Call to a member function get_billing_state() on null in /home/vr488025/yapposushi.com/dev/wp-content/themes/yappo/inc/checkout.php:185
+Stack trace:
+#0 /home/vr488025/yapposushi.com/dev/wp-content/themes/yappo/inc/checkout.php(207): yappo_get_chosen_region()
+#1 /home/vr488025/yapposushi.com/dev/wp-content/themes/yappo/header.php(97): yappo_get_chosen_header_adress()
+#2 /home/vr488025/yapposushi.com/dev/wp-includes/template.php(783): require_once('/home/vr488025/...')
+#3 /home/vr488025/yapposushi.com/dev/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#4 /home/vr488025/yapposushi.com/dev/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#5 /home/vr488025/yapposushi.com/dev/wp-content/themes/yappo/404.php(10): get_header()
+#6 /home/vr488025/yapposushi.com/dev/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#7 /home/vr488025/yapposushi.com/dev/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#8 /home/vr488 - File: /home/vr488025/yapposushi.com/dev/wp-content/themes/yappo/inc/checkout.php Line: 185 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-12 12:58:09] Uncaught Error: Call to a member function get_billing_state() on null in /home/vr488025/yapposushi.com/dev/wp-content/themes/yappo/inc/checkout.php:185
+Stack trace:
+#0 /home/vr488025/yapposushi.com/dev/wp-content/themes/yappo/inc/checkout.php(207): yappo_get_chosen_region()
+#1 /home/vr488025/yapposushi.com/dev/wp-content/themes/yappo/header.php(97): yappo_get_chosen_header_adress()
+#2 /home/vr488025/yapposushi.com/dev/wp-includes/template.php(783): require_once('/home/vr488025/...')
+#3 /home/vr488025/yapposushi.com/dev/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#4 /home/vr488025/yapposushi.com/dev/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#5 /home/vr488025/yapposushi.com/dev/wp-content/themes/yappo/404.php(10): get_header()
+#6 /home/vr488025/yapposushi.com/dev/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#7 /home/vr488025/yapposushi.com/dev/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#8 /home/vr488 - File: /home/vr488025/yapposushi.com/dev/wp-content/themes/yappo/inc/checkout.php Line: 185 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-12 12:58:12] Uncaught Error: Call to a member function get_billing_state() on null in /home/vr488025/yapposushi.com/dev/wp-content/themes/yappo/inc/checkout.php:185
+Stack trace:
+#0 /home/vr488025/yapposushi.com/dev/wp-content/themes/yappo/inc/checkout.php(207): yappo_get_chosen_region()
+#1 /home/vr488025/yapposushi.com/dev/wp-content/themes/yappo/header.php(97): yappo_get_chosen_header_adress()
+#2 /home/vr488025/yapposushi.com/dev/wp-includes/template.php(783): require_once('/home/vr488025/...')
+#3 /home/vr488025/yapposushi.com/dev/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#4 /home/vr488025/yapposushi.com/dev/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#5 /home/vr488025/yapposushi.com/dev/wp-content/themes/yappo/404.php(10): get_header()
+#6 /home/vr488025/yapposushi.com/dev/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#7 /home/vr488025/yapposushi.com/dev/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#8 /home/vr488 - File: /home/vr488025/yapposushi.com/dev/wp-content/themes/yappo/inc/checkout.php Line: 185 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-12 12:58:28] Uncaught Error: Call to a member function get_billing_state() on null in /home/vr488025/yapposushi.com/dev/wp-content/themes/yappo/inc/checkout.php:185
+Stack trace:
+#0 /home/vr488025/yapposushi.com/dev/wp-content/themes/yappo/inc/checkout.php(207): yappo_get_chosen_region()
+#1 /home/vr488025/yapposushi.com/dev/wp-content/themes/yappo/header.php(97): yappo_get_chosen_header_adress()
+#2 /home/vr488025/yapposushi.com/dev/wp-includes/template.php(783): require_once('/home/vr488025/...')
+#3 /home/vr488025/yapposushi.com/dev/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#4 /home/vr488025/yapposushi.com/dev/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#5 /home/vr488025/yapposushi.com/dev/wp-content/themes/yappo/404.php(10): get_header()
+#6 /home/vr488025/yapposushi.com/dev/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#7 /home/vr488025/yapposushi.com/dev/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#8 /home/vr488 - File: /home/vr488025/yapposushi.com/dev/wp-content/themes/yappo/inc/checkout.php Line: 185 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-12 12:58:30] Uncaught Error: Call to a member function get_billing_state() on null in /home/vr488025/yapposushi.com/dev/wp-content/themes/yappo/inc/checkout.php:185
+Stack trace:
+#0 /home/vr488025/yapposushi.com/dev/wp-content/themes/yappo/inc/checkout.php(207): yappo_get_chosen_region()
+#1 /home/vr488025/yapposushi.com/dev/wp-content/themes/yappo/header.php(97): yappo_get_chosen_header_adress()
+#2 /home/vr488025/yapposushi.com/dev/wp-includes/template.php(783): require_once('/home/vr488025/...')
+#3 /home/vr488025/yapposushi.com/dev/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#4 /home/vr488025/yapposushi.com/dev/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#5 /home/vr488025/yapposushi.com/dev/wp-content/themes/yappo/404.php(10): get_header()
+#6 /home/vr488025/yapposushi.com/dev/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#7 /home/vr488025/yapposushi.com/dev/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#8 /home/vr488 - File: /home/vr488025/yapposushi.com/dev/wp-content/themes/yappo/inc/checkout.php Line: 185 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-12 12:59:00] Uncaught Error: Call to a member function get_billing_state() on null in /home/vr488025/yapposushi.com/dev/wp-content/themes/yappo/inc/checkout.php:185
+Stack trace:
+#0 /home/vr488025/yapposushi.com/dev/wp-content/themes/yappo/inc/checkout.php(207): yappo_get_chosen_region()
+#1 /home/vr488025/yapposushi.com/dev/wp-content/themes/yappo/header.php(97): yappo_get_chosen_header_adress()
+#2 /home/vr488025/yapposushi.com/dev/wp-includes/template.php(783): require_once('/home/vr488025/...')
+#3 /home/vr488025/yapposushi.com/dev/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#4 /home/vr488025/yapposushi.com/dev/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#5 /home/vr488025/yapposushi.com/dev/wp-content/themes/yappo/404.php(10): get_header()
+#6 /home/vr488025/yapposushi.com/dev/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#7 /home/vr488025/yapposushi.com/dev/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#8 /home/vr488 - File: /home/vr488025/yapposushi.com/dev/wp-content/themes/yappo/inc/checkout.php Line: 185 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-07-12 12:59:02] Uncaught Error: Call to a member function get_billing_state() on null in /home/vr488025/yapposushi.com/dev/wp-content/themes/yappo/inc/checkout.php:185
+Stack trace:
+#0 /home/vr488025/yapposushi.com/dev/wp-content/themes/yappo/inc/checkout.php(207): yappo_get_chosen_region()
+#1 /home/vr488025/yapposushi.com/dev/wp-content/themes/yappo/header.php(97): yappo_get_chosen_header_adress()
+#2 /home/vr488025/yapposushi.com/dev/wp-includes/template.php(783): require_once('/home/vr488025/...')
+#3 /home/vr488025/yapposushi.com/dev/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#4 /home/vr488025/yapposushi.com/dev/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#5 /home/vr488025/yapposushi.com/dev/wp-content/themes/yappo/404.php(10): get_header()
+#6 /home/vr488025/yapposushi.com/dev/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#7 /home/vr488025/yapposushi.com/dev/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#8 /home/vr488 - File: /home/vr488025/yapposushi.com/dev/wp-content/themes/yappo/inc/checkout.php Line: 185 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No

@@ -1,0 +1,54 @@
+.about-us{
+    text-align: center;
+    padding: 50px 0 150px;
+
+
+    @include media-for (null, $sm){
+        padding: 35px 0 50px;
+    } 
+
+    .breadcrumbs{
+        align-items: start;
+    }
+
+    p{
+        font-size: 14px;
+        font-weight: 300px;
+        width: 80%;
+        margin: auto;
+
+        @include media-for (null, $sm){
+            width: 100%;
+        } 
+    }
+
+    a{
+        text-decoration: underline;
+        color: $text-black;
+    }
+
+    .img-wrap{
+        margin: auto;
+        margin-top: 5rem;
+        width: 80%;
+        border-radius: 50px;
+        overflow: hidden;
+        max-height: 450px;
+
+        @include media-for (null, $tablet){
+            width: 100%;
+            border-radius: 40px;
+        } 
+
+        // @include media-for (null, $sm){
+        //     width: 100%;
+        //     border-radius: 40px;
+        // } 
+        img{
+            object-position: 50% 100%;
+            width: 100%;
+            max-height: 450px;
+            object-fit: cover;
+        }
+    }
+}

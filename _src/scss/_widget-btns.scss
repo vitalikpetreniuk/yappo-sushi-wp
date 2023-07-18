@@ -1,0 +1,58 @@
+.widget-btns{
+    position: fixed;
+    top: 650px;
+    left: 0;
+    height: auto;
+    border-radius: 0% 30px 30px  0%;
+    z-index: 90;
+    top: calc(100vh - 330px);
+    // display: none;
+    background-color: $text-white;
+    box-shadow: 0px 4px 15px 0px rgba($color: #000, $alpha: .05);
+
+    @include media-for (null, 1367px){
+        top: calc(100vh - 200px);
+    }
+
+    @include media-for (null, $sm){
+        top: calc(100vh - 220px);
+        display: block;
+
+    }
+
+    .widget-btn{
+        position: relative;
+        width: 65px;
+        height: 68px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 20;
+
+        @include media-for (null, $sm){
+            width: 50px;
+            height: 55px;
+            justify-content: flex-start;
+            margin-left: .3rem;
+        }
+
+
+        
+        &:first-child{
+            border-radius: 30px 0 0 0;
+        }
+
+
+        &:last-child{
+
+            border-radius: 0 0 0 30px;
+        }
+    }
+
+
+
+
+    
+
+}

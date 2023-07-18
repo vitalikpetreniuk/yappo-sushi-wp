@@ -1,0 +1,12 @@
+2023-07-04T09:39:18+00:00 CRITICAL Cannot redeclare wp_cache_add() (previously declared in /home/vr488025/yapposushi.com/www/wp-includes/cache.php:41) у /home/vr488025/yapposushi.com/www/wp-content/plugins/memcached/object-cache.php доступно 19
+
+2023-07-04T09:39:18+00:00 CRITICAL Cannot redeclare wp_cache_add() (previously declared in /home/vr488025/yapposushi.com/www/wp-includes/cache.php:41) у /home/vr488025/yapposushi.com/www/wp-content/plugins/memcached/object-cache.php доступно 19
+
+2023-07-04T09:39:20+00:00 CRITICAL Cannot redeclare wp_cache_add() (previously declared in /home/vr488025/yapposushi.com/www/wp-includes/cache.php:41) у /home/vr488025/yapposushi.com/www/wp-content/plugins/memcached/object-cache.php доступно 19
+
+2023-07-04T09:39:20+00:00 CRITICAL Cannot redeclare wp_cache_add() (previously declared in /home/vr488025/yapposushi.com/www/wp-includes/cache.php:41) у /home/vr488025/yapposushi.com/www/wp-content/plugins/memcached/object-cache.php доступно 19
+
+2023-07-04T09:39:20+00:00 CRITICAL Cannot redeclare wp_cache_add() (previously declared in /home/vr488025/yapposushi.com/www/wp-includes/cache.php:41) у /home/vr488025/yapposushi.com/www/wp-content/plugins/memcached/object-cache.php доступно 19
+
+2023-07-04T09:39:20+00:00 CRITICAL Cannot redeclare wp_cache_add() (previously declared in /home/vr488025/yapposushi.com/www/wp-includes/cache.php:41) у /home/vr488025/yapposushi.com/www/wp-content/plugins/memcached/object-cache.php доступно 19
+

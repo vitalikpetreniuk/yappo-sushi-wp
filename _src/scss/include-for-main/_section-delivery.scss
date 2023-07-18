@@ -1,0 +1,48 @@
+.section-delivery{
+    padding: 40px 0;
+    background: url(../img/bg-delivery.png);
+    background-repeat: no-repeat;
+    color: $text-white;
+    background-size: cover;
+
+    @include media-for (null, $sm){
+        padding: 65px 40px 25px;
+        text-align: center;
+        background: url(../img/bg-delivery-mob.png);
+    }
+
+    h3{
+        font-weight: 400;
+        font-size: 26px;
+        font-family: 'DelaGothicOne';
+
+        @include media-for (null, $tablet){
+            font-size: 22px;
+        }
+
+        @include media-for (null, $sm){
+            font-size: 18px;
+            text-align: center;
+            line-height: 1.4;
+        }
+    }
+
+    a{
+        display: inline-block;
+        padding: 20px 60px;
+        margin-top: 20px;
+
+        @include media-for (null, $sm){
+            margin: 24px auto 50px;
+        }
+    }
+
+    .img-wrap{
+        img{
+            @include media-for (null, $sm){
+                // width: 50%;
+    
+            }
+        }
+    }
+}
