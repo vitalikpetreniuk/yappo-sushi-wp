@@ -36,8 +36,7 @@ global $product;
 		<?php endif; ?>
 		</ul>
 		<?php
-		$cats = [101,102];
-		if (in_array(get_queried_object_id(),$cats)) {
+		if (preg_match('/\d+л/', $product->name)) {
 			?>
 			<span class="weight"><?= $product->get_weight() ?> мл</span>
 			<?php

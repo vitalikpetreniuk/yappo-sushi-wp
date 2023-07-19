@@ -334,12 +334,12 @@ function wpdocs_create_book_tax()
 
 add_action('woocommerce_init', 'wpdocs_create_book_tax', 0);
 
-function custom_rewrite_rule()
-{
-    add_rewrite_rule('^bucha/([^/]*)/?', 'index.php?pagename=$matches[1]', 'top');
-}
-
-add_action('init', 'custom_rewrite_rule', 10, 0);
+//function custom_rewrite_rule()
+//{
+//    add_rewrite_rule('^bucha/([^/]*)/?', 'index.php?pagename=$matches[1]', 'top');
+//}
+//
+//add_action('init', 'custom_rewrite_rule', 10, 0);
 
 function load_template_part($template_name, $part_name = null, $args = null)
 {
@@ -371,41 +371,5 @@ function seo_robots_modify_search($robots)
 
 }
 
-function customize_permalink($permalink, $post, $leavename)
-{
-    $permalink = str_replace('%city%', 'kiev', $permalink);
-
-    return $permalink;
-}
-
-add_filter('post_link', 'customize_permalink', 10, 3);
-
-function register_page_category_taxonomy() {
-    $labels = array(
-        'name' => 'Page Categories',
-        'singular_name' => 'Page Category',
-        'search_items' => 'Search Categories',
-        'all_items' => 'All Categories',
-        'edit_item' => 'Edit Category',
-        'update_item' => 'Update Category',
-        'add_new_item' => 'Add New Category',
-        'new_item_name' => 'New Category Name',
-        'menu_name' => 'Page Categories',
-    );
-
-    $args = array(
-        'hierarchical' => true,
-        'labels' => $labels,
-        'show_ui' => true,
-        'show_admin_column' => true,
-        'query_var' => true,
-        'rewrite' => array('slug' => 'page-category'),
-    );
-
-    register_taxonomy('page_category', 'page', $args);
-    // 'page' specifies that the taxonomy will be applied to pages
-    register_taxonomy_for_object_type('page_category', 'page');
-}
-add_action('init', 'register_page_category_taxonomy');
 ?>
 
