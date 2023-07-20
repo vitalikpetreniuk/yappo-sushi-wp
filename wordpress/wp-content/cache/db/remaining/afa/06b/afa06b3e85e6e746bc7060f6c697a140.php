@@ -1,4 +1,4 @@
-P’·d<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:792:"SELECT wpml_translations.translation_id, wpml_translations.element_id, wpml_translations.language_code, wpml_translations.source_language_code, wpml_translations.trid, wpml_translations.element_type
+Eà¸d<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:792:"SELECT wpml_translations.translation_id, wpml_translations.element_id, wpml_translations.language_code, wpml_translations.source_language_code, wpml_translations.trid, wpml_translations.element_type
 				    FROM wp_icl_translations wpml_translations
 				JOIN wp_posts p
 					ON wpml_translations.element_id = p.ID

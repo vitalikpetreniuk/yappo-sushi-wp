@@ -1,4 +1,4 @@
-P’·d<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:1540:"
+Dà¸d<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:1540:"
 			SELECT   wp_posts.*
 			FROM wp_posts  LEFT JOIN wp_term_relationships ON (wp_posts.ID = wp_term_relationships.object_id) JOIN wp_icl_translations wpml_translations
 							ON wp_posts.ID = wpml_translations.element_id

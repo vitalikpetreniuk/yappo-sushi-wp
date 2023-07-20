@@ -207,6 +207,10 @@ jQuery(function ($) {
         })
     })
 
+    $('.product-top .qty').on('change', function () {
+        $('.single_add_to_cart_button').attr('data-quantity', $(this).val());
+    })
+
     $.fn.serializeArrayAll = function () {
         var rCRLF = /\r?\n/g;
         return this.map(function () {
@@ -280,4 +284,5 @@ jQuery(function ($) {
         return false;
 
     });
+
 })

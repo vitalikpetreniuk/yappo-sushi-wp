@@ -1,0 +1,48 @@
+2023-07-17T08:42:22+00:00 CRITICAL Uncaught Error: Call to a member function get_items() on bool in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php:81
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#2 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(92): locate_template(Array, true, true, Array)
+#3 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/page.php(37): get_footer()
+#4 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#5 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#6 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#7 {main}
+  thrown у /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php доступно 81
+
+2023-07-17T08:42:22+00:00 CRITICAL Uncaught Error: Call to a member function get_items() on bool in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php:81
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#2 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(92): locate_template(Array, true, true, Array)
+#3 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/page.php(37): get_footer()
+#4 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#5 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#6 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#7 {main}
+  thrown у /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php доступно 81
+
+2023-07-17T17:06:05+00:00 CRITICAL Uncaught Error: Call to a member function get_items() on bool in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php:81
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#2 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(92): locate_template(Array, true, true, Array)
+#3 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/page.php(37): get_footer()
+#4 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#5 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#6 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#7 {main}
+  thrown у /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php доступно 81
+
+2023-07-17T17:06:05+00:00 CRITICAL Uncaught Error: Call to a member function get_items() on bool in /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php:81
+Stack trace:
+#0 /home/vr488025/yapposushi.com/www/wp-includes/template.php(783): require_once()
+#1 /home/vr488025/yapposushi.com/www/wp-includes/template.php(718): load_template('/home/vr488025/...', true, Array)
+#2 /home/vr488025/yapposushi.com/www/wp-includes/general-template.php(92): locate_template(Array, true, true, Array)
+#3 /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/page.php(37): get_footer()
+#4 /home/vr488025/yapposushi.com/www/wp-includes/template-loader.php(106): include('/home/vr488025/...')
+#5 /home/vr488025/yapposushi.com/www/wp-blog-header.php(19): require_once('/home/vr488025/...')
+#6 /home/vr488025/yapposushi.com/www/index.php(17): require('/home/vr488025/...')
+#7 {main}
+  thrown у /home/vr488025/yapposushi.com/www/wp-content/themes/yappo/footer.php доступно 81
+

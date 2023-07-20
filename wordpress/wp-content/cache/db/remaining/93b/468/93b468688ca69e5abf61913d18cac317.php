@@ -1,4 +1,4 @@
-Q’·d<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:507:"
+Dà¸d<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:507:"
 				SELECT wpml_translations.translation_id, wpml_translations.language_code, wpml_translations.element_id, wpml_translations.source_language_code, wpml_translations.element_type, NULLIF(wpml_translations.source_language_code, '') IS NULL AS original
 				, p.post_title, p.post_status
 				FROM wp_icl_translations wpml_translations

@@ -1,4 +1,4 @@
-Q’·d<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:277:"
+Eà¸d<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:277:"
 					SELECT   wp_posts.ID
 					FROM wp_posts 
 					WHERE 1=1  AND wp_posts.post_type = 'acf-field' AND ((wp_posts.post_status = 'publish')) AND wp_posts.post_name = 'field_648c7072844ad'

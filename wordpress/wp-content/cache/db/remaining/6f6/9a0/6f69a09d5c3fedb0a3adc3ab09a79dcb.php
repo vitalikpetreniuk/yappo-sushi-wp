@@ -1,4 +1,4 @@
-Q’·d<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:831:"
+Eà¸d<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:831:"
 			SELECT  t.term_id
 			FROM wp_terms AS t  INNER JOIN wp_term_taxonomy AS tt ON t.term_id = tt.term_id LEFT JOIN wp_icl_translations icl_t
                                     ON icl_t.element_id = tt.term_taxonomy_id

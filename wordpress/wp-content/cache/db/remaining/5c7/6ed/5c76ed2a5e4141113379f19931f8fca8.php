@@ -1,4 +1,4 @@
-P’·d<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:196:"
+Eà¸d<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:196:"
 			SELECT  t.term_id
 			FROM wp_terms AS t  INNER JOIN wp_term_taxonomy AS tt ON t.term_id = tt.term_id
 			WHERE tt.taxonomy IN ('product_visibility') AND t.name IN ('featured')

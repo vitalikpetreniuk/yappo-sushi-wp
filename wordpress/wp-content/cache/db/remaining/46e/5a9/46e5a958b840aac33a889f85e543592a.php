@@ -1,4 +1,4 @@
-O’·d<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:169:"
+Dà¸d<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:169:"
 			SELECT  t.term_id
 			FROM wp_terms AS t  INNER JOIN wp_term_taxonomy AS tt ON t.term_id = tt.term_id
 			WHERE tt.taxonomy IN ('cities')

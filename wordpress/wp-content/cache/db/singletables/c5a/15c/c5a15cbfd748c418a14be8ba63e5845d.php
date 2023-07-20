@@ -1,4 +1,4 @@
-O’·d<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:208:"
+Dà¸d<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:208:"
 			SELECT   wp_posts.*
 			FROM wp_posts 
 			WHERE 1=1  AND wp_posts.post_type = 'acf-taxonomy' AND ((wp_posts.post_status = 'publish'))

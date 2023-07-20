@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Yoast SEO - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-07-06 13:14:07+0000\n"
+"PO-Revision-Date: 2023-07-18 16:22:27+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,34 @@ msgstr ""
 "X-Generator: GlotPress/4.0.0-alpha.4\n"
 "Language: uk_UA\n"
 "Project-Id-Version: Plugins - Yoast SEO - Stable (latest release)\n"
+
+#: src/integrations/support-integration.php:107 js/dist/support.js:9
+msgid "Support"
+msgstr "Підтримка"
+
+#: src/integrations/admin/crawl-settings-integration.php:157
+#: js/dist/new-settings.js:22 js/dist/new-settings.js:150
+msgid "Prevent Google AdsBot from crawling"
+msgstr "Запобігти скануванню Google AdsBot"
+
+#: src/commands/index-command.php:174
+msgid "Your WordPress environment is running on a non-production site. Indexables can only be created on production environments. Please check your `WP_ENVIRONMENT_TYPE` settings."
+msgstr "Ваше середовище WordPress працює на невиробничому сайті. Індексовані файли можна створювати лише у виробничих середовищах. Будь ласка, перевірте налаштування `WP_ENVIRONMENT_TYPE`."
+
+#. translators: %s expands to the inclusive language score
+#: inc/class-wpseo-rank.php:234 inc/class-wpseo-rank.php:239
+#: inc/class-wpseo-rank.php:244
+msgid "Inclusive language: %s"
+msgstr "Інклюзивна мова: %s"
+
+#: src/integrations/admin/background-indexing-integration.php:242
+msgid "Every fifteen minutes"
+msgstr "Що п'ятнадцять хвилин"
+
+#. translators: %1$s expands to Yoast SEO, %2$s to Wincher
+#: admin/class-wincher-dashboard-widget.php:54
+msgid "%1$s / %2$s: Top Keyphrases"
+msgstr "%1$s / %2$s: Найпопулярніші ключові фрази"
 
 #. translators: %s: expands to the post type
 #: src/exceptions/indexable/post-type-not-built-exception.php:20
@@ -333,18 +361,6 @@ msgstr "Запис %s неможливо індексувати, оскільк�
 msgid "The term %s could not be built because it's not indexable."
 msgstr "Таксономію %s неможливо побудувати, тому що вона не індексується."
 
-#. translators: 1: Opening tag of the link to the Search appearance settings
-#. page, 2: Link closing tag.
-#: src/integrations/watchers/indexable-post-type-change-watcher.php:167
-msgid "It looks like you've added a new type of content to your website. We recommend that you review your %1$sSettings%2$s under Content types."
-msgstr "Схоже, ви додали новий тип вмісту на сайт. Радимо вам переглянути %1$sНалаштування%2$s у Типах вмісту."
-
-#. translators: 1: Opening tag of the link to the Search appearance settings
-#. page, 2: Link closing tag.
-#: src/integrations/watchers/indexable-taxonomy-change-watcher.php:169
-msgid "It looks like you've added a new taxonomy to your website. We recommend that you review your %1$sSettings%2$s under Categories & tags."
-msgstr "Схоже, ви додали нову таксономію на сайт. Радимо вам переглянути %1$sНалаштування%2$s у Категоріях та мітках."
-
 #: src/presenters/admin/indexing-notification-presenter.php:87
 msgid "We need to re-analyze some of your SEO data because of a change in the visibility of your post types. Please help us do that by running the SEO data optimization. "
 msgstr "Вам слід заново проаналізувати деякі дані SEO через зміну видимості типів ваших записів. Будь ласка, допоможіть нам з цим, запустивши оптимізацію даних SEO. "
@@ -399,7 +415,7 @@ msgid "The inclusive language analysis offers suggestions to write more inclusiv
 msgstr "Інклюзивний мовний аналіз робить пропозиції щодо написання більш інклюзивної копії."
 
 #: admin/views/class-yoast-feature-toggles.php:91 js/dist/new-settings.js:22
-#: js/dist/new-settings.js:238
+#: js/dist/new-settings.js:277
 msgid "Inclusive language analysis"
 msgstr "Аналіз інклюзивної мови"
 
@@ -513,12 +529,12 @@ msgstr "Зверніться до служби підтримки WordProof"
 msgid "Find out how IndexNow can help your site."
 msgstr "Дізнайтеся як IndexNow може допомогти вашому сайту."
 
-#: admin/views/class-yoast-feature-toggles.php:198 js/dist/new-settings.js:240
+#: admin/views/class-yoast-feature-toggles.php:198 js/dist/new-settings.js:279
 msgid "Automatically ping search engines like Bing and Yandex whenever you publish, update or delete a post."
 msgstr "Автоматично перевіряйте запит пошукових систем, таких як Bing і Yandex, коли ви публікуєте, оновлюєте чи видаляєте допис."
 
 #: admin/views/class-yoast-feature-toggles.php:195 js/dist/new-settings.js:22
-#: js/dist/new-settings.js:240
+#: js/dist/new-settings.js:279
 msgid "IndexNow"
 msgstr "IndexNow"
 
@@ -1027,13 +1043,13 @@ msgid "Find out how Insights can help you improve your content."
 msgstr "Дізнайтеся, як Інсайти можуть допомогти покращити ваш вміст."
 
 #: admin/views/class-yoast-feature-toggles.php:125 js/dist/new-settings.js:22
-#: js/dist/new-settings.js:238
+#: js/dist/new-settings.js:277
 msgid "Link suggestions"
 msgstr "Посилання пропозицій"
 
 #: admin/views/class-yoast-feature-toggles.php:116 js/dist/block-editor.js:278
 #: js/dist/classic-editor.js:270 js/dist/elementor.js:278
-#: js/dist/new-settings.js:22 js/dist/new-settings.js:238
+#: js/dist/new-settings.js:22 js/dist/new-settings.js:277
 msgid "Insights"
 msgstr "Статистика"
 
@@ -1156,7 +1172,7 @@ msgstr "Автоматичні оновлення вимкнені на осно
 #: src/presenters/admin/badge-presenter.php:80
 #: src/presenters/admin/badge-presenter.php:87
 #: js/dist/externals/componentsNew.js:136 js/dist/integrations-page.js:3
-#: js/dist/integrations-page.js:23
+#: js/dist/integrations-page.js:23 js/dist/new-settings.js:293
 msgid "New"
 msgstr "Нове"
 
@@ -1187,7 +1203,7 @@ msgstr "Цю можливість було вимкнено, оскільки п
 msgid "Because of a change in your category base setting, some of your SEO data needs to be reprocessed."
 msgstr "У зв'язку із зміною налаштувань вашої основної категорії, деякі ваші дані SEO мають бути опрацьовано ще раз."
 
-#: admin/views/class-yoast-feature-toggles.php:189 js/dist/new-settings.js:238
+#: admin/views/class-yoast-feature-toggles.php:189 js/dist/new-settings.js:277
 msgid "This adds an author byline and reading time estimate to the article’s snippet when shared on Slack."
 msgstr "Це додає авторський підпис і приблизний час читання до фрагмента статті, коли він публікується в Slack."
 
@@ -1395,7 +1411,7 @@ msgstr "Новинна стаття"
 
 #: admin/views/class-yoast-feature-toggles.php:165
 #: admin/views/class-yoast-feature-toggles.php:166 js/dist/new-settings.js:22
-#: js/dist/new-settings.js:236
+#: js/dist/new-settings.js:273
 msgid "Usage tracking"
 msgstr "Відстеження користування"
 
@@ -1824,7 +1840,7 @@ msgstr "Робота Google API для перевірки помилок при�
 
 #: src/integrations/admin/first-time-configuration-integration.php:511
 #: src/integrations/admin/first-time-configuration-integration.php:524
-#: js/dist/new-settings.js:242
+#: js/dist/new-settings.js:281
 msgid "Organization"
 msgstr "Організація"
 
@@ -1955,7 +1971,7 @@ msgstr "ПОПЕРЕДЖЕННЯ:"
 
 #. translators: %s expands to Yoast SEO Premium
 #. translators: %s expands to "Yoast SEO" Premium
-#: admin/class-premium-upsell-admin-block.php:84 js/dist/new-settings.js:256
+#: admin/class-premium-upsell-admin-block.php:84 js/dist/new-settings.js:295
 msgid "Upgrade to %s"
 msgstr "Оновити до %s"
 
@@ -2004,7 +2020,7 @@ msgstr "%s - необхідний аргумент для включення а�
 msgid "Focus keyphrase not set."
 msgstr "Фокусне ключове слово не встановлено."
 
-#: admin/class-premium-upsell-admin-block.php:54 js/dist/new-settings.js:256
+#: admin/class-premium-upsell-admin-block.php:54 js/dist/new-settings.js:295
 msgid "Multiple keyphrases"
 msgstr "Множинні ключові слова"
 
@@ -2028,11 +2044,11 @@ msgstr "Ця можливість відключена адміністрато�
 #: js/dist/externals-components.js:11 js/dist/externals-components.js:125
 #: js/dist/externals-components.js:143 js/dist/externals-components.js:145
 #: js/dist/externals-components.js:147 js/dist/externals-components.js:149
-#: js/dist/new-settings.js:258
+#: js/dist/new-settings.js:297
 msgid "Get %s"
 msgstr "Отримайте %s"
 
-#: inc/options/class-wpseo-option-titles.php:962
+#: inc/options/class-wpseo-option-titles.php:976
 msgid "Colon"
 msgstr "Двокрапка"
 
@@ -2139,7 +2155,7 @@ msgid "Parent title"
 msgstr "Назва предка"
 
 #: inc/class-wpseo-replace-vars.php:1474 js/dist/externals-redux.js:1
-#: js/dist/new-settings.js:22 js/dist/new-settings.js:230
+#: js/dist/new-settings.js:22 js/dist/new-settings.js:267
 msgid "Tagline"
 msgstr "Ключова фраза"
 
@@ -2368,7 +2384,7 @@ msgstr "Це імпортує метадані типу заголовка SEO �
 #: admin/class-premium-upsell-admin-block.php:58 js/dist/block-editor.js:196
 #: js/dist/classic-editor.js:192 js/dist/elementor.js:196
 #: js/dist/externals-components.js:7 js/dist/externals-components.js:121
-#: js/dist/new-settings.js:256
+#: js/dist/new-settings.js:295
 msgid "24/7 email support"
 msgstr "Підтримка по e-mail 24/7"
 
@@ -2478,7 +2494,7 @@ msgstr "Гарні результати"
 msgid "Learn how the SEO analysis can help you rank."
 msgstr "Дізнайтеся, як аналіз SEO може допомогти вам оцінити."
 
-#: admin/views/class-yoast-feature-toggles.php:85 js/dist/new-settings.js:238
+#: admin/views/class-yoast-feature-toggles.php:85 js/dist/new-settings.js:277
 msgid "The readability analysis offers suggestions to improve the structure and style of your text."
 msgstr "Аналіз читабельності пропонує пропозиції щодо вдосконалення структури та стилю вашого тексту."
 
@@ -2508,7 +2524,7 @@ msgstr "Дізнайтеся більше про те, як працює %s."
 
 #: admin/views/class-yoast-feature-toggles.php:75
 #: js/dist/externals-components.js:152 js/dist/new-settings.js:22
-#: js/dist/new-settings.js:238
+#: js/dist/new-settings.js:277
 msgid "SEO analysis"
 msgstr "SEO аналіз"
 
@@ -2686,7 +2702,7 @@ msgid "Request method %1$s is not valid."
 msgstr "Запит методу %1$s недійсний."
 
 #: admin/views/class-yoast-feature-toggles.php:108 js/dist/new-settings.js:22
-#: js/dist/new-settings.js:238
+#: js/dist/new-settings.js:277
 msgid "Text link counter"
 msgstr "Лічильник текстових посилань"
 
@@ -2711,7 +2727,7 @@ msgstr "Оцінка читабельності"
 #: admin/filters/class-cornerstone-filter.php:87
 #: admin/views/class-yoast-feature-toggles.php:100
 #: js/dist/externals-components.js:14 js/dist/new-settings.js:22
-#: js/dist/new-settings.js:238
+#: js/dist/new-settings.js:277
 msgid "Cornerstone content"
 msgstr "Ключовий вміст"
 
@@ -2729,7 +2745,7 @@ msgstr "1 рік безкоштовних оновлень та розширен
 #: admin/class-premium-upsell-admin-block.php:56 js/dist/block-editor.js:194
 #: js/dist/classic-editor.js:190 js/dist/elementor.js:194
 #: js/dist/externals-components.js:5 js/dist/externals-components.js:119
-#: js/dist/new-settings.js:256
+#: js/dist/new-settings.js:295
 msgid "Superfast internal linking suggestions"
 msgstr "Супершвидкісні внутрішні посилання"
 
@@ -2740,30 +2756,30 @@ msgstr "Супершвидкісні внутрішні посилання"
 msgid "The plugin %2$s changes your site's output and in doing that differentiates between search engines and normal users, a process that's called cloaking. We highly recommend that you disable it."
 msgstr "Плагін %2$s змінює вихід вашого сайту, і це робить різницю між пошуковими системами та звичайними користувачами, процес, який називається маскуванням. Ми настійно рекомендуємо вимкнути його."
 
-#: admin/class-premium-upsell-admin-block.php:57 js/dist/new-settings.js:256
+#: admin/class-premium-upsell-admin-block.php:57 js/dist/new-settings.js:295
 msgid "Facebook & Twitter"
 msgstr "Facebook & Twitter"
 
-#: admin/class-premium-upsell-admin-block.php:57 js/dist/new-settings.js:256
+#: admin/class-premium-upsell-admin-block.php:57 js/dist/new-settings.js:295
 msgid "Social media preview"
 msgstr "Попередній огляд для соціальних мереж"
 
-#: admin/class-premium-upsell-admin-block.php:55 js/dist/new-settings.js:256
+#: admin/class-premium-upsell-admin-block.php:55 js/dist/new-settings.js:295
 msgid "Easy redirect manager"
 msgstr "Зручне керування перенаправленнями"
 
-#: admin/class-premium-upsell-admin-block.php:55 js/dist/new-settings.js:256
+#: admin/class-premium-upsell-admin-block.php:55 js/dist/new-settings.js:295
 msgid "No more dead links"
 msgstr "Більше немає мертвих посилань"
 
 #: admin/class-premium-upsell-admin-block.php:59 js/dist/block-editor.js:196
 #: js/dist/classic-editor.js:192 js/dist/elementor.js:196
 #: js/dist/externals-components.js:7 js/dist/externals-components.js:121
-#: js/dist/new-settings.js:256
+#: js/dist/new-settings.js:295
 msgid "No ads!"
 msgstr "Без реклами!"
 
-#: admin/class-premium-upsell-admin-block.php:54 js/dist/new-settings.js:256
+#: admin/class-premium-upsell-admin-block.php:54 js/dist/new-settings.js:295
 msgid "Increase your SEO reach"
 msgstr "Підвищіть ваш SEO рівень"
 
@@ -2784,7 +2800,7 @@ msgid "No new notifications."
 msgstr "Немає нових сповіщень."
 
 #. translators: 1: Author name; 2: Site name.
-#: inc/options/class-wpseo-option-titles.php:247
+#: inc/options/class-wpseo-option-titles.php:255
 msgid "%1$s, Author at %2$s"
 msgstr "%1$s, автор у %2$s"
 
@@ -2840,7 +2856,7 @@ msgid "The %1$s admin bar menu contains useful links to third-party tools for an
 msgstr "Меню адміністрування панелі керування %1$s містить корисні посилання на сторонні інструменти для аналізу сторінок та полегшує перевірку наявності нових сповіщень."
 
 #: admin/views/class-yoast-feature-toggles.php:147 js/dist/new-settings.js:22
-#: js/dist/new-settings.js:238 js/dist/new-settings.js:239
+#: js/dist/new-settings.js:277 js/dist/new-settings.js:278
 msgid "Admin bar menu"
 msgstr "Меню в панелі адміністратора"
 
@@ -2865,35 +2881,35 @@ msgstr "SEO-заголовок"
 msgid "Gain access to our 24/7 support team"
 msgstr "Отримайте доступ до нашої цілодобової команди підтримки"
 
-#: inc/options/class-wpseo-option-titles.php:950
+#: inc/options/class-wpseo-option-titles.php:964
 msgid "Dash"
 msgstr "Тире"
 
-#: inc/options/class-wpseo-option-titles.php:1002
+#: inc/options/class-wpseo-option-titles.php:1016
 msgid "Greater than sign"
 msgstr "Більше, ніж знак"
 
-#: inc/options/class-wpseo-option-titles.php:998
+#: inc/options/class-wpseo-option-titles.php:1012
 msgid "Less than sign"
 msgstr "Знак менше"
 
-#: inc/options/class-wpseo-option-titles.php:974
+#: inc/options/class-wpseo-option-titles.php:988
 msgid "Asterisk"
 msgstr "Зірочка"
 
-#: inc/options/class-wpseo-option-titles.php:970
+#: inc/options/class-wpseo-option-titles.php:984
 msgid "Bullet"
 msgstr "Маркер"
 
-#: inc/options/class-wpseo-option-titles.php:966
+#: inc/options/class-wpseo-option-titles.php:980
 msgid "Middle dot"
 msgstr "Середня точка"
 
-#: inc/options/class-wpseo-option-titles.php:958
+#: inc/options/class-wpseo-option-titles.php:972
 msgid "Em dash"
 msgstr "Довге тире"
 
-#: inc/options/class-wpseo-option-titles.php:954
+#: inc/options/class-wpseo-option-titles.php:968
 msgid "En dash"
 msgstr "Коротке тире"
 
@@ -2909,23 +2925,23 @@ msgstr "Ні"
 msgid "Yes"
 msgstr "Так"
 
-#: inc/options/class-wpseo-option-titles.php:986
+#: inc/options/class-wpseo-option-titles.php:1000
 msgid "Small tilde"
 msgstr "Мала тильда"
 
-#: inc/options/class-wpseo-option-titles.php:994
+#: inc/options/class-wpseo-option-titles.php:1008
 msgid "Right angle quotation mark"
 msgstr "Знак котирування правого кута"
 
-#: inc/options/class-wpseo-option-titles.php:990
+#: inc/options/class-wpseo-option-titles.php:1004
 msgid "Left angle quotation mark"
 msgstr "Лівий кутовий лапки"
 
-#: inc/options/class-wpseo-option-titles.php:982
+#: inc/options/class-wpseo-option-titles.php:996
 msgid "Vertical bar"
 msgstr "Вертикальний стрижень"
 
-#: inc/options/class-wpseo-option-titles.php:978
+#: inc/options/class-wpseo-option-titles.php:992
 msgid "Low asterisk"
 msgstr "Низька зірочка"
 
@@ -3026,7 +3042,7 @@ msgstr "Можна краще"
 
 #: admin/views/class-yoast-feature-toggles.php:83
 #: js/dist/externals-components.js:92 js/dist/new-settings.js:22
-#: js/dist/new-settings.js:238
+#: js/dist/new-settings.js:277
 msgid "Readability analysis"
 msgstr "Аналіз читабельності"
 
@@ -3206,20 +3222,20 @@ msgstr "Команда Yoast"
 msgid "Good"
 msgstr "Добре"
 
-#: inc/options/class-wpseo-option-titles.php:254
+#: inc/options/class-wpseo-option-titles.php:262
 msgid "Error 404: Page not found"
 msgstr "Помилка 404: Сторінку не знайдено"
 
-#: inc/options/class-wpseo-option-titles.php:255
+#: inc/options/class-wpseo-option-titles.php:263
 msgid "Archives for"
 msgstr "Архіви для"
 
-#: inc/options/class-wpseo-option-titles.php:257
+#: inc/options/class-wpseo-option-titles.php:265
 msgid "You searched for"
 msgstr "Ви шукали"
 
 #. translators: %s expands to a post type.
-#: inc/options/class-wpseo-option-titles.php:519
+#: inc/options/class-wpseo-option-titles.php:527
 msgid "Please select a valid taxonomy for post type \"%s\""
 msgstr "Будь ласка, виберіть правильну таксономію для типу запису \"%s\""
 
@@ -3229,12 +3245,12 @@ msgid "%1$s is not a valid choice for who should be allowed access to the %2$s s
 msgstr "%1$s не вірний вибір для тих, кому дозволений доступ до налаштувань %2$s. Здійснено скидання значення за замовчуванням."
 
 #. translators: %s expands to the search phrase.
-#: inc/options/class-wpseo-option-titles.php:249
+#: inc/options/class-wpseo-option-titles.php:257
 msgid "You searched for %s"
 msgstr "Ви шукали %s"
 
 #. translators: %s expands to the name of a post type (plural).
-#: inc/class-upgrade.php:1375 inc/options/class-wpseo-option-titles.php:284
+#: inc/class-upgrade.php:1375 inc/options/class-wpseo-option-titles.php:292
 msgid "%s Archive"
 msgstr "%s Архів"
 
@@ -3299,7 +3315,7 @@ msgid "Yoast SEO"
 msgstr "Yoast SEO"
 
 #. translators: 1: link to post; 2: link to blog.
-#: inc/options/class-wpseo-option-titles.php:252
+#: inc/options/class-wpseo-option-titles.php:260
 msgid "The post %1$s appeared first on %2$s."
 msgstr "Запис %1$s спершу з'явиться на %2$s."
 
@@ -3309,7 +3325,7 @@ msgid "%s does not seem to be a valid Twitter Username. Please correct."
 msgstr "%s — некоретне ім'я користувача в Twitter. Будь ласка, виправте його."
 
 #. translators: %s expands to a taxonomy slug.
-#: inc/options/class-wpseo-option-titles.php:557
+#: inc/options/class-wpseo-option-titles.php:565
 msgid "Please select a valid post type for taxonomy \"%s\""
 msgstr "Будь ласка, виберіть правильний тип запису для таксономії \"%s\""
 
@@ -3323,7 +3339,7 @@ msgstr "%1$s, як видається, не є дійсною ланкою пі�
 msgid "%s does not seem to be a valid url. Please correct."
 msgstr "%s, здається, не є дійсним адресою. Будь ласка, виправте."
 
-#: inc/options/class-wpseo-option-titles.php:256
+#: inc/options/class-wpseo-option-titles.php:264
 msgid "Home"
 msgstr "Головна"
 
@@ -3398,11 +3414,11 @@ msgstr "Мета опис для сторінки автора"
 
 #. translators: %s expands to the variable used for term title.
 #: admin/formatter/class-term-metabox-formatter.php:162
-#: inc/class-upgrade.php:1378 inc/options/class-wpseo-option-titles.php:320
+#: inc/class-upgrade.php:1378 inc/options/class-wpseo-option-titles.php:328
 msgid "%s Archives"
 msgstr "%s Архіви"
 
-#: inc/options/class-wpseo-option-titles.php:250
+#: inc/options/class-wpseo-option-titles.php:258
 msgid "Page not found"
 msgstr "Сторінку не знайдено"
 
@@ -3725,7 +3741,7 @@ msgid "URL"
 msgstr "URL-адреса"
 
 #: src/integrations/admin/first-time-configuration-integration.php:516
-#: js/dist/new-settings.js:242
+#: js/dist/new-settings.js:281
 msgid "Person"
 msgstr "Приватна особа"
 
@@ -3806,7 +3822,7 @@ msgid "Social settings"
 msgstr "Налаштування соцмереж"
 
 #: admin/class-admin.php:226 admin/views/redirects.php:42
-#: src/integrations/settings-integration.php:291
+#: src/integrations/settings-integration.php:312
 #: src/presenters/meta-description-presenter.php:37
 #: js/dist/structured-data-blocks.js:9
 msgid "Settings"
@@ -3872,7 +3888,7 @@ msgstr "Редагувати файли"
 msgid "Posts"
 msgstr "Записи"
 
-#: admin/menu/class-admin-menu.php:95 js/dist/new-settings.js:238
+#: admin/menu/class-admin-menu.php:95 js/dist/new-settings.js:277
 msgid "Tools"
 msgstr "Інструменти"
 
@@ -4037,13 +4053,13 @@ msgid "Meta description"
 msgstr "Мета-опис"
 
 #: admin/views/class-yoast-feature-toggles.php:136 js/dist/new-settings.js:22
-#: js/dist/new-settings.js:239 js/dist/new-settings.js:240
+#: js/dist/new-settings.js:278 js/dist/new-settings.js:279
 msgid "XML sitemaps"
 msgstr "XML Карта сайту"
 
 #: admin/menu/class-admin-menu.php:89
 #: admin/menu/class-network-admin-menu.php:56 admin/pages/network.php:18
-#: js/dist/new-settings.js:254
+#: js/dist/new-settings.js:293
 msgid "General"
 msgstr "Загальне"
 
@@ -4107,6 +4123,6 @@ msgid "Title to use for this page in breadcrumb paths"
 msgstr "Назва для цієї сторінки щоб використовувати в навігаційній стежкі"
 
 #: admin/class-yoast-network-admin.php:43 src/config/schema-types.php:163
-#: js/dist/new-settings.js:258
+#: src/integrations/settings-integration.php:546 js/dist/new-settings.js:297
 msgid "None"
 msgstr "Ні куди"

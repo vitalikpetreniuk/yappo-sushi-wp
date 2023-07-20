@@ -1,4 +1,4 @@
-O’·d<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:159:"
+Cà¸d<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:159:"
 			SELECT COLLATION_NAME
 			 FROM information_schema.columns
 			 WHERE TABLE_SCHEMA = 'yappo' AND TABLE_NAME = 'wp_icl_strings' AND COLUMN_NAME = 'context'

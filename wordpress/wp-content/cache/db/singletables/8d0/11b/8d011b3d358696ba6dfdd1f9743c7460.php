@@ -1,4 +1,4 @@
-O’·d<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:148:"SELECT value, language, status
+Dà¸d<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:148:"SELECT value, language, status
 					 FROM wp_icl_string_translations
 					 WHERE string_id = 47
 						AND value <> '' 

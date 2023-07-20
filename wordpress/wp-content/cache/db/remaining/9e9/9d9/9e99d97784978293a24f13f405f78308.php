@@ -1,4 +1,4 @@
-O’·d<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:332:"	SELECT element_id, language_code
+Dà¸d<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:332:"	SELECT element_id, language_code
 						FROM wp_icl_translations
 						WHERE trid =
 							(SELECT trid

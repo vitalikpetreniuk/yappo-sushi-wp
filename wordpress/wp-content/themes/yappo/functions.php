@@ -334,12 +334,12 @@ function wpdocs_create_book_tax()
 
 add_action('woocommerce_init', 'wpdocs_create_book_tax', 0);
 
-//function custom_rewrite_rule()
-//{
-//    add_rewrite_rule('^bucha/([^/]*)/?', 'index.php?pagename=$matches[1]', 'top');
-//}
-//
-//add_action('init', 'custom_rewrite_rule', 10, 0);
+function custom_rewrite_rule()
+{
+    add_rewrite_rule('^bucha/([^/]*)/?', 'index.php?pagename=$matches[1]', 'top');
+}
+
+add_action('init', 'custom_rewrite_rule', 10, 0);
 
 function load_template_part($template_name, $part_name = null, $args = null)
 {
@@ -370,6 +370,4 @@ function seo_robots_modify_search($robots)
     }
 
 }
-
 ?>
-

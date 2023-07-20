@@ -1,4 +1,4 @@
-R’·d<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:92:"	
+Bà¸d<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:92:"	
 				SELECT option_value
 				FROM wp_options
 				WHERE option_name = 'home'

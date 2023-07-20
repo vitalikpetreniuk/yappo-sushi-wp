@@ -1,4 +1,4 @@
-Q’·d<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:358:"
+Eà¸d<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:358:"
 					SELECT   wp_posts.ID
 					FROM wp_posts 
 					WHERE 1=1  AND wp_posts.post_type = 'acf-field-group' AND ((wp_posts.post_status = 'publish' OR wp_posts.post_status = 'trash' OR wp_posts.post_status = 'acf-disabled')) AND wp_posts.post_name = 'field_64885f63c850a'
