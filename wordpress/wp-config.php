@@ -1,9 +1,4 @@
 <?php
-/** Enable W3 Total Cache */
-define('WP_CACHE', true); // Added by W3 Total Cache
-
- // Added by WP Rocket
-
 /**
  * The base configuration for WordPress
  *
@@ -25,16 +20,16 @@ define('WP_CACHE', true); // Added by W3 Total Cache
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'vr488025_dev');
+define( 'DB_NAME', 'yappo' );
 
 /** Database username */
-define('DB_USER', 'vr488025_dev');
+define( 'DB_USER', 'root' );
 
 /** Database password */
-define('DB_PASSWORD', '7r;Sk^t8A7');
+define( 'DB_PASSWORD', '' );
 
 /** Database hostname */
-define('DB_HOST', 'vr488025.mysql.tools');
+define( 'DB_HOST', 'localhost' );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
@@ -53,14 +48,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         '9zn1eU1GE,umMde&<*uQXu%hla )ay#qH+y/CGZsCQ&Sl$G{V;=bpt&B%b@CS_[f' );
-define( 'SECURE_AUTH_KEY',  '8lY:C5|`6PzEW[uK-o)[NLZQ8!RL_!RoL_1iG,_efr0B/zla|:5O&^VbLo*o7C($' );
-define( 'LOGGED_IN_KEY',    'kgG +o@I@*-`5=5~6,NrQUNc#>]e44r:jL0p=:OBO~(:P42]uACe$`/wyb6tJgKZ' );
-define( 'NONCE_KEY',        'F/l2ju4agPLGe,e#X?p6Zn!.~B|C/0Fv)jX648)(nnC4_[{br@e*i;FWtTd1sPo;' );
-define( 'AUTH_SALT',        'USY,*=J)Y==dYs%hf0|T5tr*-5Vg2OovKSt|{hxj,$E`Q?.>pNq5^+Vx|l*XRJug' );
-define( 'SECURE_AUTH_SALT', '7aV2/+{qfDAn~TcY!AHm}AS>cpCAi$y6(Ap{iRvQ0(c2D4`k7o`vL> |i9f4+x{h' );
-define( 'LOGGED_IN_SALT',   '+.@(Zn2{P{(3gG:QEec$lN:50a=G>^}Pp.tsK%FO^l=!6M:HY,$mKCUBjGK[z~:7' );
-define( 'NONCE_SALT',       '-E(|8OgF174tIw^}HYwx(aYw[3o*&LXeSRNqrQ3IoEx$5}=cl|(OlAkBzt)A]s-!' );
+define( 'AUTH_KEY',         'm.Em7~RAUgC>yl9.;&rY#s*xl-K*&b~#bn2,i[xc#qM}`=Fm=] QL:;o*7CnCVyG' );
+define( 'SECURE_AUTH_KEY',  '-v4xrR/%)1}gJ/rN13$$I*bU@_Jx2vz4c_ ^MafZHQI5)rE2B; !())lvYbdz~dR' );
+define( 'LOGGED_IN_KEY',    'B=4T:[tyh(vR6YVAyqn$E`4W6B|E,s(ydJ{=mM)UUIflO%RjtIG#I~Y}NvYS^MX#' );
+define( 'NONCE_KEY',        'p[v_5pOPp x=8@r[LY2a:RMV)h4$1VZ3^gy-$-nxJ8p!pq&s[;s70Sxt$Kk(`8p_' );
+define( 'AUTH_SALT',        'tU9sg7(NfdvVY<66+;ZUjy_ow<wp?bM)VGXQ@?U[hyKE@ltyrsRz)nA#F.Xi9/N3' );
+define( 'SECURE_AUTH_SALT', 'f]fmG.O3B![0}uIk(X|,ZikABaB7}q*Fzhu%]D}5|9/RBn2FZ`P3Em}c<6Ekt*wp' );
+define( 'LOGGED_IN_SALT',   'qlOhodJc<I3<SS4Yj1rceU;G3Jqrxy&}n=S1/+nMW8-`D?E@f<E[X!v,|tV3N_|(' );
+define( 'NONCE_SALT',       '{*dR7(i0D>Q^D(-kbIIH>EWBTq(GY4kB`)@-M(R2p3Sp-]}g`QEwMY?,>nGiH`nk' );
 
 /**#@-*/
 
@@ -70,7 +65,7 @@ define( 'NONCE_SALT',       '-E(|8OgF174tIw^}HYwx(aYw[3o*&LXeSRNqrQ3IoEx$5}=cl|(
  * You can have multiple installations in one database if you give each
  * a unique prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix = 'wp_'; // Changed by WP STAGING
+$table_prefix = 'wp_';
 
 /**
  * For developers: WordPress debugging mode.
@@ -85,34 +80,14 @@ $table_prefix = 'wp_'; // Changed by WP STAGING
  * @link https://wordpress.org/documentation/article/debugging-in-wordpress/
  */
 define( 'WP_DEBUG', true );
-define( 'WP_DEBUG_DISPLAY', false );
-define( 'WP_DEBUG_LOG', true );
-error_reporting(1);
-@ini_set('display_errors', 1);
-
-define('WP_MEMORY_LIMIT', '1536M');
-define( 'WP_MAX_MEMORY_LIMIT', '1536M' );
 
 /* Add any custom values between this line and the "stop editing" line. */
 
-define('WP_REDIS_SCHEME', 'unix');
-define('WP_REDIS_PATH', '/home/vr488025/.system/redis.sock');
-define('WP_CACHE_KEY_SALT', 'yappo');
+
 
 /* That's all, stop editing! Happy publishing. */
 
 /** Absolute path to the WordPress directory. */
-define('UPLOADS', 'wp-content/uploads');
-define('WP_PLUGIN_DIR', __DIR__ . "/wp-content/plugins");
-define('WP_PLUGIN_URL', 'https://dev.yapposushi.com/wp-content/plugins');
-define('WP_LANG_DIR', __DIR__ . "/wp-content/languages");
-define('WP_HOME', 'https://dev.yapposushi.com');
-define('WP_SITEURL', 'https://dev.yapposushi.com');
-define('DISABLE_WP_CRON', false);
-if ( ! defined( 'WP_ENVIRONMENT_TYPE' ) ) {
-    define('WP_ENVIRONMENT_TYPE', 'staging');
-}
-define('MYSQL_CLIENT_FLAGS', MYSQLI_CLIENT_SSL | MYSQLI_CLIENT_SSL_DONT_VERIFY_SERVER_CERT);
 if ( ! defined( 'ABSPATH' ) ) {
 	define( 'ABSPATH', __DIR__ . '/' );
 }

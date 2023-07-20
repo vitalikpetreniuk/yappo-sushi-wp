@@ -21863,3 +21863,5 @@ Stack trace:
 [18-Jul-2023 09:34:08 UTC] PHP Notice:  Undefined index: choosedcity in /home/vr488025/yapposushi.com/dev/wp-content/themes/yappo/inc/checkout.php on line 169
 [18-Jul-2023 09:34:08 UTC] PHP Notice:  Undefined index: choosedcity in /home/vr488025/yapposushi.com/dev/wp-content/themes/yappo/inc/checkout.php on line 169
 [18-Jul-2023 09:34:08 UTC] PHP Notice:  Undefined index: choosedcity in /home/vr488025/yapposushi.com/dev/wp-content/themes/yappo/inc/checkout.php on line 169
+[20-Jul-2023 08:25:22 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2006): MySQL server has gone away in E:\Installations\OSPanel\domains\yappo.loc\wordpress\wp-includes\class-wpdb.php on line 2019
+[20-Jul-2023 08:26:48 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2006): MySQL server has gone away in E:\Installations\OSPanel\domains\yappo.loc\wordpress\wp-includes\class-wpdb.php on line 2019
