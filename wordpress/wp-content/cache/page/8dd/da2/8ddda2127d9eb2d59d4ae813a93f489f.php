@@ -1,4 +1,4 @@
-���d<?php exit; ?>a:4:{i:404;b:0;s:7:"headers";a:5:{s:11:"Status-Code";i:200;s:12:"Content-Type";s:24:"text/html; charset=UTF-8";i:0;a:2:{s:1:"n";s:4:"Link";s:1:"v";s:53:"<http://yappo.loc/wp-json/>; rel="https://api.w.org/"";}i:1;a:2:{s:1:"n";s:4:"Link";s:1:"v";s:84:"<http://yappo.loc/wp-json/wp/v2/pages/119>; rel="alternate"; type="application/json"";}i:2;a:2:{s:1:"n";s:4:"Link";s:1:"v";s:34:"<http://yappo.loc/>; rel=shortlink";}}s:4:"time";i:1689837436;s:7:"content";s:225169:"<!doctype html>
+���d<?php exit; ?>a:4:{i:404;b:0;s:7:"headers";a:5:{s:11:"Status-Code";i:200;s:12:"Content-Type";s:24:"text/html; charset=UTF-8";i:0;a:2:{s:1:"n";s:4:"Link";s:1:"v";s:53:"<http://yappo.loc/wp-json/>; rel="https://api.w.org/"";}i:1;a:2:{s:1:"n";s:4:"Link";s:1:"v";s:84:"<http://yappo.loc/wp-json/wp/v2/pages/119>; rel="alternate"; type="application/json"";}i:2;a:2:{s:1:"n";s:4:"Link";s:1:"v";s:34:"<http://yappo.loc/>; rel=shortlink";}}s:4:"time";i:1689841285;s:7:"content";s:223956:"<!doctype html>
 <html lang="uk">
 <head>
   <meta charset="UTF-8">
@@ -94,8 +94,8 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <link rel='stylesheet' id='yappo-shared-styles-css' href='http://yappo.loc/wp-content/themes/yappo/assets/css/style-shared.min.css?ver=1.0.0' type='text/css' media='all' />
 <link rel='stylesheet' id='yappo-fonts-css' href='https://fonts.googleapis.com/css2?family=Open+Sans%3Awght%40300%3B400%3B700&#038;display=swap&#038;ver=1.0.0' type='text/css' media='all' />
 <link rel='stylesheet' id='yappo-swiper-css' href='http://yappo.loc/wp-content/themes/yappo/assets/libs/swiper.min.css?ver=1.0.0' type='text/css' media='all' />
-<link rel='stylesheet' id='yappo-css-css' href='http://yappo.loc/wp-content/themes/yappo/assets/css/style.min.css?ver=1689837435' type='text/css' media='all' />
-<link rel='stylesheet' id='yappo-style-css' href='http://yappo.loc/wp-content/themes/yappo/style.css?ver=1689837435' type='text/css' media='all' />
+<link rel='stylesheet' id='yappo-css-css' href='http://yappo.loc/wp-content/themes/yappo/assets/css/style.min.css?ver=1689841283' type='text/css' media='all' />
+<link rel='stylesheet' id='yappo-style-css' href='http://yappo.loc/wp-content/themes/yappo/style.css?ver=1689841283' type='text/css' media='all' />
 <script type='text/javascript' src='http://yappo.loc/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2' id='wp-polyfill-inert-js'></script>
 <script type='text/javascript' src='http://yappo.loc/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.11' id='regenerator-runtime-js'></script>
 <script type='text/javascript' src='http://yappo.loc/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
@@ -111,8 +111,8 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"uk","expires":1,"path":
 </script>
 <script type='text/javascript' src='http://yappo.loc/wp-content/plugins/sitepress-multilingual-cms/res/js/cookies/language-cookie.js?ver=4.6.4' id='wpml-cookie-js'></script>
 <script type='text/javascript' src='http://yappo.loc/wp-content/themes/yappo/assets/libs/swiper.min.js?ver=6.2.2' id='yappo-swiper-js'></script>
-<script type='text/javascript' src='http://yappo.loc/wp-content/themes/yappo/assets/js/scripts.min.js?ver=1689837435' id='yappo-script-js'></script>
-<script type='text/javascript' src='http://yappo.loc/wp-content/themes/yappo/assets/js/backend.js?ver=1689837435' id='yappo-backend-js'></script>
+<script type='text/javascript' src='http://yappo.loc/wp-content/themes/yappo/assets/js/scripts.min.js?ver=1689841283' id='yappo-script-js'></script>
+<script type='text/javascript' src='http://yappo.loc/wp-content/themes/yappo/assets/js/backend.js?ver=1689841283' id='yappo-backend-js'></script>
 <link rel="https://api.w.org/" href="http://yappo.loc/wp-json/" /><link rel="alternate" type="application/json" href="http://yappo.loc/wp-json/wp/v2/pages/119" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://yappo.loc/xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://yappo.loc/wp-includes/wlwmanifest.xml" />
 <meta name="generator" content="WordPress 6.2.2" />
@@ -1819,12 +1819,8 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"uk","expires":1,"path":
 				</svg></button>        </div>
     </div>
 </div>
-												<div class="col-xl-4 col-lg-6 col-md-6 product type-product post-383 status-publish first outofstock product_cat-business-lanch has-post-thumbnail purchasable product-type-simple woopt_global woopt_global_">
+												<div class="col-xl-4 col-lg-6 col-md-6 product type-product post-383 status-publish first outofstock product_cat-business-lanch has-post-thumbnail purchasable product-type-simple woopt_global woopt_global_ woopt woopt_set_instock">
     <div class="product__item">
-		            <div class="no-product-wrap">
-                <div class="no-product">
-					На жаль, товар зараз недоступний                </div>
-            </div>
 				    <div class="sale-bage-wrap">
 		
 		
@@ -1860,7 +1856,7 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"uk","expires":1,"path":
 			</div>
 
 			<button data-quantity="1" data-name="Ситий день суп з рисом" data-index="10" data-seo='{"item_name": "Ситий день суп з рисом","item_id": "383","price": "179","item_category": "Бізнес Ланчі","item_list_name": "Single item","item_list_id": "SR383","index": "1","quantity": "1"}
-' class="btn btn-primary button product_type_simple" data-product_id="383" data-product_sku="210_1" aria-label="Детальніше про &ldquo;Ситий день суп з рисом&rdquo;" aria-describedby="" rel="nofollow"><span>Переглянути</span><svg width="25" height="28" viewBox="0 0 25 28" fill="none"
+' class="btn btn-primary button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="383" data-product_sku="210_1" aria-label="Додайте &ldquo;Ситий день суп з рисом&rdquo; до кошика" aria-describedby="" rel="nofollow"><span>Беру</span><svg width="25" height="28" viewBox="0 0 25 28" fill="none"
 					 xmlns="http://www.w3.org/2000/svg">
 					<path
 						d="M0 10.8458C0 8.7218 1.7218 7 3.84575 7H19.1542C21.2782 7 23 8.7218 23 10.8458C23 14.2744 22.679 17.6955 22.0413 21.0643L22.0016 21.2741C21.5925 23.4354 19.7039 25 17.5042 25H11.5H5.49576C3.29612 25 1.40752 23.4354 0.998393 21.2741L0.958675 21.0643C0.320958 17.6955 0 14.2744 0 10.8458Z"
@@ -1872,12 +1868,8 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"uk","expires":1,"path":
 				</svg></button>        </div>
     </div>
 </div>
-												<div class="col-xl-4 col-lg-6 col-md-6 product type-product post-381 status-publish outofstock product_cat-business-lanch has-post-thumbnail purchasable product-type-simple woopt_global woopt_global_">
+												<div class="col-xl-4 col-lg-6 col-md-6 product type-product post-381 status-publish outofstock product_cat-business-lanch has-post-thumbnail purchasable product-type-simple woopt_global woopt_global_ woopt woopt_set_instock">
     <div class="product__item">
-		            <div class="no-product-wrap">
-                <div class="no-product">
-					На жаль, товар зараз недоступний                </div>
-            </div>
 				    <div class="sale-bage-wrap">
 		
 		
@@ -1913,7 +1905,7 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"uk","expires":1,"path":
 			</div>
 
 			<button data-quantity="1" data-name="YAPPO суп Місо" data-index="11" data-seo='{"item_name": "YAPPO суп Місо","item_id": "381","price": "179","item_category": "Бізнес Ланчі","item_list_name": "Single item","item_list_id": "SR381","index": "1","quantity": "1"}
-' class="btn btn-primary button product_type_simple" data-product_id="381" data-product_sku="225_1" aria-label="Детальніше про &ldquo;YAPPO суп Місо&rdquo;" aria-describedby="" rel="nofollow"><span>Переглянути</span><svg width="25" height="28" viewBox="0 0 25 28" fill="none"
+' class="btn btn-primary button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="381" data-product_sku="225_1" aria-label="Додайте &ldquo;YAPPO суп Місо&rdquo; до кошика" aria-describedby="" rel="nofollow"><span>Беру</span><svg width="25" height="28" viewBox="0 0 25 28" fill="none"
 					 xmlns="http://www.w3.org/2000/svg">
 					<path
 						d="M0 10.8458C0 8.7218 1.7218 7 3.84575 7H19.1542C21.2782 7 23 8.7218 23 10.8458C23 14.2744 22.679 17.6955 22.0413 21.0643L22.0016 21.2741C21.5925 23.4354 19.7039 25 17.5042 25H11.5H5.49576C3.29612 25 1.40752 23.4354 0.998393 21.2741L0.958675 21.0643C0.320958 17.6955 0 14.2744 0 10.8458Z"
@@ -1925,12 +1917,8 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"uk","expires":1,"path":
 				</svg></button>        </div>
     </div>
 </div>
-												<div class="col-xl-4 col-lg-6 col-md-6 product type-product post-379 status-publish last outofstock product_cat-business-lanch has-post-thumbnail purchasable product-type-simple woopt_global woopt_global_">
+												<div class="col-xl-4 col-lg-6 col-md-6 product type-product post-379 status-publish last outofstock product_cat-business-lanch has-post-thumbnail purchasable product-type-simple woopt_global woopt_global_ woopt woopt_set_instock">
     <div class="product__item">
-		            <div class="no-product-wrap">
-                <div class="no-product">
-					На жаль, товар зараз недоступний                </div>
-            </div>
 				    <div class="sale-bage-wrap">
 		
 		
@@ -1966,7 +1954,7 @@ var wpml_cookies = {"wp-wpml_current_language":{"value":"uk","expires":1,"path":
 			</div>
 
 			<button data-quantity="1" data-name="Ситий день суп з локшиною" data-index="12" data-seo='{"item_name": "Ситий день суп з локшиною","item_id": "379","price": "179","item_category": "Бізнес Ланчі","item_list_name": "Single item","item_list_id": "SR379","index": "1","quantity": "1"}
-' class="btn btn-primary button product_type_simple" data-product_id="379" data-product_sku="289_1" aria-label="Детальніше про &ldquo;Ситий день суп з локшиною&rdquo;" aria-describedby="" rel="nofollow"><span>Переглянути</span><svg width="25" height="28" viewBox="0 0 25 28" fill="none"
+' class="btn btn-primary button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="379" data-product_sku="289_1" aria-label="Додайте &ldquo;Ситий день суп з локшиною&rdquo; до кошика" aria-describedby="" rel="nofollow"><span>Беру</span><svg width="25" height="28" viewBox="0 0 25 28" fill="none"
 					 xmlns="http://www.w3.org/2000/svg">
 					<path
 						d="M0 10.8458C0 8.7218 1.7218 7 3.84575 7H19.1542C21.2782 7 23 8.7218 23 10.8458C23 14.2744 22.679 17.6955 22.0413 21.0643L22.0016 21.2741C21.5925 23.4354 19.7039 25 17.5042 25H11.5H5.49576C3.29612 25 1.40752 23.4354 0.998393 21.2741L0.958675 21.0643C0.320958 17.6955 0 14.2744 0 10.8458Z"
@@ -3089,7 +3077,7 @@ var actions = {"is_lang_switched":"0","force_reset":"0"};
 Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
 
 Page Caching using disk 
-Database Caching 10/527 queries in 0.474 seconds using disk (Request-wide modification query)
+Database Caching 32/522 queries in 0.765 seconds using disk
 
-Served from: yappo.loc @ 2023-07-20 10:17:16 by W3 Total Cache
+Served from: yappo.loc @ 2023-07-20 11:21:25 by W3 Total Cache
 -->";}

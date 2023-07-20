@@ -63,6 +63,7 @@
 
 
 
+
   </script>
   <noscript><img height="1" width="1" style="display:none"
                  src="https://www.facebook.com/tr?id=488055693044741&ev=PageView&noscript=1"
@@ -147,15 +148,9 @@
 
         <div class="col-lg-2 col-md-4 col-6 pe-0 pe-md-3 me-lg-5 me-md-0">
           <div class="logo">
-              <?php if (yappo_get_chosen_city_slug()) { ?>
-                <a href="<?= home_url() ?>/<?= yappo_get_chosen_city_slug() ?>">
-                    <?= wp_get_attachment_image(get_field('logo', 'option'), 'full') ?>
-                </a>
-              <?php } else { ?>
-                <a href="<?= home_url() ?>/<?= yappo_get_chosen_city_slug() ?>">
-                    <?= wp_get_attachment_image(get_field('logo', 'option'), 'full') ?>
-                </a>
-              <?php } ?>
+            <a href="<?= rtrim(home_url(), '/') ?>/<?= yappo_get_chosen_city_slug() ?>">
+                <?= wp_get_attachment_image(get_field('logo', 'option'), 'full') ?>
+            </a>
           </div>
         </div>
 
@@ -365,7 +360,7 @@
                 <li>
                   <a class="link-category <?php if (get_queried_object_id() === $term->term_id) {
                       echo 'link-category-active';
-                  } ?>" href="/<?= yappo_get_chosen_city_slug() ?>/<?= $term->slug ?>">
+                  } ?>" href="<?= rtrim(home_url(), '/') ?>/<?= yappo_get_chosen_city_slug() ?>/<?= $term->slug ?>">
 
                     <div class="cotegory_img">
                         <?php if (get_field('image', $term)) : ?>

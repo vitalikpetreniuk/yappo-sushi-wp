@@ -1,0 +1,1 @@
+•ü¸d<?php exit; ?>a:4:{i:404;b:0;s:7:"headers";a:4:{s:11:"Status-Code";i:302;s:12:"Content-Type";s:24:"text/html; charset=UTF-8";i:0;a:2:{s:1:"n";s:4:"Link";s:1:"v";s:53:"<http://yappo.loc/wp-json/>; rel="https://api.w.org/"";}s:8:"Location";s:60:"http://yappo.loc/wp-includes/images/w-logo-blue-white-bg.png";}s:4:"time";i:1689841285;s:7:"content";s:0:"";}
