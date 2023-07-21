@@ -1,9 +1,4 @@
 <?php
-/** Enable W3 Total Cache */
-define('WP_CACHE', false); // Added by W3 Total Cache
-
- // Added by WP Rocket
-
 /**
  * The base configuration for WordPress
  *
@@ -53,14 +48,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'A/F{?ZO=.W172g;c/-a@:r*}lCO!Sg)X9:pj35ZU;0.B3]3{a+/r]rGi$|G_LHch' );
-define( 'SECURE_AUTH_KEY',  '2cU{h9Qi3]xZ.t`}!p./NIRA</Jtcc[Fd<E2C,U[A:.Dg-QO6_i{>ACn5SgRu%Pc' );
-define( 'LOGGED_IN_KEY',    'XKzM6#68xe|]G7o3o1mww@1X&g<g]WjST~vA!)P*a?Zy?;k2PlM!;]%yd?:`^=Ha' );
-define( 'NONCE_KEY',        '{df *65:/e:_g=uv|<}e4}Z}?9U(v#fG5X1fGQ9}0XXsr(|JpyvrXptE>9mOLRl5' );
-define( 'AUTH_SALT',        '=~Z5W%e=:-2g!2P{=w@cPr+`T/aung/:#~y[%6??(-?1TFGvuN%O~gve=6`FRgA1' );
-define( 'SECURE_AUTH_SALT', '-?V?bhl<^^kc[n3&F0r[>{-*>O#SFDj^,,t_^2!8_KV|;qVH2n:><~>:^:&Y3!ib' );
-define( 'LOGGED_IN_SALT',   '4j}A642AtPC-1z<gL3@+7>,TWIq_ H^-qhB&G-9#G9C3J7$4kum}q.A_c |U,iwt' );
-define( 'NONCE_SALT',       ',s-vL1OF017&p[I~LO`p4DmqC#X_F4|{jp$SN=H=~%ikES;tVL9WmG*(Rn?4>,!M' );
+define( 'AUTH_KEY',         'SYkfFnw#|0gJWu+{}v`FSG.&[a9QO(#@5;>Wdp$PTE]UEgU4J:Re/_`&tE*wah<^' );
+define( 'SECURE_AUTH_KEY',  '@8Y| %WmYq$}v.=5Ukqo[>VL4 ($8.J[7F`.Hv8hRPxfMT!W|,6mfy$]k6@~6K-r' );
+define( 'LOGGED_IN_KEY',    ';^2[ufE1Xv{9P[ Y-FtyNH.GhT*C~E3e&Q4ki0qOMjP1{eS@]IZ%fZfT;C^A7t}|' );
+define( 'NONCE_KEY',        'O72iXW4s(?@`9Qq/(d4J{-YCqPtLs)(!lDSgv#Sc#rp]]#IBocNIb5 o]k#)cn9E' );
+define( 'AUTH_SALT',        ';im}w)!DvL`yV@(6{7>O<L#A~xbXs^X)`Zg:92ywToS|z&Woq~?&*[)D5O>`Ueg[' );
+define( 'SECURE_AUTH_SALT', '/@RsL|=zX~CJ%9ibu.pbD5y^6#w1uBZ(vbe(nJBtu$Q<a8i9w;;Z6Rb06tz~Jj<r' );
+define( 'LOGGED_IN_SALT',   'Zr3lC[`~ek%pd3fMYGGYV4SN#yr&zIay{#k%i=-ri)Z%(m-;PgY;Sk&ndTdz(}F{' );
+define( 'NONCE_SALT',       '6i,_ybCYn)$ ,FZ{&q%2@3b~:fS9B#<1,i5czwY=0TkFlMi G;.9b7~4,>9eQA{*' );
 
 /**#@-*/
 
@@ -70,7 +65,7 @@ define( 'NONCE_SALT',       ',s-vL1OF017&p[I~LO`p4DmqC#X_F4|{jp$SN=H=~%ikES;tVL9
  * You can have multiple installations in one database if you give each
  * a unique prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix = 'wp_'; // Changed by WP STAGING
+$table_prefix = 'wp_';
 
 /**
  * For developers: WordPress debugging mode.
@@ -84,38 +79,18 @@ $table_prefix = 'wp_'; // Changed by WP STAGING
  *
  * @link https://wordpress.org/documentation/article/debugging-in-wordpress/
  */
-define( 'WP_DEBUG', true );
-define( 'WP_DEBUG_DISPLAY', false );
-define( 'WP_DEBUG_LOG', true );
-error_reporting(1);
-@ini_set('display_errors', 1);
-
-define('WP_MEMORY_LIMIT', '1536M');
-define( 'WP_MAX_MEMORY_LIMIT', '1536M' );
+define( 'WP_DEBUG', false );
 
 /* Add any custom values between this line and the "stop editing" line. */
 
-//define('WP_REDIS_SCHEME', 'unix');
-//define('WP_REDIS_PATH', '/home/vr488025/.system/redis.sock');
-//define('WP_CACHE_KEY_SALT', 'yappo');
+
 
 /* That's all, stop editing! Happy publishing. */
 
 /** Absolute path to the WordPress directory. */
-//define('UPLOADS', 'wp-content/uploads');
-//define('WP_PLUGIN_DIR', __DIR__ . "/wp-content/plugins");
-//define('WP_PLUGIN_URL', 'https://dev.yapposushi.com/wp-content/plugins');
-//define('WP_LANG_DIR', __DIR__ . "/wp-content/languages");
-//define('WP_HOME', 'https://dev.yapposushi.com');
-//define('WP_SITEURL', 'https://dev.yapposushi.com');
-//define('DISABLE_WP_CRON', false);
-//if ( ! defined( 'WP_ENVIRONMENT_TYPE' ) ) {
-//    define('WP_ENVIRONMENT_TYPE', 'staging');
-//}
-//define('MYSQL_CLIENT_FLAGS', MYSQLI_CLIENT_SSL | MYSQLI_CLIENT_SSL_DONT_VERIFY_SERVER_CERT);
-//if ( ! defined( 'ABSPATH' ) ) {
-//	define( 'ABSPATH', __DIR__ . '/' );
-//}
+if ( ! defined( 'ABSPATH' ) ) {
+	define( 'ABSPATH', __DIR__ . '/' );
+}
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
