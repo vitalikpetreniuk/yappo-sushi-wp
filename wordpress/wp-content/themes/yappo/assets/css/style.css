@@ -7030,6 +7030,29 @@ body .helpcrunch-iframe-wrapper {
   margin-left: 4%;
 }
 
+@media (min-width: 575px) {
+  .cart-page .cart__preview-item .product__cart__info {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  .cart-page .cart__preview-item .product__cart__info {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2a1a5e;
+  }
+
+  .cart-page .cart__preview-item .text-span {
+    margin-left: 0;
+  }
+
+  .cart-page .quantity input {
+    text-align: left;
+    margin-left: 15px;
+  }
+}
+
 @media (min-width: 576px) {
   .container-sm,
   .container {

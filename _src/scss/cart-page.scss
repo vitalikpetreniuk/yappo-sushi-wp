@@ -735,3 +735,29 @@
 @media (max-width:600px){
     .cart-page .woocommerce-error{margin-left:0%;}
 }
+
+
+
+// =============================================================>
+
+@media (min-width: 575px) {
+
+	.cart-page .cart__preview-item .product__cart__info {
+		justify-content: flex-start;
+	}
+
+	.cart-page .cart__preview-item .product__cart__info {
+		font-size: 20px;
+		font-weight: 700;
+		color: #2a1a5e;
+	}
+
+	.cart-page .cart__preview-item .text-span {
+		margin-left: 0;
+	}
+
+	.cart-page .quantity input {
+		text-align: left;
+		margin-left: 15px;
+	}
+}
