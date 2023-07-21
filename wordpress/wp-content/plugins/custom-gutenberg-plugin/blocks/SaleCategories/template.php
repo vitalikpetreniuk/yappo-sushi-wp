@@ -35,7 +35,7 @@ if ( @$block['data']['preview_image_help'] ) : ?>
 					?>
 					<div class="col-xxl-5 col-lg-6  col-11 px-xxl-5 px-lg-4">
 						<div class="banner-slider__slide swiper-slide slide-<?= $i ?>">
-							<a href="<?= $link ?>">
+              <a href="<?= rtrim(home_url(), '/') ?>/<?= yappo_get_chosen_city_slug() ?>/<?= get_field('category', $post_id)->term_id ?>/<?= $subcategory->slug ?>">
 								<img src="<?= wp_get_attachment_image_url( $thumbnail_id, 'full' ) ?>"
 								     alt="<?= $subcategory->name ?>">
 							</a>
