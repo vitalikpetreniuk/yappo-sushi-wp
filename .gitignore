@@ -1,5 +1,6 @@
 node_modules/
 wordpress/wp-content/cache/
+wordpress/wp-content/cache/object/
 .idea/
 .DS_Store
 _src/.DS_Store

@@ -118,11 +118,16 @@
                 <ul>
                     <?php
                     $cities = getCities();
+                    $cityLink = '';
+
                     if (count($cities)) {
                         foreach ($cities as $city) {
+                            if(!is_checkout()){
+                                $cityLink =  rtrim(home_url(), '/'). '/' . $city->slug;
+                            }
                             ?>
                           <li>
-                            <a href="<?php the_sub_field('link', $city) ?>"
+                            <a href="<?= $cityLink ?>"
                                data-id="<?= $city->slug ?>">
                                 <?php the_field('city', $city) ?> <span
                                   class="adress"><?php the_field('adress', $city) ?></span>

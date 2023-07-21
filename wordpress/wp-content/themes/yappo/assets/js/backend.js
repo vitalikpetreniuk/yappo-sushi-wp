@@ -138,7 +138,11 @@ jQuery(function ($) {
         e.preventDefault();
         let cityid = $(this).data('id');
         setCookie('choosedcity', cityid);
-        window.location.reload()
+        if($(this).attr("href")){
+            window.location.href = $(this).attr("href");
+        } else {
+            window.location.reload()
+        }
     })
 
     $(document.body).on('added_to_cart', function (e, fragments, cart_hash, button) {
