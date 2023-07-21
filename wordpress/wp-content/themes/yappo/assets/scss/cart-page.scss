@@ -44,7 +44,6 @@
         font-family: 'DelaGothicOne';
         color: $accent;
 
-
         @include media-for (null, $sm){
             text-align: center;
         }

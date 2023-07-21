@@ -62,6 +62,8 @@
 		fbq('track', 'PageView');
 
 
+
+
   </script>
   <noscript><img height="1" width="1" style="display:none"
                  src="https://www.facebook.com/tr?id=488055693044741&ev=PageView&noscript=1"
@@ -116,11 +118,16 @@
                 <ul>
                     <?php
                     $cities = getCities();
+                    $cityLink = '';
+
                     if (count($cities)) {
                         foreach ($cities as $city) {
+                            if(!is_checkout()){
+                                $cityLink =  rtrim(home_url(), '/'). '/' . $city->slug;
+                            }
                             ?>
                           <li>
-                            <a href="<?php the_sub_field('link', $city) ?>"
+                            <a href="<?= $cityLink ?>"
                                data-id="<?= $city->slug ?>">
                                 <?php the_field('city', $city) ?> <span
                                   class="adress"><?php the_field('adress', $city) ?></span>
@@ -146,7 +153,7 @@
 
         <div class="col-lg-2 col-md-4 col-6 pe-0 pe-md-3 me-lg-5 me-md-0">
           <div class="logo">
-            <a href="<?= home_url() ?>">
+            <a href="<?= rtrim(home_url(), '/') ?>/<?= yappo_get_chosen_city_slug() ?>">
                 <?= wp_get_attachment_image(get_field('logo', 'option'), 'full') ?>
             </a>
           </div>
@@ -178,7 +185,7 @@
             <div class="col-lg-6 col-md-9">
               <div class="social-wrap d-flex justify-content-between">
                   <?php if (get_field('instagram_link', 'option')) : ?>
-                    <a href="<?php the_field('instagram_link', 'option') ?>"  rel="nofollow" target="_blank">
+                    <a href="<?php the_field('instagram_link', 'option') ?>" rel="nofollow" target="_blank">
                       <svg class="hover-effect-svg" width="23" height="24" viewBox="0 0 23 24"
                            fill="none"
                            xmlns="http://www.w3.org/2000/svg">
@@ -354,10 +361,12 @@
               $terms = get_field('categories_in_header', 'option');
               foreach ($terms as $term) {
                   ?>
+
                 <li>
                   <a class="link-category <?php if (get_queried_object_id() === $term->term_id) {
                       echo 'link-category-active';
-                  } ?>" href="<?= get_term_link($term) ?>">
+                  } ?>" href="<?= rtrim(home_url(), '/') ?>/<?= yappo_get_chosen_city_slug() ?>/<?= $term->slug ?>">
+
                     <div class="cotegory_img">
                         <?php if (get_field('image', $term)) : ?>
                           <img class="image-category"
