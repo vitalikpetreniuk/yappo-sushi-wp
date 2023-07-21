@@ -25,16 +25,16 @@ define('WP_CACHE', false); // Added by W3 Total Cache
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'yappo');
+define( 'DB_NAME', 'yappo' );
 
 /** Database username */
-define('DB_USER', 'root');
+define( 'DB_USER', 'root' );
 
 /** Database password */
-define('DB_PASSWORD', '');
+define( 'DB_PASSWORD', '' );
 
 /** Database hostname */
-define('DB_HOST', 'localhost');
+define( 'DB_HOST', 'localhost' );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
@@ -53,14 +53,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         ')nNUt15f+&cn0g?jU2iE7w/+}6I;4Yr4v&FlwFB,h!;H{Oik:TaJ vy99^Mt]|:1' );
-define( 'SECURE_AUTH_KEY',  '8gO@?K6*I6?2@z5;v2%*El^Oy>}=Dn3n$,{0~1K;&OuvRr<M_;Qj2[^1(|y-w$}x' );
-define( 'LOGGED_IN_KEY',    'uFnlB@zVsMB-8G=I[H52`K!l8f/:r1zTe_LwGY}Wq8fS7^egwpcsFoBgJY!$k;F3' );
-define( 'NONCE_KEY',        '`Sq_x4Vv)NytK2l/|:gxZ[;AhP-O;KA@I<5+JT?Djq>We5k(riC,d;BYu0AP+z/W' );
-define( 'AUTH_SALT',        'iC#+rh6ELRibRwMQYttY?ZUmmhHK?z *_w8ltj~!(!0hkN1:!)ONGGDd_L?UeW@J' );
-define( 'SECURE_AUTH_SALT', 'L__dY98Q4_]D+hNA(|t5&qy5B@J(]ive:ft/%]Ur|gR]<<d#T~KI2(nRMp|b-hUf' );
-define( 'LOGGED_IN_SALT',   'Ti >9w8{dA]1`aeVVo230;KsLdV5-4b!L0rf3>_,zsRVCVW=hW>Tb&R2882FVxQu' );
-define( 'NONCE_SALT',       'QTfLfmsxzS/ZSoA1i{*q~)uh:S9cHUlV&8yhv4}EdIItB%op{QkU,TzPCcODS2&M' );
+define( 'AUTH_KEY',         'A/F{?ZO=.W172g;c/-a@:r*}lCO!Sg)X9:pj35ZU;0.B3]3{a+/r]rGi$|G_LHch' );
+define( 'SECURE_AUTH_KEY',  '2cU{h9Qi3]xZ.t`}!p./NIRA</Jtcc[Fd<E2C,U[A:.Dg-QO6_i{>ACn5SgRu%Pc' );
+define( 'LOGGED_IN_KEY',    'XKzM6#68xe|]G7o3o1mww@1X&g<g]WjST~vA!)P*a?Zy?;k2PlM!;]%yd?:`^=Ha' );
+define( 'NONCE_KEY',        '{df *65:/e:_g=uv|<}e4}Z}?9U(v#fG5X1fGQ9}0XXsr(|JpyvrXptE>9mOLRl5' );
+define( 'AUTH_SALT',        '=~Z5W%e=:-2g!2P{=w@cPr+`T/aung/:#~y[%6??(-?1TFGvuN%O~gve=6`FRgA1' );
+define( 'SECURE_AUTH_SALT', '-?V?bhl<^^kc[n3&F0r[>{-*>O#SFDj^,,t_^2!8_KV|;qVH2n:><~>:^:&Y3!ib' );
+define( 'LOGGED_IN_SALT',   '4j}A642AtPC-1z<gL3@+7>,TWIq_ H^-qhB&G-9#G9C3J7$4kum}q.A_c |U,iwt' );
+define( 'NONCE_SALT',       ',s-vL1OF017&p[I~LO`p4DmqC#X_F4|{jp$SN=H=~%ikES;tVL9WmG*(Rn?4>,!M' );
 
 /**#@-*/
 
@@ -70,7 +70,7 @@ define( 'NONCE_SALT',       'QTfLfmsxzS/ZSoA1i{*q~)uh:S9cHUlV&8yhv4}EdIItB%op{Qk
  * You can have multiple installations in one database if you give each
  * a unique prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix = 'wp_'; // Changed by WP STAGING
+$table_prefix = 'wp_';
 
 /**
  * For developers: WordPress debugging mode.
@@ -95,27 +95,27 @@ define( 'WP_MAX_MEMORY_LIMIT', '1536M' );
 
 /* Add any custom values between this line and the "stop editing" line. */
 
-define('WP_REDIS_SCHEME', 'unix');
-define('WP_REDIS_PATH', '/home/vr488025/.system/redis.sock');
-define('WP_CACHE_KEY_SALT', 'yappo');
+//define('WP_REDIS_SCHEME', 'unix');
+//define('WP_REDIS_PATH', '/home/vr488025/.system/redis.sock');
+//define('WP_CACHE_KEY_SALT', 'yappo');
 
 /* That's all, stop editing! Happy publishing. */
 
 /** Absolute path to the WordPress directory. */
-define('UPLOADS', 'wp-content/uploads');
-define('WP_PLUGIN_DIR', __DIR__ . "/wp-content/plugins");
-define('WP_PLUGIN_URL', 'https://dev.yapposushi.com/wp-content/plugins');
-define('WP_LANG_DIR', __DIR__ . "/wp-content/languages");
-define('WP_HOME', 'https://dev.yapposushi.com');
-define('WP_SITEURL', 'https://dev.yapposushi.com');
-define('DISABLE_WP_CRON', false);
-if ( ! defined( 'WP_ENVIRONMENT_TYPE' ) ) {
-    define('WP_ENVIRONMENT_TYPE', 'staging');
-}
-define('MYSQL_CLIENT_FLAGS', MYSQLI_CLIENT_SSL | MYSQLI_CLIENT_SSL_DONT_VERIFY_SERVER_CERT);
-if ( ! defined( 'ABSPATH' ) ) {
-	define( 'ABSPATH', __DIR__ . '/' );
-}
+//define('UPLOADS', 'wp-content/uploads');
+//define('WP_PLUGIN_DIR', __DIR__ . "/wp-content/plugins");
+//define('WP_PLUGIN_URL', 'https://dev.yapposushi.com/wp-content/plugins');
+//define('WP_LANG_DIR', __DIR__ . "/wp-content/languages");
+//define('WP_HOME', 'https://dev.yapposushi.com');
+//define('WP_SITEURL', 'https://dev.yapposushi.com');
+//define('DISABLE_WP_CRON', false);
+//if ( ! defined( 'WP_ENVIRONMENT_TYPE' ) ) {
+//    define('WP_ENVIRONMENT_TYPE', 'staging');
+//}
+//define('MYSQL_CLIENT_FLAGS', MYSQLI_CLIENT_SSL | MYSQLI_CLIENT_SSL_DONT_VERIFY_SERVER_CERT);
+//if ( ! defined( 'ABSPATH' ) ) {
+//	define( 'ABSPATH', __DIR__ . '/' );
+//}
 
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
