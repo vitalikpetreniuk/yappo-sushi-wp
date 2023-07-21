@@ -14,6 +14,9 @@
  * @package WooCommerce\Templates
  * @version 3.4.0
  */
+/**
+ * Template Name: Product list
+ */  
 
 defined( 'ABSPATH' ) || exit;
 get_header( 'shop' );

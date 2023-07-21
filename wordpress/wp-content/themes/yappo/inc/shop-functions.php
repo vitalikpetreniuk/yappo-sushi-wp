@@ -352,7 +352,7 @@ add_filter( 'woocommerce_loop_add_to_cart_args', function ( $args ) {
 	return $args;
 } );
 
-//add_action( 'init', 'registerCities' );
+add_action( 'init', 'registerCities' );
 
 function registerCities() {
 	$cities = getCities();

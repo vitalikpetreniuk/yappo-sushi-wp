@@ -119,7 +119,15 @@ jQuery(function ($) {
     }
 
     $('body').on('update_checkout', function () {
-        $("#billing_phone").mask("+38 (999) 999-99-99", {placeholder: "+38 (___) ___-__-__"});
+        $('#billing_phone').mask("+38 (?99) 999-99-99", {
+            translation: {
+                '?': {
+                    pattern: 0,
+                    fallback: '0'
+                },
+            },
+            placeholder: "+38 (0__) ___-__-__",
+        })
     })
 
     $('#shipping_method .delivery-label').on('click', function () {
@@ -130,7 +138,11 @@ jQuery(function ($) {
         e.preventDefault();
         let cityid = $(this).data('id');
         setCookie('choosedcity', cityid);
-        window.location.reload()
+        if($(this).attr("href")){
+            window.location.href = $(this).attr("href");
+        } else {
+            window.location.reload()
+        }
     })
 
     $(document.body).on('added_to_cart', function (e, fragments, cart_hash, button) {
@@ -207,6 +219,10 @@ jQuery(function ($) {
         })
     })
 
+    $('.product-top .qty').on('change', function () {
+        $('.single_add_to_cart_button').attr('data-quantity', $(this).val());
+    })
+
     $.fn.serializeArrayAll = function () {
         var rCRLF = /\r?\n/g;
         return this.map(function () {
@@ -280,4 +296,5 @@ jQuery(function ($) {
         return false;
 
     });
+
 })

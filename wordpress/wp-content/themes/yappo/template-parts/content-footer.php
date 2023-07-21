@@ -79,14 +79,13 @@
 						</svg>
 					</a>
 				<?php endif; ?>
-
 			</div>
 		</div>
 
-
 		<div class="col-lg-2  col-12 p-0  order-lg-3 order-1">
 			<div class="logo">
-				<a href="<?= home_url(); ?>">
+
+				<a href="<?= rtrim(home_url(), '/') ?>/<?= yappo_get_chosen_city_slug() ?>">
 					<?= wp_get_attachment_image( get_field( 'footer_logo', 'option' ), 'full' ) ?>
 				</a>
 			</div>

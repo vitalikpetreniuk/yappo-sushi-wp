@@ -3233,10 +3233,6 @@ body .helpcrunch-iframe-wrapper {
   cursor: pointer;
 }
 
-.test-class {
-  margin: 0;
-}
-
 .burger,
 .burger-desck {
   position: relative;
@@ -5453,7 +5449,7 @@ body .helpcrunch-iframe-wrapper {
 
 .about-us p {
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 300px;
   width: 80%;
   margin: auto;
 }

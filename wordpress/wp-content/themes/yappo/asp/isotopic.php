@@ -36,21 +36,23 @@ if ( ! $prod ) {
 $GLOBALS['product'] = $prod;
 ?>
 <div class="col-xl-4 col-lg-6 col-md-6">
-	<div href="<?= $prod->get_permalink() ?>" class="product__item">
+	<div class="product__item">
 
 		<?php if ( function_exists( 'yappo_product_badges' ) ) {
 			yappo_product_badges( $prid );
 		} ?>
 
 		<div class="product__image">
-			<a>
+			<a href="<?= $prod->get_permalink() ?>">
 				<img alt="<?= $r->title ?>" src="<?php echo $r->image; ?>">
 			</a>
 		</div>
 
 		<div class="product__detail">
 
-			<h3 title="<?php echo $r->title; ?>"><?php echo $r->title; ?></h3>
+            <a href="<?= $prod->get_permalink() ?>" >
+                <h3 title="<?php echo $r->title; ?>"><?php echo $r->title; ?></h3>
+            </a>
 
 			<div class="cart__detail">
 
