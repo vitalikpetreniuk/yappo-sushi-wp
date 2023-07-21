@@ -7,15 +7,14 @@
  * @param (int|string) $post_id The post ID this block is saved to.
  */
 // Image preview when the block is in the list of blocks
-if (@$block['data']['preview_image_help']) : ?>
-  <img src="<?= plugin_dir_url(__FILE__) ?>/screenshot.png" alt="">
+if ( @$block['data']['preview_image_help'] ) : ?>
+	<img src="<?= plugin_dir_url( __FILE__ ) ?>/screenshot.png" alt="">
 <?php else:
     // Your block html goes here
     ?>
   <section class="discount-sale-page">
 
     <div class="container-fluid">
-
       <div class="row justify-content-xxl-center justify-content-lg-between justify-content-center">
           <?php
           $args = array(
@@ -42,9 +41,8 @@ if (@$block['data']['preview_image_help']) : ?>
                 </a>
               </div>
             </div>
-          <?php } ?>
+          <?php } ?> 
       </div>
-    </div>
     </div>
 
   </section>
