@@ -61,6 +61,7 @@ function get_queried_object_id() {
 	return $wp_query->get_queried_object_id();
 }
 
+
 /**
  * Sets the value of a query variable in the WP_Query class.
  *

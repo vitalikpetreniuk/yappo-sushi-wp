@@ -370,4 +370,9 @@ function seo_robots_modify_search($robots)
     }
 
 }
+
+function get_queried_object_slug() {
+    global $wp_query;
+    return $wp_query->get_queried_object();
+}
 ?>

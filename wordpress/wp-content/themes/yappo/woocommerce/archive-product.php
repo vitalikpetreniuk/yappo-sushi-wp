@@ -51,11 +51,11 @@ if ( $cateID != 23 ) { ?>
 					</div>
 
 					<div class="col-6">
-						<h2 class="section__title <?= $title_class ?>">
+						<h1 class="section__title <?= $title_class ?>">
 							<?php
                             woocommerce_page_title($cateID);
                             ?>
-						</h2>
+						</h1>
 					</div>
 
 				</div>

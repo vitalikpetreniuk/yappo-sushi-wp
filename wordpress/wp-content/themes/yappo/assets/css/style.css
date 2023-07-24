@@ -3233,6 +3233,10 @@ body .helpcrunch-iframe-wrapper {
   cursor: pointer;
 }
 
+.test-class {
+  margin: 0;
+}
+
 .burger,
 .burger-desck {
   position: relative;
@@ -7044,7 +7048,7 @@ body .helpcrunch-iframe-wrapper {
   }
 
   .cart-page .cart__preview-item .text-span {
-    margin-left: 0;
+    margin-left: 0 !important;
   }
 
   .cart-page .quantity input {

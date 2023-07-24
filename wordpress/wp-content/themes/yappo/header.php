@@ -363,7 +363,7 @@
                   ?>
 
                 <li>
-                  <a class="link-category <?php if (get_queried_object_id() === $term->term_id) {
+                  <a class="link-category <?php if (get_queried_object_slug()->post_name === $term->slug) {
                       echo 'link-category-active';
                   } ?>" href="<?= rtrim(home_url(), '/') ?>/<?= yappo_get_chosen_city_slug() ?>/<?= $term->slug ?>">
 
