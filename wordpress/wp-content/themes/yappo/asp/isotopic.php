@@ -1,6 +1,6 @@
 <?php
 /* Prevent direct access */
-defined( 'ABSPATH' ) or die( "You can't access this file directly." );
+defined('ABSPATH') or die("You can't access this file directly.");
 
 /**
  * This is the default template for one isotopic result
@@ -28,57 +28,70 @@ defined( 'ABSPATH' ) or die( "You can't access this file directly." );
 ?>
 
 <?php
-$prid = (int) $r->id;
-$prod = wc_get_product( $prid );
-if ( ! $prod ) {
-	return;
+$prid = (int)$r->id;
+$prod = wc_get_product($prid);
+if (!$prod) {
+    return;
 }
 $GLOBALS['product'] = $prod;
 ?>
 <div class="col-xl-4 col-lg-6 col-md-6">
-	<div class="product__item">
+  <div class="product__item">
+    <script>
+        dataLayer.push({
+            'event': 'view_search_results_ads',
+            'value': <?= $prod->get_price() ?>,
 
-		<?php if ( function_exists( 'yappo_product_badges' ) ) {
-			yappo_product_badges( $prid );
-		} ?>
+            'items': [
+                {
+                    'id': <?php echo $r->id; ?>,
+                    'google_business_vertical': 'retail'
+                },
+            ]
+        });
+    </script>
 
-		<div class="product__image">
-			<a href="<?= $prod->get_permalink() ?>">
-				<img alt="<?= $r->title ?>" src="<?php echo $r->image; ?>">
-			</a>
-		</div>
+      <?php if (function_exists('yappo_product_badges')) {
+          yappo_product_badges($prid);
+      } ?>
 
-		<div class="product__detail">
+    <div class="product__image">
+      <a href="<?= $prod->get_permalink() ?>">
+        <img alt="<?= $r->title ?>" src="<?php echo $r->image; ?>">
+      </a>
+    </div>
 
-            <a href="<?= $prod->get_permalink() ?>" >
-                <h3 title="<?php echo $r->title; ?>"><?php echo $r->title; ?></h3>
-            </a>
+    <div class="product__detail">
 
-			<div class="cart__detail">
+      <a href="<?= $prod->get_permalink() ?>">
+        <h3 title="<?php echo $r->title; ?>"><?php echo $r->title; ?></h3>
+      </a>
 
-				<p title="<?= $prod->get_short_description(); ?>"><?= $prod->get_short_description(); ?></p>
+      <div class="cart__detail">
 
-			</div>
-		</div>
+        <p title="<?= $prod->get_short_description(); ?>"><?= $prod->get_short_description(); ?></p>
 
-		<div class="product__cart">
+      </div>
+    </div>
 
-			<div class="product__cart-info-block">
-				<ul class="product__cart__info <?php if ( $prod->is_on_sale() ) {
-					echo "product__cart__info-discount";
-				} ?>">
-					<?= $prod->get_price_html() ?>
-				</ul>
-				<?php if ( $prod->get_weight() ) : ?>
-					<span class="weight">
-                       <?= wc_format_weight( $prod->get_weight() ) ?>
+    <div class="product__cart">
+
+      <div class="product__cart-info-block">
+        <ul class="product__cart__info <?php if ($prod->is_on_sale()) {
+            echo "product__cart__info-discount";
+        } ?>">
+            <?= $prod->get_price_html() ?>
+        </ul>
+          <?php if ($prod->get_weight()) : ?>
+            <span class="weight">
+                       <?= wc_format_weight($prod->get_weight()) ?>
                     </span>
-				<?php endif; ?>
-			</div>
+          <?php endif; ?>
+      </div>
 
-			<?php
-			woocommerce_template_loop_add_to_cart()
-			?>
-		</div>
-	</div>
+        <?php
+        woocommerce_template_loop_add_to_cart()
+        ?>
+    </div>
+  </div>
 </div>

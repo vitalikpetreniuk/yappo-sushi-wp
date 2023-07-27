@@ -64,6 +64,14 @@
 
 
 
+
+
+
+
+
+
+
+
   </script>
   <noscript><img height="1" width="1" style="display:none"
                  src="https://www.facebook.com/tr?id=488055693044741&ev=PageView&noscript=1"
@@ -122,17 +130,24 @@
 
                     if (count($cities)) {
                         foreach ($cities as $city) {
-                            if(!is_checkout()){
-                                $cityLink =  rtrim(home_url(), '/'). '/' . $city->slug;
+                            if (!is_checkout()) {
+                                $cityLink = rtrim(home_url(), '/') . '/' . $city->slug;
                             }
+                            $sityArr = get_field('adresy', $city);
                             ?>
-                          <li>
-                            <a href="<?= $cityLink ?>"
-                               data-id="<?= $city->slug ?>">
-                                <?php the_field('city', $city) ?> <span
-                                  class="adress"><?php the_field('adress', $city) ?></span>
-                            </a>
-                          </li>
+
+                            <?php
+                            foreach ($sityArr as $item) { ?>
+                              <li>
+                                <a href="<?= $cityLink ?>"
+                                   data-id="<?= $city->slug ?>"
+                                   data-address="<?= $item['item']['name'] ?>">
+                                    <?php the_field('city', $city) ?>
+                                  <span class="adress"><?= $item['item']['name'] ?></span>
+                                </a>
+                              </li>
+                            <?php }
+                            ?>
                             <?php
                         }
                     }

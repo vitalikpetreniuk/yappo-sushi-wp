@@ -161,15 +161,25 @@
           $cities = getCities();
           if (count($cities)) {
               foreach ($cities as $city) {
-                  ?>
-                <li>
-                  <a href="#" data-id="<?= $city->slug ?>" class="active">
-                      <?php the_field('city', $city) ?>&nbsp;<span class="adress">
+                  $sityArr = get_field('adresy', $city);
+                  if (isset($sityArr)) {
+                      foreach ($sityArr as $item) { ?>
+                        <li>
+                          <a href="#" data-id="<?= $city->slug ?>" data-address="<?= $item['item']['name'] ?>" class="active">
+                              <?php the_field('city', $city) ?>&nbsp;
+                            <span class="adress"> <?= $item['item']['name'] ?>  </span>
+                          </a>
+                        </li>
+                      <?php }
+                  } else { ?>
+                    <li>
+                      <a href="#" data-id="<?= $city->slug ?>" data-address="<?= $city->slug ?>" class="active">
+                          <?php the_field('city', $city) ?>&nbsp;<span class="adress">
                            <?php the_field('adress', $city); ?>
                         </span>
-                  </a>
-                </li>
-                  <?php
+                      </a>
+                    </li>
+                  <?php }
               }
           }
           ?>

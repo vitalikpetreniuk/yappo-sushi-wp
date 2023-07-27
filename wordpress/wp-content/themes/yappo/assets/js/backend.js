@@ -90,8 +90,10 @@ jQuery(function ($) {
     $("#city-chooser button").on('click', function (e) {
         e.preventDefault();
         const cityid = $(this).closest('#city-chooser').find('a.active').data('id');
-
+        const cityAddress = $(this).closest('#city-chooser').find('a.active').data('address');
+        console.log(cityAddress);
         setCookie('choosedcity', cityid);
+        setCookie('choosedaddress', cityAddress);
         window.location.reload();
     })
 
@@ -138,7 +140,9 @@ jQuery(function ($) {
     $('.city-list a').on('click', function (e) {
         e.preventDefault();
         let cityid = $(this).data('id');
+        let cityAddress = $(this).data('address');
         setCookie('choosedcity', cityid);
+        setCookie('choosedaddress', cityAddress);
         if($(this).attr("href")){
             window.location.href = $(this).attr("href");
         } else {

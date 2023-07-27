@@ -114,7 +114,7 @@ function get_choosed_city_data()
             'hide_empty' => false,
             'slug' => $_COOKIE['choosedcity'],
         ))[0] ?? false;
-}
+} 
 
 function change_default_checkout_city()
 {
@@ -215,7 +215,7 @@ function yappo_get_chosen_adress()
             return '';
         }
 
-        return get_field('adress', $arr);
+        return $_COOKIE['choosedaddress'];
     }
 
     return '';
@@ -224,7 +224,6 @@ function yappo_get_chosen_adress()
 function yappo_get_chosen_header_adress()
 {
     if (yappo_get_chosen_region() && yappo_get_chosen_city()) {
-
         return '<span>' . (get_locale() == 'uk' ? yappo_get_chosen_city() : get_ru_city_name()) . ',</span>' . yappo_get_chosen_adress();
     }
 

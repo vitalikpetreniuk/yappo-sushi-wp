@@ -32,9 +32,9 @@ if ( @$block['data']['preview_image_help'] ) : ?>
 				}
 				?>
 				<div class="col-6">
-					<h1 class="section__title">
+					<h1 class="section__title ">
 						<?php the_title(); ?>
-					</h1>
+					</h1> 
 				</div>
 
 			</div>
