@@ -236,7 +236,7 @@ function yappo_remove_shipping_on_hours($rates, $package)
     $hour_start_shipping = get_field('hour_start_shipping', 'option');
     $hour_end_shipping = get_field('hour_end_shipping', 'option');
 
-    $time = (new DateTime('now', new DateTimeZone('Europe/Kyiv')))->format('G.i');
+    $time = (new DateTime('now', new DateTimeZone('Europe/Kiev')))->format('G.i');
 
     if (!($hour_start_shipping <= $time && $time <= $hour_end_shipping)) {
         unset($rates['flat_rate:3']);

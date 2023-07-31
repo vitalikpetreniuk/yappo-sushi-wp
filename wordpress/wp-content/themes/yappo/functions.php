@@ -129,10 +129,10 @@ require_once 'inc/functions-crm.php';
 
 function yappo_lang_opener($classes = '')
 { ?>
-  <div class="lang lang-desctop <?= $classes ?>">
+    <div class="lang lang-desctop <?= $classes ?>">
 
-    <div class="d-flex align-items-center justify-content-start">
-        <?php echo do_shortcode('[wpml_language_switcher]
+        <div class="d-flex align-items-center justify-content-start">
+            <?php echo do_shortcode('[wpml_language_switcher]
 			<div class="{{ css_classes }} lang-desctop-wrap">
 			
 			   {% for code, language in languages %}
@@ -145,17 +145,17 @@ function yappo_lang_opener($classes = '')
 			</div>
 			[/wpml_language_switcher]'); ?>
 
-      <div class="arrow-wrap">
-        <svg width="8" height="6" viewBox="0 0 8 6" fill="none"
-             xmlns="http://www.w3.org/2000/svg">
-          <path d="M1 1L3.8 5L7 1" stroke="black" stroke-linecap="round"
-                stroke-linejoin="round"/>
-        </svg>
-      </div>
-    </div>
+            <div class="arrow-wrap">
+                <svg width="8" height="6" viewBox="0 0 8 6" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L3.8 5L7 1" stroke="black" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </div>
 
 
-      <?php echo do_shortcode('[wpml_language_switcher]
+        <?php echo do_shortcode('[wpml_language_switcher]
 								<div class="{{ css_classes }} lang-list">
 
 								   {% for code, language in languages %}
@@ -168,7 +168,7 @@ function yappo_lang_opener($classes = '')
 								</div>
 								[/wpml_language_switcher]') ?>
 
-  </div>
+    </div>
 
     <?php
 }
@@ -371,8 +371,23 @@ function seo_robots_modify_search($robots)
 
 }
 
-function get_queried_object_slug() {
-    global $wp_query;
-    return $wp_query->get_queried_object();
+function yappo_faq_row($question, $answer)
+{
+    ?>
+    <div class="slide-wrap">
+        <div class="slide-header">
+            <span class="glyphicon glyphicon-chevron-down"></span>
+            <h4>
+                <?= $question ?>
+            </h4>
+
+            <span class="span-plus"></span>
+        </div>
+        <div class="slide-content">
+            <?= $answer ?>
+        </div>
+    </div>
+    <?php
 }
+
 ?>

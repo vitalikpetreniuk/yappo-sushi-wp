@@ -90,14 +90,12 @@ jQuery(function ($) {
     $("#city-chooser button").on('click', function (e) {
         e.preventDefault();
         const cityid = $(this).closest('#city-chooser').find('a.active').data('id');
-        const cityAddress = $(this).closest('#city-chooser').find('a.active').data('address');
-        console.log(cityAddress);
+
         setCookie('choosedcity', cityid);
-        setCookie('choosedaddress', cityAddress);
         window.location.reload();
     })
 
-    function checkoutFields(e){
+    function checkoutFields(e) {
         if ($('.shipping_method:checked').val() == 'local_pickup:2') {
             $('#billing_address_1_field, #billing_address_2_field, #billing_address_3_field').hide();
         } else {
@@ -122,15 +120,15 @@ jQuery(function ($) {
 
     $('body').on('update_checkout', function () {
         // $("#billing_phone").mask("+38 (999) 999-99-99", {placeholder: "+38 (___) ___-__-__"});
-		$('#billing_phone').mask("+38 (?99) 999-99-99", {
-			translation: {
-				'?': {
-					pattern: 0,
-					fallback: '0'
-				},
-			},
-			placeholder: "+38 (0__) ___-__-__",
-		})
+        $('#billing_phone').mask("+38 (?99) 999-99-99", {
+            translation: {
+                '?': {
+                    pattern: 0,
+                    fallback: '0'
+                },
+            },
+            placeholder: "+38 (0__) ___-__-__",
+        })
     })
 
     $('#shipping_method .delivery-label').on('click', function () {
@@ -140,10 +138,8 @@ jQuery(function ($) {
     $('.city-list a').on('click', function (e) {
         e.preventDefault();
         let cityid = $(this).data('id');
-        let cityAddress = $(this).data('address');
         setCookie('choosedcity', cityid);
-        setCookie('choosedaddress', cityAddress);
-        if($(this).attr("href")){
+        if ($(this).attr("href")) {
             window.location.href = $(this).attr("href");
         } else {
             window.location.reload()
@@ -301,4 +297,35 @@ jQuery(function ($) {
         return false;
 
     });
+
+    // Throttling Function
+    var debounceTimer;
+    const debounce = (callback, time) => {
+        window.clearTimeout(debounceTimer);
+        debounceTimer = window.setTimeout(callback, time);
+    }
+
+    /* Клік на чіпси і видалення з фільтра */
+    $('.chaked-box').on('click', function () {
+
+        const url = new URL(window.location);
+
+        if ($(this).data('tax')) {
+            const id = $(this).data('slug');
+            const input = $(`#${id}`);
+            input.closest('.filter__checkgroup-title').removeClass('label-active');
+
+            $(`#${id}`).prop('checked', false);
+        }else if($(this).data('sortby')) {
+            const id = $(this).data('sortby');
+            $(`#${id}`).prop('checked', false);
+
+        }
+
+        $(this).remove();
+
+        debounce(()=>{
+            $('.filter__slider-form').submit();
+        }, 300)
+    })
 })
