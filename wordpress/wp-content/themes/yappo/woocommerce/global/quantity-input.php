@@ -32,7 +32,7 @@ $label = ! empty( $args['product_name'] ) ? sprintf( esc_html__( '%s quantity', 
 	 * @since 7.2.0
 	 */
 	do_action( 'woocommerce_before_quantity_input_field' );
-	?>
+  ?>
 	<button type="button" class="minus minus1">
 		-
 	</button>
@@ -54,8 +54,7 @@ $label = ! empty( $args['product_name'] ) ? sprintf( esc_html__( '%s quantity', 
 			autocomplete="<?php echo esc_attr( isset( $autocomplete ) ? $autocomplete : 'on' ); ?>"
 		<?php endif; ?>
 	/>
-
-	<button type="button" class="plus">
+	<button type="button" class="plus" onclick="add_to_cart_ads('<?= $args['id'] ?>' , <?= $args['price'] ?>)">
 		+
 	</button>
 	<?php

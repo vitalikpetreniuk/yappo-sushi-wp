@@ -33,6 +33,7 @@ if ( $cateID != 23 ) { ?>
     </span>
 <?php } ?>
 	<section class="category-page">
+      ворк
 		<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
 			<div class="container">
 				<div class="row align-items-center mb-md-5 mb-4">

@@ -55,7 +55,7 @@ if ( $product->is_in_stock() ) : ?>
 			<?php woocommerce_template_single_price(); ?>
         </ul>
 
-		<button type="submit" name="add-to-cart" data-name="<?= $product->get_name() ?>" data-quantity="1" data-seo='<?= $item ?>' data-product_id="<?php echo esc_attr( $product->get_id() ); ?>" value="<?php echo esc_attr( $product->get_id() ); ?>" class="single_add_to_cart_button add_to_cart_button button alt<?php echo esc_attr( wc_wp_theme_get_element_class_name( 'button' ) ? ' ' . wc_wp_theme_get_element_class_name( 'button' ) : '' ); ?>"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
+		<button type="submit" name="add-to-cart" onclick="add_to_cart_ads('<?= $product->get_id()?>' , '<?= $product->get_price()?>')" data-name="<?= $product->get_name() ?>" data-quantity="1" data-seo='<?= $item ?>' data-product_id="<?php echo esc_attr( $product->get_id() ); ?>" value="<?php echo esc_attr( $product->get_id() ); ?>" class="single_add_to_cart_button add_to_cart_button button alt<?php echo esc_attr( wc_wp_theme_get_element_class_name( 'button' ) ? ' ' . wc_wp_theme_get_element_class_name( 'button' ) : '' ); ?>"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
 
 		<?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
 	</form>

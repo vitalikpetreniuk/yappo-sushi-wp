@@ -98,3 +98,4 @@ table.wc-block-cart-items .wc-block-cart-items__header th,
 .wc-block-components-pagination__page--active[disabled]:focus {
 	color: var(--wp--preset--color--primary);
 }
+

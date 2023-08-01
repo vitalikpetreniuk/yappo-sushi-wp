@@ -390,4 +390,15 @@ function yappo_faq_row($question, $answer)
     <?php
 }
 
-?>
+add_filter( 'wpml_hreflangs', 'removeDefHreflangs' );
+function removeDefHreflangs($hreflangs){
+    foreach ($hreflangs as $key => $lang)
+    {
+        if ($key == "x-default"){
+            unset ($hreflangs[$key]);
+        }
+    }
+    return $hreflangs;
+}
+
+

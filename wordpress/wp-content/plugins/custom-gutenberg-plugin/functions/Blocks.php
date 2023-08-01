@@ -16,3 +16,4 @@ new BreadcrumbsTitleCats\BreadcrumbsTitleCats();
 new ProductCategory\ProductCategory();
 new SaleCategories\SaleCategories();
 new Menu\Menu();
+new Sale\Sale();

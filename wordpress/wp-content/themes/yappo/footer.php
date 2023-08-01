@@ -12,6 +12,14 @@
 ?>
 </main>
 <footer class="footer"><?= get_template_part('template-parts/content', 'footer') ?></footer>
+<script>
+
+</script>
+<button onclick="topScroll()" id="scrollTop" title="Go to top">
+  <svg width="29" height="14" viewBox="0 0 29 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path id="Vector 58" d="M13.8415 0.576191L0.502945 12.2474C-0.191958 12.8555 0.238085 14 1.16145 14H27.8386C28.7619 14 29.192 12.8555 28.4971 12.2474L15.1585 0.576192C14.7815 0.246294 14.2185 0.246293 13.8415 0.576191Z" fill="#2A1A5E"/>
+  </svg>
+</button>
 
 <div class="cart-modal">
 
@@ -108,6 +116,20 @@
                   }
               });
           </script>
+        <?php if (isset($_GET['wc_order_id'])) { ?>
+          <script>
+              dataLayer.push({
+                  'event': 'purchase_ads',
+                  'value': <?= $order->get_order_number() ?>,
+                  'items': [
+                      {
+                          'id': <?= $order->get_shipping_total(); ?>,
+                          'google_business_vertical': 'retail'
+                      },
+                  ]
+              });
+          </script>
+        <?php } ?>
             <?php
         }
         if (isset($order) && $order instanceof WC_Order) :?>
@@ -165,7 +187,8 @@
                   if (isset($sityArr)) {
                       foreach ($sityArr as $item) { ?>
                         <li>
-                          <a href="#" data-id="<?= $city->slug ?>" data-address="<?= $item['item']['name'] ?>" class="active">
+                          <a href="#" data-id="<?= $city->slug ?>" data-address="<?= $item['item']['name'] ?>"
+                             class="active">
                               <?php the_field('city', $city) ?>&nbsp;
                             <span class="adress"> <?= $item['item']['name'] ?>  </span>
                           </a>
@@ -206,6 +229,24 @@
       </script>
     <?php endif; ?>
 <?php endif; ?>
+<script>
+    document.oncopy = function () {
+        let bodyElement = document.body;
+        let selection = getSelection();
+        let href = document.location.href;
+        let copyright = "<br><br>Источник: <a href='" + href + "'>" + href + "</a><br>© YappoSushi";
+        let text = selection + copyright;
+        let divElement = document.createElement('div');
+        divElement.style.position = 'absolute';
+        divElement.style.left = '-99999px';
+        divElement.innerHTML = text;
+        bodyElement.appendChild(divElement);
+        selection.selectAllChildren(divElement);
+        setTimeout(function () {
+            bodyElement.removeChild(divElement);
+        }, 0);
+    };
+</script>
 <?php wp_footer(); ?>
 </body>
 </html>

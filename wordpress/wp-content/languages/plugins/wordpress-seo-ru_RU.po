@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Yoast SEO - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-07-11 08:12:12+0000\n"
+"PO-Revision-Date: 2023-06-27 08:13:20+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,36 +10,6 @@ msgstr ""
 "X-Generator: GlotPress/4.0.0-alpha.4\n"
 "Language: ru\n"
 "Project-Id-Version: Plugins - Yoast SEO - Stable (latest release)\n"
-
-#. translators: 1: Opening tag of the link to the Search appearance settings
-#. page, 2: Link closing tag.
-#: src/content-type-visibility/application/content-type-visibility-watcher-actions.php:158
-msgid "You've added a new type of content. We recommend that you review the corresponding %1$sSearch appearance settings%2$s."
-msgstr "Вы добавили новый тип контента. Мы рекомендуем вам просмотреть соответствующие %1$sНастройки внешнего вида%2$s."
-
-#: src/content-type-visibility/application/content-type-visibility-dismiss-notifications.php:73
-msgid "Error: Taxonomy was not removed from new_taxonomies list."
-msgstr "Ошибка: Таксономия не была удалена из списка new_taxonomies."
-
-#: src/content-type-visibility/application/content-type-visibility-dismiss-notifications.php:73
-msgid "Taxonomy is no longer new."
-msgstr "Таксономия уже не нова."
-
-#: src/content-type-visibility/application/content-type-visibility-dismiss-notifications.php:66
-msgid "Taxonomy is not new."
-msgstr "Таксономия не нова."
-
-#: src/content-type-visibility/application/content-type-visibility-dismiss-notifications.php:43
-msgid "Error: Post type was not removed from new_post_types list."
-msgstr "Ошибка: тип записи не был удален из списка новых типов записей."
-
-#: src/content-type-visibility/application/content-type-visibility-dismiss-notifications.php:43
-msgid "Post type is no longer new."
-msgstr "Тип записи больше не новый."
-
-#: src/content-type-visibility/application/content-type-visibility-dismiss-notifications.php:37
-msgid "Post type is not new."
-msgstr "Тип записи не новый."
 
 #: src/integrations/support-integration.php:107 js/dist/support.js:9
 msgid "Support"
@@ -78,17 +48,17 @@ msgstr "Тип записи %s не может быть проиндексиро
 msgid "Academy"
 msgstr "Академия"
 
+#. translators: %1$s is the plugin name, %2$s and %3$s are a link.
+#: inc/class-addon-manager.php:406
+msgid "%1$s can't be updated because your product subscription is expired. %2$sRenew your product subscription%3$s to get updates again and use all the features of %1$s."
+msgstr "%1$s не может быть обновлено, так как срок действия вашей подписки на продукт истек. %2$sПродлите подписку на продукт%3$s, чтобы снова получать обновления и использовать все функции %1$s."
+
 #. translators: %1$s expands to a strong tag, %2$s expands to the product name,
 #. %3$s expands to a closing strong tag, %4$s expands to an a tag. %5$s expands
 #. to MyYoast with a closing a tag,  %6$s expands to the product name
 #: inc/class-addon-manager.php:502
 msgid "%1$s %2$s isn't working as expected %3$s and you are not receiving updates or support! Make sure to %4$s activate your product subscription in %5$s to unlock all the features of %6$s."
 msgstr "%1$s %2$s не работает должным образом %3$s и вы не получаете обновления или поддержку! Убедитесь, что %4$s активировал подписку на продукт в %5$s, чтобы разблокировать все функции %6$s."
-
-#. translators: %1$s is the plugin name, %2$s and %3$s are a link.
-#: inc/class-addon-manager.php:406
-msgid "%1$s can't be updated because your product subscription is expired. %2$sRenew your product subscription%3$s to get updates again and use all the features of %1$s."
-msgstr "%1$s не может быть обновлено, так как срок действия вашей подписки на продукт истек. %2$sПродлите подписку на продукт%3$s, чтобы снова получать обновления и использовать все функции %1$s."
 
 #: src/integrations/admin/crawl-settings-integration.php:297
 msgid "This feature is disabled when your site is not using pretty permalinks."
@@ -347,6 +317,18 @@ msgstr "Нам нужно повторно проанализировать не
 msgid "We need to re-analyze some of your SEO data because of a change in the visibility of your post types. Please help us do that by running the SEO data optimization. "
 msgstr "Нам нужно повторно проанализировать некоторые из ваших данных SEO из-за изменения видимости ваших типов сообщений. Пожалуйста, помогите нам сделать это, запустив SEO-оптимизацию данных. "
 
+#. translators: 1: Opening tag of the link to the Search appearance settings
+#. page, 2: Link closing tag.
+#: src/integrations/watchers/indexable-taxonomy-change-watcher.php:169
+msgid "It looks like you've added a new taxonomy to your website. We recommend that you review your %1$sSettings%2$s under Categories & tags."
+msgstr "Похоже, вы добавили новую таксономию на свой веб-сайт. Рекомендуем пересмотреть %1$sнастройки%2$s в разделе Рубрики и метки."
+
+#. translators: 1: Opening tag of the link to the Search appearance settings
+#. page, 2: Link closing tag.
+#: src/integrations/watchers/indexable-post-type-change-watcher.php:167
+msgid "It looks like you've added a new type of content to your website. We recommend that you review your %1$sSettings%2$s under Content types."
+msgstr "Похоже, вы добавили новый тип содержимого на свой веб-сайт. Рекомендуем пересмотреть %1$sнастройки%2$s в разделе Рубрики и метки."
+
 #. translators: %s: expands to the term id
 #: src/exceptions/indexable/term-not-built-exception.php:20
 msgid "The term %s could not be built because it's not indexable."
@@ -449,7 +431,7 @@ msgid "The inclusive language analysis offers suggestions to write more inclusiv
 msgstr "Инклюзивный языковой анализ предлагает рекомендации по написанию более инклюзивного текста."
 
 #: admin/views/class-yoast-feature-toggles.php:91 js/dist/new-settings.js:22
-#: js/dist/new-settings.js:277
+#: js/dist/new-settings.js:238
 msgid "Inclusive language analysis"
 msgstr "Инклюзивный языковой анализ"
 
@@ -523,7 +505,7 @@ msgid "Permalink cleanup settings"
 msgstr "Настройки очистки постоянных ссылок"
 
 #: admin/views/class-yoast-feature-toggles.php:195 js/dist/new-settings.js:22
-#: js/dist/new-settings.js:279
+#: js/dist/new-settings.js:240
 msgid "IndexNow"
 msgstr "IndexNow"
 
@@ -559,7 +541,7 @@ msgstr "Свяжитесь со службой поддержки %s."
 msgid "Campaign tracking URL parameters"
 msgstr "Параметры URL отслеживания кампании"
 
-#: admin/views/class-yoast-feature-toggles.php:198 js/dist/new-settings.js:279
+#: admin/views/class-yoast-feature-toggles.php:198 js/dist/new-settings.js:240
 msgid "Automatically ping search engines like Bing and Yandex whenever you publish, update or delete a post."
 msgstr "Автоматическое оповещение поисковых систем, таких как Bing и Yandex, при публикации, обновлении или удалении записи."
 
@@ -1073,7 +1055,7 @@ msgid "Find out how Insights can help you improve your content."
 msgstr "Узнайте, как инсайты могут помочь улучшить содержимое."
 
 #: admin/views/class-yoast-feature-toggles.php:125 js/dist/new-settings.js:22
-#: js/dist/new-settings.js:277
+#: js/dist/new-settings.js:238
 msgid "Link suggestions"
 msgstr "Предложенная ссылка"
 
@@ -1083,7 +1065,7 @@ msgstr "Найдите соответствующие данные о вашем
 
 #: admin/views/class-yoast-feature-toggles.php:116 js/dist/block-editor.js:278
 #: js/dist/classic-editor.js:270 js/dist/elementor.js:278
-#: js/dist/new-settings.js:22 js/dist/new-settings.js:277
+#: js/dist/new-settings.js:22 js/dist/new-settings.js:238
 msgid "Insights"
 msgstr "Основное содержание"
 
@@ -1206,7 +1188,7 @@ msgstr "Автообновления выключены на основе это
 #: src/presenters/admin/badge-presenter.php:80
 #: src/presenters/admin/badge-presenter.php:87
 #: js/dist/externals/componentsNew.js:136 js/dist/integrations-page.js:3
-#: js/dist/integrations-page.js:23 js/dist/new-settings.js:293
+#: js/dist/integrations-page.js:23
 msgid "New"
 msgstr "Новый"
 
@@ -1241,7 +1223,7 @@ msgstr "Из-за изменения настроек URL-адреса для р
 msgid "Find out how a rich snippet can improve visibility and click-through-rate."
 msgstr "Узнайте как rich сниппеты могут улучшить видимость и CTR сайта."
 
-#: admin/views/class-yoast-feature-toggles.php:189 js/dist/new-settings.js:277
+#: admin/views/class-yoast-feature-toggles.php:189 js/dist/new-settings.js:238
 msgid "This adds an author byline and reading time estimate to the article’s snippet when shared on Slack."
 msgstr "Это добавит имя автора и примерное время для чтения в сниппет статьи для Slack."
 
@@ -1445,7 +1427,7 @@ msgstr "Страница коллекции"
 
 #: admin/views/class-yoast-feature-toggles.php:165
 #: admin/views/class-yoast-feature-toggles.php:166 js/dist/new-settings.js:22
-#: js/dist/new-settings.js:273
+#: js/dist/new-settings.js:236
 msgid "Usage tracking"
 msgstr "Отслеживание использования"
 
@@ -1874,7 +1856,7 @@ msgstr "Работа Google API для проверки ошибок прекр�
 
 #: src/integrations/admin/first-time-configuration-integration.php:511
 #: src/integrations/admin/first-time-configuration-integration.php:524
-#: js/dist/new-settings.js:281
+#: js/dist/new-settings.js:242
 msgid "Organization"
 msgstr "Организация"
 
@@ -2009,7 +1991,7 @@ msgstr "Узнайте почему постоянные ссылки важны
 
 #. translators: %s expands to Yoast SEO Premium
 #. translators: %s expands to "Yoast SEO" Premium
-#: admin/class-premium-upsell-admin-block.php:84 js/dist/new-settings.js:295
+#: admin/class-premium-upsell-admin-block.php:84 js/dist/new-settings.js:256
 msgid "Upgrade to %s"
 msgstr "Обновить до %s"
 
@@ -2063,7 +2045,7 @@ msgstr "Эта возможность отключена администрат�
 msgid "Focus keyphrase not set."
 msgstr "Фокусное ключевое слово не установлено."
 
-#: admin/class-premium-upsell-admin-block.php:54 js/dist/new-settings.js:295
+#: admin/class-premium-upsell-admin-block.php:54 js/dist/new-settings.js:256
 msgid "Multiple keyphrases"
 msgstr "Множественные ключевые слова"
 
@@ -2078,11 +2060,11 @@ msgstr "Множественные ключевые слова"
 #: js/dist/externals-components.js:11 js/dist/externals-components.js:125
 #: js/dist/externals-components.js:143 js/dist/externals-components.js:145
 #: js/dist/externals-components.js:147 js/dist/externals-components.js:149
-#: js/dist/new-settings.js:297
+#: js/dist/new-settings.js:258
 msgid "Get %s"
 msgstr "Получите %s"
 
-#: inc/options/class-wpseo-option-titles.php:976
+#: inc/options/class-wpseo-option-titles.php:962
 msgid "Colon"
 msgstr "Двоеточие"
 
@@ -2307,7 +2289,7 @@ msgid "description (custom taxonomy)"
 msgstr "описание (произвольная таксономия)"
 
 #: inc/class-wpseo-replace-vars.php:1474 js/dist/externals-redux.js:1
-#: js/dist/new-settings.js:22 js/dist/new-settings.js:267
+#: js/dist/new-settings.js:22 js/dist/new-settings.js:230
 msgid "Tagline"
 msgstr "Краткое описание"
 
@@ -2418,7 +2400,7 @@ msgstr "%s данные удалены."
 #: admin/class-premium-upsell-admin-block.php:58 js/dist/block-editor.js:196
 #: js/dist/classic-editor.js:192 js/dist/elementor.js:196
 #: js/dist/externals-components.js:7 js/dist/externals-components.js:121
-#: js/dist/new-settings.js:295
+#: js/dist/new-settings.js:256
 msgid "24/7 email support"
 msgstr "Поддержка по e-mail 24/7"
 
@@ -2540,7 +2522,7 @@ msgstr "Хорошие результаты"
 msgid "The SEO analysis offers suggestions to improve the SEO of your text."
 msgstr "SEO Анализ предлагает предложения по улучшению SEO вашего текста."
 
-#: admin/views/class-yoast-feature-toggles.php:85 js/dist/new-settings.js:277
+#: admin/views/class-yoast-feature-toggles.php:85 js/dist/new-settings.js:238
 msgid "The readability analysis offers suggestions to improve the structure and style of your text."
 msgstr "Анализ читабельности подскажет, как улучшить структуру и стиль вашего текста."
 
@@ -2566,7 +2548,7 @@ msgstr "Функция ключевого содержимого позволя�
 
 #: admin/views/class-yoast-feature-toggles.php:75
 #: js/dist/externals-components.js:152 js/dist/new-settings.js:22
-#: js/dist/new-settings.js:277
+#: js/dist/new-settings.js:238
 msgid "SEO analysis"
 msgstr "SEO-анализ"
 
@@ -2736,7 +2718,7 @@ msgid "Request method %1$s is not valid."
 msgstr "Метод запроса %1$s неверен."
 
 #: admin/views/class-yoast-feature-toggles.php:108 js/dist/new-settings.js:22
-#: js/dist/new-settings.js:277
+#: js/dist/new-settings.js:238
 msgid "Text link counter"
 msgstr "Счетчик текстовых ссылок"
 
@@ -2761,7 +2743,7 @@ msgstr "%s Столбцы"
 #: admin/filters/class-cornerstone-filter.php:87
 #: admin/views/class-yoast-feature-toggles.php:100
 #: js/dist/externals-components.js:14 js/dist/new-settings.js:22
-#: js/dist/new-settings.js:277
+#: js/dist/new-settings.js:238
 msgid "Cornerstone content"
 msgstr "Ключевое содержимое"
 
@@ -2773,7 +2755,7 @@ msgstr "Сохранить изменения"
 #: admin/class-premium-upsell-admin-block.php:56 js/dist/block-editor.js:194
 #: js/dist/classic-editor.js:190 js/dist/elementor.js:194
 #: js/dist/externals-components.js:5 js/dist/externals-components.js:119
-#: js/dist/new-settings.js:295
+#: js/dist/new-settings.js:256
 msgid "Superfast internal linking suggestions"
 msgstr "Мгновенно предлагаемые внутренние ссылки"
 
@@ -2793,27 +2775,27 @@ msgstr "1 год бесплатных обновлений и улучшений
 #: admin/class-premium-upsell-admin-block.php:59 js/dist/block-editor.js:196
 #: js/dist/classic-editor.js:192 js/dist/elementor.js:196
 #: js/dist/externals-components.js:7 js/dist/externals-components.js:121
-#: js/dist/new-settings.js:295
+#: js/dist/new-settings.js:256
 msgid "No ads!"
 msgstr "Без рекламы!"
 
-#: admin/class-premium-upsell-admin-block.php:57 js/dist/new-settings.js:295
+#: admin/class-premium-upsell-admin-block.php:57 js/dist/new-settings.js:256
 msgid "Facebook & Twitter"
 msgstr "Facebook и Twitter"
 
-#: admin/class-premium-upsell-admin-block.php:57 js/dist/new-settings.js:295
+#: admin/class-premium-upsell-admin-block.php:57 js/dist/new-settings.js:256
 msgid "Social media preview"
 msgstr "Предварительный просмотр в социальных сетях"
 
-#: admin/class-premium-upsell-admin-block.php:55 js/dist/new-settings.js:295
+#: admin/class-premium-upsell-admin-block.php:55 js/dist/new-settings.js:256
 msgid "Easy redirect manager"
 msgstr "Легкий менеджер переадресации"
 
-#: admin/class-premium-upsell-admin-block.php:54 js/dist/new-settings.js:295
+#: admin/class-premium-upsell-admin-block.php:54 js/dist/new-settings.js:256
 msgid "Increase your SEO reach"
 msgstr "Увеличить SEO-доступность"
 
-#: admin/class-premium-upsell-admin-block.php:55 js/dist/new-settings.js:295
+#: admin/class-premium-upsell-admin-block.php:55 js/dist/new-settings.js:256
 msgid "No more dead links"
 msgstr "Больше никаких мертвых ссылок"
 
@@ -2834,7 +2816,7 @@ msgid "Save"
 msgstr "Сохранить"
 
 #. translators: 1: Author name; 2: Site name.
-#: inc/options/class-wpseo-option-titles.php:255
+#: inc/options/class-wpseo-option-titles.php:247
 msgid "%1$s, Author at %2$s"
 msgstr "%1$s, Автор в %2$s"
 
@@ -2890,7 +2872,7 @@ msgid "The %1$s admin bar menu contains useful links to third-party tools for an
 msgstr "%1$s меню администратора. Панель содержит список инструментов анализа страниц и предложения для исправлений."
 
 #: admin/views/class-yoast-feature-toggles.php:147 js/dist/new-settings.js:22
-#: js/dist/new-settings.js:277 js/dist/new-settings.js:278
+#: js/dist/new-settings.js:238 js/dist/new-settings.js:239
 msgid "Admin bar menu"
 msgstr "Меню в панели администратора"
 
@@ -2927,55 +2909,55 @@ msgstr "Нет"
 msgid "Yes"
 msgstr "Да"
 
-#: inc/options/class-wpseo-option-titles.php:972
+#: inc/options/class-wpseo-option-titles.php:958
 msgid "Em dash"
 msgstr "Длинное тире"
 
-#: inc/options/class-wpseo-option-titles.php:964
+#: inc/options/class-wpseo-option-titles.php:950
 msgid "Dash"
 msgstr "Тире"
 
-#: inc/options/class-wpseo-option-titles.php:1016
+#: inc/options/class-wpseo-option-titles.php:1002
 msgid "Greater than sign"
 msgstr "Больше, чем знак"
 
-#: inc/options/class-wpseo-option-titles.php:1012
+#: inc/options/class-wpseo-option-titles.php:998
 msgid "Less than sign"
 msgstr "Знак меньше"
 
-#: inc/options/class-wpseo-option-titles.php:1008
+#: inc/options/class-wpseo-option-titles.php:994
 msgid "Right angle quotation mark"
 msgstr "Правая угловая кавычка"
 
-#: inc/options/class-wpseo-option-titles.php:1004
+#: inc/options/class-wpseo-option-titles.php:990
 msgid "Left angle quotation mark"
 msgstr "Левая угловая кавычка"
 
-#: inc/options/class-wpseo-option-titles.php:996
+#: inc/options/class-wpseo-option-titles.php:982
 msgid "Vertical bar"
 msgstr "Вертикальная полоса"
 
-#: inc/options/class-wpseo-option-titles.php:992
+#: inc/options/class-wpseo-option-titles.php:978
 msgid "Low asterisk"
 msgstr "Нижний знак сноски"
 
-#: inc/options/class-wpseo-option-titles.php:988
+#: inc/options/class-wpseo-option-titles.php:974
 msgid "Asterisk"
 msgstr "Звездочка"
 
-#: inc/options/class-wpseo-option-titles.php:984
+#: inc/options/class-wpseo-option-titles.php:970
 msgid "Bullet"
 msgstr "Маркер"
 
-#: inc/options/class-wpseo-option-titles.php:980
+#: inc/options/class-wpseo-option-titles.php:966
 msgid "Middle dot"
 msgstr "Средняя точка"
 
-#: inc/options/class-wpseo-option-titles.php:968
+#: inc/options/class-wpseo-option-titles.php:954
 msgid "En dash"
 msgstr "Короткое тире"
 
-#: inc/options/class-wpseo-option-titles.php:1000
+#: inc/options/class-wpseo-option-titles.php:986
 msgid "Small tilde"
 msgstr "Малая тильда"
 
@@ -3074,7 +3056,7 @@ msgstr "Отключить анализ читаемости"
 
 #: admin/views/class-yoast-feature-toggles.php:83
 #: js/dist/externals-components.js:92 js/dist/new-settings.js:22
-#: js/dist/new-settings.js:277
+#: js/dist/new-settings.js:238
 msgid "Readability analysis"
 msgstr "Анализ удобочитаемости"
 
@@ -3241,7 +3223,7 @@ msgid "%1$s is not a valid choice for who should be allowed access to the %2$s s
 msgstr "%1$s — это неправильное значение для имени пользователя, которому можно разрешить доступ к настройкам %2$s. Значение сброшено к первоначальному."
 
 #. translators: %s expands to the name of a post type (plural).
-#: inc/class-upgrade.php:1375 inc/options/class-wpseo-option-titles.php:292
+#: inc/class-upgrade.php:1375 inc/options/class-wpseo-option-titles.php:284
 msgid "%s Archive"
 msgstr "Архив %s"
 
@@ -3263,11 +3245,11 @@ msgstr "Не удалось активировать:"
 msgid "Analyze this page"
 msgstr "Проанализировать эту страницу"
 
-#: inc/options/class-wpseo-option-titles.php:263
+#: inc/options/class-wpseo-option-titles.php:255
 msgid "Archives for"
 msgstr "Архивы для"
 
-#: inc/options/class-wpseo-option-titles.php:262
+#: inc/options/class-wpseo-option-titles.php:254
 msgid "Error 404: Page not found"
 msgstr "Ошибка 404: страница не найдена"
 
@@ -3292,7 +3274,7 @@ msgstr "Хорошо"
 msgid "Google Page Speed Test"
 msgstr "Тест скорости загрузки страницы от Google"
 
-#: inc/options/class-wpseo-option-titles.php:264
+#: inc/options/class-wpseo-option-titles.php:256
 msgid "Home"
 msgstr "Главная страница"
 
@@ -3305,12 +3287,12 @@ msgid "No numeric value was received."
 msgstr "Нет числового значения."
 
 #. translators: %s expands to a taxonomy slug.
-#: inc/options/class-wpseo-option-titles.php:565
+#: inc/options/class-wpseo-option-titles.php:557
 msgid "Please select a valid post type for taxonomy \"%s\""
 msgstr "Пожалуйста выберите корректный тип записи для таксономии «%s»"
 
 #. translators: %s expands to a post type.
-#: inc/options/class-wpseo-option-titles.php:527
+#: inc/options/class-wpseo-option-titles.php:519
 msgid "Please select a valid taxonomy for post type \"%s\""
 msgstr "Пожалуйста, выберите допустимую таксономию для типа записей «%s»"
 
@@ -3362,17 +3344,17 @@ msgstr "Этот идентификатор должен принадлежат�
 msgid "Yoast SEO"
 msgstr "Yoast SEO"
 
-#: inc/options/class-wpseo-option-titles.php:265
+#: inc/options/class-wpseo-option-titles.php:257
 msgid "You searched for"
 msgstr "Вы искали"
 
 #. translators: %s expands to the search phrase.
-#: inc/options/class-wpseo-option-titles.php:257
+#: inc/options/class-wpseo-option-titles.php:249
 msgid "You searched for %s"
 msgstr "Вы искали %s"
 
 #. translators: 1: link to post; 2: link to blog.
-#: inc/options/class-wpseo-option-titles.php:260
+#: inc/options/class-wpseo-option-titles.php:252
 msgid "The post %1$s appeared first on %2$s."
 msgstr "Сообщение %1$s появились сначала на %2$s."
 
@@ -3393,7 +3375,7 @@ msgstr "Настройки %1$s"
 
 #. translators: %s expands to the variable used for term title.
 #: admin/formatter/class-term-metabox-formatter.php:162
-#: inc/class-upgrade.php:1378 inc/options/class-wpseo-option-titles.php:328
+#: inc/class-upgrade.php:1378 inc/options/class-wpseo-option-titles.php:320
 msgid "%s Archives"
 msgstr "Архивы %s"
 
@@ -3448,7 +3430,7 @@ msgstr "Импортировать настройки"
 msgid "Page %1$d of %2$d"
 msgstr "Страница %1$d из %2$d"
 
-#: inc/options/class-wpseo-option-titles.php:258
+#: inc/options/class-wpseo-option-titles.php:250
 msgid "Page not found"
 msgstr "Страница не найдена"
 
@@ -3669,7 +3651,7 @@ msgid "Optimize your videos to show them off in search results and get more clic
 msgstr "Оптимизируйте свои видео-записи, чтобы они попадали в результаты поиска и получали больше кликов!"
 
 #: src/integrations/admin/first-time-configuration-integration.php:516
-#: js/dist/new-settings.js:281
+#: js/dist/new-settings.js:242
 msgid "Person"
 msgstr "Частное лицо"
 
@@ -3920,7 +3902,7 @@ msgstr "Фокусное ключевое слово"
 
 #: admin/menu/class-admin-menu.php:89
 #: admin/menu/class-network-admin-menu.php:56 admin/pages/network.php:18
-#: js/dist/new-settings.js:293
+#: js/dist/new-settings.js:254
 msgid "General"
 msgstr "Общие"
 
@@ -3939,7 +3921,7 @@ msgid "No Image Index"
 msgstr "Не индексировать изображения"
 
 #: admin/class-yoast-network-admin.php:43 src/config/schema-types.php:163
-#: src/integrations/settings-integration.php:546 js/dist/new-settings.js:297
+#: js/dist/new-settings.js:258
 msgid "None"
 msgstr "Пусто"
 
@@ -3997,7 +3979,7 @@ msgid "Search Console"
 msgstr "Консоль поиска"
 
 #: admin/class-admin.php:226 admin/views/redirects.php:42
-#: src/integrations/settings-integration.php:312
+#: src/integrations/settings-integration.php:291
 #: src/presenters/meta-description-presenter.php:37
 #: js/dist/structured-data-blocks.js:9
 msgid "Settings"
@@ -4020,7 +4002,7 @@ msgstr "Социальные сети"
 msgid "The URL that this page should redirect to."
 msgstr "URL-адрес, на который должна перенаправлять эта страница."
 
-#: admin/menu/class-admin-menu.php:95 js/dist/new-settings.js:277
+#: admin/menu/class-admin-menu.php:95 js/dist/new-settings.js:238
 msgid "Tools"
 msgstr "Инструменты"
 
@@ -4113,7 +4095,7 @@ msgid "Post has an invalid Content Type: %s."
 msgstr "У записи неверный тип: %s."
 
 #: admin/views/class-yoast-feature-toggles.php:136 js/dist/new-settings.js:22
-#: js/dist/new-settings.js:278 js/dist/new-settings.js:279
+#: js/dist/new-settings.js:239 js/dist/new-settings.js:240
 msgid "XML sitemaps"
 msgstr "XML-карта сайта"
 

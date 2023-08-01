@@ -139,6 +139,7 @@ jQuery(function ($) {
         e.preventDefault();
         let cityid = $(this).data('id');
         setCookie('choosedcity', cityid);
+        setCookie('choosedaddress', cityAddress);
         if ($(this).attr("href")) {
             window.location.href = $(this).attr("href");
         } else {
@@ -329,3 +330,26 @@ jQuery(function ($) {
         }, 300)
     })
 })
+
+function add_to_cart_ads(id, price) {
+    alert('work');
+    dataLayer.push({
+        'event': 'add_to_cart_ads',
+        'value': price,
+        'items': [
+            {
+                'id': id,
+                'google_business_vertical': 'retail'
+            },
+        ]
+    });
+
+    dataLayer.push({
+        'event': 'add_to_cart_fb',
+        'value': price,
+        'content_ids': '1234',
+        'content_type': 'product',
+        'currency': 'UAH'
+
+    })
+}

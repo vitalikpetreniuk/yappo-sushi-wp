@@ -15,51 +15,64 @@
  * @version 3.6.0
  */
 
-defined( 'ABSPATH' ) || exit;
+defined('ABSPATH') || exit;
 
 global $product;
 // Ensure visibility.
-if ( empty( $product ) || ! $product->is_visible() ) {
-	return;
+if (empty($product) || !$product->is_visible()) {
+    return;
 }
 ?>
-<div <?php wc_product_class( 'col-xl-4 col-lg-6 col-md-6', $product ); ?>>
-    <div class="product__item">
-		<?php
-		if ( ! ( $product->is_purchasable() && $product->is_in_stock() ) ) { ?>
-            <div class="no-product-wrap">
-                <div class="no-product">
-					<?php esc_html_e( 'На жаль, товар зараз недоступний', 'yappo' ); ?>
-                </div>
-            </div>
-		<?php } ?>
-		<?php if ( function_exists( 'yappo_product_badges' ) ) {
-			yappo_product_badges();
-		} ?>
-
-        <div class="product__image class">
-            <a href="<?php the_permalink(); ?>">
-				<?php woocommerce_template_loop_product_thumbnail(); ?>
-            </a>
-            <!--			--><?php //= $product->get_image(); ?>
+<div <?php wc_product_class('col-xl-4 col-lg-6 col-md-6', $product); ?>>
+  <div class="product__item">
+      <?php
+      if (!($product->is_purchasable() && $product->is_in_stock())) { ?>
+        <div class="no-product-wrap">
+          <div class="no-product">
+              <?php esc_html_e('На жаль, товар зараз недоступний', 'yappo'); ?>
+          </div>
         </div>
+      <?php } ?>
+      <?php if (function_exists('yappo_product_badges')) {
+          yappo_product_badges();
+      } ?>
 
-        <div class="product__detail">
+    <script>
+        dataLayer.push({
+            'event': 'view_item_list_ads',
+            'value': <?= $product->get_price() ?>,
+            'items': [
+                {
+                    'id': <?= $product->get_id() ?>,
+                    'google_business_vertical': 'retail'
+                },
+            ]
+        });
+    </script>
 
-            <a href="<?php the_permalink(); ?>">
-                <h3 title="<?php the_title(); ?>"><?php the_title(); ?></h3>
-            </a>
-
-            <div class="cart__detail" title="<?= $product->get_short_description() ?>">
-				<?= wpautop( $product->get_short_description() ); ?>
-            </div>
-        </div>
-
-        <div class="product__cart">
-
-			<?php do_action( 'woocommerce_after_shop_loop_item_title' ); ?>
-
-			<?php woocommerce_template_loop_add_to_cart(); ?>
-        </div>
+    <div class="product__image class">
+      <a href="<?php the_permalink(); ?>">
+          <?php woocommerce_template_loop_product_thumbnail(); ?>
+      </a>
+      <!--			--><?php //= $product->get_image(); ?>
     </div>
+
+    <div class="product__detail">
+
+      <a href="<?php the_permalink(); ?>">
+        <h3 title="<?php the_title(); ?>"><?php the_title(); ?></h3>
+      </a>
+
+      <div class="cart__detail" title="<?= $product->get_short_description() ?>">
+          <?= wpautop($product->get_short_description()); ?>
+      </div>
+    </div>
+
+    <div class="product__cart">
+
+        <?php do_action('woocommerce_after_shop_loop_item_title'); ?>
+
+        <?php woocommerce_template_loop_add_to_cart(); ?>
+    </div>
+  </div>
 </div>

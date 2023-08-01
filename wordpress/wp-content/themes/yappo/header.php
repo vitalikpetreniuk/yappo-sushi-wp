@@ -29,7 +29,7 @@
               'gtm.start':
                   new Date().getTime(), event: 'gtm.js'
           });
-          var f = d.getElementsByTagName(s)[0],
+          let f = d.getElementsByTagName(s)[0],
               j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
           j.async = true;
           j.src =
@@ -80,6 +80,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+
 <!-- Google Tag Manager (noscript) -->
 <noscript>
   <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GVTP5D"

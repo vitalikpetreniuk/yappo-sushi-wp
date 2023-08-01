@@ -2891,6 +2891,41 @@ body .helpcrunch-iframe-wrapper {
   bottom: 6px !important;
 }
 
+#scrollTop {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  bottom: 25px;
+  right: 50%;
+  z-index: 99;
+  outline: 0;
+  background-color: #fff;
+  color: #fff;
+  cursor: pointer;
+  padding: 16px 14px;
+  font-size: 18px;
+  -webkit-transform: translateX(50%);
+      -ms-transform: translateX(50%);
+          transform: translateX(50%);
+  width: 64px;
+  height: 64px;
+  border-radius: 27px;
+  border: 1px solid #2a1a5e;
+}
+
+#scrollTop:hover {
+  border-color: #e68127;
+}
+
+#scrollTop:hover svg path {
+  fill: #e68127;
+}
+
 .product__item {
   position: relative;
   display: block;

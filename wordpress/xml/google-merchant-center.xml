@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:g="http://base.google.com/ns/1.0">
+    <link rel="self" href="https://yapposushi.com/"/>
+    <entry>
+        <g:id>12345</g:id>
+        <g:title>ЧІЗ-ФІШ</g:title>
+        <g:description>лосось теріякі, чука, сир вершковий, перець болгарський, чорний кунжут, медовий соус, рис, норі</g:description>
+        <g:link>https://yapposushi.com/product/chiz-fish/</g:link>
+        <g:image_link>https://yapposushi.com/wp-content/uploads/2023/06/chiz-fish-2.png</g:image_link>
+        <g:condition>new</g:condition>
+        <g:availability>in stock</g:availability>
+        <g:price>139.0 UAH</g:price>
+        <g:brand>Yapposushi</g:brand>
+    </entry>
+</feed>
