@@ -34,7 +34,7 @@ if (post_password_required()) {
 ?>
 <div id="product-<?php the_ID(); ?>" <?php wc_product_class('', $product); ?>>
 
-  <div class="summary entry-summary product-top">
+  <div class="summary entry-summary product-top" itemscope itemtype="http://schema.org/Product">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-xxl-10 col-xl-11 col-lg-12">
@@ -56,7 +56,7 @@ if (post_password_required()) {
 
                 <?php yappo_product_badges(); ?>
 
-              <a href="<?php the_permalink(); ?>" class="">
+              <a href="<?php the_permalink(); ?>" class="" itemprop="image">
                   <?php the_post_thumbnail('full'); ?>
               </a>
             </div>
@@ -68,7 +68,7 @@ if (post_password_required()) {
 
                 <?php woocommerce_template_single_title(); ?>
 
-              <div class="description">
+              <div class="description" itemprop="description">
                 <p><?php woocommerce_template_single_excerpt(); ?></p>
               </div>
 

@@ -11,9 +11,9 @@ function yappo_mini_cart_fragments($fragments)
     $fragments['.widget_shopping_cart_content'] = ob_get_clean();
     ob_start();
     ?>
-    <span class="mini-cart-count <?php if (WC()->cart->get_cart_contents_count()) {
-        echo 'mini-cart-count-active';
-    } ?>"><?= WC()->cart->get_cart_contents_count() ?></span>
+  <span class="mini-cart-count <?php if (WC()->cart->get_cart_contents_count()) {
+      echo 'mini-cart-count-active';
+  } ?>"><?= WC()->cart->get_cart_contents_count() ?></span>
     <?php
     $fragments['.mini-cart-count'] = ob_get_clean();
 
@@ -23,30 +23,30 @@ function yappo_mini_cart_fragments($fragments)
 function yappo_mini_cart()
 {
     ?>
-    <div class="fix-cart">
-        <div class="cart">
+  <div class="fix-cart">
+    <div class="cart">
         <span class="mini-cart-count <?php if (WC()->cart->get_cart_contents_count()) {
             echo 'mini-cart-count-active';
         } ?>">
 <?= WC()->cart->get_cart_contents_count() ?>
         </span>
 
-            <svg width="26" height="26" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                        d="M0.0302734 10.8458C0.0302734 8.7218 1.75208 7 3.87602 7H19.1845C21.3085 7 23.0303 8.7218 23.0303 10.8458V10.8458C23.0303 14.2744 22.7093 17.6955 22.0716 21.0643L22.0319 21.2741C21.6228 23.4354 19.7342 25 17.5345 25H11.5303H5.52603C3.32639 25 1.43779 23.4354 1.02867 21.2741L0.988949 21.0643C0.351232 17.6955 0.0302734 14.2744 0.0302734 10.8458V10.8458Z"
-                        fill="#ffff"/>
-                <path
-                        d="M7.03027 7V6.5C7.03027 4.01472 9.04499 2 11.5303 2V2C14.0156 2 16.0303 4.01472 16.0303 6.5V7"
-                        stroke="#ffff" stroke-width="3"/>
-            </svg>
+      <svg width="26" height="26" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+            d="M0.0302734 10.8458C0.0302734 8.7218 1.75208 7 3.87602 7H19.1845C21.3085 7 23.0303 8.7218 23.0303 10.8458V10.8458C23.0303 14.2744 22.7093 17.6955 22.0716 21.0643L22.0319 21.2741C21.6228 23.4354 19.7342 25 17.5345 25H11.5303H5.52603C3.32639 25 1.43779 23.4354 1.02867 21.2741L0.988949 21.0643C0.351232 17.6955 0.0302734 14.2744 0.0302734 10.8458V10.8458Z"
+            fill="#ffff"/>
+        <path
+            d="M7.03027 7V6.5C7.03027 4.01472 9.04499 2 11.5303 2V2C14.0156 2 16.0303 4.01472 16.0303 6.5V7"
+            stroke="#ffff" stroke-width="3"/>
+      </svg>
 
 
-            <div class="speech right">
-                = <?php echo WC()->cart->get_cart_total(); ?>
-            </div>
-        </div>
-
+      <div class="speech right">
+        = <?php echo WC()->cart->get_cart_total(); ?>
+      </div>
     </div>
+
+  </div>
     <?php
 }
 
@@ -96,14 +96,15 @@ add_filter('wc_price', function ($return, $price, $args, $unformatted_price, $or
     if (apply_filters('woocommerce_price_trim_zeros', false) && $args['decimals'] > 0) {
         $price = wc_trim_zeros($price);
     }
-    $formatted_price = ($negative ? '-' : '') . sprintf($args['price_format'], '<span class="woocommerce-Price-currencySymbol">' . get_woocommerce_currency_symbol($args['currency']) . '</span>', $price);
+    $formatted_price = ($negative ? '-' : '') . sprintf($args['price_format'], '<span class="woocommerce-Price-currencySymbol"> <meta itemprop="priceCurrency" content="' . get_woocommerce_currency_symbol($args['currency']) . '">
+' . get_woocommerce_currency_symbol($args['currency']) . '</span>', $price);
     $return = $formatted_price;
 
     return $return;
 }, 10, 5);
 
 add_filter('woocommerce_get_price_html', function ($price, $tthis) {
-    return $price;
+    return '<span itemprop="price">' . $price . '</span>';
 }, 10, 2);
 
 add_filter('woocommerce_format_sale_price', function ($price, $regular_price, $sale_price) {
@@ -117,68 +118,68 @@ remove_action('woocommerce_widget_shopping_cart_buttons', 'woocommerce_widget_sh
 function yappo_product_badges($p_id = null)
 {
     ?>
-    <div class="sale-bage-wrap">
-        <?php if (has_term(apply_filters('wpml_object_id', 62, 'product_tag'), 'product_tag', $p_id)) { ?>
-            <div class="sale-badge hot-sale">
-                <div class="сhat-bubbles-wrap">
-                    <div class="сhat-bubbles">
-                        <p>
-                            <?php esc_html_e('Гостре', 'yappo'); ?>
-                        </p>
-                    </div>
-                </div>
+  <div class="sale-bage-wrap">
+      <?php if (has_term(apply_filters('wpml_object_id', 62, 'product_tag'), 'product_tag', $p_id)) { ?>
+        <div class="sale-badge hot-sale">
+          <div class="сhat-bubbles-wrap">
+            <div class="сhat-bubbles">
+              <p>
+                  <?php esc_html_e('Гостре', 'yappo'); ?>
+              </p>
             </div>
-        <?php } ?>
+          </div>
+        </div>
+      <?php } ?>
 
-        <?php if (has_term(apply_filters('wpml_object_id', 63, 'product_tag'), 'product_tag', $p_id)) { ?>
-            <div class="sale-badge vegaterian-sale">
-                <div class="сhat-bubbles-wrap">
-                    <div class="сhat-bubbles">
-                        <p>
-                            <?php esc_html_e('Вегетаріанське', 'yappo'); ?>
-                        </p>
-                    </div>
-                </div>
+      <?php if (has_term(apply_filters('wpml_object_id', 63, 'product_tag'), 'product_tag', $p_id)) { ?>
+        <div class="sale-badge vegaterian-sale">
+          <div class="сhat-bubbles-wrap">
+            <div class="сhat-bubbles">
+              <p>
+                  <?php esc_html_e('Вегетаріанське', 'yappo'); ?>
+              </p>
             </div>
-        <?php } ?>
+          </div>
+        </div>
+      <?php } ?>
 
-        <?php if (has_term(apply_filters('wpml_object_id', 60, 'product_tag'), 'product_tag', $p_id)) { ?>
-            <div class="sale-badge new-sale">
+      <?php if (has_term(apply_filters('wpml_object_id', 60, 'product_tag'), 'product_tag', $p_id)) { ?>
+        <div class="sale-badge new-sale">
 
-                <div class="сhat-bubbles-wrap">
-                    <div class="сhat-bubbles">
-                        <p>
-                            <?php esc_html_e('Новинки', 'yappo'); ?>
-                        </p>
-                    </div>
-                </div>
+          <div class="сhat-bubbles-wrap">
+            <div class="сhat-bubbles">
+              <p>
+                  <?php esc_html_e('Новинки', 'yappo'); ?>
+              </p>
             </div>
-        <?php } ?>
+          </div>
+        </div>
+      <?php } ?>
 
-        <?php if (has_term(apply_filters('wpml_object_id', 61, 'product_tag'), 'product_tag', $p_id)) { ?>
-            <div class="sale-badge discount-sale">
-                <div class="сhat-bubbles-wrap">
-                    <div class="сhat-bubbles">
-                        <p>
-                            <?php esc_html_e('Акція', 'yappo'); ?>
-                        </p>
-                    </div>
-                </div>
+      <?php if (has_term(apply_filters('wpml_object_id', 61, 'product_tag'), 'product_tag', $p_id)) { ?>
+        <div class="sale-badge discount-sale">
+          <div class="сhat-bubbles-wrap">
+            <div class="сhat-bubbles">
+              <p>
+                  <?php esc_html_e('Акція', 'yappo'); ?>
+              </p>
             </div>
-        <?php } ?>
+          </div>
+        </div>
+      <?php } ?>
 
-        <?php if (has_term(apply_filters('wpml_object_id', 59, 'product_tag'), 'product_tag', $p_id)) { ?>
-            <div class="sale-badge popular-sale">
-                <div class="сhat-bubbles-wrap">
-                    <div class="сhat-bubbles">
-                        <p>
-                            <?php esc_html_e('Популярне', 'yappo'); ?>
-                        </p>
-                    </div>
-                </div>
+      <?php if (has_term(apply_filters('wpml_object_id', 59, 'product_tag'), 'product_tag', $p_id)) { ?>
+        <div class="sale-badge popular-sale">
+          <div class="сhat-bubbles-wrap">
+            <div class="сhat-bubbles">
+              <p>
+                  <?php esc_html_e('Популярне', 'yappo'); ?>
+              </p>
             </div>
-        <?php } ?>
-    </div>
+          </div>
+        </div>
+      <?php } ?>
+  </div>
     <?php
 }
 
@@ -334,12 +335,12 @@ add_filter('woocommerce_enqueue_styles', '__return_empty_array');
 remove_action('woocommerce_after_shop_loop', 'woocommerce_pagination');
 add_action('woocommerce_after_shop_loop', function () {
     ?>
-    <div class="row justify-content-center">
-        <div class="col-xxl-1 col-lg-2 col-md-3 col-5">
-            <?php
-            bootstrap_pagination(); ?>
-        </div>
+  <div class="row justify-content-center">
+    <div class="col-xxl-1 col-lg-2 col-md-3 col-5">
+        <?php
+        bootstrap_pagination(); ?>
     </div>
+  </div>
     <?php
 });
 

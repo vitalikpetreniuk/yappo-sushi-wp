@@ -138,6 +138,7 @@ jQuery(function ($) {
     $('.city-list a').on('click', function (e) {
         e.preventDefault();
         let cityid = $(this).data('id');
+        let cityAddress = $(this).data('address');
         setCookie('choosedcity', cityid);
         setCookie('choosedaddress', cityAddress);
         if ($(this).attr("href")) {
