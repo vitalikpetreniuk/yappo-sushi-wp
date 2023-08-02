@@ -445,8 +445,6 @@ if (@$block['data']['preview_image_help']) : ?>
             $loop = new WP_Query($args);
             woocommerce_product_loop_start();
 
-            var_dump($args);
-
             ?>
             <?php if (isset($loop) && $loop->have_posts()) {
                 $i = 0;
@@ -465,8 +463,11 @@ if (@$block['data']['preview_image_help']) : ?>
                     <?php wc_get_template_part('content', 'product'); ?>
                     <?php
                 }
+            } else {
+                ?>
+                <?php esc_html_e('Постів не знайдено', 'yappo'); ?>
+                <?php
             }
-            //				var_dump($loop->request);
             ?>
             <script>
                 // Measure product views / impressions

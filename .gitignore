@@ -6,3 +6,4 @@ wordpress/wp-content/uploads/logs/
 .idea/
 .DS_Store
 _src/.DS_Store
+*.log

@@ -310,3 +310,32 @@ Stack trace:
 #18 D:\OpenServer\domains\yappo.local\wordpress\index.php(17): require('D:\\OpenServer\\d...')
 #19 {main}
   thrown - File: D:\OpenServer\domains\yappo.local\wordpress\wp-content\themes\yappo\inc\shop-functions.php Line: 725 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-08-02 09:43:18] Uncaught TypeError: WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository::createFromQueryResult(): Argument #1 ($data) must be of type array, null given, called in D:\OpenServer\domains\yappo.local\wordpress\wp-content\plugins\sitepress-multilingual-cms\vendor\wpml\core-api\core\BackgroundTask\Repository\BackgroundTaskRepository.php on line 29 and defined in D:\OpenServer\domains\yappo.local\wordpress\wp-content\plugins\sitepress-multilingual-cms\vendor\wpml\core-api\core\BackgroundTask\Repository\BackgroundTaskRepository.php:101
+Stack trace:
+#0 D:\OpenServer\domains\yappo.local\wordpress\wp-content\plugins\sitepress-multilingual-cms\vendor\wpml\core-api\core\BackgroundTask\Repository\BackgroundTaskRepository.php(29): WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository->createFromQueryResult()
+#1 D:\OpenServer\domains\yappo.local\wordpress\wp-content\plugins\sitepress-multilingual-cms\vendor\wpml\core-api\core\BackgroundTask\Service\BackgroundTaskService.php(54): WPML\Core\BackgroundTask\Repository\BackgroundTaskRepository->getByTaskId()
+#2 D:\OpenServer\domains\yappo.local\wordpress\wp-content\plugins\sitepress-multilingual-cms\classes\background-task\AbstractTaskEndpoint.php(62): WPML\Core\BackgroundTask\Service\BackgroundTaskService->startByTaskId()
+#3 [internal function]: WPML\BackgroundTask\AbstractTaskEndpoint->run()
+#4 D:\OpenServer\domains\yappo.local\wordpress\wp-content\plugins\sitepress-multilingual-cms\vendor\otgs\auryn\lib\Executable.php(42): ReflectionMethod->invokeArgs()
+#5 [internal function]: WPML\Auryn\Executable->__invoke()
+#6 D:\OpenServer\domains\yappo.local\wordpress\wp-content\plugins\sitepress-multilingual-cms\vendor\otgs\auryn\lib\Injector.php(641): call_user_func_array()
+#7 D:\OpenServer\domains\yappo.local\wordpress\wp-content\plugins\sitepress-multilingual-cms\classes\container\class-wpml-container.php(110): WPML\Auryn\Injector->execute()
+#8 [internal function]: WPML\Container\Container::execute()
+#9 D:\OpenServer\domains\yappo.local\wordpress\wp-content\plugins\sitepress-multilingual-cms\vendor\wpml\fp\core\functions.php(154): call_user_func_array()
+#10 D:\OpenServer\domains\yappo.local\wordpress\wp-content\plugins\sitepress-multilingual-cms\vendor\wpml\fp\core\Maybe.php(106): WPML\FP\{closure}()
+#11 D:\OpenServer\domains\yappo.local\wordpress\wp-content\plugins\sitepress-multilingual-cms\classes\ajax\Factory.php(38): WPML\FP\Just->map()
+#12 D:\OpenServer\domains\yappo.local\wordpress\wp-content\plugins\sitepress-multilingual-cms\vendor\wpml\fp\core\Either.php(207): WPML\Ajax\Factory->WPML\Ajax\{closure}()
+#13 D:\OpenServer\domains\yappo.local\wordpress\wp-content\plugins\sitepress-multilingual-cms\vendor\wpml\fp\core\Either.php(257): WPML\FP\Right->map()
+#14 D:\OpenServer\domains\yappo.local\wordpress\wp-content\plugins\sitepress-multilingual-cms\vendor\wpml\fp\core\Promise.php(24): WPML\FP\Right->chain()
+#15 D:\OpenServer\domains\yappo.local\wordpress\wp-content\plugins\sitepress-multilingual-cms\vendor\wpml\fp\core\Promise.php(30): WPML\FP\Promise->resolve()
+#16 D:\OpenServer\domains\yappo.local\wordpress\wp-content\plugins\sitepress-multilingual-cms\vendor\wpml\fp\core\Promise.php(30): WPML\FP\Promise->resolve()
+#17 D:\OpenServer\domains\yappo.local\wordpress\wp-content\plugins\sitepress-multilingual-cms\vendor\wpml\fp\core\Promise.php(30): WPML\FP\Promise->resolve()
+#18 D:\OpenServer\domains\yappo.local\wordpress\wp-content\plugins\sitepress-multilingual-cms\vendor\wpml\fp\core\Promise.php(30): WPML\FP\Promise->resolve()
+#19 D:\OpenServer\domains\yappo.local\wordpress\wp-content\plugins\sitepress-multilingual-cms\vendor\wpml\fp\core\Promise.php(30): WPML\FP\Promise->resolve()
+#20 D:\OpenServer\domains\yappo.local\wordpress\wp-content\plugins\sitepress-multilingual-cms\vendor\wpml\wp\classes\Hooks.php(50): WPML\FP\Promise->resolve()
+#21 D:\OpenServer\domains\yappo.local\wordpress\wp-includes\class-wp-hook.php(308): WPML\LIB\WP\Hooks::WPML\LIB\WP\{closure}()
+#22 D:\OpenServer\domains\yappo.local\wordpress\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters()
+#23 D:\OpenServer\domains\yappo.local\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action()
+#24 D:\OpenServer\domains\yappo.local\wordpress\wp-admin\admin-ajax.php(188): do_action()
+#25 {main}
+  thrown - File: D:\OpenServer\domains\yappo.local\wordpress\wp-content\plugins\sitepress-multilingual-cms\vendor\wpml\core-api\core\BackgroundTask\Repository\BackgroundTaskRepository.php Line: 101 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
