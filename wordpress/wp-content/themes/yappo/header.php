@@ -72,6 +72,7 @@
 
 
 
+
   </script>
   <noscript><img height="1" width="1" style="display:none"
                  src="https://www.facebook.com/tr?id=488055693044741&ev=PageView&noscript=1"
@@ -124,7 +125,7 @@
               </h6>
 
               <div>
-                <ul>
+                <ul itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
                     <?php
                     $cities = getCities();
                     $cityLink = '';
@@ -143,8 +144,10 @@
                                 <a href="<?= $cityLink ?>"
                                    data-id="<?= $city->slug ?>"
                                    data-address="<?= $item['item']['name'] ?>">
-                                    <?php the_field('city', $city) ?>
-                                  <span class="adress"><?= $item['item']['name'] ?></span>
+                                    <div  itemprop="addressLocality">>
+                                        <?php the_field('city', $city) ?>
+                                    </div>
+                                  <span class="adress" itemprop="streetAddress"><?= $item['item']['name'] ?></span>
                                 </a>
                               </li>
                             <?php }
@@ -165,12 +168,15 @@
 
   <div class="header-center">
     <div class="container-fluid">
-      <div class="row justify-content-between align-items-center align-items-md-end">
+      <div class="row justify-content-between align-items-center align-items-md-end" itemscope
+           itemtype="http://schema.org/Organization">
 
         <div class="col-lg-2 col-md-4 col-6 pe-0 pe-md-3 me-lg-5 me-md-0">
           <div class="logo">
-            <a href="<?= rtrim(home_url(), '/') ?>/<?= yappo_get_chosen_city_slug() ?>">
-                <?= wp_get_attachment_image(get_field('logo', 'option'), 'full') ?>
+            <a href="<?= rtrim(home_url(), '/') ?>/<?= yappo_get_chosen_city_slug() ?>" itemprop="url">
+              <div itemprop="name">
+                  <?= wp_get_attachment_image(get_field('logo', 'option'), 'full') ?>
+              </div>
             </a>
           </div>
         </div>
@@ -186,13 +192,13 @@
                        src="<?= get_theme_file_uri('assets/img/clock.svg') ?>" alt="clock">
                 </div>
 
-                <div>
+                <div itemscope itemtype="http://schema.org/LocalBusiness">
 										<span>
 											<?php the_field('working_days', 'option'); ?>
 										</span>
-                  <p>
+                  <time itemprop="openingHours" datetime="<?php the_field('working_hours', 'option') ?>">
                       <?php the_field('working_hours', 'option') ?>
-                  </p>
+                  </time>
                 </div>
               </div>
 
@@ -379,9 +385,11 @@
                   ?>
 
                 <li>
-                  <a class="link-category <?php if (get_queried_object_slug()->post_name === $term->slug) {
-                      echo 'link-category-active';
-                  } ?>" href="<?= rtrim(home_url(), '/') ?>/<?= yappo_get_chosen_city_slug() ?>/<?= $term->slug ?>">
+                  <a class="link-category
+<?php //if (get_queried_object_slug()->post_name === $term->slug) {
+                  //                      echo 'link-category-active';
+                  //                  } ?>
+" href="<?= rtrim(home_url(), '/') ?>/<?= yappo_get_chosen_city_slug() ?>/<?= $term->slug ?>">
 
                     <div class="cotegory_img">
                         <?php if (get_field('image', $term)) : ?>

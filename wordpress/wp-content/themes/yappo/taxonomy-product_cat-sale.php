@@ -52,7 +52,7 @@ do_action( 'woocommerce_archive_description' );
 					?>
 					<div class="col-xxl-5 col-lg-6  col-11 px-xxl-5 px-lg-4">
 						<div class="banner-slider__slide swiper-slide slide-<?= $i ?>">
-							<a href="work <?= $link ?>">
+							<a href="<?= $link ?>">
 								<img src="<?= wp_get_attachment_image_url( $thumbnail_id, 'full' ) ?>"
 								     alt="<?= $subcategory->name ?>">
 							</a>

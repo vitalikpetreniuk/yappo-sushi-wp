@@ -1694,6 +1694,10 @@ p {
   font-weight: 300;
 }
 
+.time-wrap time {
+  display: block;
+}
+
 .categories-business-lunch .section__title {
   margin: 0;
 }

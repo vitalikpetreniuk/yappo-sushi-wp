@@ -444,9 +444,6 @@ if (@$block['data']['preview_image_help']) : ?>
             <?php
             $loop = new WP_Query($args);
             woocommerce_product_loop_start();
-
-            var_dump($args);
-
             ?>
             <?php if (isset($loop) && $loop->have_posts()) {
                 $i = 0;
