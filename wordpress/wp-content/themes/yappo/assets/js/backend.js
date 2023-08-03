@@ -115,7 +115,7 @@ jQuery(function ($) {
     })
 
     if (!getCookie('choosedcity')) {
-        $('.modal-city-wrap').removeClass('modal-city-wrap-none');
+        // $('.modal-city-wrap').removeClass('modal-city-wrap-none');
     }
 
     $('body').on('update_checkout', function () {
