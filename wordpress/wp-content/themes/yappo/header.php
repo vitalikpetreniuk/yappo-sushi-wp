@@ -456,9 +456,8 @@
                         ?>
                       <li>
                         <a href="<?php the_field('link', $city) ?>" data-id="<?= $city->slug ?>">
-                            <?php the_field('city', $city) ?>
-                          <span class="adress">
-													  <?php the_field('adress', $city); ?>
+                            <?php the_field('city', $city) ?> <span class="adress">
+													<?php the_field('adress', $city); ?>
 												 </span>
                         </a>
                       </li>
