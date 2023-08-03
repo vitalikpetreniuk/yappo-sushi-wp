@@ -1,0 +1,64 @@
+.added-success{
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 706px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $text-white;
+    box-shadow: 0px 4px 15px 0px rgba($color: #000, $alpha: .05);
+    
+    border-radius: 40px;
+    padding: 16px 20px 16px 35px;
+    opacity: 0;
+    z-index: -100;
+    display: none;
+
+    @include media-for (null, $tablet){  
+        width: 90%;
+    }
+
+    @include media-for (null, $sm){  
+       flex-direction: column;
+       justify-content: center;
+       padding: 1rem;
+       bottom: 20px;
+    }
+
+    p{
+        margin: 0;
+        color: $text-black;
+        font-weight: 300;
+        font-size: 20px;
+
+        @include media-for (null, $sm){  
+            text-align: center;
+            margin-bottom: 1rem;
+            font-size: 16px;
+        }
+
+        span{
+            color: $accent;
+            font-weight: 700;
+        }
+    }
+
+    .orange-btn{
+        margin: 0;
+        width: 280px;
+        padding: 14px 0;
+
+        @include media-for (null, $tablet){  
+            width: 250px;
+        }
+    }
+}
+
+.added-success-active{
+    opacity: 1;
+    z-index: 100;
+    display: flex;
+}

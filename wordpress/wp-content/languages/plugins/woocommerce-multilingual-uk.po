@@ -1,0 +1,1618 @@
+# Translation of Plugins - WooCommerce Multilingual &amp; Multicurrency with WPML - Stable (latest release) in Ukrainian
+# This file is distributed under the same license as the Plugins - WooCommerce Multilingual &amp; Multicurrency with WPML - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2022-09-17 09:48:30+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.0.0-alpha.4\n"
+"Language: uk_UA\n"
+"Project-Id-Version: Plugins - WooCommerce Multilingual &amp; Multicurrency with WPML - Stable (latest release)\n"
+
+#: addons/wpml-dependencies/lib/inc/icl-admin-notifier.php:652
+#: addons/wpml-dependencies/lib/inc/icl-admin-notifier.php:703
+msgid "Done"
+msgstr "Готово"
+
+#: classes/Multicurrency/UI/Hooks.php:251 classes/PaymentGateways/Hooks.php:90
+msgid "Specific countries"
+msgstr "Конкретні країни"
+
+#: classes/Multicurrency/Shipping/ShippingClasses.php:76
+#: classes/Multicurrency/Shipping/ShippingClasses.php:87
+msgid "N/A"
+msgstr "Невідомо"
+
+#: classes/Multicurrency/UI/Hooks.php:263
+#: compatibility/WcProductAddons/MulticurrencyHooks.php:304
+msgid "Apply"
+msgstr "Застосувати"
+
+#: inc/template-classes/status/class-wcml-status-media-ui.php:26
+msgid "Media"
+msgstr "Медіафайли"
+
+#: inc/class-wcml-install.php:359
+msgid "Uncategorized"
+msgstr "Без категорії"
+
+#: inc/template-classes/multi-currency/class-wcml-multi-currency-ui.php:117
+msgid "Additional CSS"
+msgstr "Додатковий код CSS"
+
+#: inc/template-classes/currency-switcher/class-wcml-currency-switcher-options-dialog.php:44
+msgid "Border"
+msgstr "Межа"
+
+#: inc/template-classes/currency-switcher/class-wcml-currency-switcher-options-dialog.php:40
+msgid "Blue"
+msgstr "Блакитний"
+
+#: inc/template-classes/currency-switcher/class-wcml-currency-switcher-options-dialog.php:34
+msgid "Gray"
+msgstr "Сірий"
+
+#: inc/template-classes/currency-switcher/class-wcml-currency-switcher-options-dialog.php:37
+msgid "White"
+msgstr "Білий"
+
+#: inc/template-classes/multi-currency/class-wcml-multi-currency-ui.php:123
+msgid "Action"
+msgstr "Дія"
+
+#: inc/template-classes/currency-switcher/class-wcml-currency-switcher-options-dialog.php:67
+msgid "Normal"
+msgstr "Звичайний"
+
+#: inc/template-classes/multi-currency/class-wcml-multi-currency-ui.php:122
+msgid "Actions"
+msgstr "Дії"
+
+#: inc/template-classes/multi-currency/class-wcml-multi-currency-ui.php:121
+msgid "Position"
+msgstr "Позиція"
+
+#: inc/template-classes/currency-switcher/class-wcml-currency-switcher-options-dialog.php:77
+#: inc/template-classes/multi-currency/class-wcml-multi-currency-ui.php:120
+msgid "Preview"
+msgstr "Переглянути"
+
+#: inc/template-classes/currency-switcher/class-wcml-currency-switcher-options-dialog.php:54
+msgid "Custom"
+msgstr "Довільний"
+
+#: inc/template-classes/class-wcml-troubleshooting-ui.php:59
+msgid "Done!"
+msgstr "Готово!"
+
+#: addons/wpml-dependencies/lib/classes/notices/class-wpml-notice-render.php:183
+#: addons/wpml-dependencies/lib/inc/icl-admin-notifier.php:486
+msgid "Dismiss this notice."
+msgstr "Ігнорувати це повідомлення."
+
+#. translators: %s is a date and time
+#: inc/template-classes/multi-currency/class-wcml-exchange-rates-ui.php:61
+msgid "Last updated: %s"
+msgstr "Останнє оновлення: %s"
+
+#: inc/class-wcml-requests.php:63
+#: inc/currencies/class-wcml-multi-currency-configuration.php:95
+msgid "Your settings have been saved."
+msgstr "Ваші налаштування збережено."
+
+#: inc/class-wcml-cart.php:199
+msgid "Proceed"
+msgstr "Продовжити"
+
+#. translators: %s is a slug
+#: inc/template-classes/store-urls/class-wcml-store-urls-ui.php:84
+msgid "Attribute slug: %s"
+msgstr "Короткий заголовок атрибута: %s"
+
+#: inc/template-classes/status/class-wcml-status-products-ui.php:39
+msgid "Right now, there are no products needing translation."
+msgstr "Зараз немає товарів, які потрібно перекласти."
+
+#: inc/template-classes/status/class-wcml-status-products-ui.php:38
+msgid "Translate Products"
+msgstr "Перекласти товари"
+
+#: inc/template-classes/status/class-wcml-status-products-ui.php:33
+msgid "Products Missing Translations"
+msgstr "Товари без перекладу"
+
+#: inc/template-classes/status/class-wcml-status-multi-currencies-ui.php:41
+msgid "Add Currencies"
+msgstr "Додати грошові одиниці"
+
+#: inc/template-classes/status/class-wcml-status-multi-currencies-ui.php:40
+msgid "Multi-currency is not enabled."
+msgstr "Режим кількох грошових одиниць не ввімкнуто."
+
+#. translators: %s is a list of currency codes
+#: inc/template-classes/status/class-wcml-status-multi-currencies-ui.php:39
+msgid "Secondary currencies: %s"
+msgstr "Додаткові грошові одиниці: %s"
+
+#: inc/template-classes/setup/class-wcml-setup-ready-ui.php:43
+msgid "Close setup"
+msgstr "Закрити програму встановлення"
+
+#: inc/template-classes/setup/class-wcml-setup-ready-ui.php:38
+msgid "Setup Complete"
+msgstr "Установлення завершено"
+
+#: inc/template-classes/setup/class-wcml-setup-introduction-ui.php:34
+msgid "I'll do the setup later"
+msgstr "Я виконаю встановлення пізніше"
+
+#: inc/template-classes/setup/class-wcml-setup-introduction-ui.php:33
+msgid "Let's continue"
+msgstr "Продовжмо"
+
+#: inc/template-classes/setup/class-wcml-setup-introduction-ui.php:28
+msgid "Choose if you need multiple currencies"
+msgstr "Вибрати кілька грошових одиниць за необхідності"
+
+#: inc/template-classes/setup/class-wcml-setup-introduction-ui.php:27
+msgid "Choose which attributes to make translatable"
+msgstr "Вибрати атрибути на переклад"
+
+#: inc/template-classes/setup/class-wcml-setup-introduction-ui.php:26
+msgid "Translate the 'store' pages"
+msgstr "Перекласти сторінки «store»"
+
+#: inc/template-classes/setup/class-wcml-setup-introduction-ui.php:25
+msgid "We'll help you:"
+msgstr "Ми допоможемо вам:"
+
+#: inc/template-classes/setup/class-wcml-setup-introduction-ui.php:21
+msgid "Let's turn your WooCommerce shop multilingual"
+msgstr "Зробімо ваш магазин WooCommerce багатомовним"
+
+#: inc/template-classes/currency-switcher/class-wcml-currency-switcher-options-dialog.php:55
+msgid "Allowed HTML tags: <img> <span> <u> <strong> <em>"
+msgstr "Дозволені HTML-теги: <img> <span> <u> <strong> <em>"
+
+#: classes/Multicurrency/UI/Hooks.php:199
+msgid "Currencies to display for each language"
+msgstr "Грошові одиниці, що відображатимуться кожною мовою"
+
+#: classes/Multicurrency/UI/Hooks.php:237
+#: inc/template-classes/multi-currency/class-wcml-custom-currency-options.php:110
+msgid "For 1454.07, when the increment for the nearest integer is 100 and the auto-subtract amount is 1, the resulting amount is 1499."
+msgstr "У разі 1454,07 за умови 100 як доданої величини до найближчого цілого числа та 1 як суми, що віднімається автоматично, кінцева ціна дорівнюватиме 1499."
+
+#: classes/Multicurrency/UI/Hooks.php:236
+#: inc/template-classes/multi-currency/class-wcml-custom-currency-options.php:109
+msgid "The value to be subtracted from the amount obtained previously."
+msgstr "Значення, що буде віднято від раніше отриманої суми."
+
+#: classes/Multicurrency/UI/Hooks.php:233
+#: inc/template-classes/multi-currency/class-wcml-custom-currency-options.php:108
+msgid "1454.07 &raquo; 1500 when set to 100"
+msgstr "1454,07 &raquo; 1500, якщо задано 100"
+
+#: classes/Multicurrency/UI/Hooks.php:232
+#: inc/template-classes/multi-currency/class-wcml-custom-currency-options.php:107
+msgid "1454.07 &raquo; 1450 when set to 10"
+msgstr "1454,07 &raquo; 1450, якщо задано 10"
+
+#: classes/Multicurrency/UI/Hooks.php:231
+#: inc/template-classes/multi-currency/class-wcml-custom-currency-options.php:106
+msgid "1454.07 &raquo; 1454 when set to 1"
+msgstr "1454,07 &raquo; 1454, якщо задано 1"
+
+#. translators: %s is an HTML break line
+#: classes/Multicurrency/UI/Hooks.php:230
+#: inc/template-classes/multi-currency/class-wcml-custom-currency-options.php:105
+msgid "The resulting price will be an increment of this value after initial rounding.%se.g.:"
+msgstr "Кінцева ціна буде збільшенням цього значення після першого округлення. %sНапр.:"
+
+#. translators: %s is an HTML break line
+#: classes/Multicurrency/UI/Hooks.php:235
+#: inc/template-classes/multi-currency/class-wcml-custom-currency-options.php:104
+msgid "Round the converted price to the closest integer. %se.g. 15.78 becomes 16.00"
+msgstr "Округлити конвертовані ціни до найближчого цілого числа. %sНапр., 15,78 стає 16,00"
+
+#: inc/template-classes/class-wcml-menus-wrap.php:125
+msgid "Custom Taxonomies"
+msgstr "Користувацькі класифікації"
+
+#: inc/template-classes/class-wcml-custom-taxonomy-translation-ui.php:98
+msgid "Select the taxonomy to translate: "
+msgstr "Вибрати класифікацію на переклад:"
+
+#: inc/template-classes/class-wcml-custom-taxonomy-translation-ui.php:97
+msgid "There are no translatable product custom taxonomies defined"
+msgstr "Користувацькі класифікації товару на переклад не визначено"
+
+#: inc/template-classes/class-wcml-custom-taxonomy-translation-ui.php:72
+msgid "--Taxonomy--"
+msgstr "--Класифікація--"
+
+#: inc/template-classes/class-wcml-attribute-translation-ui.php:52
+msgid "--Attribute--"
+msgstr "--Атрибут--"
+
+#: inc/class-wcml-url-translation.php:765
+msgid "Attribute Slug"
+msgstr "Короткий заголовок атрибута"
+
+#: inc/class-wcml-languages-upgrader.php:248
+msgid "Downloading translations... Please don't close this page."
+msgstr "Завантаження перекладів... Не закривайте цю сторінку."
+
+#: inc/template-classes/setup/class-wcml-setup-notice.php:22
+msgid "Skip"
+msgstr "Пропустити"
+
+#: inc/template-classes/setup/class-wcml-setup-notice.php:21
+msgid "Start the Setup Wizard"
+msgstr "Запустити майстер налаштування"
+
+#: inc/template-classes/setup/class-wcml-setup-notice.php:20
+msgid "Choosing if you need multiple currencies"
+msgstr "Вибір кількох грошових одиниць за необхідності"
+
+#: inc/template-classes/setup/class-wcml-setup-notice.php:19
+msgid "Choosing which attributes to make translatable"
+msgstr "Вибір атрибутів на переклад"
+
+#: inc/template-classes/setup/class-wcml-setup-notice.php:18
+msgid "Translating the 'store' pages"
+msgstr "Переклад сторінок «store»"
+
+#: inc/admin-menus/class-wcml-admin-menus.php:383
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#: classes/pointers/class-wcml-pointers.php:42
+msgid "Translate WooCommerce products"
+msgstr "Перекласти товари WooCommerce"
+
+#: classes/pointers/class-wcml-pointers.php:50
+msgid "Translate shipping classes"
+msgstr "Перекласти варіанти доставки"
+
+#: classes/pointers/class-wcml-pointers.php:77
+msgid "Translate endpoints"
+msgstr "Перекласти кінцеві точки"
+
+#: inc/template-classes/setup/class-wcml-setup-notice.php:16
+msgid "Prepare your WooCommerce store to run multilingual!"
+msgstr "Підготуйте свій магазин WooCommerce до роботи в багатомовному середовищі!"
+
+#: inc/template-classes/setup/class-wcml-setup-notice.php:17
+msgid "We need to help you with a few steps to turn your WooCommerce store multilingual. These steps include:"
+msgstr "Ми допоможемо виконати кілька кроків, щоб ваш магазин WooCommerce став багатомовним. Зокрема, це:"
+
+#: inc/currencies/currency-switcher/class-wcml-currency-switcher.php:142
+#: inc/template-classes/multi-currency/class-wcml-exchange-rates-ui.php:38
+#: inc/template-classes/status/class-wcml-status-multi-currencies-ui.php:37
+msgid "You haven't added any secondary currencies."
+msgstr "Не додано жодної додаткової грошової одиниці."
+
+#: compatibility/WcCompositeProducts/class-wcml-composite-products.php:176
+msgid "Composite Products ( Components )"
+msgstr "Об'єднані товари (компоненти)"
+
+#: compatibility/WcCompositeProducts/class-wcml-composite-products.php:200
+msgid "Composite Products ( Scenarios )"
+msgstr "Об'єднані товари (сценарії)"
+
+#: inc/translation-editor/class-wcml-editor-ui-product-job.php:292
+msgid "Button text"
+msgstr "Текст кнопки"
+
+#: inc/translation-editor/class-wcml-editor-ui-product-job.php:290
+msgid "External Product"
+msgstr "Зовнішній товар"
+
+#: inc/translation-editor/class-wcml-editor-ui-product-job.php:291
+msgid "Product url"
+msgstr "URL-адреса товару"
+
+#. translators: %d is a number of items
+#: inc/template-classes/class-wcml-products-ui.php:115
+msgid "%d items"
+msgstr "Елементів: %d"
+
+#. translators: %s is a plugin name
+#: inc/template-classes/status/class-wcml-status-media-ui.php:33
+#: inc/template-classes/status/class-wcml-status-status-ui.php:30
+msgid "%s is installed and active."
+msgstr "%s установлено й активовано."
+
+#: inc/template-classes/store-urls/class-wcml-store-urls-ui.php:73
+msgid "Account settings"
+msgstr "Налаштування облікового запису"
+
+#: inc/template-classes/setup/class-wcml-setup-store-pages-ui.php:56
+msgid "All store pages must be translated in the languages configured on the site."
+msgstr "Усі сторінки магазину слід перекласти мовами, встановленими на сайті."
+
+#: inc/template-classes/class-wcml-products-ui.php:85
+msgid "All translation statuses"
+msgstr "Стан усіх перекладів"
+
+#: inc/template-classes/class-wcml-menus-wrap.php:132
+msgid "Attributes"
+msgstr "Атрибути"
+
+#: inc/template-classes/class-wcml-menus-wrap.php:108
+#: inc/template-classes/class-wcml-products-ui.php:47
+msgid "Categories"
+msgstr "Категорії"
+
+#: inc/template-classes/status/class-wcml-status-config-warnings-ui.php:53
+msgid "Change default language"
+msgstr "Змінити мову за промовчанням"
+
+#: inc/template-classes/setup/class-wcml-setup-attributes-ui.php:45
+#: inc/template-classes/setup/class-wcml-setup-multi-currency-ui.php:30
+#: inc/template-classes/setup/class-wcml-setup-store-pages-ui.php:57
+#: inc/template-classes/setup/class-wcml-setup-translation-options-ui.php:53
+msgid "Continue"
+msgstr "Продовжити"
+
+#: classes/Multicurrency/UI/Hooks.php:189
+#: inc/template-classes/multi-currency/class-wcml-multi-currency-ui.php:66
+msgid "Currencies"
+msgstr "Грошові одиниці"
+
+#: inc/template-classes/class-wcml-products-ui.php:119
+msgid "Current page"
+msgstr "Поточна сторінка"
+
+#: inc/translation-editor/class-wcml-editor-ui-product-job.php:186
+msgid "Custom Fields"
+msgstr "Користувацькі поля"
+
+#: inc/translation-editor/class-wcml-editor-ui-product-job.php:166
+msgid "Custom Product attributes"
+msgstr "Атрибути продукту"
+
+#: inc/template-classes/class-wcml-products-ui.php:46
+msgid "Date"
+msgstr "Дата"
+
+#: classes/Multicurrency/UI/Hooks.php:226
+#: inc/template-classes/multi-currency/class-wcml-custom-currency-options.php:100
+msgid "Down"
+msgstr "Вниз"
+
+#: inc/translation-editor/class-wcml-editor-ui-product-job.php:263
+msgid "Download Files"
+msgstr "Завантажити файли"
+
+#. translators: %s is a product ID
+#: inc/translation-editor/class-wcml-editor-ui-product-job.php:261
+msgid "Download Files for Variation #%s"
+msgstr "Завантажити файли для різновиду #%s"
+
+#: inc/template-classes/class-wcml-products-ui.php:49
+msgid "Draft"
+msgstr "Чернетка"
+
+#: inc/template-classes/class-wcml-products-ui.php:55
+msgid "Edit this item"
+msgstr "Редагувати цей елемент"
+
+#: inc/template-classes/multi-currency/class-wcml-multi-currency-ui.php:65
+msgid "Enable/disable"
+msgstr "Увімкнути/вимкнути"
+
+#: inc/template-classes/class-wcml-not-translatable-attributes.php:33
+msgid "Existing translations and variations associated will be deleted."
+msgstr "Наявні пов'язані переклади та різновиди буде видалено."
+
+#: inc/template-classes/class-wcml-products-ui.php:91
+msgid "Filter"
+msgstr "Фільтр"
+
+#: inc/template-classes/multi-currency/class-wcml-custom-prices-ui.php:80
+msgid "From&hellip;"
+msgstr "Від&hellip;"
+
+#: inc/template-classes/class-wcml-settings-ui.php:64
+msgid ""
+"If you are using downloadable products, you can choose to have their paths\n"
+"                                            synchronized, or seperate for each language."
+msgstr ""
+"Під час використання товарів, що завантажуються, можна задати синхронізацію\n"
+" їх шляхів або вказати їх окремо залежно від мови."
+
+#: inc/template-classes/class-wcml-products-ui.php:44
+msgid "Image"
+msgstr "Зображення"
+
+#: inc/template-classes/setup/class-wcml-setup-store-pages-ui.php:36
+msgid "Install missing WooCommerce pages and create translations."
+msgstr "Установіть відсутні сторінки WooCommerce та створіть їхні переклади."
+
+#: inc/template-classes/setup/class-wcml-setup-attributes-ui.php:46
+#: inc/template-classes/setup/class-wcml-setup-multi-currency-ui.php:31
+msgid "Later"
+msgstr "Пізніше"
+
+#: inc/template-classes/status/class-wcml-status-config-warnings-ui.php:58
+msgid "Multilingual Content Setup"
+msgstr "Налаштування багатомовного вмісту"
+
+#: inc/template-classes/class-wcml-settings-ui.php:148
+msgid "Native WooCommerce product editing screen"
+msgstr "Власний екран редагування товарів WooCommerce"
+
+#: inc/template-classes/setup/class-wcml-setup-store-pages-ui.php:32
+msgid "One or more WooCommerce pages have not been created"
+msgstr "Не було створено однієї або кількох сторінок WooCommerce"
+
+#: inc/template-classes/store-urls/class-wcml-store-urls-ui.php:75
+msgid "Original Slug"
+msgstr "Вихідний короткий заголовок"
+
+#: inc/template-classes/store-urls/class-wcml-store-urls-edit-base-ui.php:70
+msgid "Product Shop Base"
+msgstr "База магазину товарів"
+
+#: inc/template-classes/store-urls/class-wcml-store-urls-ui.php:77
+msgid "Product base"
+msgstr "База товарів"
+
+#: inc/template-classes/class-wcml-settings-ui.php:63
+msgid "Products Download Files"
+msgstr "Завантажувані файли товарів"
+
+#: inc/template-classes/class-wcml-products-ui.php:60
+msgid "Published"
+msgstr "Опубліковано"
+
+#: inc/translation-editor/class-wcml-editor-ui-product-job.php:145
+msgid "Purchase note"
+msgstr "Примітка до покупки"
+
+#: inc/template-classes/class-wcml-settings-ui.php:120
+#: inc/template-classes/multi-currency/class-wcml-multi-currency-ui.php:106
+msgid "Save changes"
+msgstr "Зберегти зміни"
+
+#: inc/template-classes/class-wcml-products-ui.php:52
+msgid "Scheduled"
+msgstr "Заплановано"
+
+#: classes/Multicurrency/UI/Hooks.php:204
+#: inc/template-classes/class-wcml-menus-wrap.php:146
+#: inc/template-classes/multi-currency/class-wcml-multi-currency-ui.php:68
+msgid "Settings"
+msgstr "Налаштування"
+
+#: inc/template-classes/class-wcml-menus-wrap.php:138
+msgid "Shipping Classes"
+msgstr "Варіанти доставки"
+
+#: inc/template-classes/store-urls/class-wcml-store-urls-ui.php:74
+msgid "Slug type"
+msgstr "Тип короткого заголовка"
+
+#: inc/template-classes/class-wcml-settings-ui.php:139
+msgid "The recommended way is using the WPML Translation Editor. It is streamlined for making the translation process much easier while also providing a much better integration with various WooCommerce extensions."
+msgstr "Радимо скористатися Редактором перекладів WPML. Він призначений для значного спрощення процесу перекладу та одночасно забезпечує набагато надійнішу інтеграцію з різними розширеннями WooCommerce."
+
+#: inc/template-classes/setup/class-wcml-setup-attributes-ui.php:44
+msgid "There are no attributes defined"
+msgstr "Атрибути не визначено"
+
+#: inc/template-classes/status/class-wcml-status-config-warnings-ui.php:54
+msgid "There are some settings that require careful attention."
+msgstr "Є налаштування, на які слід звернути увагу."
+
+#: inc/template-classes/status/class-wcml-status-config-warnings-ui.php:52
+msgid "This may cause problems with URLs in different languages."
+msgstr "Це може призвести до проблем з URL-адресами іншими мовами."
+
+#: inc/template-classes/store-urls/class-wcml-store-urls-ui.php:60
+msgid "This page allows you to translate all strings that are being used by WooCommerce in building different type of urls. Translating them enables you to have fully localized urls that match the language of the pages."
+msgstr "На цій сторінці можна перекладати всі рядки, які використовуються WooCommerce для створення іншого виду URL-адрес. Завдяки перекладу у вас будуть повністю локалізовані адреси відповідно до мови сторінок."
+
+#: inc/template-classes/setup/class-wcml-setup-multi-currency-ui.php:28
+msgid "This will allow you to set prices for products in different currencies. The prices can be determined based on a given exchange rate or set explicitly for specific products."
+msgstr "Завдяки цій функції можна задавати ціни на товари в різних грошових одиницях. Ціни можна визначати на підставі заданого обмінного курсу або явно задавати для конкретних товарів."
+
+#: inc/template-classes/multi-currency/class-wcml-custom-prices-ui.php:81
+msgid "To&hellip;"
+msgstr "Кому&hellip;"
+
+#: inc/template-classes/class-wcml-not-translatable-attributes.php:31
+msgid "Translatable?"
+msgstr "Перекладається?"
+
+#: inc/template-classes/setup/class-wcml-setup-store-pages-ui.php:55
+msgid "Translate Store Pages"
+msgstr "Перекладіть сторінки магазину"
+
+#: inc/template-classes/status/class-wcml-status-config-warnings-ui.php:50
+msgid "Translate URLs"
+msgstr "Перекласти URL-адреси"
+
+#: inc/template-classes/store-urls/class-wcml-store-urls-edit-base-ui.php:49
+msgid "Translation to"
+msgstr "Переклад"
+
+#: classes/Multicurrency/UI/Hooks.php:225
+#: inc/template-classes/multi-currency/class-wcml-custom-currency-options.php:99
+msgid "Up"
+msgstr "Вгору"
+
+#: inc/template-classes/class-wcml-custom-files-ui.php:37
+#: inc/template-classes/class-wcml-settings-ui.php:70
+msgid "Use the same files for translations"
+msgstr "Використовувати однакові файли для перекладів"
+
+#: inc/translation-editor/class-wcml-editor-ui-product-job.php:171
+msgid "Value(s)"
+msgstr "Значення"
+
+#: inc/translation-editor/class-wcml-editor-ui-product-job.php:235
+msgid "Variations data"
+msgstr "Дані різновидів"
+
+#. translators: %s is a product name
+#: inc/template-classes/class-wcml-products-ui.php:58
+msgid "View \"%s\""
+msgstr "Переглянути \"%s\""
+
+#: inc/template-classes/class-wcml-settings-ui.php:144
+msgid "WPML Translation Editor"
+msgstr "Редактор перекладів WPML"
+
+#. translators: %s is link to Multilingual Content Setup
+#: inc/template-classes/status/class-wcml-status-config-warnings-ui.php:57
+msgid "You should check WPML configuration files added by other plugins or manual settings on the %s section."
+msgstr "Потрібно перевірити файли конфігурації WPML, додані іншими плагінами, або ручні налаштування в розділі %s."
+
+#: inc/template-classes/status/class-wcml-status-config-warnings-ui.php:49
+msgid "Your product permalink base is not translated to:"
+msgstr "Базу постійних посилань товарів не перекладено такою мовою:"
+
+#: inc/template-classes/store-urls/class-wcml-store-urls-ui.php:72
+msgid "permalinks settings"
+msgstr "налаштування постійних посилань"
+
+#: inc/template-classes/class-wcml-menus-wrap.php:156
+msgid "Store URLs"
+msgstr "URL-адреси магазину"
+
+#: inc/template-classes/class-wcml-custom-files-ui.php:36
+msgid "Use custom settings for translations download files"
+msgstr "Використовувати користувацькі налаштування для файлів завантаження перекладів"
+
+#: inc/template-classes/setup/class-wcml-setup-multi-currency-ui.php:27
+msgid "Enable Multiple Currencies"
+msgstr "Увімкнути кілька грошових одиниць"
+
+#: inc/template-classes/setup/class-wcml-setup-attributes-ui.php:43
+msgid "Select Translatable Attributes"
+msgstr "Виберіть атрибути на переклад"
+
+#: inc/translation-editor/class-wcml-editor-ui-product-job.php:129
+msgid "Slug"
+msgstr "Частина посилання"
+
+#: inc/template-classes/class-wcml-menus-wrap.php:116
+msgid "Tags"
+msgstr "Позначки"
+
+#: inc/template-classes/class-wcml-menus-wrap.php:161
+msgid "Status"
+msgstr "Статус"
+
+#: inc/template-classes/class-wcml-products-ui.php:61
+msgid "Last Modified"
+msgstr "Остання зміна"
+
+#: inc/template-classes/class-wcml-products-ui.php:50
+msgid "Private"
+msgstr "Особисте"
+
+#: inc/translation-editor/class-wcml-editor-ui-product-job.php:652
+msgid "Content, title, and excerpt are empty."
+msgstr "Вміст, назва, та уривок порожні."
+
+#: inc/template-classes/store-urls/class-wcml-store-urls-edit-base-ui.php:48
+msgid "Original"
+msgstr "Оригінальний"
+
+#: inc/template-classes/store-urls/class-wcml-store-urls-ui.php:78
+msgid "Product category base"
+msgstr "База категорій товару"
+
+#: inc/template-classes/store-urls/class-wcml-store-urls-ui.php:79
+msgid "Product tag base"
+msgstr "База позначок товару"
+
+#: inc/template-classes/store-urls/class-wcml-store-urls-ui.php:80
+msgid "Product attribute base"
+msgstr "База атрибутів товару"
+
+#: inc/template-classes/class-wcml-products-ui.php:59
+msgid "View"
+msgstr "Перегляд"
+
+#: inc/translation-editor/class-wcml-editor-ui-product-job.php:270
+msgid "File URL"
+msgstr "URL файлу"
+
+#: classes/Multicurrency/UI/Hooks.php:192
+msgid "Rate"
+msgstr "Ставка"
+
+#: inc/template-classes/class-wcml-products-ui.php:118
+msgid "Select Page"
+msgstr "Виберіть сторінку"
+
+#: inc/template-classes/store-urls/class-wcml-store-urls-ui.php:76
+msgid "Shop page"
+msgstr "Сторінка Магазину"
+
+#: inc/template-classes/class-wcml-products-ui.php:84
+msgid "All categories"
+msgstr "Всі категорії"
+
+#: inc/template-classes/class-wcml-products-ui.php:51
+msgid "Pending"
+msgstr "Очікує перевірки"
+
+#: classes/Multicurrency/UI/Hooks.php:205
+msgid "Add new currency"
+msgstr "Додати нову грошову одиницю"
+
+#: inc/class-wcml-resources.php:198
+msgid "At least one of these fields is required: title, content or excerpt"
+msgstr "Слід заповнити хоча б одне з цих полів: назва, вміст або витяг"
+
+#: classes/Multicurrency/UI/Hooks.php:213
+#: inc/template-classes/multi-currency/class-wcml-custom-currency-options.php:76
+msgid "Currency Preview"
+msgstr "Перегляд грошової одиниці"
+
+#. translators: %s is a slug
+#: inc/class-wcml-url-translation.php:778
+#: inc/template-classes/store-urls/class-wcml-store-urls-ui.php:82
+msgid "Endpoint: %s"
+msgstr "Кінцева точка: %s"
+
+#: inc/template-classes/class-wcml-attribute-translation-ui.php:78
+#: inc/template-classes/class-wcml-custom-taxonomy-translation-ui.php:99
+#: inc/template-classes/class-wcml-menus-wrap.php:257
+msgid "Loading ..."
+msgstr "Завантаження..."
+
+#: inc/class-wcml-url-translation.php:760
+msgid "Product Attribute Base"
+msgstr "База атрибутів товарів"
+
+#: inc/class-wcml-url-translation.php:745
+msgid "Product Base"
+msgstr "База товарів"
+
+#: inc/class-wcml-url-translation.php:755
+msgid "Product Category Base"
+msgstr "База категорій товарів"
+
+#: inc/class-wcml-url-translation.php:750
+msgid "Product Tag Base"
+msgstr "База тегів товарів"
+
+#: classes/Multicurrency/UI/Hooks.php:208
+#: inc/template-classes/multi-currency/class-wcml-custom-currency-options.php:61
+msgid "Select currency"
+msgstr "Вибрати грошову одиницю"
+
+#: inc/template-classes/class-wcml-attribute-translation-ui.php:77
+msgid "Select the attribute to translate: "
+msgstr "Виберіть атрибут для перекладу:"
+
+#: inc/template-classes/class-wcml-attribute-translation-ui.php:76
+msgid "There are no translatable product attributes defined"
+msgstr "Атрибути товару на переклад не визначено"
+
+#: inc/class-wcml-resources.php:199
+msgid "This translation job will no longer be assigned to you. Other translators will be able take it and continue the translation."
+msgstr "Це замовлення на переклад більше не буде закріплене за вами. Інші перекладачі зможуть забрати його та продовжити переклад."
+
+#: inc/template-classes/store-urls/class-wcml-store-urls-translation-statuses-ui.php:57
+msgid "Update translation"
+msgstr "Оновити переклад"
+
+#: classes/Multicurrency/UI/Hooks.php:215
+#: inc/template-classes/multi-currency/class-wcml-custom-currency-options.php:81
+msgid "Left"
+msgstr "Ліворуч"
+
+#: classes/Multicurrency/UI/Hooks.php:216
+#: inc/template-classes/multi-currency/class-wcml-custom-currency-options.php:82
+msgid "Right"
+msgstr "Праворуч"
+
+#: classes/Multicurrency/UI/Hooks.php:217
+#: inc/template-classes/multi-currency/class-wcml-custom-currency-options.php:83
+msgid "Left with space"
+msgstr "Зліва з пробілом"
+
+#: classes/Multicurrency/UI/Hooks.php:218
+#: inc/template-classes/multi-currency/class-wcml-custom-currency-options.php:84
+msgid "Right with space"
+msgstr "Праворуч з пробілом"
+
+#: classes/wcml-setup/class-wcml-setup.php:55
+msgid "Global Attributes"
+msgstr "Глобальні атрибути"
+
+#: classes/wcml-setup/class-wcml-setup.php:38
+msgid "Introduction"
+msgstr "Вступ"
+
+#: classes/wcml-setup/class-wcml-setup.php:63
+msgid "Multiple Currencies"
+msgstr "Кілька грошових одиниць"
+
+#: classes/wcml-setup/class-wcml-setup.php:82
+msgid "Ready!"
+msgstr "Готово!"
+
+#: classes/wcml-setup/class-wcml-setup.php:46
+msgid "Store Pages"
+msgstr "Сторінки магазину"
+
+#: classes/wcml-setup/class-wcml-setup.php:196
+msgid "Action failed. Please refresh the page and retry."
+msgstr "Дія не вдалася. Будь ласка, оновіть сторінку і повторіть спробу."
+
+#: compatibility/AdventureTours/class-wcml-adventure-tours.php:122
+msgid "Content"
+msgstr "Вміст"
+
+#: compatibility/WcTabManager/class-wcml-tab-manager.php:336
+msgid "Heading"
+msgstr "Заголовок"
+
+#: compatibility/WcProductAddons/class-wcml-product-addons.php:269
+msgid "Label"
+msgstr "Мітка"
+
+#: compatibility/WcCompositeProducts/class-wcml-composite-products.php:185
+#: compatibility/WcCompositeProducts/class-wcml-composite-products.php:209
+#: compatibility/WcProductAddons/class-wcml-product-addons.php:257
+#: compatibility/WcProductBundles/class-wcml-product-bundles.php:384
+#: inc/translation-editor/class-wcml-editor-ui-product-job.php:169
+#: inc/translation-editor/class-wcml-editor-ui-product-job.php:268
+msgid "Name"
+msgstr "Ім'я"
+
+#: compatibility/WcProductAddons/class-wcml-product-addons.php:266
+msgid "Options"
+msgstr "Параметри"
+
+#: compatibility/WcBookings/class-wcml-bookings.php:721
+msgid "Person Type Name"
+msgstr "Назва типу особистості"
+
+#. translators: %s is a product addon name
+#: compatibility/WcProductAddons/class-wcml-product-addons.php:254
+msgid "Product Add-ons Group \"%s\""
+msgstr "Група надбудов товарів «%s»"
+
+#: compatibility/WcTabManager/class-wcml-tab-manager.php:320
+msgid "Product tabs"
+msgstr "Вкладки товарів"
+
+#: compatibility/WcBookings/class-wcml-bookings.php:684
+msgid "Resources Label"
+msgstr "Мітка ресурсів"
+
+#: compatibility/WcSubscriptions/MulticurrencyHooks.php:149
+msgid "Sign-up Fee"
+msgstr "Вартість реєстрації"
+
+#: compatibility/WcSubscriptions/MulticurrencyHooks.php:148
+msgid "Subscription Price"
+msgstr "Вартість підписки"
+
+#: compatibility/AdventureTours/class-wcml-adventure-tours.php:113
+msgid "Tour Data"
+msgstr "Дані туру"
+
+#: compatibility/WcBookings/class-wcml-bookings.php:680
+msgid "Bookings"
+msgstr "Бронювання"
+
+#: inc/class-wcml-wc-strings.php:268
+msgctxt "default-slug"
+msgid "product"
+msgstr "product"
+
+#: classes/Email/Settings/Hooks.php:130 inc/class-wcml-wc-gateways.php:309
+#: inc/class-wcml-wc-strings.php:310
+msgid "translations"
+msgstr "переклади"
+
+#: inc/class-wcml-wc-strings.php:223
+msgid "You are using the same value as for the regular category base. This is known to create conflicts resulting in urls not working properly."
+msgstr "Використовується те ж значення, що і для звичайної бази категорій. Відомі випадки виникнення конфліктів, що призводять до збоїв у роботі URL-адрес."
+
+#: inc/admin-menus/class-wcml-admin-menus.php:336
+#: inc/class-wcml-cart-sync-warnings.php:87 inc/class-wcml-install.php:304
+msgid "Dismiss"
+msgstr "Відхилити"
+
+#: classes/Multicurrency/UI/Hooks.php:194
+#: inc/template-classes/class-wcml-products-ui.php:56
+msgid "Edit"
+msgstr "Редагувати"
+
+#: classes/Multicurrency/UI/Hooks.php:198
+#: inc/template-classes/multi-currency/class-wcml-multi-currency-ui.php:124
+msgid "Delete"
+msgstr "Видалити"
+
+#: classes/Multicurrency/UI/Hooks.php:191
+msgid "Add currency"
+msgstr "Додати грошову одиницю"
+
+#: inc/template-classes/class-wcml-settings-ui.php:42
+msgid "Configure specific product properties that should be synced to translations."
+msgstr "Налаштуйте властивості товарів, які потрібно синхронізувати з перекладами."
+
+#: inc/admin-menus/class-wcml-admin-menus.php:220
+msgid "How to translate attributes"
+msgstr "Як перекладати атрибути"
+
+#: inc/admin-menus/class-wcml-admin-menus.php:231
+msgid "How to translate product categories"
+msgstr "Як перекладати категорії товарів"
+
+#: inc/template-classes/status/class-wcml-status-store-pages-ui.php:43
+msgid "Install WooCommerce Pages"
+msgstr "Установити сторінки WooCommerce"
+
+#: classes/Multicurrency/UI/Hooks.php:197
+msgid "Keep"
+msgstr "Не змінювати"
+
+#: inc/class-wcml-install.php:301
+msgid "Learn how to turn your e-commerce site multilingual"
+msgstr "Дізнайтеся, як зробити свій веб-сайт електронної комерції багатомовним"
+
+#: inc/template-classes/status/class-wcml-status-store-pages-ui.php:42
+msgid "One or more WooCommerce pages have not been created."
+msgstr "Не створено одну або декілька сторінок WooCommerce."
+
+#: inc/template-classes/class-wcml-troubleshooting-ui.php:43
+msgid "Please make a backup of your database before you start the synchronization"
+msgstr "Перш ніж розпочати синхронізацію, створіть резервну копію бази даних"
+
+#: inc/template-classes/class-wcml-settings-ui.php:138
+msgid "Product Translation Interface"
+msgstr "Інтерфейс перекладу товару"
+
+#: inc/template-classes/status/class-wcml-status-taxonomies-ui.php:34
+msgid "Right now, there are no taxonomy terms needing translation."
+msgstr "Наразі немає термінів класифікації, що потребують перекладу."
+
+#: inc/template-classes/class-wcml-troubleshooting-ui.php:47
+msgid "Sync products variations:"
+msgstr "Синхронізувати різновиди товарів:"
+
+#: inc/template-classes/class-wcml-settings-ui.php:45
+msgid "Sync publishing date for translated products."
+msgstr "Синхронізувати дату публікації перекладених товарів."
+
+#: inc/template-classes/class-wcml-troubleshooting-ui.php:44
+msgid "Sync variables products"
+msgstr "Синхронізація змінних товарів"
+
+#. translators: %s is a taxonomy name
+#: inc/template-classes/class-wcml-sync-taxonomy.php:48
+msgid "Synchronize %s assignment in content"
+msgstr "Синхронізувати завдання %s у вмісті"
+
+#: inc/class-wcml-resources.php:312 inc/class-wcml-resources.php:313
+msgid "This field is locked for editing because WPML will copy its value from the original language."
+msgstr "Це поле заблоковано для редагування, оскільки WPML копіює його значення з мови оригіналу."
+
+#: inc/template-classes/status/class-wcml-status-taxonomies-ui.php:31
+msgid "This taxonomy does not require translation."
+msgstr "Ця класифікація не потребує перекладу."
+
+#: inc/template-classes/status/class-wcml-status-taxonomies-ui.php:24
+msgid "This taxonomy requires translation."
+msgstr "Цю класифікацію потрібно перекласти."
+
+#: inc/template-classes/status/class-wcml-status-taxonomies-ui.php:21
+msgid "To run a fully translated site, you should translate all taxonomy terms. Some store elements, such as variations, depend on taxonomy translation."
+msgstr "Щоб повністю запустити перекладений веб-сайт, потрібно перекласти всі терміни класифікації. Деякі елементи магазину, наприклад різновиди, залежать від перекладу класифікації."
+
+#: inc/template-classes/class-wcml-troubleshooting-ui.php:45
+msgid "Update products count:"
+msgstr "Оновити кількість товарів:"
+
+#: inc/template-classes/status/class-wcml-status-store-pages-ui.php:40
+msgid "WooCommerce Store Pages"
+msgstr "Сторінки магазину WooCommerce"
+
+#: inc/template-classes/status/class-wcml-status-store-pages-ui.php:47
+msgid "WooCommerce store pages are translated to all the site's languages."
+msgstr "Сторінки магазину WooCommerce перекладено всіма мовами веб-сайту."
+
+#: inc/template-classes/class-wcml-troubleshooting-ui.php:48
+msgid "left"
+msgstr "ліворуч"
+
+#: inc/template-classes/class-wcml-troubleshooting-ui.php:52
+msgid "none"
+msgstr "немає"
+
+#: inc/template-classes/class-wcml-troubleshooting-ui.php:46
+msgid "products with variations"
+msgstr "товари з різновидами"
+
+#: inc/template-classes/multi-currency/class-wcml-multi-currency-ui.php:108
+msgid "At least one currency must be enabled for this language!"
+msgstr "Для цієї мови має бути увімкнена хоча б одна грошова одиниця!"
+
+#: inc/template-classes/status/class-wcml-status-store-pages-ui.php:45
+msgid "Create missing translations"
+msgstr "Створити відсутні переклади"
+
+#: inc/template-classes/class-wcml-troubleshooting-ui.php:51
+msgid "Duplicate terms ( please select attribute ):"
+msgstr "Копіювати терміни (виберіть атрибут):"
+
+#: inc/admin-menus/class-wcml-admin-menus.php:182
+msgid "Edit this product translation"
+msgstr "Редагувати переклад цього товару"
+
+#: inc/template-classes/class-wcml-troubleshooting-ui.php:49
+msgid "Sync products \"gallery images\":"
+msgstr "Синхронізувати «зображення галереї» товарів:"
+
+#: inc/template-classes/class-wcml-settings-ui.php:49
+msgid "Sync products and product taxonomies order."
+msgstr "Синхронізувати товари і порядок класифікацій товарів."
+
+#: inc/template-classes/class-wcml-troubleshooting-ui.php:50
+msgid "Sync products categories (display type, thumbnail):"
+msgstr "Синхронізувати категорії товарів (відображати тип, ескіз):"
+
+#: inc/template-classes/status/class-wcml-status-store-pages-ui.php:46
+msgid "These pages are currently being translated by translators via WPML: "
+msgstr "Ці сторінки зараз перекладаються через WPML перекладачами:"
+
+#: inc/template-classes/status/class-wcml-status-store-pages-ui.php:41
+msgid "To run a multilingual e-commerce site, you need to have the WooCommerce shop pages translated to all the site's languages. Once all the pages are installed you can add the translations for them from this menu."
+msgstr "Щоб користуватися багатомовним веб-сайтом електронної комерції, потрібно перекласти сторінки магазину WooCommerce усіма мовами веб-сайту. Після встановлення всіх сторінок можна додати їх переклади за допомогою цього меню."
+
+#: inc/template-classes/status/class-wcml-status-store-pages-ui.php:44
+msgid "WooCommerce store pages do not exist for these languages:"
+msgstr "Немає сторінок магазину WooCommerce цими мовами:"
+
+#. Author of the plugin
+msgid "OnTheGoSystems"
+msgstr "OnTheGoSystems"
+
+#. Author URI of the plugin
+msgid "http://www.onthegosystems.com/"
+msgstr "http://www.onthegosystems.com/"
+
+#: inc/template-classes/status/class-wcml-status-taxonomies-ui.php:20
+msgid "Taxonomies Missing Translations"
+msgstr "Класифікації без перекладу"
+
+#: inc/template-classes/class-wcml-menus-wrap.php:166
+#: inc/template-classes/class-wcml-settings-ui.php:132
+#: inc/template-classes/class-wcml-troubleshooting-ui.php:42
+#: inc/template-classes/status/class-wcml-status-ui.php:46
+msgid "Troubleshooting"
+msgstr "Усунення неполадок"
+
+#: classes/Multicurrency/UI/Hooks.php:193
+msgid "default"
+msgstr "за замовчуванням"
+
+#: inc/template-classes/multi-currency/class-wcml-multi-currency-ui.php:107
+msgid "The changes you made will be lost if you navigate away from this page."
+msgstr "Внесені зміни будуть скасовані, якщо ви підете з цієї сторінки."
+
+#: classes/Multicurrency/UI/Hooks.php:243
+#: inc/template-classes/class-wcml-pointer-ui.php:28
+#: inc/template-classes/multi-currency/class-wcml-custom-currency-options.php:120
+msgid "Learn more"
+msgstr "Дізнатися більше"
+
+#: classes/multi-currency/payment-gateways/class-wcml-payment-gateway-bacs.php:17
+#: classes/multi-currency/payment-gateways/class-wcml-payment-gateway-paypal-v2.php:32
+#: classes/multi-currency/payment-gateways/class-wcml-payment-gateway-paypal.php:47
+#: classes/multi-currency/payment-gateways/class-wcml-payment-gateway-stripe.php:18
+#: classes/Multicurrency/Analytics/Export.php:24
+#: classes/Multicurrency/Analytics/Export.php:26
+#: classes/Multicurrency/Analytics/Hooks.php:84
+#: classes/Multicurrency/UI/Hooks.php:190 inc/class-wcml-wc-gateways.php:375
+msgid "Currency"
+msgstr "Валюта"
+
+#: inc/template-classes/class-wcml-troubleshooting-ui.php:53
+msgid "Start"
+msgstr "Почати"
+
+#: inc/template-classes/class-wcml-settings-ui.php:41
+msgid "Products Synchronization"
+msgstr "Синхронізація товарів"
+
+#: inc/template-classes/class-wcml-products-ui.php:132
+msgid "Type"
+msgstr "Тип"
+
+#: classes/Multicurrency/UI/Hooks.php:246
+#: inc/template-classes/currency-switcher/class-wcml-currency-switcher-options-dialog.php:81
+#: inc/template-classes/multi-currency/class-wcml-custom-currency-options.php:124
+#: inc/template-classes/store-urls/class-wcml-store-urls-edit-base-ui.php:51
+msgid "Save"
+msgstr "Зберегти"
+
+#. translators: %s is a taxonomy name
+#: inc/template-classes/status/class-wcml-status-taxonomies-ui.php:30
+msgid "Translate %s"
+msgstr "Перекласти %s"
+
+#: inc/class-wcml-store-pages.php:358 inc/class-wcml-store-pages.php:401
+msgid "My Account"
+msgstr "Мій обліковий запис"
+
+#. translators: %d is a number of products
+#: inc/class-wcml-terms.php:510
+msgid "%d products left"
+msgstr "Залишилось товарів: %d"
+
+#. translators: %s is a taxonomy name
+#: inc/template-classes/status/class-wcml-status-taxonomies-ui.php:23
+msgid "%s do not require translation."
+msgstr "%s не потрібно перекладати."
+
+#. translators: %s is a taxonomy name
+#: inc/template-classes/status/class-wcml-status-taxonomies-ui.php:33
+msgid "All %s are translated."
+msgstr "Усі %s перекладено."
+
+#: inc/template-classes/class-wcml-products-ui.php:83
+msgid "All languages"
+msgstr "Усі мови"
+
+#: inc/template-classes/class-wcml-products-ui.php:90
+msgid "All statuses"
+msgstr "Усі стани"
+
+#: compatibility/WcProductAddons/MulticurrencyHooks.php:279
+#: inc/template-classes/multi-currency/class-wcml-custom-prices-ui.php:66
+msgid "Calculate prices in other currencies automatically"
+msgstr "Автоматично розраховувати ціни в іншій грошовій одиниці"
+
+#: classes/Multicurrency/UI/Hooks.php:245
+#: compatibility/WcProductAddons/MulticurrencyHooks.php:305
+#: inc/template-classes/currency-switcher/class-wcml-currency-switcher-options-dialog.php:80
+#: inc/template-classes/multi-currency/class-wcml-custom-currency-options.php:123
+#: inc/template-classes/store-urls/class-wcml-store-urls-edit-base-ui.php:50
+msgid "Cancel"
+msgstr "Скасувати"
+
+#: inc/class-wcml-store-pages.php:354 inc/class-wcml-store-pages.php:395
+#: inc/template-classes/class-wcml-settings-ui.php:85
+msgid "Cart"
+msgstr "Кошик"
+
+#: inc/class-wcml-store-pages.php:359
+msgid "Change Password"
+msgstr "Змінити пароль"
+
+#: inc/class-wcml-store-pages.php:356
+msgid "Checkout &rarr; Pay"
+msgstr "Оформити замовлення та оплатити"
+
+#: inc/class-wcml-resources.php:197
+msgid "Choose a file"
+msgstr "Вибрати файл"
+
+#: inc/template-classes/multi-currency/class-wcml-custom-prices-ui.php:79
+msgid "Collapse"
+msgstr "Згорнути"
+
+#: inc/class-wcml-dependencies.php:272
+msgid "Configure products slug translation"
+msgstr "Налаштувати переклад коротких заголовків товарів"
+
+#. translators: %s is a number of product variations
+#: inc/template-classes/class-wcml-sync-taxonomy.php:46
+msgid "Currently, there are %s variations that need to be created."
+msgstr "Наразі потрібно створити різновиди %s."
+
+#. translators: %s is a field name
+#: inc/class-wcml-dependencies.php:331
+msgid "Custom field %s configuration from wpml-config.xml file was altered!"
+msgstr "Змінено конфігурацію користувацького поля %s у файлі wpml-config.xml!"
+
+#. translators: %s is a custom taxonomy name
+#: inc/class-wcml-dependencies.php:395
+msgid "Custom taxonomy %s configuration from wpml-config.xml file was altered!"
+msgstr "Змінено конфігурацію користувацької класифікації %s у файлі wpml-config.xml!"
+
+#. translators: %s is a custom post type name
+#: inc/class-wcml-dependencies.php:363
+msgid "Custom type %s configuration from wpml-config.xml file was altered!"
+msgstr "Змінено конфігурацію користувацького типу %s у файлі wpml-config.xml!"
+
+#: compatibility/WcBookings/class-wcml-bookings.php:723
+#: compatibility/WcCompositeProducts/class-wcml-composite-products.php:187
+#: compatibility/WcCompositeProducts/class-wcml-composite-products.php:211
+#: compatibility/WcProductAddons/class-wcml-product-addons.php:259
+#: compatibility/WcProductBundles/class-wcml-product-bundles.php:395
+msgid "Description"
+msgstr "Опис"
+
+#: inc/template-classes/multi-currency/class-wcml-custom-prices-ui.php:73
+msgid "Determined automatically based on exchange rate"
+msgstr "Визначається автоматично згідно з курсом обміну"
+
+#: inc/class-wcml-store-pages.php:360
+msgid "Edit My Address"
+msgstr "Змінити мою адресу"
+
+#: inc/template-classes/store-urls/class-wcml-store-urls-translation-statuses-ui.php:59
+msgid "Edit translation"
+msgstr "Редагувати переклад"
+
+#: inc/template-classes/multi-currency/class-wcml-custom-prices-ui.php:71
+msgid "Enter prices in other currencies"
+msgstr "Ввести ціни в іншій грошовій одиниці"
+
+#: inc/template-classes/multi-currency/class-wcml-custom-prices-ui.php:72
+msgid "Hide prices in other currencies"
+msgstr "Приховати ціни в іншій грошовій одиниці"
+
+#: inc/translation-editor/class-wcml-editor-ui-product-job.php:156
+msgid "Images"
+msgstr "Зображення"
+
+#: classes/currencies/class-wcml-admin-currency-selector.php:105
+#: compatibility/WcBookings/MulticurrencyHooks.php:734
+#: inc/class-wcml-orders.php:446
+#: inc/currencies/class-wcml-multi-currency-configuration.php:297
+#: inc/currencies/class-wcml-multi-currency-orders.php:477
+#: inc/currencies/class-wcml-multi-currency-reports.php:153
+msgid "Invalid nonce"
+msgstr "Неприпустимий nonce"
+
+#. translators: %s is a taxonomy name
+#: inc/class-wcml-terms.php:547 inc/class-wcml-terms.php:575
+msgid "Invalid taxonomy %s"
+msgstr "Неприпустима класифікація %s"
+
+#: classes/Multicurrency/Analytics/Export.php:19
+#: classes/Reports/Orders/Hooks.php:24
+#: compatibility/WcExporter/class-wcml-wcexporter.php:40
+#: compatibility/WcExporter/class-wcml-wcexporter.php:55
+msgid "Language"
+msgstr "Мова"
+
+#: inc/class-wcml-store-pages.php:361
+msgid "Logout"
+msgstr "Вийти"
+
+#: inc/class-wcml-store-pages.php:362
+msgid "Lost Password"
+msgstr "Втрачено пароль"
+
+#: inc/template-classes/class-wcml-products-ui.php:87
+msgid "Needs updating"
+msgstr "Потрібно оновити"
+
+#: inc/class-wcml-upgrade.php:68
+msgid "No - dismiss"
+msgstr "Ні, закрити"
+
+#: inc/template-classes/class-wcml-products-ui.php:86
+msgid "Not translated or needs updating"
+msgstr "Не перекладено або потрібно оновити"
+
+#: classes/Multicurrency/UI/Hooks.php:210
+#: inc/template-classes/multi-currency/class-wcml-custom-currency-options.php:64
+#: inc/template-classes/multi-currency/class-wcml-custom-currency-options.php:94
+#: inc/template-classes/multi-currency/class-wcml-custom-currency-options.php:114
+msgid "Only numeric"
+msgstr "Тільки числа"
+
+#: inc/class-wcml-store-pages.php:357
+msgid "Order Received"
+msgstr "Замовлення отримано"
+
+#: inc/class-wcml-dependencies.php:270
+msgid "Permalink settings"
+msgstr "Налаштування постійних посилань"
+
+#: inc/template-classes/status/class-wcml-status-status-ui.php:28
+msgid "Plugins Status"
+msgstr "Стан плагінів"
+
+#: inc/template-classes/class-wcml-menus-wrap.php:102
+msgid "Products"
+msgstr "Товари"
+
+#: inc/template-classes/multi-currency/class-wcml-custom-prices-ui.php:38
+#: inc/template-classes/multi-currency/class-wcml-custom-prices-ui.php:74
+msgid "Regular Price"
+msgstr "Звичайна ціна"
+
+#: inc/template-classes/class-wcml-products-ui.php:92
+msgid "Reset"
+msgstr "Скинути"
+
+#: inc/template-classes/multi-currency/class-wcml-custom-prices-ui.php:39
+#: inc/template-classes/multi-currency/class-wcml-custom-prices-ui.php:75
+msgid "Sale Price"
+msgstr "Ціна зі знижкою"
+
+#: inc/template-classes/multi-currency/class-wcml-custom-prices-ui.php:77
+msgid "Same as default currency"
+msgstr "Як грошова одиниця за промовчанням"
+
+#: inc/template-classes/class-wcml-products-ui.php:93
+msgid "Search"
+msgstr "Пошук"
+
+#: inc/template-classes/multi-currency/class-wcml-custom-prices-ui.php:78
+msgid "Set dates"
+msgstr "Задати дати"
+
+#: compatibility/WcProductAddons/MulticurrencyHooks.php:280
+#: inc/template-classes/multi-currency/class-wcml-custom-prices-ui.php:70
+msgid "Set prices in other currencies manually"
+msgstr "Встановити ціни в іншій грошовій одиниці вручну"
+
+#: inc/class-wcml-store-pages.php:364 inc/class-wcml-store-pages.php:392
+msgid "Shop"
+msgstr "Магазин"
+
+#: inc/template-classes/multi-currency/class-wcml-custom-prices-ui.php:68
+msgid "Show"
+msgstr "Показати"
+
+#: inc/currencies/class-wcml-multi-currency-orders.php:72
+msgid "Show all currencies"
+msgstr "Показати всі грошові одиниці"
+
+#. translators: %d is a number of products
+#: inc/class-wcml-terms.php:510
+msgid "Synchronization complete!"
+msgstr "Синхронізацію завершено!"
+
+#: inc/template-classes/class-wcml-sync-taxonomy.php:43
+msgid "Synchronize attributes and update product variations"
+msgstr "Синхронізувати атрибути й оновити різновиди товарів"
+
+#: inc/template-classes/class-wcml-sync-taxonomy.php:44
+msgid "This will automatically generate variations for translated products corresponding to recently translated attributes."
+msgstr "Ця дія автоматично згенерує різновиди перекладених товарів згідно з нещодавно перекладеними атрибутами."
+
+#: compatibility/AdventureTours/class-wcml-adventure-tours.php:120
+#: compatibility/WcBookings/class-wcml-bookings.php:703
+#: compatibility/WcTabManager/class-wcml-tab-manager.php:334
+#: compatibility/WcTabManager/class-wcml-tab-manager.php:341
+#: inc/translation-editor/class-wcml-editor-ui-product-job.php:128
+msgid "Title"
+msgstr "Заголовок"
+
+#: inc/template-classes/class-wcml-products-ui.php:89
+msgid "Translation complete"
+msgstr "Переклад завершено"
+
+#: inc/class-wcml-products.php:229
+#: inc/template-classes/class-wcml-products-ui.php:88
+msgid "Translation in progress"
+msgstr "Переклад виконується"
+
+#: inc/class-wcml-store-pages.php:363
+msgid "View Order"
+msgstr "Переглянути замовлення"
+
+#: inc/class-wcml-upgrade.php:67
+msgid "Yes, go to the troubleshooting page"
+msgstr "Так, перейти до сторінки усунення несправностей"
+
+#: inc/template-classes/class-wcml-menus-wrap.php:98
+#: inc/template-classes/class-wcml-menus-wrap.php:109
+#: inc/template-classes/class-wcml-menus-wrap.php:117
+#: inc/template-classes/class-wcml-menus-wrap.php:139
+#: inc/template-classes/class-wcml-sync-taxonomy.php:51
+msgid "You have untranslated terms!"
+msgstr "Залишилися неперекладені терміни!"
+
+#: inc/class-wcml-dependencies.php:230
+msgid "and"
+msgstr "та"
+
+#: classes/Multicurrency/UI/Hooks.php:221
+#: inc/template-classes/multi-currency/class-wcml-custom-currency-options.php:90
+msgid "Decimal Separator"
+msgstr "Десятковий роздільник"
+
+#. translators: %s is a plugin name
+#: inc/template-classes/status/class-wcml-status-status-ui.php:34
+msgid "%s is not set up."
+msgstr "%s не налаштовано."
+
+#. translators: %s is a plugin name
+#: inc/template-classes/status/class-wcml-status-status-ui.php:32
+msgid "%s is set up."
+msgstr "%s налаштовано."
+
+#: inc/template-classes/store-urls/class-wcml-store-urls-translation-statuses-ui.php:58
+msgid "Add translation"
+msgstr "Додати переклад"
+
+#: inc/currencies/class-wcml-multi-currency-orders.php:208
+msgid "All the products will be removed from the current order in order to change the currency"
+msgstr "Щоб змінити грошову одиницю, буде видалено всі продукти з поточного порядку подання"
+
+#: inc/class-wcml-orders.php:414
+msgid "All the products will be removed from the current order in order to change the language"
+msgstr "Щоб змінити мову, буде видалено всі продукти з поточного порядку подання"
+
+#: classes/Multicurrency/UI/Hooks.php:238
+#: inc/template-classes/multi-currency/class-wcml-custom-currency-options.php:113
+msgid "Autosubtract amount"
+msgstr "Сума автовирахування"
+
+#: inc/template-classes/currency-switcher/class-wcml-currency-switcher-options-dialog.php:59
+msgid "Available parameters"
+msgstr "Доступні параметри"
+
+#: compatibility/WcBookings/MulticurrencyHooks.php:691
+msgid "Booking currency"
+msgstr "Грошова одиниця замовлення"
+
+#: compatibility/WcBookings/class-wcml-accommodation-bookings.php:53
+#: compatibility/WcBookings/MulticurrencyHooks.php:330
+msgid "Calculate costs in other currencies automatically"
+msgstr "Автоматично розраховувати вартість в іншій грошовій одиниці"
+
+#: inc/template-classes/multi-currency/class-wcml-custom-prices-ui.php:67
+msgid "Click to see the prices in the other currencies as they are currently shown on the front end."
+msgstr "Натисніть для перегляду цін в іншій грошовій одиниці, як їх зараз видно відвідувачам."
+
+#: inc/translation-editor/class-wcml-editor-ui-product-job.php:138
+msgid "Content / Description"
+msgstr "Вміст / Опис"
+
+#: inc/currencies/currency-switcher/class-wcml-currency-switcher-ajax.php:34
+msgid "Currencies order updated"
+msgstr "Порядок грошових одиниць оновлено"
+
+#: classes/currencies/class-wcml-admin-currency-selector.php:87
+#: inc/currencies/class-wcml-multi-currency-reports.php:176
+msgid "Currency - no orders found"
+msgstr "Грошова одиниця – замовлення не знайдено"
+
+#: classes/Multicurrency/UI/Hooks.php:214
+#: inc/template-classes/multi-currency/class-wcml-custom-currency-options.php:80
+msgid "Currency Position"
+msgstr "Розташування грошової одиниці"
+
+#: inc/currencies/currency-switcher/class-wcml-currency-switcher-widget.php:10
+msgid "Currency switcher"
+msgstr "Перемикач грошових одиниць"
+
+#: inc/template-classes/multi-currency/class-wcml-multi-currency-ui.php:114
+msgid "Currency switcher options"
+msgstr "Параметри перемикача грошових одиниць"
+
+#: inc/template-classes/multi-currency/class-wcml-multi-currency-ui.php:137
+msgid "Currency switcher preview"
+msgstr "Попередній перегляд перемикача грошових одиниць"
+
+#: inc/template-classes/currency-switcher/class-wcml-currency-switcher-options-dialog.php:52
+msgid "Currency switcher style"
+msgstr "Стиль перемикача грошових одиниць"
+
+#: inc/class-wcml-products.php:305
+msgid "Edit this item inline"
+msgstr "Редагувати цей елемент у тексті"
+
+#: classes/Multicurrency/UI/Hooks.php:209
+#: inc/template-classes/multi-currency/class-wcml-custom-currency-options.php:63
+msgid "Exchange Rate"
+msgstr "Курс обміну"
+
+#: inc/template-classes/class-wcml-languages-upgrade-notice.php:20
+msgid "Hide This Message"
+msgstr "Приховати це повідомлення"
+
+#. translators: %s is a URL
+#: inc/class-wcml-wc-strings.php:463
+msgid "In order to edit custom attributes you need to use the <a href=\"%s\">custom product translation editor</a>"
+msgstr "Для редагування користувацьких атрибутів потрібно використовувати <a href=\"%s\">редактор перекладу користувацьких продуктів</a>"
+
+#: classes/Multicurrency/UI/Hooks.php:228
+#: inc/template-classes/multi-currency/class-wcml-custom-currency-options.php:102
+msgid "Increment for nearest integer"
+msgstr "Приріст до найближчого цілого числа"
+
+#: classes/Multicurrency/UI/Hooks.php:227
+#: inc/template-classes/multi-currency/class-wcml-custom-currency-options.php:101
+msgid "Nearest"
+msgstr "До найближчого"
+
+#: classes/Multicurrency/UI/Hooks.php:222
+#: inc/template-classes/multi-currency/class-wcml-custom-currency-options.php:93
+msgid "Number of Decimals"
+msgstr "Кількість десяткових знаків"
+
+#: compatibility/WcBookings/MulticurrencyHooks.php:176
+msgid "One-off cost for the booking as a whole."
+msgstr "Одноразова плата за замовлення в цілому."
+
+#: inc/currencies/class-wcml-multi-currency-orders.php:188
+msgid "Order currency:"
+msgstr "Грошова одиниця замовлення:"
+
+#: inc/class-wcml-orders.php:393
+msgid "Order language:"
+msgstr "Мова замовлення:"
+
+#: inc/class-wcml-products.php:190
+#: inc/template-classes/store-urls/class-wcml-store-urls-translation-statuses-ui.php:56
+msgid "Original language"
+msgstr "Мова оригіналу"
+
+#. translators: %s is a product name
+#: inc/template-classes/class-wcml-products-ui.php:54
+msgid "Parent product: %s"
+msgstr "Батьківський товар: %s"
+
+#: compatibility/WcBookings/class-wcml-bookings.php:713
+msgid "Person Types"
+msgstr "Типи особистості"
+
+#: inc/template-classes/multi-currency/class-wcml-custom-prices-ui.php:82
+msgid "Please enter in a value less than the regular price"
+msgstr "Введіть значення нижче звичайної ціни"
+
+#: compatibility/WcProductBundles/class-wcml-product-bundles.php:360
+msgid "Product Bundles"
+msgstr "Пакети продукту"
+
+#: inc/class-wcml-products.php:306
+msgid "Quick Edit"
+msgstr "Швидке редагування"
+
+#: compatibility/WcBookings/class-wcml-bookings.php:692
+#: compatibility/WcBookings/class-wcml-bookings.php:693
+msgid "Resources"
+msgstr "Ресурси"
+
+#: compatibility/WcBookings/class-wcml-bookings.php:816
+msgid "Resources label"
+msgstr "Мітка ресурсів"
+
+#: classes/Multicurrency/UI/Hooks.php:223
+#: inc/template-classes/multi-currency/class-wcml-custom-currency-options.php:97
+msgid "Rounding to the nearest integer"
+msgstr "Округлення до найближчого цілого числа"
+
+#: compatibility/WcBookings/class-wcml-accommodation-bookings.php:58
+#: compatibility/WcBookings/MulticurrencyHooks.php:335
+msgid "Set costs in other currencies manually"
+msgstr "Задавати вартість в іншій грошовій одиниці вручну"
+
+#. translators: %s is a date
+#: classes/Multicurrency/UI/Hooks.php:303
+#: inc/template-classes/multi-currency/class-wcml-custom-currency-options.php:69
+msgid "Set on %s"
+msgstr "Задано %s"
+
+#: inc/class-wcml-products.php:245
+msgid "Take this and edit"
+msgstr "Використовувати це і редагувати"
+
+#: inc/template-classes/currency-switcher/class-wcml-currency-switcher-options-dialog.php:58
+msgid "Template for currency switcher"
+msgstr "Шаблон перемикача грошових одиниць"
+
+#: compatibility/WcBookings/MulticurrencyHooks.php:218
+msgid "The cost is displayed to the user on the frontend. Leave blank to have it calculated for you. If a booking has varying costs, this will be prefixed with the word \"from:\"."
+msgstr "Користувач може бачити вартість через зовнішній інтерфейс. Щоб вартість розрахували за вас, залиште її порожньою. Якщо вартість замовлення може змінюватися, перед нею стоятиме слово «від:»."
+
+#: compatibility/WcBookings/class-wcml-accommodation-bookings.php:79
+#: compatibility/WcBookings/MulticurrencyHooks.php:200
+msgid "This is the cost per block booked. All other costs (for resources and persons) are added to this."
+msgstr "Це вартість одного замовленого блоку. Усі інші витрати (за ресурси і людей) додаються."
+
+#: classes/Multicurrency/UI/Hooks.php:219
+#: inc/template-classes/multi-currency/class-wcml-custom-currency-options.php:87
+msgid "Thousand Separator"
+msgstr "Роздільник груп розрядів"
+
+#: compatibility/WcExporter/class-wcml-wcexporter.php:45
+msgid "Translation of"
+msgstr "Переклад"
+
+#: inc/template-classes/class-wcml-languages-upgrade-notice.php:19
+msgid "Update Translation"
+msgstr "Оновити переклад"
+
+#: inc/template-classes/status/class-wcml-status-config-warnings-ui.php:48
+msgid "Configuration Warnings"
+msgstr "Попередження конфігурації"
+
+#: addons/wpml-dependencies/lib/classes/notices/class-wpml-notice-render.php:57
+#: addons/wpml-dependencies/lib/inc/icl-admin-notifier.php:474
+#: inc/template-classes/class-wcml-menus-wrap-base.php:32
+#: inc/template-classes/multi-currency/class-wcml-custom-prices-ui.php:69
+msgid "Hide"
+msgstr "Сховати"
+
+#: inc/translation-editor/class-wcml-editor-ui-product-job.php:141
+msgid "Excerpt"
+msgstr "Уривок"
+
+#: inc/template-classes/class-wcml-products-ui.php:120
+msgid "of"
+msgstr "з"
+
+#: inc/template-classes/multi-currency/class-wcml-custom-prices-ui.php:76
+msgid "Schedule"
+msgstr "Відкласти"
+
+#: inc/class-wcml-url-translation.php:34
+msgctxt "slug"
+msgid "product-category"
+msgstr "product-category"
+
+#: inc/class-wcml-url-translation.php:35
+msgctxt "slug"
+msgid "product-tag"
+msgstr "product-tag"
+
+#: inc/template-classes/class-wcml-products-ui.php:116
+msgid "Go to the first page"
+msgstr "Перейти до першої сторінки"
+
+#: inc/template-classes/class-wcml-products-ui.php:117
+msgid "Go to the previous page"
+msgstr "Перейти до попередньої сторінки"
+
+#: inc/template-classes/class-wcml-products-ui.php:121
+msgid "Go to the next page"
+msgstr "Перейти до наступної сторінки"
+
+#: inc/template-classes/class-wcml-products-ui.php:122
+msgid "Go to the last page"
+msgstr "Перейти до останньої сторінки"
+
+#: inc/template-classes/class-wcml-products-ui.php:48
+msgid "No products found"
+msgstr "Товарів не знайдено"
+
+#: classes/Multicurrency/UI/Hooks.php:224
+#: inc/template-classes/multi-currency/class-wcml-custom-currency-options.php:98
+msgid "Disabled"
+msgstr "Вимкнено"
+
+#: inc/class-wcml-store-pages.php:355 inc/class-wcml-store-pages.php:398
+msgid "Checkout"
+msgstr "Оформлення замовлення"
+
+#: inc/template-classes/class-wcml-products-ui.php:45
+#: inc/translation-editor/class-wcml-editor-ui-product-job.php:75
+msgid "Product"
+msgstr "Товар"

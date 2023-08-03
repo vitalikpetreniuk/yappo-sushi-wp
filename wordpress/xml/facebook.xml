@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
+    <channel>
+        <title>Yapposushi</title>
+        <link>https://yapposushi.com/</link>
+        <description>Yappo…</description>
+        -
+        <item>- начало описания суши
+            <g:id>12345</g:id>
+            - id товара
+            <g:title>ЧІЗ-ФІШ</g:title>
+            <g:description>лосось теріякі, чука, сир вершковий, перець болгарський, чорний кунжут, медовий соус, рис,
+                норі
+            </g:description>
+            <g:link>https://yapposushi.com/product/chiz-fish/</g:link>
+            - URL адрес лодки
+            <g:image_link>https://yapposushi.com/wp-content/uploads/2023/06/chiz-fish-2.png</g:image_link>
+            <g:additional_image_link>
+            <g:additional_image_link>
+            - дополнительные фото товара суши. перечисляем все URL фото кроме первого основного через «,». Максимальной
+            кол-во фото – 10 шт
+            <g:brand>Yapposushi</g:brand>
+            -
+            <g:condition>used</g:condition>
+            - статический параметр.
+            <g:availability>available for order</g:availability>
+            - статический параметр. <g:price>139.00 UAH</g:price> - цена лодки в РУБ
+            <g:sale_price>120.00 UAH</g:price>
+            - цена со скидкой.
+            <g:google_product_category>5644</g:google_product_category>
+            - статический параметр.
+        </item>
+    </channel>
+</rss>

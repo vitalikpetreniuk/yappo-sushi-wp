@@ -1,0 +1,133 @@
+#menu{
+    position: fixed;
+    right: -200%;
+    display: none;
+    width: 100%;
+    background-color: $text-white;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+    z-index: 100;
+    padding-bottom: 24px;
+    text-align: center;
+    overflow-x: scroll;
+    height: 100%;
+    padding-bottom: 20rem;
+
+    @include media-for (null, $sm){
+        display: block;
+    }
+
+    .time-wrap {
+        justify-content: center;
+        flex-direction: column;
+        margin: 20px 0 26px;
+
+        div{
+            line-height: 1.1;
+            span{
+                font-size: 14px;
+            }
+        }
+    }
+    
+    .menu-body{
+        text-align: center;
+    }
+
+    .menu-header{
+        background-color: $accent;
+    }
+
+    .time-wrap{
+        margin: 35px 0 50px;
+        color: #2A1A5E;
+        
+        p{
+            font-size: 14px;
+            color: #2A1A5E;
+        }
+
+
+    }
+
+    .top-nav{
+        ul{
+            li{
+                a{
+                    font-family: 'DelaGothicOne';
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: $accent;
+                    margin-bottom: 18px;
+                    display: block;
+
+                    &:hover{
+                        color: $orange;
+                    }
+                }
+            }
+        }
+    }
+
+    .lang{
+        margin: auto;
+        margin-top: 35px;
+
+    }
+
+    .social-wrap{
+        margin: 30px 0 35px;
+        
+
+
+
+        a{
+            width: 2rem;
+            height: 2rem;
+            margin-right: 15px;
+
+            &:first-child{
+                // margin-top: .3rem;
+            }
+        }
+    }
+
+    .bottom-nav{
+        margin-bottom: 35px;
+
+        @media (min-height: 0px) and (max-height: 843px){
+            margin-bottom: 20px;
+        }
+
+        ul{
+            li{
+                a{
+                  font-weight: 300;
+                  font-size: 12px;  
+                  color: $text-black;
+                }
+            }
+        }
+    }
+
+    .img-wrap{
+        margin-bottom: 14px;
+    }
+
+    p{
+        font-size: 10px;
+        color: $text-black;
+        font-weight: 300;
+    }
+
+}
+
+
+
+
+.overlay{
+    visibility: visible !important;
+    opacity: 1 !important;
+    right: 0 !important;
+}

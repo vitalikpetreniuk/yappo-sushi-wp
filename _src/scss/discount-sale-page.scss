@@ -1,0 +1,171 @@
+.discount-sale-page{
+    padding: 70px 0 115px;
+
+    @include media-for (null, $sm){
+        padding: 40px 0 60px;
+    }
+
+    @include media-for (null, 1025px){
+        height: 74vh;
+    }
+
+    @include media-for (null, 913px){
+        height: auto;
+    }
+
+
+    .banner-slider__slide{
+        margin-bottom: 65px;
+        border-radius: 55px;
+        position: relative;
+        max-width: 1920px;
+        height: auto !important;
+
+        // @include media-for (null, 2100px){
+        //     height: 400px;
+        // }
+
+        // @include media-for (null, 1700px){
+        //     height: 350px;
+        // }
+
+        // @include media-for (null, 1600px){
+        //     height: 300px;
+        // }
+
+        // @include media-for (null, 1025px){
+        //     height: 250px;
+        // }
+
+        // @include media-for (null, 913px){
+        //     height: 370px;
+        // }
+
+        // @include media-for (null, $tablet){
+        //     height: 370px;
+        // }
+
+        // @include media-for (null, $sm){
+        //     height: 190px;
+        // }
+
+        a{
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100%;
+            img{
+                width: 100%;
+                // height: 100%;
+            }
+        }
+    }
+
+    .banner-slider__slide{
+        position: relative;
+        
+        &::before,
+        &::after{
+            position: absolute;
+            content: '';
+            background-repeat: no-repeat;
+            z-index: 10;
+            background-size: contain;
+        }
+
+    }
+    .slide-1::before {
+        
+        // @include media-for (null, 1025px){
+        //     left: -3rem;
+        // }
+        // @include media-for (null, $sm){
+        //     left: -1rem;
+        // }
+    }
+
+    .slide-1{
+        &::before{
+            @include media-for (null, 1025px){
+                left: -3rem;
+             }
+            @include media-for (null, $sm){
+                width: 60px;
+            }
+        }
+    
+    
+        &::after{
+    
+            @include media-for (null, $sm){
+                width: 105px;
+            }
+        }
+    }
+    
+    .slide-2{
+        &::before{
+    
+            @include media-for (null, $sm){
+                width: 73px;
+
+            }
+        }
+    
+        a{
+            &::before{
+    
+                @include media-for (null, $sm){
+                    width: 60px;
+                }
+            } 
+        }
+    
+        &::after{
+
+    
+            @include media-for (null, $sm){
+                width: 110px;
+            }
+        }
+    }
+    
+    
+    .slide-3{
+        &::before{
+    
+            @include media-for (null, $sm){
+                width: 98px;
+            }
+        }
+    
+    
+        &::after{
+    
+            @include media-for (null, $sm){
+                width: 110px;
+            }
+        }
+    }
+    
+    
+    
+    .slide-4{
+    
+        &::before{
+    
+            @include media-for (null, $sm){
+                bottom: -0.5rem;
+                width: 71px;
+
+            }
+        }
+    
+    
+        &::after{
+            @include media-for (null, $sm){
+                width: 135px;
+            }
+        }
+    }
+}

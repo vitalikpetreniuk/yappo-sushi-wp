@@ -1,0 +1,109 @@
+.modal-city-wrap{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: .2);
+    z-index: 100;
+    opacity: 1;
+    padding-top: 92px;
+ 
+
+    .modal-city{
+        max-width: 570px;
+        width: 100%;
+        text-align: center;
+        color: $accent;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        background-color: $text-white;
+        border-radius: 50px;
+        padding: 45px 65px 60px;
+        z-index: 100;
+
+        @include media-for (null, $sm){
+            width: 90%;
+            padding: 35px 25px 35px;
+        } 
+
+
+        h6{
+            font-size: 16px;
+            font-weight: 400;
+            font-family: 'DelaGothicOne';
+            margin-bottom: 25px;
+        }
+
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 14px;
+
+            li{
+                width: 49%;
+                margin-bottom: 14px;
+
+                a{
+                    width: 100%;
+                    display: block;
+                    text-align: center;
+                    border: 1px solid $accent;
+                    font-size: 14px;
+                    font-weight: 700;
+                    color: $accent;
+                    padding: 19px 0;
+                    border-radius: 30px;
+                    text-transform: uppercase;
+
+                    @include media-for (null, $sm){
+                        font-size: 13px;
+                        padding: 13px 0;
+                    } 
+
+                    .adress{
+                        color: $accent;
+                        font-size: 12px;
+                        font-weight: 300;
+                        display: block;
+                        text-transform: none;
+                        @include media-for (null, $sm){
+                            font-size: 10px;
+                        }
+                    }
+                }
+
+                .active{
+                    background-color: $accent;
+                    color: $text-white;
+                    .adress{
+                        color: $text-white;
+                    }
+                }
+            }
+        }
+
+
+        button{
+            width: 262px;
+
+            &:disabled {
+                opacity: 0.5; 
+                cursor: not-allowed;
+            }
+        }
+
+        
+    }
+
+
+}
+
+.modal-city-wrap-none{
+    z-index: -100;
+    opacity: 0;
+    display: none;
+}
