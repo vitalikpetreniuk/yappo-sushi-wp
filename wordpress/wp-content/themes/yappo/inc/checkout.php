@@ -114,7 +114,7 @@ function get_choosed_city_data()
             'hide_empty' => false,
             'slug' => $_COOKIE['choosedcity'],
         ))[0] ?? false;
-} 
+}
 
 function change_default_checkout_city()
 {
@@ -217,8 +217,8 @@ function yappo_get_chosen_adress()
 
         return $_COOKIE['choosedaddress'];
     }
-
-    return '';
+    $text = __('Оберіть Місто', 'yappo');
+    return "<span>$text</span>";
 }
 
 function yappo_get_chosen_header_adress()
@@ -226,8 +226,33 @@ function yappo_get_chosen_header_adress()
     if (yappo_get_chosen_region() && yappo_get_chosen_city()) {
         return '<span>' . (get_locale() == 'uk' ? yappo_get_chosen_city() : get_ru_city_name()) . ',</span>' . yappo_get_chosen_adress();
     }
+    $text = __('Оберіть Місто', 'yappo');
 
-    return '';
+    return "<span>$text</span>";
+}
+
+function yappo_get_chosen_billing_adress()
+{
+    if (yappo_get_chosen_region() && yappo_get_chosen_city()) {
+        ?>
+      <p class="choose-city">
+          <?php esc_html_e('Ваше місто', 'yappo'); ?>
+      </p>
+
+      <div class="select-dropdown">
+        <div role="button" class="select-dropdown__button">
+							<span
+                  class="city"><?= get_locale() == 'uk' ? checkout_get_billing_city() : get_ru_city_name() ?><?php if (function_exists('yappo_get_chosen_adress')) echo "(" . yappo_get_chosen_adress() . ")" ?></span>
+          <span class="region">
+                  <?= WC()->countries->get_states()['UA'][WC()->customer->get_billing_state()]; ?>
+              </span>
+        </div>
+      </div>
+    <?php } else {
+        $text = __('Оберіть Місто', 'yappo');
+
+        return "<span>$text</span>";
+    }
 }
 
 function yappo_remove_shipping_on_hours($rates, $package)
