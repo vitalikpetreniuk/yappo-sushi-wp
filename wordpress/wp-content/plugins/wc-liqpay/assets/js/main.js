@@ -1,1 +1,0 @@
-window.onload = function () {    if (document.getElementById('kmnd_notice-close')) {        document.getElementById('kmnd_notice-close').onclick = function() {            console.log('onclick');            document.querySelector('.kmnd_notice').remove();        }    }}

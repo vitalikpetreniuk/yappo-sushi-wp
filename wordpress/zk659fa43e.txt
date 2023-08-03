@@ -1,1 +1,0 @@
-Temporary file for measuring server response speed.

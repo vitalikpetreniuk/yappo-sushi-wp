@@ -1,1 +1,0 @@
-<?php echo 'Temporary file for measuring server response speed.';
