@@ -132,7 +132,7 @@ if (@$block['data']['preview_image_help']) : ?>
 
         </div>
         <div class="container-fluid">
-            <div class="filter-wrap filter-wrap-active">
+            <div class="filter-wrap">
 
 
                 <div class="filter-btn-wrap">
@@ -145,7 +145,7 @@ if (@$block['data']['preview_image_help']) : ?>
                     <hr class="line">
                 </div>
 
-                <div class="filter-options filter-options-active">
+                <div class="filter-options">
 
                     <button class="close-filter">
                         <svg class="hover-effect-svg" width="22" height="22" viewBox="0 0 22 22" fill="none"
@@ -371,12 +371,13 @@ if (@$block['data']['preview_image_help']) : ?>
             </div>
         </div>
 
-        <?php if (!empty($_GET)) : ?>
 
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="cheked-wrap">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="cheked-wrap">
+                        <?php if (!empty($_GET)) : ?>
+
                             <?php if (isset($_GET['orderby'])) : ?>
                                 <div class="chaked-box" data-sortby="<?= $_GET['orderby'] ?>">
                                     <?php switch ($_GET['orderby']) {
@@ -433,59 +434,57 @@ if (@$block['data']['preview_image_help']) : ?>
                                 </div>
                             <?php endforeach; ?>
 
-                        </div>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
+        </div>
 
-        <?php endif; ?>
 
-        <div class="container-fluid">
-            <?php
-            $loop = new WP_Query($args);
-            woocommerce_product_loop_start();
+        <?php
+        $loop = new WP_Query($args);
+        woocommerce_product_loop_start();
 
-            ?>
-            <?php if (isset($loop) && $loop->have_posts()) {
-                $i = 0;
-                while ($loop->have_posts()) {
-                    $loop->the_post();
-                    $i++;
-                    $product = wc_get_product(get_the_ID());
-                    $seo[] = load_template_part('template-parts/seo/product', 'item', [
-                        'i' => $i,
-                        'quantity' => 1,
-                        'id' => get_the_ID(),
-                        'price' => $product->get_price(),
-                        'list_name' => 'Product category'
-                    ]);
-                    ?>
-                    <?php wc_get_template_part('content', 'product'); ?>
-                    <?php
-                }
-            } else {
+        ?>
+        <?php if (isset($loop) && $loop->have_posts()) {
+            $i = 0;
+            while ($loop->have_posts()) {
+                $loop->the_post();
+                $i++;
+                $product = wc_get_product(get_the_ID());
+                $seo[] = load_template_part('template-parts/seo/product', 'item', [
+                    'i' => $i,
+                    'quantity' => 1,
+                    'id' => get_the_ID(),
+                    'price' => $product->get_price(),
+                    'list_name' => 'Product category'
+                ]);
                 ?>
-                <?php esc_html_e('Постів не знайдено', 'yappo'); ?>
+                <?php wc_get_template_part('content', 'product'); ?>
                 <?php
             }
+        } else {
             ?>
-            <script>
-                // Measure product views / impressions
-                window.dataLayer = window.dataLayer || [];
-                dataLayer.push({ecommerce: null});  // Clear the previous ecommerce object.
-                dataLayer.push({
-                    event: "view_item_list",
-                    ecommerce: {
-                        items: [
-                            <?= implode(',', $seo) ?>
-                        ]
-                    }
-                });
-            </script>
+            <?php esc_html_e('Постів не знайдено', 'yappo'); ?>
             <?php
-            woocommerce_product_loop_end();
-            ?>
-        </div>
+        }
+        ?>
+        <script>
+            // Measure product views / impressions
+            window.dataLayer = window.dataLayer || [];
+            dataLayer.push({ecommerce: null});  // Clear the previous ecommerce object.
+            dataLayer.push({
+                event: "view_item_list",
+                ecommerce: {
+                    items: [
+                        <?= implode(',', $seo) ?>
+                    ]
+                }
+            });
+        </script>
+        <?php
+        woocommerce_product_loop_end();
+        ?>
     </section>
     <?php
     wp_reset_query();
