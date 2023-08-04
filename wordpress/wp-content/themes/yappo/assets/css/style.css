@@ -3912,6 +3912,11 @@ body .helpcrunch-iframe-wrapper {
   cursor: pointer;
 }
 
+.radio-button-container .img-wrap,
+.filter__checkgroup-title .img-wrap {
+  margin-left: 0.5rem !important;
+}
+
 /* Create a custom radio button */
 
 .checkmark {
@@ -3941,6 +3946,10 @@ body .helpcrunch-iframe-wrapper {
 .filter__checkgroup-title input:checked ~ .checkmark {
   background-color: rgba(0, 0, 0, 0);
   border-color: #2A1A5E;
+}
+
+.filter__checkgroup-title .img-wrap {
+  margin-left: 0.5rem;
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
