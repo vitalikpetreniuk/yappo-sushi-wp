@@ -425,6 +425,9 @@
         opacity: 0;
         cursor: pointer;
       }
+    .img-wrap{
+        margin-left: .5rem !important;
+    }
   }
   
   /* Create a custom radio button */
@@ -456,7 +459,9 @@
   }
   
   
-  
+  .filter__checkgroup-title .img-wrap{
+        margin-left: .5rem;
+    }
   
   /* Create the indicator (the dot/circle - hidden when not checked) */
   .checkmark:after {
@@ -499,6 +504,8 @@
         -o-transition: .3s;
         transition: .3s;
       }
+
+      
   }
 
 //   .radio-button-container .checkmark:before{
