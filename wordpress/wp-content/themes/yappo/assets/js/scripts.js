@@ -219,15 +219,17 @@ $(function() {
 		input.addEventListener("input", (e) => {
 		let minRange = parseInt(rangeInput[0].value);
 		let maxRange = parseInt(rangeInput[1].value);
-		if (maxRange - minRange < rangeMin) {     
+		if (maxRange - minRange < rangeMin) {
 			if (e.target.className === "min") {
-			rangeInput[0].value = maxRange - rangeMin;        
+			rangeInput[0].value = maxRange - rangeMin;
 			} else {
-			rangeInput[1].value = minRange + rangeMin;        
+			rangeInput[1].value = minRange + rangeMin;
 			}
 		} else {
 			rangePrice[0].value = minRange;
 			rangePrice[1].value = maxRange;
+			console.log("left", (minRange / rangeInput[0].max) * 100 + "%")
+			console.log("right", 100 - (maxRange / rangeInput[1].max) * 100 + "%")
 			range.style.left = (minRange / rangeInput[0].max) * 100 + "%";
 			range.style.right = 100 - (maxRange / rangeInput[1].max) * 100 + "%";
 		}
@@ -248,7 +250,7 @@ $(function() {
 		  }
 		});
 	  });
-  
+
 
 	$(".inp-regulation").click(function() {
         var input = $(this);
@@ -521,38 +523,38 @@ $(function() {
 
 	var $customTooltip;
 	var $lastTooltipElement;
-	
+
 	$(document).on('click', '.cart__detail[title]', function(e) {
 	  e.stopPropagation();
-	
+
 	  if ($(window).width() < 768) {
 		var tooltipText = $(this).attr('title');
 		var $productItem = $(this).closest('.product__item');
-	
+
 		if ($customTooltip && $customTooltip.is(':visible') && $(this).is($lastTooltipElement)) {
-		
+
 		  $customTooltip.remove();
 		  $customTooltip = null;
 		  $lastTooltipElement = null;
 		} else {
-	
+
 		  if ($customTooltip && $customTooltip.is(':visible')) {
 			$customTooltip.remove();
 		  }
-	
-	
+
+
 		  $customTooltip = $('<div>')
 			.attr('id', 'custom-tooltip')
 			.addClass('custom-tooltip')
 			.append($('<div>').addClass('tooltip-content').text(tooltipText));
-	
+
 		  $productItem.append($customTooltip);
 		  $lastTooltipElement = $(this);
 		  $customTooltip.show();
 		}
 	  }
 	});
-	
+
 	$(document).click(function() {
 	  if ($customTooltip && $customTooltip.is(':visible')) {
 		$customTooltip.remove();
@@ -560,7 +562,7 @@ $(function() {
 		$lastTooltipElement = null;
 	  }
 	});
-	
+
 	$customTooltip && $customTooltip.click(function(e) {
 	  e.stopPropagation();
 	});
@@ -614,10 +616,10 @@ $(document).ready(function() {
 	$(document).on('click', '.close-cart', toggleCart);
 	$(document).on('click', '.added-success > .orange-btn', function() {
 		toggleCart;
-	  
+
 		$('.added-success').removeClass('added-success-active');
 	  });
-	
+
 
 	$(document).on('click', '.local', function() {
 	if ($('.cart-modal').hasClass('cart-modal-active')) {
@@ -833,7 +835,7 @@ $(window).on('load resize', function() {
 
 
 	//click in page-404
-	
+
 	$('.cursor-pointer').click(function() {
 		window.location.href = window.location.origin;
 	});
@@ -849,19 +851,19 @@ $(window).on('load resize', function() {
 		}
 	  }, 1000);
 
-	
+
 	//for chat
 	function checkElement() {
 		if ($('.helpcrunch-iframe-wrapper iframe').length > 0) {
-	
+
 		  $('.header').css('z-index', 20);
 		} else {
-	
+
 		  $('.header').css('z-index', 100);
 		}
 	}
-	
-	  
+
+
 	$(window).on('load resize', function() {
 		if ($(window).width() <= 768) {
 			setInterval(checkElement, 500);
