@@ -198,8 +198,8 @@ if (@$block['data']['preview_image_help']) : ?>
                                                     </div>
                                                     <div class="range-input">
 
-                                                        <input type="range" class="min" min="0" max="100" value="0" step="10">
-                                                        <input class="range-two" type="range" class="max" min="0" max="<?= $_GET['max_price'] ?: $max ?>" value="<?= $_GET['max_price'] ?: $max ?>" step="10">
+                                                        <input type="range" class="min" min="0" max="2000" value="0" step="10">
+                                                        <input class="range-two" type="range" class="max" min="0" max="2000" value="2000" step="10">
 
                                                     </div>
 
@@ -207,7 +207,7 @@ if (@$block['data']['preview_image_help']) : ?>
 
                                                         <input type="number" name="min" value="0">      
                                                      
-                                                        <input style="text-align: right;" type="number" name="max" value="<?= $_GET['max_price'] ?: $max ?>">  
+                                                        <input style="text-align: right;" type="number" name="max" value="2000">  
 
                                                     </div>
                                                 </div> 
