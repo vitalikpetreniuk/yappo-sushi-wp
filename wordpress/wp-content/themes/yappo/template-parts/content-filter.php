@@ -63,22 +63,36 @@
                                                 <span class="range-selected"></span>
 
                                             </div>
+<!--                                            <div class="range-input">-->
+<!---->
+<!--                                                <input type="range" class="min" min="0" max="--><?php //= $_GET['max_price'] ?: $args['max'] ?><!--" value="300"-->
+<!--                                                       step="10">-->
+<!--                                                <input class="range-two" type="range" class="max" min="0" max="--><?php //= $_GET['max_price'] ?: $args['max'] ?><!--"-->
+<!--                                                       value="700" step="10">-->
+<!---->
+<!--                                            </div>-->
+<!---->
+<!--                                            <div class="range-price">-->
+<!---->
+<!--                                                <input type="number" name="min_price"-->
+<!--                                                       value="--><?php //= $_GET['min_price'] ?: $args['min'] ?><!--">-->
+<!---->
+<!--                                                <input style="text-align: right;" type="number" name="max_price"-->
+<!--                                                       value="--><?php //= $_GET['max_price'] ?: $args['max'] ?><!--">-->
+<!---->
+<!--                                            </div>-->
                                             <div class="range-input">
 
-                                                <input type="range" class="min" min="0" max="<?= $_GET['max_price'] ?: $args['max'] ?>" value="300"
-                                                       step="10">
-                                                <input class="range-two" type="range" class="max" min="0" max="<?= $_GET['max_price'] ?: $args['max'] ?>"
-                                                       value="700" step="10">
+                                                <input type="range" class="min" min="0" max="<?= $_GET['max_price'] ?: $args['max'] ?>" value="0" step="10">
+                                                <input class="range-two" type="range" class="max" min="0" max="<?= $_GET['max_price'] ?: $args['max'] ?>" value="<?= $_GET['max_price'] ?: $args['max'] ?>" step="10">
 
                                             </div>
 
                                             <div class="range-price">
 
-                                                <input type="number" name="min_price"
-                                                       value="<?= $_GET['min_price'] ?: $args['min'] ?>">
+                                                <input type="number" name="min" value="0">
 
-                                                <input style="text-align: right;" type="number" name="max_price"
-                                                       value="<?= $_GET['max_price'] ?: $args['max'] ?>">
+                                                <input style="text-align: right;" type="number" name="max" value="<?= $_GET['max_price'] ?: $args['max'] ?>">
 
                                             </div>
                                         </div>
