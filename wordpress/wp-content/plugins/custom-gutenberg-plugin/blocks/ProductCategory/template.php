@@ -145,7 +145,7 @@ if (@$block['data']['preview_image_help']) : ?>
                     <hr class="line">
                 </div>
 
-                <div class="filter-options ">
+                <div class="filter-options">
 
                     <button class="close-filter">
                         <svg class="hover-effect-svg" width="22" height="22" viewBox="0 0 22 22" fill="none"
@@ -198,30 +198,30 @@ if (@$block['data']['preview_image_help']) : ?>
                                                     </div>
                                                     <div class="range-input">
 
-                                                        <input type="range" class="min" min="0" max="2000" value="0" step="10">
-                                                        <input class="range-two" type="range" class="max" min="0" max="2000" value="2000" step="10">
+                                                        <input type="range" class="min" min="0" max="1000" value="300" step="10">
+                                                        <input class="range-two" type="range" class="max" min="0" max="1000" value="700" step="10">
 
                                                     </div>
 
-                                                    <div class="range-price">    
+                                                    <div class="range-price">
 
-                                                        <input type="number" name="min" value="0">      
-                                                     
-                                                        <input style="text-align: right;" type="number" name="max" value="2000">  
+                                                        <input type="number" name="min" value="<?= $_GET['min_price'] ?: $min ?>">
+
+                                                        <input style="text-align: right;" type="number" name="max" value="<?= $_GET['max_price'] ?: $max ?>">
 
                                                     </div>
-                                                </div> 
+                                                </div>
                                             </div>
 
                                         </div>
 
                                     </div>
 
-<!-- 
+<!--
                                     <div class="filter__slider-control-group">
 
                                         <div class="filter__slider-control-column">
-                                        
+
                                             <input class="filter__slider-control inp-regulation" type="number"
                                                    name="min_price" value="">
                                         </div>
@@ -362,7 +362,7 @@ if (@$block['data']['preview_image_help']) : ?>
                                                                                <div class="default-img">
                                                                                     <?= wp_get_attachment_image(get_field('image', $term), 'full') ?>
                                                                                </div>
-                                                                                
+
                                                                                 <div class="img-active">
                                                                                     <?= wp_get_attachment_image(get_field('hover_image', $term), 'full') ?>
                                                                                 </div>

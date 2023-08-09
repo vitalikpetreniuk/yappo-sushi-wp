@@ -90,7 +90,9 @@ jQuery(function ($) {
     $("#city-chooser button").on('click', function (e) {
         e.preventDefault();
         const cityid = $(this).closest('#city-chooser').find('a.active').data('id');
+        const cityAddress = $(this).closest('#city-chooser').find('a.active').data('address');
 
+        setCookie('choosedaddress', cityAddress);
         setCookie('choosedcity', cityid);
         window.location.reload();
     })
@@ -113,8 +115,9 @@ jQuery(function ($) {
     $("#city-chooser ul li a").on('click', function () {
         $("#city-chooser .orange-btn").removeAttr('disabled');
     })
-
-    if (!getCookie('choosedcity')) {
+    const checkoutPage = document.querySelector('.woocommerce-checkout');
+    if (!getCookie('choosedcity') && checkoutPage) {
+        console.log(checkoutPage);
         $('.modal-city-wrap').removeClass('modal-city-wrap-none');
     }
 
@@ -333,7 +336,6 @@ jQuery(function ($) {
 })
 
 function add_to_cart_ads(id, price) {
-    alert('work');
     dataLayer.push({
         'event': 'add_to_cart_ads',
         'value': price,
