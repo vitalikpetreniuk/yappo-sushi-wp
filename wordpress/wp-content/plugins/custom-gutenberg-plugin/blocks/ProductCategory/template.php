@@ -145,7 +145,7 @@ if (@$block['data']['preview_image_help']) : ?>
                     <hr class="line">
                 </div>
 
-                <div class="filter-options filter-options-active">
+                <div class="filter-options ">
 
                     <button class="close-filter">
                         <svg class="hover-effect-svg" width="22" height="22" viewBox="0 0 22 22" fill="none"
@@ -198,14 +198,14 @@ if (@$block['data']['preview_image_help']) : ?>
                                                     </div>
                                                     <div class="range-input">
 
-                                                        <input type="range" class="min" min="0" max="1000" value="300" step="10">
-                                                        <input class="range-two" type="range" class="max" min="0" max="1000" value="700" step="10">
+                                                        <input type="range" class="min" min="0" max="100" value="0" step="10">
+                                                        <input class="range-two" type="range" class="max" min="0" max="<?= $_GET['max_price'] ?: $max ?>" value="<?= $_GET['max_price'] ?: $max ?>" step="10">
 
                                                     </div>
 
                                                     <div class="range-price">    
 
-                                                        <input type="number" name="min" value="<?= $_GET['min_price'] ?: $min ?>">      
+                                                        <input type="number" name="min" value="0">      
                                                      
                                                         <input style="text-align: right;" type="number" name="max" value="<?= $_GET['max_price'] ?: $max ?>">  
 

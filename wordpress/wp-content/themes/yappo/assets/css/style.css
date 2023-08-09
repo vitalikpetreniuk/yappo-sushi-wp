@@ -4005,11 +4005,38 @@ body .helpcrunch-iframe-wrapper {
 
 .range-selected {
   height: 100%;
-  left: 30%;
-  right: 30%;
+  left: 0%;
+  right: 0%;
   position: absolute;
   border-radius: 5px;
   background-color: #2A1A5E;
+}
+
+.range-selected:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 33px;
+  background: url(../img/fish-tail.svg) 50% 50% no-repeat;
+  left: 0px;
+  top: 50%;
+  -webkit-transform: translate(-67%, -50%);
+      -ms-transform: translate(-67%, -50%);
+          transform: translate(-67%, -50%);
+}
+
+.range-selected::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 33px;
+  background: url(../img/fish-tail.svg) 50% 50% no-repeat;
+  -webkit-transform: rotate(180deg) translate(-67%, 50%);
+      -ms-transform: rotate(180deg) translate(-67%, 50%);
+          transform: rotate(180deg) translate(-67%, 50%);
+  left: auto;
+  right: 0;
+  top: 50%;
 }
 
 .range-input {
@@ -4030,7 +4057,7 @@ body .helpcrunch-iframe-wrapper {
 .range-input input::-webkit-slider-thumb {
   width: 20px;
   height: 33px;
-  background: url(../img/fish-tail.svg) 50% 50% no-repeat;
+  background: none;
   cursor: pointer;
   pointer-events: auto;
   -webkit-appearance: none;
@@ -4042,7 +4069,7 @@ body .helpcrunch-iframe-wrapper {
 .range-input .range-two::-webkit-slider-thumb {
   width: 20px;
   height: 33px;
-  background: url(../img/fish-tail.svg) 50% 50% no-repeat;
+  background: none;
   cursor: pointer;
   pointer-events: auto;
   -webkit-appearance: none;
