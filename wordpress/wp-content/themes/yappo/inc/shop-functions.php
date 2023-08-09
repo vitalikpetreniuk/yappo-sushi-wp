@@ -732,3 +732,95 @@ const FILTERED_TAXONOMIES = [
     'pa_ingredients',
     'product_tag'
 ];
+
+//add_action('pre_get_posts', function ($q) {
+add_action('woocommerce_product_query', 'yappo_product_query', 10, 2);
+
+function yappo_product_query($q) {
+
+    switch ($_GET['orderby']) {
+        case 'popularity':
+            $meta_key = '';
+            $order = 'desc';
+            $orderby = 'total_sales';
+            break;
+        case 'low_to_high':
+            $meta_key = '_price';
+            $order = 'asc';
+            $orderby = 'meta_value_num';
+            break;
+        case 'high_to_low':
+            $meta_key = '_price';
+            $order = 'desc';
+            $orderby = 'meta_value_num';
+            break;
+        case 'newness':
+            $meta_key = '';
+            $order = 'desc';
+            $orderby = 'date';
+            break;
+        case 'rating':
+            $meta_key = '';
+            $order = 'desc';
+            $orderby = 'rating';
+            break;
+        default:
+            $meta_key = '';
+            $order = 'asc';
+            $orderby = 'menu_order title';
+            break;
+    }
+
+    $q->set('order', $order);
+    $q->set('orderby', $orderby);
+    $q->set('meta_key', $meta_key);
+    $tax_query = $q->get('tax_query');
+    $meta_query = $q->get('meta_query');
+
+    if (isset($_GET['pa_ingredients'])) {
+        $tax_query[] = [
+            'taxonomy' => 'pa_ingredients',
+            'field' => 'slug',
+            'terms' => $_GET['pa_ingredients'],
+        ];
+    }
+
+    if (isset($_GET['product_tag'])) {
+        $tax_query[] = [
+            'taxonomy' => 'product_tag',
+            'field' => 'slug',
+            'terms' => $_GET['product_tag'],
+        ];
+    }
+
+    if (isset($_GET['min_price'], $_GET['max_price'])) {
+        $meta_query = array(
+            'relation' => 'AND',
+            'min_price' => [
+                'key' => '_price',
+                'compare' => '>=',
+                'type' => 'numeric',
+                'value' => $_GET['min_price']
+            ],
+            'max_price' => [
+                'key' => '_price',
+                'compare' => '<=',
+                'type' => 'numeric',
+                'value' => $_GET['max_price']
+            ]
+        );
+    }
+
+
+    $q->set('tax_query', $tax_query);
+    $q->set('meta_query', $meta_query);
+
+    return $q;
+}
+
+add_action('pre_get_posts', function ($q) {
+    if($q->get('yappo_filter')) {
+        $q = yappo_product_query($q);
+    }
+    return $q;
+});

@@ -8,3 +8,4 @@ wordpress/wp-content/uploads/cache
 _src/.DS_Store
 *.log
 /wordpress/wp-content/uploads/log/
+wordpress/wp-content/uploads/wc-logs
