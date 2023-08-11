@@ -1,505 +1,513 @@
-.filter-btn-wrap{
-    padding: 0 0 28px;
+.filter-btn-wrap {
+  padding: 0 0 28px;
 
-    @include media-for (null, $sm){
-        padding: 0 0 8px;
-    } 
+  @include media-for(null, $sm) {
+    padding: 0 0 8px;
+  }
 }
 
-.filter-wrap{
-    
-    // margin-bottom: 110px;
+.filter-wrap {
 
-    // @include media-for (null, $sm){
-    //     margin-bottom: 100px;
-    // } 
-   
-    .filter-btn-open{
+  // margin-bottom: 110px;
+
+  // @include media-for (null, $sm){
+  //     margin-bottom: 100px;
+  // }
+
+  .filter-btn-open {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'DelaGothicOne';
+    color: $accent;
+    position: relative;
+    z-index: 10;
+  }
+
+
+  .filter-options {
+    text-align: left;
+    position: relative;
+    // margin-bottom: 40px;
+    z-index: 2;
+    // transition: opacity .4s ease, margin-top .4s ease, z-index .4s ease;
+    opacity: 0;
+    margin-top: -100%;
+    z-index: -100;
+
+    @include media-for(null, 1025px) {
+      margin-top: -300%;
+    }
+
+    @include media-for(null, $sm) {
+      margin-bottom: 30px;
+      margin-top: -1000%;
+    }
+
+    label {
+      color: $text-black;
+      font-size: 14px;
+      font-weight: 300;
+      margin-bottom: 17px;
+    }
+
+
+    .filter__title {
+      font-size: 14px;
+      font-weight: 700;
+      color: $accent;
+      text-align: left;
+      margin-bottom: 30px;
+
+      @include media-for(null, $sm) {
+        text-align: center;
+      }
+    }
+
+    .close-filter {
+      position: absolute;
+      right: 1rem;
+      top: -1rem;
+      @include media-for(null, $sm) {
+        right: 0rem;
+      }
+    }
+
+    .radio {
+
+      @include media-for(null, $sm) {
+        display: flex;
+        margin-bottom: 25px;
+      }
+
+      label {
+        @include media-for(null, $sm) {
+          margin-right: 1.5rem;
+          display: block;
+        }
+      }
+
+      div {
         display: flex;
         align-items: center;
-        font-weight: 400;
-        font-size: 16px;
-        font-family: 'DelaGothicOne';
-        color: $accent;
-        position: relative;
-        z-index: 10;
-    }
 
-
-    .filter-options{
-        text-align: left;
-        position: relative;
-        // margin-bottom: 40px;
-        z-index: 2;
-        // transition: opacity .4s ease, margin-top .4s ease, z-index .4s ease;
-        opacity: 0;
-        margin-top: -100%;
-        z-index: -100;
-
-        @include media-for (null, 1025px){
-            margin-top: -300%;
-         } 
-
-        @include media-for (null, $sm){
-            margin-bottom: 30px;
-            margin-top: -1000%;
-         } 
-
-        label{
-            color: $text-black;
-            font-size: 14px;
-            font-weight: 300;
-            margin-bottom: 17px;
+        input {
+          margin-right: 1rem;
+          margin-bottom: 17px;
         }
-
-
-
-        .filter__title{
-            font-size: 14px;
-            font-weight: 700;
-            color: $accent;
-            text-align: left;
-            margin-bottom: 30px;
-
-            @include media-for (null, $sm){
-                text-align: center;
-            }
-        }
-
-        .close-filter{
-            position: absolute;
-            right: 1rem;
-            top: -1rem;
-            @include media-for (null, $sm){
-                right: 0rem;
-            }   
-        }
-
-        .radio{
-
-            @include media-for (null, $sm){
-                display: flex;
-                margin-bottom: 25px;
-            }
-            label{
-                @include media-for (null, $sm){
-                    margin-right: 1.5rem;
-                    display: block;
-                }
-            }
-            div{
-                display: flex;
-                align-items: center;
-
-                input{
-                    margin-right: 1rem;
-                    margin-bottom: 17px;
-                }
-            }
-        }
-
-
-        .filter__slider-control-group{
-            display: flex;
-            margin: 23px 0;
-
-            @include media-for (null, $sm){
-                margin: 24px 0;
-            }
-             
-            input{
-                width: 115px;
-                height: 30px;
-                border: none;
-                outline: none;
-                border-bottom: 1px solid $accent;
-                color: $text-black;
-                text-align: left;
-                border-radius: 0;
-         
-                @include media-for (null, $sm){
-                    width: 120px;
-                }
-
-            }
-
-            .filter__slider-control-column{
-
-                &:first-child{
-                    input{
-                        margin-right: 25px;
-                        @include media-for (null, $sm){
-                            margin-right: 30px;
-                        }
-                    }
-                }
-
-                &:last-child{
-                    input{
-                        text-align: right;
-                    }
-                }
-
-            }
-        }
-
-
-        .filter__range-slider{
-            max-width: 250px;
-            @include media-for (null, $sm){
-                max-width: 100%;
-                margin: 0 10px;
-            }
-
-            .slider-wrapper{
-                padding-bottom: 30px;
-            }
-
-            .ui-slider-handle{
-                // position:relative;
-                .value{
-                  position:absolute;
-                  top: -20px;
-                  left: 50%;
-                  transform:translate(-50%, 0);
-                  display: block;
-                  width: 80px;
-                  background:#000;
-                  color:#fff;
-                  text-align: center;
-                }
-                &.ui-state-default{
-                  &.ui-corner-all{
-                    &.ui-state-focus{
-                      outline:none;
-                    }
-                  }
-                } 
-              }
-            
-
-
-            .ui-widget-content {
-                position: relative;
-                border: 1px solid $accent;
-                background: #fff;
-                height: 6px;
-                border-radius: 10px;
-
-                @include media-for (null, $sm){
-                    width: 90%;
-                }
-
-                .ui-slider-range {
-                    position: absolute;
-                    top: 50% !important;
-                    margin-top: -2.5px;
-                    height: 5px!important;
-                    background: $accent;
-                }
-
-                .ui-state-default{
-                    background: url(../img/fish-tail.svg) 50% 50% no-repeat;
-                    font-weight: 400;
-                    width: 20px;
-                    height: 33px;
-                    display: block;
-                    position: absolute;
-                    z-index: 2;
-                    cursor: pointer;
-                    -ms-touch-action: none;
-                    touch-action: none;
-                    left: 0;
-                    transform: translate(-80%, -50%);
-                    top: 50%;
-
-                    &:last-child{
-                        transform:translate(-30%, -50%) rotate(180deg);
-                    }
-                }
-            }
-        }
-
-        .filter__properties-list{
-            @include media-for (null, $sm){
-                display: flex;
-                flex-wrap: wrap;
-                margin-bottom: 40px;
-                justify-content: space-between;
-            }
-
-            // .filter__checkgroup-link{
-            //     @include media-for (null, $sm){
-            //         margin-right: 1rem;
-            //     }   
-            // }
-        }
-
-        .line{
-            @include media-for (null, $sm){
-                margin-top: 0;
-            }    
-        }
-    }
-
-    .filter-options-active{
-        opacity: 1;
-        margin-top: 0% !important;
-        z-index: 10;
-    }
-
-
-    .col-two{
-
-        .filter__properties-list{
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            margin-bottom: 30px;
-
-            // .filter__properties-item {
-            //     &:nth-of-type(2n){
-            //         .filter__checkgroup-link {
-            //             @include media-for (null, $sm){
-            //                 margin-right: 0;    
-            //             }
-            //         }
-
-            //         .filter__checkgroup-link{
-            //             @include media-for (null, $sm){
-            //                 margin-right: 0;    
-            //             }
-            //         }
-            //     }
-            // }
-        }
-
-        label{
-            border: 1px solid $accent;
-            min-width: 170px;
-            height: 70px;
-            display: block;
-            padding: 14px 15px;
-            font-family: 'DelaGothicOne';
-            font-size: 13px;
-            font-weight: 400;
-            color: $accent;
-            border-radius: 25px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            line-height: 1.2;
-
-            @include media-for (null, $sm){
-                padding: 12px 18px;
-                width: 195px;
-            } 
-            
-
-
-            @include media-for (null, 424px){
-                width: 182px;
-            } 
-
-            @include media-for (null, 400px){
-                width: 174px;
-            } 
-
-            @include media-for (null, 387px){
-                width: 166px;
-            } 
-        }
-
-        .category-offers{
-            label{
-                .img-wrap{
-                    border-radius: 100%;
-                    margin-left: .5rem;
-
-                    .default-img{
-                        display: block;
-                    }
-                    .img-active{
-                        display: none;
-                    }
-                }
-            }
-
-            .filter__properties-item{
-                .akcziyi{
-                    border: 1px solid #FF671D;
-                    color: #FF671D;
-                }
-                .vegeterianske{
-                    border: 1px solid $green;
-                    color: $green;
-                    min-width: 200px;
-                }
-                .gostre{
-                    border: 1px solid $red;
-                    color: $red;
-                }
-
-                .populyarne{
-                    border: 1px solid #6775D0;
-                    color: #6775D0;
-                }
-            }
-        }
-
-        .label-active{
-            border: 1px solid #FF671D !important;
-            background: #FF671D;
-            color: $text-white !important;
-            
-            .img-wrap{
-                .default-img{
-                    display: none;
-                }
-                .img-active{
-                    display: block !important;
-                }
-            }
-        }
-
-        .filter__properties-item{
-            margin-right: .5rem;
-
-            @include media-for (null, $sm){
-                margin-right: .0rem;
-            }
-        }
-    }
-
-
-
-
-}
-
-.label-active{
-    border: 1px solid #FF671D !important;
-    background: #FF671D;
-    color: $text-white;
-
-    .img-wrap{
-        .default-img{
-            display: none !important;
-        }
-        .img-active{
-            display: block !important;
-        }
-    }
-
-}
-
-
-.filter-wrap-active{
-    margin-bottom: 0;
-    // height: auto  !important;
-}
-
-
-
-
-  
-  /* label container */
-  .radio-button-container,.filter__checkgroup-title {
-    color: rgba(0,0,0,0.75);
-    display: block;
-    position: relative;
-    padding-left: 25px;
-    line-height: 25px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 18px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  
-  /* Hide the browser's default radio button */
-  .radio-button-container,.filter__checkgroup-title {
-    input{
-        position: absolute;
-        opacity: 0;
-        cursor: pointer;
       }
+    }
+
+
+    .filter__slider-control-group {
+      display: flex;
+      margin: 23px 0;
+
+      @include media-for(null, $sm) {
+        margin: 24px 0;
+      }
+
+      input {
+        width: 115px;
+        height: 30px;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid $accent;
+        color: $text-black;
+        text-align: left;
+        border-radius: 0;
+
+        @include media-for(null, $sm) {
+          width: 120px;
+        }
+
+      }
+
+      .filter__slider-control-column {
+
+        &:first-child {
+          input {
+            margin-right: 25px;
+            @include media-for(null, $sm) {
+              margin-right: 30px;
+            }
+          }
+        }
+
+        &:last-child {
+          input {
+            text-align: right;
+          }
+        }
+
+      }
+    }
+
+
+    .filter__range-slider {
+      max-width: 250px;
+      @include media-for(null, $sm) {
+        max-width: 100%;
+        margin: 0 10px;
+      }
+
+      .slider-wrapper {
+        padding-bottom: 30px;
+      }
+
+      .ui-slider-handle {
+        // position:relative;
+        .value {
+          position: absolute;
+          top: -20px;
+          left: 50%;
+          transform: translate(-50%, 0);
+          display: block;
+          width: 80px;
+          background: #000;
+          color: #fff;
+          text-align: center;
+        }
+
+        &.ui-state-default {
+          &.ui-corner-all {
+            &.ui-state-focus {
+              outline: none;
+            }
+          }
+        }
+      }
+
+
+      .ui-widget-content {
+        position: relative;
+        border: 1px solid $accent;
+        background: #fff;
+        height: 6px;
+        border-radius: 10px;
+
+        @include media-for(null, $sm) {
+          width: 90%;
+        }
+
+        .ui-slider-range {
+          position: absolute;
+          top: 50% !important;
+          margin-top: -2.5px;
+          height: 5px !important;
+          background: $accent;
+        }
+
+        .ui-state-default {
+          background: url(../img/fish-tail.svg) 50% 50% no-repeat;
+          font-weight: 400;
+          width: 20px;
+          height: 33px;
+          display: block;
+          position: absolute;
+          z-index: 2;
+          cursor: pointer;
+          -ms-touch-action: none;
+          touch-action: none;
+          left: 0;
+          transform: translate(-80%, -50%);
+          top: 50%;
+
+          &:last-child {
+            transform: translate(-30%, -50%) rotate(180deg);
+          }
+        }
+      }
+    }
+
+    .filter__properties-list {
+      @include media-for(null, $sm) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+        justify-content: space-between;
+      }
+
+      // .filter__checkgroup-link{
+      //     @include media-for (null, $sm){
+      //         margin-right: 1rem;
+      //     }
+      // }
+    }
+
+    .line {
+      @include media-for(null, $sm) {
+        margin-top: 0;
+      }
+    }
   }
-  
-  /* Create a custom radio button */
-  .checkmark {
+
+  .filter-options-active {
+    opacity: 1;
+    margin-top: 0% !important;
+    z-index: 10;
+  }
+
+
+  .col-two {
+
+    .filter__properties-list {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+
+      // .filter__properties-item {
+      //     &:nth-of-type(2n){
+      //         .filter__checkgroup-link {
+      //             @include media-for (null, $sm){
+      //                 margin-right: 0;
+      //             }
+      //         }
+
+      //         .filter__checkgroup-link{
+      //             @include media-for (null, $sm){
+      //                 margin-right: 0;
+      //             }
+      //         }
+      //     }
+      // }
+    }
+
+    label {
+      border: 1px solid $accent;
+      min-width: 170px;
+      height: 70px;
+      display: block;
+      padding: 14px 15px;
+      font-family: 'DelaGothicOne';
+      font-size: 13px;
+      font-weight: 400;
+      color: $accent;
+      border-radius: 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      line-height: 1.2;
+
+      @include media-for(null, $sm) {
+        padding: 12px 18px;
+        width: 195px;
+      }
+
+
+      @include media-for(null, 424px) {
+        width: 182px;
+      }
+
+      @include media-for(null, 400px) {
+        width: 174px;
+      }
+
+      @include media-for(null, 387px) {
+        width: 166px;
+      }
+    }
+
+    .category-offers {
+      label {
+        .img-wrap {
+          border-radius: 100%;
+          margin-left: .5rem;
+
+          .default-img {
+            display: block;
+          }
+
+          .img-active {
+            display: none;
+          }
+        }
+      }
+
+      .filter__properties-item {
+        .akcziyi {
+          border: 1px solid #FF671D;
+          color: #FF671D;
+        }
+
+        .vegeterianske {
+          border: 1px solid $green;
+          color: $green;
+          min-width: 200px;
+        }
+
+        .gostre {
+          border: 1px solid $red;
+          color: $red;
+        }
+
+        .populyarne {
+          border: 1px solid #6775D0;
+          color: #6775D0;
+        }
+      }
+    }
+
+    .label-active {
+      border: 1px solid #FF671D !important;
+      background: #FF671D;
+      color: $text-white !important;
+
+      .img-wrap {
+        .default-img {
+          display: none;
+        }
+
+        .img-active {
+          display: block !important;
+        }
+      }
+    }
+
+    .filter__properties-item {
+      margin-right: .5rem;
+
+      @include media-for(null, $sm) {
+        margin-right: .0rem;
+      }
+    }
+  }
+
+
+}
+
+.label-active {
+  border: 1px solid #FF671D !important;
+  background: #FF671D;
+  color: $text-white;
+
+  .img-wrap {
+    .default-img {
+      display: none !important;
+    }
+
+    .img-active {
+      display: block !important;
+    }
+  }
+
+}
+
+
+.filter-wrap-active {
+  margin-bottom: 0;
+  // height: auto  !important;
+}
+
+
+/* label container */
+.radio-button-container, .filter__checkgroup-title {
+  color: rgba(0, 0, 0, 0.75);
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  line-height: 25px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radio-button-container, .filter__checkgroup-title {
+  input {
     position: absolute;
-    top: 0.5rem;
-    left: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .img-wrap {
+    margin-left: .5rem !important;
+  }
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+  height: 13px;
+  width: 13px;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  border: 1px solid #B3BCF3;
+  transition: all 0.3s;
+}
+
+/* On mouse-over, add a grey background color */
+.radio-button-container, .filter__checkgroup-title {
+  &:hover input ~ .checkmark {
+    border-color: rgba(0, 0, 0, .5);
+  }
+}
+
+/* When the radio button is checked */
+.radio-button-container, .filter__checkgroup-title {
+  input:checked ~ .checkmark {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: $accent;
+  }
+}
+
+
+.filter__checkgroup-title .img-wrap {
+  margin-left: .5rem;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkmark:before {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-button-container, .filter__checkgroup-title {
+  input:checked ~ .checkmark:after {
+    display: block;
+  }
+}
+
+.radio-button-container, .filter__checkgroup-title {
+  input:checked ~ .checkmark:before {
+    display: block;
+  }
+}
+
+/* Style the indicator (dot/circle) */
+.radio-button-container, .filter__checkgroup-title {
+  .checkmark:after {
+    position: absolute;
+    left: -1px;
+    top: -1px;
     height: 13px;
     width: 13px;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
     border-radius: 50%;
-    border: 1px solid #B3BCF3;
-    transition: all 0.3s;
-  }
-  
-  /* On mouse-over, add a grey background color */
-  .radio-button-container,.filter__checkgroup-title{
-    &:hover input ~ .checkmark {
-        border-color: rgba(0,0,0,.5);
-      }
-  }
-  
-  /* When the radio button is checked */
-  .radio-button-container,.filter__checkgroup-title{
-    input:checked ~ .checkmark {
-        background-color: rgba(0,0,0,0);
-        border-color: $accent;
-      }
-  }
-  
-  
-  
-  
-  /* Create the indicator (the dot/circle - hidden when not checked) */
-  .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
+    border: 4px solid $accent;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
   }
 
-  .checkmark:before {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-  
-  /* Show the indicator (dot/circle) when checked */
-  .radio-button-container,.filter__checkgroup-title{
-    input:checked ~ .checkmark:after {
-        display: block;
-      }
-  }
 
-  .radio-button-container,.filter__checkgroup-title {
-    input:checked ~ .checkmark:before {
-        display: block;
-      }
-  }
-  
-  /* Style the indicator (dot/circle) */
-  .radio-button-container,.filter__checkgroup-title {
-    .checkmark:after {
-        position: absolute;
-        left: -1px;
-        top: -1px;
-        height: 13px;
-        width: 13px;
-        background-color: rgba(0,0,0,0);
-        border-radius: 50%;
-        border: 4px solid $accent;
-        -webkit-transition: .3s;
-        -o-transition: .3s;
-        transition: .3s;
-      }
-  }
+}
 
 //   .radio-button-container .checkmark:before{
 //     top: 3px;
@@ -511,69 +519,168 @@
 //     z-index: 1;
 //   }
 
-.range-slider {
-    position: relative;
-    border: 1px solid $accent;
-    background: #fff;
-    height: 6px;
-    border-radius: 10px;
-    @include media-for (null, $sm){
-        width: 90%;
+//.range-slider {
+//    position: relative;
+//    border: 1px solid $accent;
+//    background: #fff;
+//    height: 6px;
+//    border-radius: 10px;
+//    @include media-for (null, $sm){
+//        width: 90%;
+//    }
+//
+//  }
+//  .range-selected {
+//    height: 100%;
+//    left: 0%;
+//    right: 0%;
+//    position: absolute;
+//    border-radius: 5px;
+//    background-color: $accent;
+//  }
+//
+//  .range-selected:before {
+//        content: "";
+//        position: absolute;
+//        width: 20px;
+//        height: 33px;
+//        background: url(../img/fish-tail.svg) 50% 50% no-repeat;
+//        left: 0px;
+//        top: 50%;
+//        transform: translate(-67% ,-50%);
+//    }
+//
+//
+//    .range-selected::after {
+//        content: "";
+//        position: absolute;
+//        width: 20px;
+//        height: 33px;
+//        background: url(../img/fish-tail.svg) 50% 50% no-repeat;
+//        transform:rotate(180deg) translate(-67% ,50%) ;
+//        left: auto;
+//        right: 0;
+//        top: 50%;
+//    }
+//
+//  .range-input {
+//    position: relative;
+//  }
+//  .range-input input {
+//    position: absolute;
+//    width: 100%;
+//    height: 5px;
+//    top: -7px;
+//    background: none;
+//    pointer-events: none;
+//    -webkit-appearance: none;
+//    -moz-appearance: none;
+//  }
+//  .range-input input::-webkit-slider-thumb {
+//    width: 20px;
+//    height: 33px;
+//    background: none;
+//    cursor: pointer;
+//    pointer-events: auto;
+//    -webkit-appearance: none;
+//    position: relative;
+//    transform:translateX(-30%);
+//
+//    @include media-for (null, $sm){
+//        transform:translateX(-80%);
+//    }
+//  }
+//
+//
+//  .range-input .range-two::-webkit-slider-thumb {
+//    width: 20px;
+//    height: 33px;
+//    background: none;
+//    cursor: pointer;
+//    pointer-events: auto;
+//    -webkit-appearance: none;
+//    transform:rotate(180deg) translateX(-40%);
+//
+//    @include media-for (null, $sm){
+//        transform:rotate(180deg) translateX(100%);
+//    }
+//
+//  }
+
+.filter-wrap .filter-options {
+  .column-one {
+    .filter__title {
+      margin-bottom: 0;
     }
+  }
+}
 
-  }
-  .range-selected {
-    height: 100%;
-    left: 30%;
-    right: 30%;
-    position: absolute;
-    border-radius: 5px;
-    background-color: $accent;
-  }
+.range-slider {
+  position: relative;
+  //height: 80px;
+}
 
-  .range-input {
-    position: relative;
-  }
-  .range-input input {
-    position: absolute;
-    width: 100%;
-    height: 5px;
-    top: -7px;
-    background: none;
-    pointer-events: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-  }
-  .range-input input::-webkit-slider-thumb {
-    width: 20px;
-    height: 33px;
-    background: url(../img/fish-tail.svg) 50% 50% no-repeat;
-    cursor: pointer;
-    pointer-events: auto;
-    -webkit-appearance: none;
-    position: relative;
-    transform:translateX(-30%);
+.irs--round .irs-line {
+  height: 6px;
+  background: rgb(255, 255, 255);
+  border-width: 1px;
+  border-style: solid;
+  border-color: #2a1a5e;
+}
 
-    @include media-for (null, $sm){
-        transform:translateX(-80%);
-    } 
-  }
+.irs-from, .irs-to, .irs-min, .irs-max, .irs-single, .irs-grid {
+  display: none;
+}
+
+span.irs--round .irs-bar {
+  background-color: #2a1a5e;
+  height: 6px;
+}
 
 
-  .range-input .range-two::-webkit-slider-thumb {
-    width: 20px;
-    height: 33px;
-    background: url(../img/fish-tail.svg) 50% 50% no-repeat;
-    cursor: pointer;
-    pointer-events: auto;
-    -webkit-appearance: none;
-    transform:rotate(180deg) translateX(-40%);
+span.irs-handle.from:before,
+span.irs-handle.to:before {
+  width: 20px;
+  height: 33px;
+  content: "";
+  position: absolute;
+  background: url(../img/fish-tail.svg) 50% 50% no-repeat;
+}
 
-    @include media-for (null, $sm){
-        transform:rotate(180deg) translateX(100%);
-    } 
-    
-  }
+span.irs-handle.from:before {
+  left: -13px;
+  top: -4px;
+}
+span.irs-handle.to:before {
+  left: 2.7px;
+  transform: rotate(-180deg);
+  top: -5px;
+}
+
+.irs--round .irs-handle {
+  background: transparent;
+  width: 10px;
+  height: 25px;
+}
+
+.irs--round .irs-handle.state_hover, .irs--round .irs-handle:hover {
+  background-color: initial;
+}
+
+.irs--round .irs-handle {
+  border: none;
+  background-color: initial;
+  border-radius: initial;
+  box-shadow: initial;
+}
+
+.irs--round .irs-handle > i:first-child {
+  display: none;
+}
+
+//span.irs--round .irs-handle {
+//  background-color: #2a1a5e;
+//}
 
 
 //   .range-input input::-moz-range-thumb {
@@ -587,32 +694,32 @@
 //   }
 
 
-  .range-price {
-    display: flex;
-    justify-content: space-between;
-    margin: 23px 0;
-    @include media-for (null, $sm){
-        margin: 24px 0;
-    }
+.extra-controls {
+  display: flex;
+  justify-content: space-between;
+  margin: 23px 0;
+  @include media-for (null, $sm){
+      margin: 24px 0;
   }
-  .range-price label {
-    margin-right: 5px;
-  }
-  .range-price input {
-    width: 115px;
-    height: 30px;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid $accent;
-    color: $text-black;
-    text-align: left;
-    border-radius: 0;
+}
+.extra-controls label {
+  margin-right: 5px;
+}
+.extra-controls input {
+  width: 115px;
+  height: 30px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid $accent;
+  color: $text-black;
+  text-align: left;
+  border-radius: 0;
 
-    @include media-for (null, $sm){
-        width: 120px;
-    }
+  @include media-for (null, $sm){
+      width: 120px;
   }
-  .range-price input:first-of-type {
-    margin-right: 15px;
-  }
+}
+.extra-controls input:first-of-type {
+  margin-right: 15px;
+}
 
