@@ -3915,6 +3915,14 @@ body .helpcrunch-iframe-wrapper {
 .radio-button-container .img-wrap,
 .filter__checkgroup-title .img-wrap {
   margin-left: 0.5rem !important;
+  width: 37px;
+  height: 36px;
+}
+
+.radio-button-container .img-wrap img,
+.filter__checkgroup-title .img-wrap img {
+  width: 100%;
+  height: 100%;
 }
 
 /* Create a custom radio button */
@@ -3950,13 +3958,6 @@ body .helpcrunch-iframe-wrapper {
 
 .filter__checkgroup-title .img-wrap {
   margin-left: 0.5rem;
-  width: 37px;
-  height: 36px;
-}
-
-.filter__checkgroup-title .img-wrap img {
-  width: 100%;
-  height: 100%;
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -3975,9 +3976,34 @@ body .helpcrunch-iframe-wrapper {
 
 /* Show the indicator (dot/circle) when checked */
 
+.radio-button-container,
+.filter__checkgroup-title {
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+}
+
 .radio-button-container input:checked ~ .checkmark:after,
 .filter__checkgroup-title input:checked ~ .checkmark:after {
   display: block;
+}
+
+.radio-button-container .filter__checkgroup-title .img-wrap,
+.filter__checkgroup-title .filter__checkgroup-title .img-wrap {
+  margin-left: 0.5rem;
+  width: 37px;
+  height: 36px;
+}
+
+.radio-button-container .filter__checkgroup-title .img-wrap img,
+.filter__checkgroup-title .filter__checkgroup-title .img-wrap img {
+  width: 100%;
+  height: 100%;
+}
+
+.radio-button-container .checkmark:after,
+.filter__checkgroup-title .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
 }
 
 .radio-button-container input:checked ~ .checkmark:before,
