@@ -73,6 +73,12 @@ function yappo_styles()
         YAPPO_VERSION
     );
     wp_enqueue_style(
+        'yappo-rangestyle',
+        get_theme_file_uri('assets/libs/ion.rangeSlider.min.css'),
+        [],
+        time()
+    );
+    wp_enqueue_style(
         'yappo-css',
         get_theme_file_uri('assets/css/style.min.css'),
         [],
@@ -85,7 +91,7 @@ function yappo_styles()
         time()
     );
 
-    $deps = ['jquery'];
+    $deps = ['jquery', 'yappo-rangeslider'];
 
     if (is_checkout()) {
         wp_enqueue_script('yappo-mask', get_theme_file_uri('assets/libs/jquery.mask.min.js'));
@@ -93,6 +99,7 @@ function yappo_styles()
     }
 
     wp_enqueue_script('yappo-swiper', get_theme_file_uri('assets/libs/swiper.min.js'));
+    wp_enqueue_script('yappo-rangeslider', get_theme_file_uri('assets/libs/ion.rangeSlider.min.js'));
 
     wp_enqueue_script('yappo-script', get_theme_file_uri('assets/js/scripts.min.js'), $deps, time());
     wp_enqueue_script('yappo-backend', get_theme_file_uri('assets/js/backend.js'), array('jquery'), time());
@@ -125,7 +132,6 @@ function theme_register_nav_menu()
 
 require_once 'inc/shop-functions.php';
 require_once 'inc/functions-sasha.php';
-require_once 'inc/functions-crm.php';
 
 function yappo_lang_opener($classes = '')
 { ?>
@@ -390,11 +396,11 @@ function yappo_faq_row($question, $answer)
     <?php
 }
 
-add_filter( 'wpml_hreflangs', 'removeDefHreflangs' );
-function removeDefHreflangs($hreflangs){
-    foreach ($hreflangs as $key => $lang)
-    {
-        if ($key == "x-default"){
+add_filter('wpml_hreflangs', 'removeDefHreflangs');
+function removeDefHreflangs($hreflangs)
+{
+    foreach ($hreflangs as $key => $lang) {
+        if ($key == "x-default") {
             unset ($hreflangs[$key]);
         }
     }

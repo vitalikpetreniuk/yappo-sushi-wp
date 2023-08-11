@@ -126,20 +126,8 @@ defined('ABSPATH') || exit;
         <div class="img-wrap-local">
           <img src="<?= get_theme_file_uri('assets/img/local-blue.svg') ?>" alt="local">
         </div>
-
         <div class="wrap-center ms-0 me-auto">
-          <p class="choose-city">
-              <?php esc_html_e('Ваше місто', 'yappo'); ?>
-          </p>
-
-          <div class="select-dropdown">
-            <div role="button" class="select-dropdown__button">
-							<span
-                  class="city"><?= get_locale() == 'uk' ? checkout_get_billing_city() : get_ru_city_name() ?> (<?php if (function_exists('yappo_get_chosen_adress')) echo yappo_get_chosen_adress() ?>)</span>
-              <span
-                  class="region"><?= WC()->countries->get_states()['UA'][WC()->customer->get_billing_state()]; ?></span>
-            </div>
-          </div>
+            <?= yappo_get_chosen_billing_adress() ?>
         </div>
 
         <div class="arrow-rotate">

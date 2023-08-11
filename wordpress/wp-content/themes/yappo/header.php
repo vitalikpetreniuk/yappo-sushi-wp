@@ -67,12 +67,6 @@
 
 
 
-
-
-
-
-
-
   </script>
   <noscript><img height="1" width="1" style="display:none"
                  src="https://www.facebook.com/tr?id=488055693044741&ev=PageView&noscript=1"
@@ -113,10 +107,10 @@
         <div class="col-xxl-3 col-lg-3 col-md-4 col-3 d-md-block d-none  p-0">
           <div class="local-wrap">
             <a class="local" href="#" target="_blank">
-              <img src="<?= get_theme_file_uri('assets/img/white-location.svg') ?>" alt="location">
-                <?php if (function_exists('yappo_get_chosen_header_adress')) : ?>
-                    <?= yappo_get_chosen_header_adress(); ?>
-                <?php endif; ?>
+                <?php if (function_exists('yappo_get_chosen_header_adress')) { ?>
+                  <img src="<?= get_theme_file_uri('assets/img/white-location.svg') ?>" alt="location">
+                <?php } ?>
+                <?= yappo_get_chosen_header_adress(); ?>
             </a>
 
             <div class="city-list">
@@ -144,15 +138,13 @@
                                 <a href="<?= $cityLink ?>"
                                    data-id="<?= $city->slug ?>"
                                    data-address="<?= $item['item']['name'] ?>">
-                                    <div  itemprop="addressLocality">>
-                                        <?php the_field('city', $city) ?>
-                                    </div>
+                                  <div itemprop="addressLocality">
+                                      <?php the_field('city', $city) ?>
+                                  </div>
                                   <span class="adress" itemprop="streetAddress"><?= $item['item']['name'] ?></span>
                                 </a>
                               </li>
                             <?php }
-                            ?>
-                            <?php
                         }
                     }
                     ?>
@@ -382,15 +374,16 @@
               <?php
               $terms = get_field('categories_in_header', 'option');
               foreach ($terms as $term) {
+                  $categoryUrl = '/product-category/' . $term->slug;
+                  $categoryID = get_queried_object_id();
+                  if (yappo_get_chosen_city_slug()) {
+                      $categoryUrl = rtrim(home_url(), '/') . '/' . yappo_get_chosen_city_slug() . '/' . $term->slug;
+                  }
                   ?>
 
                 <li>
-                  <a class="link-category
-<?php //if (get_queried_object_slug()->post_name === $term->slug) {
-                  //                      echo 'link-category-active';
-                  //                  } ?>
-" href="<?= rtrim(home_url(), '/') ?>/<?= yappo_get_chosen_city_slug() ?>/<?= $term->slug ?>">
-
+                  <a class="link-category <?php if ($categoryID === $term->term_id){ echo 'link-category-active';} ?>"
+                     href="<?= $categoryUrl ?>">
                     <div class="cotegory_img">
                         <?php if (get_field('image', $term)) : ?>
                           <img class="image-category"

@@ -7,3 +7,6 @@ wordpress/wp-content/uploads/logs/
 .DS_Store
 _src/.DS_Store
 *.log
+/wordpress/wp-content/uploads/cache/
+/wordpress/wp-content/uploads/log/
+wordpress/wp-content/uploads/wc-logs
