@@ -174,7 +174,7 @@ if (@$block['data']['preview_image_help']) : ?>
 
                                             <div class="pc-range-slider__wrapper">
 
-                                                <div class="pc-range-slider__control ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
+                                                <!-- <div class="pc-range-slider__control ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
 
                                                     <div class="ui-slider-range ui-widget-header ui-corner-all"
                                                          style="left: 0%; width: 50.5443%;">
@@ -188,6 +188,28 @@ if (@$block['data']['preview_image_help']) : ?>
                                                           tabindex="0" style="left: 50.5443%;">
                                                         </span>
 
+                                                </div> -->
+
+                                                <div class="range mt-5">
+                                                    <div class="range-slider">
+
+                                                        <span class="range-selected"></span>
+
+                                                    </div>
+                                                    <div class="range-input">
+
+                                                        <input type="range" class="min" min="0" max="1000" value="300" step="10">
+                                                        <input class="range-two" type="range" class="max" min="0" max="1000" value="700" step="10">
+
+                                                    </div>
+
+                                                    <div class="range-price">
+
+                                                        <input type="number" name="min" value="<?= $_GET['min_price'] ?: $min ?>">
+
+                                                        <input style="text-align: right;" type="number" name="max" value="<?= $_GET['max_price'] ?: $max ?>">
+
+                                                    </div>
                                                 </div>
                                             </div>
 
@@ -195,22 +217,22 @@ if (@$block['data']['preview_image_help']) : ?>
 
                                     </div>
 
-
+<!--
                                     <div class="filter__slider-control-group">
 
                                         <div class="filter__slider-control-column">
 
                                             <input class="filter__slider-control inp-regulation" type="number"
-                                                   name="min_price" value="<?= $_GET['min_price'] ?: $min ?>">
+                                                   name="min_price" value="">
                                         </div>
 
                                         <div class="filter__slider-control-column">
 
                                             <input class="filter__slider-control inp-regulation" type="number"
-                                                   name="max_price" value="<?= $_GET['max_price'] ?: $max ?>">
+                                                   name="max_price" value="">
                                         </div>
 
-                                    </div>
+                                    </div> -->
 
 
                                     <div class="radio">
@@ -325,7 +347,7 @@ if (@$block['data']['preview_image_help']) : ?>
                                                                 <div class="filter__checkgroup-body">
                                                                     <div class="filter__checkgroup-link ">
 
-                                                                        <label class="filter__checkgroup-title radio-button-container <?php if ($checked) echo 'label-active' ?>"
+                                                                        <label class="filter__checkgroup-title radio-button-container <?= $term->slug ?> <?php if ($checked) echo 'label-active' ?>"
                                                                                for="<?= $term->slug ?>">
                                                                             <input type="checkbox"
                                                                                 <?php if ($checked) echo 'checked' ?>
@@ -337,7 +359,13 @@ if (@$block['data']['preview_image_help']) : ?>
                                                                             <?= $term->name ?>
 
                                                                             <div class="img-wrap">
-                                                                                <?= wp_get_attachment_image(get_field('image', $term), 'full') ?>
+                                                                               <div class="default-img">
+                                                                                    <?= wp_get_attachment_image(get_field('image', $term), 'full') ?>
+                                                                               </div>
+
+                                                                                <div class="img-active">
+                                                                                    <?= wp_get_attachment_image(get_field('hover_image', $term), 'full') ?>
+                                                                                </div>
                                                                             </div>
 
                                                                         </label>
@@ -441,6 +469,8 @@ if (@$block['data']['preview_image_help']) : ?>
         </div>
 
 
+
+
         <?php
         $loop = new WP_Query($args);
         woocommerce_product_loop_start();
@@ -489,3 +519,7 @@ if (@$block['data']['preview_image_help']) : ?>
     <?php
     wp_reset_query();
 endif; ?>
+
+
+
+
