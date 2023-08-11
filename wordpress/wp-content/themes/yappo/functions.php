@@ -369,7 +369,8 @@ add_filter('wpseo_robots', 'seo_robots_modify_search');
 
 function seo_robots_modify_search($robots)
 {
-    if (is_checkout() || is_search() || is_cart() || strpos($_SERVER['REQUEST_URI'], 'add-to-cart') || strpos($_SERVER['REQUEST_URI'], '/feed')) {
+    if (is_checkout() || is_search() || is_cart() || strpos($_SERVER['REQUEST_URI'], 'add-to-cart') ||  strpos($_SERVER['REQUEST_URI'], '?') || strpos($_SERVER['REQUEST_URI'], '/feed')
+    || strpos($_SERVER['REQUEST_URI'], '&pa_ingredients') || strpos($_SERVER['REQUEST_URI'], '&max_price')|| strpos($_SERVER['REQUEST_URI'], '&min_price') ||  strpos($_SERVER['REQUEST_URI'], '&product_tag') ) {
         return "noindex, nofollow";
     } else {
         return $robots;
@@ -407,34 +408,15 @@ function removeDefHreflangs($hreflangs)
     return $hreflangs;
 }
 
-function renderImageUpload($imageId, $size = 'full')
-{
-    if ($imageId) {
-        $image_html = wp_get_attachment_image($imageId, $size);
-        $webp_image_html = apply_filters('webp_image_html', $image_html, $imageId);
-        echo $webp_image_html;
-    }
-}
 
-
-function add_custom_attr($tag, $handle, $src)
-{
-    $scriptArr = array('yappo-swiper', 'jquery-core');
-
-    if (in_array($handle, $scriptArr)) {
-        $tag = str_replace('src=', 'sync="false" src=', $tag);
-    }
-    return $tag;
-}
-
-add_filter('script_loader_tag', 'add_custom_attr', 10, 3);
-
-//function footer_enqueue_scripts(){
-//    remove_action('wp_head','wp_print_scripts');
-//    remove_action('wp_head','wp_print_head_scripts',9);
-//    remove_action('wp_head','wp_enqueue_scripts',1);
-//    add_action('wp_footer','wp_print_scripts',5);
-//    add_action('wp_footer','wp_enqueue_scripts',5);
-//    add_action('wp_footer','wp_print_head_scripts',5);
+//function add_custom_attr($tag, $handle, $src)
+//{
+//    $scriptArr = array('yappo-swiper', 'jquery-core');
+//
+//    if (in_array($handle, $scriptArr)) {
+//        $tag = str_replace('src=', 'sync="false" src=', $tag);
+//    }
+//    return $tag;
 //}
-//add_action('after_setup_theme','footer_enqueue_scripts');
+//
+//add_filter('script_loader_tag', 'add_custom_attr', 10, 3);

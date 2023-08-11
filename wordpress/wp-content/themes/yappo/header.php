@@ -20,7 +20,11 @@
   <link rel="dns-prefetch" href="https://fonts.googleapis.com">
   <link rel="dns-prefetch" href="https://fonts.gstatic.com" crossorigin>
 
-
+    <?php
+    if ( strpos($_SERVER['REQUEST_URI'], '&pa_ingredients') || strpos($_SERVER['REQUEST_URI'], '&max_price')|| strpos($_SERVER['REQUEST_URI'], '&min_price') ||  strpos($_SERVER['REQUEST_URI'], '&product_tag') ) { ?>
+      <link rel="canonical" href="<?php echo $_SERVER['REQUEST_URI'] ?>" />
+    <?php }
+    ?>
     <?php wp_head(); ?>
 
 </head>
