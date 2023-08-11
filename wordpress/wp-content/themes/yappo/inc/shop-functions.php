@@ -96,15 +96,15 @@ add_filter('wc_price', function ($return, $price, $args, $unformatted_price, $or
     if (apply_filters('woocommerce_price_trim_zeros', false) && $args['decimals'] > 0) {
         $price = wc_trim_zeros($price);
     }
-    $formatted_price = ($negative ? '-' : '') . sprintf($args['price_format'], '<span class="woocommerce-Price-currencySymbol"> <meta itemprop="priceCurrency" content="' . get_woocommerce_currency_symbol($args['currency']) . '">
-' . get_woocommerce_currency_symbol($args['currency']) . '</span>', $price);
-    $return = $formatted_price;
-
-    return $return;
+    $symbol =  '<span class="woocommerce-Price-currencySymbol"><meta itemprop="priceCurrency" content="980">
+    ' . get_woocommerce_currency_symbol($args['currency']) . '</span>';
+    $formatted_price = ($negative ? '-' : '') . sprintf('%2$s%1$s', $symbol , str_replace(" ", '', $price));
+    return $formatted_price;
 }, 10, 5);
 
 add_filter('woocommerce_get_price_html', function ($price, $tthis) {
-    return '<span itemprop="price">' . $price . '</span>';
+
+    return '<span itemprop="price">' .  $price . '</span>';
 }, 10, 2);
 
 add_filter('woocommerce_format_sale_price', function ($price, $regular_price, $sale_price) {
@@ -736,7 +736,8 @@ const FILTERED_TAXONOMIES = [
 //add_action('pre_get_posts', function ($q) {
 add_action('woocommerce_product_query', 'yappo_product_query', 10, 2);
 
-function yappo_product_query($q) {
+function yappo_product_query($q)
+{
 
     switch ($_GET['orderby']) {
         case 'popularity':
@@ -819,7 +820,7 @@ function yappo_product_query($q) {
 }
 
 add_action('pre_get_posts', function ($q) {
-    if($q->get('yappo_filter')) {
+    if ($q->get('yappo_filter')) {
         $q = yappo_product_query($q);
     }
     return $q;
