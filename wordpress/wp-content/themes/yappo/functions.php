@@ -125,7 +125,6 @@ function theme_register_nav_menu()
 
 require_once 'inc/shop-functions.php';
 require_once 'inc/functions-sasha.php';
-require_once 'inc/functions-crm.php';
 
 function yappo_lang_opener($classes = '')
 { ?>
