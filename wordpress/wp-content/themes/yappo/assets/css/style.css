@@ -3950,6 +3950,13 @@ body .helpcrunch-iframe-wrapper {
 
 .filter__checkgroup-title .img-wrap {
   margin-left: 0.5rem;
+  width: 37px;
+  height: 36px;
+}
+
+.filter__checkgroup-title .img-wrap img {
+  width: 100%;
+  height: 100%;
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
