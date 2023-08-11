@@ -99,7 +99,7 @@
 		<div class="col-lg-2 col-12 p-0  order-lg-5 d-none d-lg-block">
 			<a href="https://ninesquares.studio/ua" style='    display: block;width: 7rem;margin-right: 0;margin-right: 0;margin-left: auto;margin-bottom: 0.2rem;' rel="nofollow" target="_blank">
 				<img width="103px" height="24px" src="<?= get_theme_file_uri( 'assets/img/Ninesquares.svg' ) ?>"
-				     alt="Ninesquares">
+				     alt="Ninesquares" loading="lazy">
 			</a>
 		</div>
 	</div>
@@ -109,7 +109,7 @@
 		<div class="col-lg-2 col-4 mx-auto my-3 d-block d-lg-none">
 			<a class="copmpany" href="https://ninesquares.studio/ua" rel="nofollow" target="_blank">
 				<img width="103px" height="24px" src="<?= get_theme_file_uri( 'assets/img/Ninesquares.svg' ) ?>"
-				     alt="Ninesquares">
+				     alt="Ninesquares" loading="lazy">
 			</a>
 		</div>
 	</div>

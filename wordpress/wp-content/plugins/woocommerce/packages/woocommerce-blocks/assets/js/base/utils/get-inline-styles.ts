@@ -5,7 +5,16 @@ import classnames from 'classnames';
 import { paramCase as kebabCase } from 'change-case';
 import { getCSSRules } from '@wordpress/style-engine';
 import { isObject } from '@woocommerce/types';
-import type { Style as StyleEngineProperties } from '@wordpress/style-engine/src/types';
+
+type StyleValue = string | NestedStyle;
+
+interface NestedStyle {
+	[ key: string ]: StyleValue | undefined;
+}
+
+export type WithStyle = {
+	style: Record< string, NestedStyle > | undefined;
+};
 
 /**
  * Returns the inline styles to add depending on the style object
@@ -40,10 +49,11 @@ function getColorClassName(
  * Generates a CSS class name consisting of all the applicable border color
  * classes given the current block attributes.
  */
-function getBorderClassName( attributes: {
-	style?: StyleEngineProperties;
-	borderColor?: string;
-} ) {
+function getBorderClassName(
+	attributes: WithStyle & {
+		borderColor?: string;
+	}
+) {
 	const { borderColor, style } = attributes;
 	const borderColorClass = borderColor
 		? getColorClassName( 'border-color', borderColor )
@@ -65,14 +75,19 @@ function getGradientClassName( gradientSlug: string | undefined ) {
 /**
  * Provides the CSS class names and inline styles for a block's color support
  * attributes.
+ *
+ * @param {Object} attributes Block attributes.
+ *
+ * @return {Object} Color block support derived CSS classes & styles.
  */
-export function getColorClassesAndStyles( props: {
-	style?: StyleEngineProperties;
-	backgroundColor?: string | undefined;
-	textColor?: string | undefined;
-	gradient?: string | undefined;
-} ) {
-	const { backgroundColor, textColor, gradient, style } = props;
+export function getColorClassesAndStyles(
+	attributes: WithStyle & {
+		backgroundColor?: string | undefined;
+		textColor?: string | undefined;
+		gradient?: string | undefined;
+	}
+) {
+	const { backgroundColor, textColor, gradient, style } = attributes;
 
 	// Collect color CSS classes.
 	const backgroundClass = getColorClassName(
@@ -101,26 +116,27 @@ export function getColorClassesAndStyles( props: {
 
 	// Collect inline styles for colors.
 	const colorStyles = style?.color || {};
+	const styleProp = getInlineStyles( { color: colorStyles } );
 
 	return {
-		className,
-		style: getInlineStyles( { color: colorStyles } ),
+		className: className || undefined,
+		style: styleProp,
 	};
 }
 
 /**
  * Provides the CSS class names and inline styles for a block's border support
  * attributes.
+ *
+ * @param {Object} attributes Block attributes.
+ * @return {Object} Border block support derived CSS classes & styles.
  */
-export function getBorderClassesAndStyles( props: {
-	style?: StyleEngineProperties;
-	borderColor?: string;
-} ) {
-	const border = props.style?.border || {};
-	const className = getBorderClassName( props );
+export function getBorderClassesAndStyles( attributes: WithStyle ) {
+	const border = attributes.style?.border || {};
+	const className = getBorderClassName( attributes );
 
 	return {
-		className,
+		className: className || undefined,
 		style: getInlineStyles( { border } ),
 	};
 }
@@ -128,11 +144,16 @@ export function getBorderClassesAndStyles( props: {
 /**
  * Provides the CSS class names and inline styles for a block's spacing support
  * attributes.
+ *
+ * @param {Object} attributes Block attributes.
+ *
+ * @return {Object} Spacing block support derived CSS classes & styles.
  */
-export function getSpacingClassesAndStyles( props: {
-	style?: StyleEngineProperties;
-} ) {
-	const spacingStyles = props.style?.spacing || {};
+export function getSpacingClassesAndStyles( attributes: WithStyle ) {
+	const { style } = attributes;
+
+	// Collect inline styles for spacing.
+	const spacingStyles = style?.spacing || {};
 	const styleProp = getInlineStyles( { spacing: spacingStyles } );
 
 	return {

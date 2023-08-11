@@ -213,7 +213,6 @@ final class BlockTypesController {
 			'ReviewsByProduct',
 			'RelatedProducts',
 			'ProductDetails',
-			'SingleProduct',
 			'StockFilter',
 		];
 
@@ -225,8 +224,7 @@ final class BlockTypesController {
 		);
 
 		if ( Package::feature()->is_experimental_build() ) {
-			$block_types[] = 'ProductCollection';
-			$block_types[] = 'ProductTemplate';
+			$block_types[] = 'SingleProduct';
 		}
 
 		/**

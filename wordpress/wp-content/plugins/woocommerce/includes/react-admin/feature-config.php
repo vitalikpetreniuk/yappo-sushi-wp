@@ -8,7 +8,7 @@ if ( ! function_exists( 'wc_admin_get_feature_config' ) ) {
 			'analytics' => true,
 			'product-block-editor' => true,
 			'coupons' => true,
-			'core-profiler' => true,
+			'core-profiler' => false,
 			'customer-effort-score-tracks' => true,
 			'import-products-task' => true,
 			'experimental-fashion-sample-products' => true,

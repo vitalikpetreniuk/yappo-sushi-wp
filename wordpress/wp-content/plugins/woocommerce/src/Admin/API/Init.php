@@ -5,7 +5,6 @@
 
 namespace Automattic\WooCommerce\Admin\API;
 
-use AllowDynamicProperties;
 use Automattic\WooCommerce\Admin\Features\Features;
 
 defined( 'ABSPATH' ) || exit;
@@ -17,7 +16,6 @@ use Automattic\WooCommerce\Internal\Admin\Loader;
  *
  * @internal
  */
-#[AllowDynamicProperties]
 class Init {
 	/**
 	 * The single instance of the class.

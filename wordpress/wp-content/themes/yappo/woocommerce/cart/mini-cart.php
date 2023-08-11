@@ -167,7 +167,7 @@ do_action('woocommerce_before_mini_cart'); ?>
           </p>
         </div>
 
-        <img src="<?= get_theme_file_uri('assets/img/cart-img.png') ?>" alt="fish">
+        <img src="<?= get_theme_file_uri('assets/img/cart-img.png') ?>" alt="fish" loading="lazy" width="100%" height="auto">
       </div>
 
     <?php endif; ?>

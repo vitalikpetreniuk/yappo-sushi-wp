@@ -22,66 +22,11 @@
 
 
     <?php wp_head(); ?>
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-          w[l] = w[l] || [];
-          w[l].push({
-              'gtm.start':
-                  new Date().getTime(), event: 'gtm.js'
-          });
-          let f = d.getElementsByTagName(s)[0],
-              j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-          j.async = true;
-          j.src =
-              'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-          f.parentNode.insertBefore(j, f);
-      })(window, document, 'script', 'dataLayer', 'GTM-5GVTP5D');</script>
-  <!-- End Google Tag Manager -->
 
-  <!-- Meta Pixel Code -->
-  <script type="c731a9971cd8d55081298037-text/javascript">
-		!function (f, b, e, v, n, t, s) {
-			if (f.fbq) return;
-			n = f.fbq = function () {
-				n.callMethod ?
-					n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-			};
-			if (!f._fbq) f._fbq = n;
-			n.push = n;
-			n.loaded = !0;
-			n.version = '2.0';
-			n.queue = [];
-			t = b.createElement(e);
-			t.async = !0;
-			t.src = v;
-			s = b.getElementsByTagName(e)[0];
-			s.parentNode.insertBefore(t, s)
-		}(window, document, 'script',
-			'https://connect.facebook.net/en_US/fbevents.js');
-		fbq('init', '488055693044741');
-		fbq('track', 'PageView');
-
-
-
-
-
-
-
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-                 src="https://www.facebook.com/tr?id=488055693044741&ev=PageView&noscript=1"
-    /></noscript>
-  <!-- End Meta Pixel Code -->
 </head>
 
 <body <?php body_class(); ?>>
 
-<!-- Google Tag Manager (noscript) -->
-<noscript>
-  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GVTP5D"
-          height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
-<!-- End Google Tag Manager (noscript) -->
 <?php wp_body_open(); ?>
 <header class="header">
   <div class="header-top">
@@ -108,7 +53,7 @@
           <div class="local-wrap">
             <a class="local" href="#" target="_blank">
                 <?php if (function_exists('yappo_get_chosen_header_adress')) { ?>
-                  <img src="<?= get_theme_file_uri('assets/img/white-location.svg') ?>" alt="location">
+                  <img src="<?= get_theme_file_uri('assets/img/white-location.svg') ?>" alt="location" width="10" height="20">
                 <?php } ?>
                 <?= yappo_get_chosen_header_adress(); ?>
             </a>
@@ -388,12 +333,12 @@
                         <?php if (get_field('image', $term)) : ?>
                           <img class="image-category"
                                src="<?= wp_get_attachment_image_url(get_field('image', $term)); ?>"
-                               alt="<?= $term->name ?>">
+                               alt="<?= $term->name ?>" loading="lazy" width="30" height="30">
                         <?php endif; ?>
                         <?php if (get_field('hover_image', $term)) : ?>
                           <img class="image-category-active"
                                src="<?= wp_get_attachment_image_url(get_field('hover_image', $term)); ?>"
-                               alt="<?= $term->name ?>">
+                               alt="<?= $term->name ?>" loading="lazy" width="30" height="30">
                         <?php endif; ?>
                     </div>
 
@@ -425,7 +370,7 @@
       <div class="local-wrap">
         <a class="local" href="#" target="_blank">
 
-          <img src="<?= get_theme_file_uri('assets/img/white-location.svg') ?>" alt="location">
+          <img src="<?= get_theme_file_uri('assets/img/white-location.svg') ?>" alt="location" width="10" height="20">
 
             <?php if (function_exists('yappo_get_chosen_header_adress')) : ?>
                 <?= yappo_get_chosen_header_adress(); ?>
@@ -580,7 +525,7 @@
       </nav>
 
       <div class="img-wrap">
-        <img width="72px" height="25" src="<?= get_theme_file_uri('assets/img/visa-black.svg') ?>"
+        <img width="72px" height="25" src="<?= get_theme_file_uri('assets/img/visa-black.svg') ?>" loading="lazy"
              alt="visa-card">
       </div>
 

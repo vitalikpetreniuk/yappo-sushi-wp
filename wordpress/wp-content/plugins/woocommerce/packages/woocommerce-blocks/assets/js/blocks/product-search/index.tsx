@@ -21,8 +21,8 @@ import {
  */
 import './style.scss';
 import './editor.scss';
-import Block from './block';
-import Edit from './edit';
+import Block from './block.js';
+import Edit from './edit.js';
 
 const isBlockVariationAvailable = getSettingWithCoercion(
 	'isBlockVariationAvailable',

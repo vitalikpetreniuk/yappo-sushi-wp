@@ -38,6 +38,7 @@ if (empty($product) || !$product->is_visible()) {
       } ?>
 
     <script>
+        window.dataLayer = window.dataLayer || [];
         dataLayer.push({
             'event': 'view_item_list_ads',
             'value': <?= $product->get_price() ?>,
@@ -52,9 +53,10 @@ if (empty($product) || !$product->is_visible()) {
 
     <div class="product__image class">
       <a href="<?php the_permalink(); ?>">
-          <?php woocommerce_template_loop_product_thumbnail(); ?>
+          <?= wp_get_attachment_image( get_post_thumbnail_id( $product->get_id() ), 'large' ) ?>
+<!--          --><?php //woocommerce_template_loop_product_thumbnail(); ?>
       </a>
-      <!--			--><?php //= $product->get_image(); ?>
+      <?php //= $product->get_image(); ?>
     </div>
 
     <div class="product__detail">

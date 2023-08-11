@@ -22,7 +22,7 @@ class ProductImageGallery extends AbstractBlock {
 	/**
 	 *  Register the context
 	 *
-	 * @return string[]
+	 * @var string
 	 */
 	protected function get_block_type_uses_context() {
 		return [ 'query', 'queryId', 'postId' ];
@@ -37,27 +37,17 @@ class ProductImageGallery extends AbstractBlock {
 	 * @return string Rendered block type output.
 	 */
 	protected function render( $attributes, $content, $block ) {
+
 		$post_id = $block->context['postId'];
-
-		if ( ! isset( $post_id ) ) {
-			return '';
-		}
-
 		global $product;
-
-		$previous_product = $product;
-		$product          = wc_get_product( $post_id );
-		if ( ! $product instanceof \WC_Product ) {
-			$product = $previous_product;
-
-			return '';
-		}
+		$product = wc_get_product( $post_id );
 
 		if ( class_exists( 'WC_Frontend_Scripts' ) ) {
 			$frontend_scripts = new \WC_Frontend_Scripts();
 			$frontend_scripts::load_scripts();
 		}
 
+		$classname = $attributes['className'] ?? '';
 		ob_start();
 		woocommerce_show_product_sale_flash();
 		$sale_badge_html = ob_get_clean();
@@ -66,13 +56,12 @@ class ProductImageGallery extends AbstractBlock {
 		woocommerce_show_product_images();
 		$product_image_gallery_html = ob_get_clean();
 
-		$product   = $previous_product;
-		$classname = $attributes['className'] ?? '';
 		return sprintf(
 			'<div class="wp-block-woocommerce-product-image-gallery %1$s">%2$s %3$s</div>',
 			esc_attr( $classname ),
 			$sale_badge_html,
 			$product_image_gallery_html
 		);
+
 	}
 }

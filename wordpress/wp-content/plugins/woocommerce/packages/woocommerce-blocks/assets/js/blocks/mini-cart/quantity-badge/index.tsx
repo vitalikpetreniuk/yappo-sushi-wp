@@ -22,9 +22,7 @@ const QuantityBadge = ( { count }: Props ): JSX.Element => {
 				size={ 20 }
 				icon={ miniCart }
 			/>
-			<span className="wc-block-mini-cart__badge">
-				{ count > 0 ? count : '' }
-			</span>
+			<span className="wc-block-mini-cart__badge">{ count }</span>
 		</span>
 	);
 };

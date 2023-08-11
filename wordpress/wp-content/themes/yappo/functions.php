@@ -129,10 +129,10 @@ require_once 'inc/functions-crm.php';
 
 function yappo_lang_opener($classes = '')
 { ?>
-    <div class="lang lang-desctop <?= $classes ?>">
+  <div class="lang lang-desctop <?= $classes ?>">
 
-        <div class="d-flex align-items-center justify-content-start">
-            <?php echo do_shortcode('[wpml_language_switcher]
+    <div class="d-flex align-items-center justify-content-start">
+        <?php echo do_shortcode('[wpml_language_switcher]
 			<div class="{{ css_classes }} lang-desctop-wrap">
 			
 			   {% for code, language in languages %}
@@ -145,17 +145,17 @@ function yappo_lang_opener($classes = '')
 			</div>
 			[/wpml_language_switcher]'); ?>
 
-            <div class="arrow-wrap">
-                <svg width="8" height="6" viewBox="0 0 8 6" fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 1L3.8 5L7 1" stroke="black" stroke-linecap="round"
-                          stroke-linejoin="round"/>
-                </svg>
-            </div>
-        </div>
+      <div class="arrow-wrap">
+        <svg width="8" height="6" viewBox="0 0 8 6" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 1L3.8 5L7 1" stroke="black" stroke-linecap="round"
+                stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </div>
 
 
-        <?php echo do_shortcode('[wpml_language_switcher]
+      <?php echo do_shortcode('[wpml_language_switcher]
 								<div class="{{ css_classes }} lang-list">
 
 								   {% for code, language in languages %}
@@ -168,7 +168,7 @@ function yappo_lang_opener($classes = '')
 								</div>
 								[/wpml_language_switcher]') ?>
 
-    </div>
+  </div>
 
     <?php
 }
@@ -218,12 +218,12 @@ add_action('loop_end', function ($q) {
  * @return string
  */
 function doublee_filter_yoast_breadcrumb_items($link_output, $link)
-{
-
-    $new_link_output = '<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">';
-    $new_link_output .= '<a href="' . $link['url'] . '" title="' . $link['text'] . '" itemprop="url">' . $link['text'] . '</a>';
+{ ?>
+    <?php
+    $new_link_output = '<li   itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">';
+    $new_link_output .= '<a href="' . $link['url'] . '" title="' . $link['text'] . '" itemprop="item"> <span itemprop="name">' . $link['text'] . '</span>
+            <meta itemprop="position" content=""></a>';
     $new_link_output .= '</li>';
-
     return $new_link_output;
 }
 
@@ -257,7 +257,7 @@ add_filter('wpseo_breadcrumb_output', 'doublee_filter_yoast_breadcrumb_output');
 function doublee_breadcrumbs()
 {
     if (function_exists('yoast_breadcrumb')) {
-        yoast_breadcrumb('<ul class="breadcrumbs">', '</ul>');
+        yoast_breadcrumb('<ul class="breadcrumbs"  itemscope itemtype="https://schema.org/BreadcrumbList">', '</ul>');
     }
 }
 
@@ -374,31 +374,61 @@ function seo_robots_modify_search($robots)
 function yappo_faq_row($question, $answer)
 {
     ?>
-    <div class="slide-wrap">
-        <div class="slide-header">
-            <span class="glyphicon glyphicon-chevron-down"></span>
-            <h4>
-                <?= $question ?>
-            </h4>
+  <div class="slide-wrap">
+    <div class="slide-header">
+      <span class="glyphicon glyphicon-chevron-down"></span>
+      <h4>
+          <?= $question ?>
+      </h4>
 
-            <span class="span-plus"></span>
-        </div>
-        <div class="slide-content">
-            <?= $answer ?>
-        </div>
+      <span class="span-plus"></span>
     </div>
+    <div class="slide-content">
+        <?= $answer ?>
+    </div>
+  </div>
     <?php
 }
 
-add_filter( 'wpml_hreflangs', 'removeDefHreflangs' );
-function removeDefHreflangs($hreflangs){
-    foreach ($hreflangs as $key => $lang)
-    {
-        if ($key == "x-default"){
+add_filter('wpml_hreflangs', 'removeDefHreflangs');
+function removeDefHreflangs($hreflangs)
+{
+    foreach ($hreflangs as $key => $lang) {
+        if ($key == "x-default") {
             unset ($hreflangs[$key]);
         }
     }
     return $hreflangs;
 }
 
+function renderImageUpload($imageId, $size = 'full')
+{
+    if ($imageId) {
+        $image_html = wp_get_attachment_image($imageId, $size);
+        $webp_image_html = apply_filters('webp_image_html', $image_html, $imageId);
+        echo $webp_image_html;
+    }
+}
 
+
+function add_custom_attr($tag, $handle, $src)
+{
+    $scriptArr = array('yappo-swiper', 'jquery-core');
+
+    if (in_array($handle, $scriptArr)) {
+        $tag = str_replace('src=', 'sync="false" src=', $tag);
+    }
+    return $tag;
+}
+
+add_filter('script_loader_tag', 'add_custom_attr', 10, 3);
+
+//function footer_enqueue_scripts(){
+//    remove_action('wp_head','wp_print_scripts');
+//    remove_action('wp_head','wp_print_head_scripts',9);
+//    remove_action('wp_head','wp_enqueue_scripts',1);
+//    add_action('wp_footer','wp_print_scripts',5);
+//    add_action('wp_footer','wp_enqueue_scripts',5);
+//    add_action('wp_footer','wp_print_head_scripts',5);
+//}
+//add_action('after_setup_theme','footer_enqueue_scripts');

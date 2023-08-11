@@ -398,10 +398,8 @@ abstract class WC_CSV_Exporter {
 		$use_mb = function_exists( 'mb_convert_encoding' );
 
 		if ( $use_mb ) {
-			$is_valid_utf_8 = mb_check_encoding( $data, 'UTF-8' );
-			if ( ! $is_valid_utf_8 ) {
-				$data = mb_convert_encoding( $data, 'UTF-8', 'ISO-8859-1' );
-			}
+			$encoding = mb_detect_encoding( $data, 'UTF-8, ISO-8859-1', true );
+			$data     = 'UTF-8' === $encoding ? $data : utf8_encode( $data );
 		}
 
 		return $this->escape_data( $data );

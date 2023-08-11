@@ -282,7 +282,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 						<div class="local-wrap">
 								<a class="local" target="_blank">
 
-									<img width="10" src="<?= get_theme_file_uri( 'assets/img/gray-location.svg' ) ?>" alt="location">
+									<img width="10" height="20" src="<?= get_theme_file_uri( 'assets/img/gray-location.svg' ) ?>" alt="location" >
 
 									<?php if ( function_exists( 'yappo_get_chosen_header_adress' ) ) : ?>
 										<?= yappo_get_chosen_header_adress(); ?>

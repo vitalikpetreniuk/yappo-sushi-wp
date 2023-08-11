@@ -460,10 +460,6 @@ class ShippingController {
 		if ( count( $valid_packages ) !== count( $packages ) ) {
 			$packages = array_map(
 				function( $package ) {
-					if ( ! is_array( $package['rates'] ) ) {
-						$package['rates'] = [];
-						return $package;
-					}
 					$package['rates'] = array_filter(
 						$package['rates'],
 						function( $rate ) {

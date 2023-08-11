@@ -33,15 +33,9 @@ class ComparisonOperation {
 			case '!=':
 				return $left_operand !== $right_operand;
 			case 'contains':
-				if ( is_array( $left_operand ) && is_string( $right_operand ) ) {
-					return in_array( $right_operand, $left_operand, true );
-				}
-				return strpos( $right_operand, $left_operand ) !== false;
+				return in_array( $right_operand, $left_operand, true );
 			case '!contains':
-				if ( is_array( $left_operand ) && is_string( $right_operand ) ) {
-					return ! in_array( $right_operand, $left_operand, true );
-				}
-				return strpos( $right_operand, $left_operand ) === false;
+				return ! in_array( $right_operand, $left_operand, true );
 		}
 
 		return false;

@@ -1,10 +1,10 @@
 /**
  * External dependencies
  */
-import { getSetting, getSettingWithCoercion } from '@woocommerce/settings';
+import { getSetting } from '@woocommerce/settings';
 import { objectOmit } from '@woocommerce/utils';
 import type { InnerBlockTemplate } from '@wordpress/blocks';
-import { isBoolean } from '@woocommerce/types';
+
 /**
  * Internal dependencies
  */
@@ -69,13 +69,6 @@ export const QUERY_DEFAULT_ATTRIBUTES: QueryBlockAttributes = {
 	},
 };
 
-// This is necessary to fix https://github.com/woocommerce/woocommerce-blocks/issues/9884.
-const postTemplateHasSupportForGridView = getSettingWithCoercion(
-	'post_template_has_support_for_grid_view',
-	false,
-	isBoolean
-);
-
 export const INNER_BLOCKS_TEMPLATE: InnerBlockTemplate[] = [
 	[
 		'core/post-template',
@@ -85,9 +78,6 @@ export const INNER_BLOCKS_TEMPLATE: InnerBlockTemplate[] = [
 			 * This class is used to add default styles for inner blocks.
 			 */
 			className: 'products-block-post-template',
-			...( postTemplateHasSupportForGridView && {
-				layout: { type: 'grid', columnCount: 3 },
-			} ),
 		},
 		[
 			[

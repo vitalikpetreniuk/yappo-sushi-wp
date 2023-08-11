@@ -2,7 +2,7 @@
  * External dependencies
  */
 import React from '@wordpress/element';
-import { act, render, screen, within, waitFor } from '@testing-library/react';
+import { render, screen, within, waitFor } from '@testing-library/react';
 import { default as fetchMock } from 'jest-fetch-mock';
 import userEvent from '@testing-library/user-event';
 
@@ -14,6 +14,7 @@ import { allSettings } from '../../../settings/shared/settings-init';
 import { Attributes } from '../types';
 
 const setWindowUrl = ( { url }: { url: string } ) => {
+	global.window = Object.create( window );
 	Object.defineProperty( window, 'location', {
 		value: {
 			href: url,
@@ -307,9 +308,7 @@ describe( 'Filter by Stock block', () => {
 			);
 
 			if ( removeOutOfStockButton ) {
-				act( () => {
-					userEvent.click( removeOutOfStockButton );
-				} );
+				userEvent.click( removeOutOfStockButton );
 			}
 
 			expect( getInStockChips() ).toBeNull();
@@ -402,9 +401,7 @@ describe( 'Filter by Stock block', () => {
 			);
 
 			if ( removeOutOfStockButton ) {
-				act( () => {
-					userEvent.click( removeOutOfStockButton );
-				} );
+				userEvent.click( removeOutOfStockButton );
 			}
 
 			expect( getInStockChips() ).toBeInTheDocument();

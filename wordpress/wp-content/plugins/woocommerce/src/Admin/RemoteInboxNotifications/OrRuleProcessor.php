@@ -13,15 +13,6 @@ defined( 'ABSPATH' ) || exit;
  * operands.
  */
 class OrRuleProcessor implements RuleProcessorInterface {
-
-	/**
-	 * Rule evaluator to use.
-	 *
-	 * @var RuleEvaluator
-	 */
-	private $rule_evaluator;
-
-
 	/**
 	 * Constructor.
 	 *

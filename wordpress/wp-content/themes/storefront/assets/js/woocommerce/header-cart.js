@@ -12,6 +12,7 @@
 		return;
 	}
 
+	// eslint-disable-next-line @wordpress/no-global-event-listener
 	window.addEventListener( 'load', function () {
 		const cart = document.querySelector( '.site-header-cart' );
 

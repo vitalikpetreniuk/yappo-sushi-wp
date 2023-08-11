@@ -41,9 +41,9 @@ if (post_password_required()) {
 
             <?php if (function_exists('yoast_breadcrumb')) {
                 if (get_locale() == 'ru_RU') {
-                    echo str_replace('Головна', 'Главная', yoast_breadcrumb('<ul class="breadcrumbs">', '</ul>', false));
+                    echo str_replace('Головна', 'Главная', yoast_breadcrumb('<ul class="breadcrumbs"  itemscope itemtype="https://schema.org/BreadcrumbList">', '</ul>', false));
                 } else {
-                    echo yoast_breadcrumb('<ul class="breadcrumbs">', '</ul>');
+                    echo yoast_breadcrumb('<ul class="breadcrumbs"  itemscope itemtype="https://schema.org/BreadcrumbList">', '</ul>');
                 }
             } ?>
         </div>

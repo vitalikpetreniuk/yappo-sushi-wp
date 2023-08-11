@@ -1,6 +1,6 @@
 /*global jQuery */
 (function( $ ) {
-	$( function() {
+	$( document ).on( 'ready', function() {
 		window.wcTracks.recordEvent( 'wcadmin_status_widget_view' );
 	});
 

@@ -7,6 +7,7 @@ import {
 	type BlockInstance,
 } from '@wordpress/blocks';
 import { isWpVersion } from '@woocommerce/settings';
+import { isExperimentalBuild } from '@woocommerce/block-settings';
 import { __, sprintf } from '@wordpress/i18n';
 
 /**
@@ -18,7 +19,7 @@ import {
 } from '../product-query/constants';
 import { VARIATION_NAME as productsVariationName } from '../product-query/variations/product-query';
 import { createArchiveTitleBlock, createRowBlock } from './utils';
-import { OnClickCallbackParameter, type InheritedAttributes } from './types';
+import { type InheritedAttributes } from './types';
 
 const createProductsBlock = ( inheritedAttributes: InheritedAttributes ) =>
 	createBlock(
@@ -63,14 +64,14 @@ const getBlockifiedTemplateWithTermDescription = (
 const isConversionPossible = () => {
 	// Blockification is possible for the WP version 6.1 and above,
 	// which are the versions the Products block supports.
-	return isWpVersion( '6.1', '>=' );
+	return isExperimentalBuild() && isWpVersion( '6.1', '>=' );
 };
 
 const getDescriptionAllowingConversion = ( templateTitle: string ) =>
 	sprintf(
 		/* translators: %s is the template title */
 		__(
-			'Transform this template into multiple blocks so you can add, remove, reorder, and customize your %s template.',
+			"This block serves as a placeholder for your %s. We recommend upgrading to the Products block for more features to edit your products visually. Don't worry, you can always revert back.",
 			'woo-gutenberg-products-block'
 		),
 		templateTitle
@@ -95,69 +96,17 @@ const getDescription = ( templateTitle: string, canConvert: boolean ) => {
 };
 
 const getButtonLabel = () =>
-	__( 'Transform into blocks', 'woo-gutenberg-products-block' );
-
-const onClickCallback = ( {
-	clientId,
-	attributes,
-	getBlocks,
-	replaceBlock,
-	selectBlock,
-}: OnClickCallbackParameter ) => {
-	replaceBlock( clientId, getBlockifiedTemplate( attributes ) );
-
-	const blocks = getBlocks();
-
-	const groupBlock = blocks.find(
-		( block ) =>
-			block.name === 'core/group' &&
-			block.innerBlocks.some(
-				( innerBlock ) =>
-					innerBlock.name === 'woocommerce/store-notices'
-			)
-	);
-
-	if ( groupBlock ) {
-		selectBlock( groupBlock.clientId );
-	}
-};
-
-const onClickCallbackWithTermDescription = ( {
-	clientId,
-	attributes,
-	getBlocks,
-	replaceBlock,
-	selectBlock,
-}: OnClickCallbackParameter ) => {
-	replaceBlock( clientId, getBlockifiedTemplate( attributes, true ) );
-
-	const blocks = getBlocks();
-
-	const groupBlock = blocks.find(
-		( block ) =>
-			block.name === 'core/group' &&
-			block.innerBlocks.some(
-				( innerBlock ) =>
-					innerBlock.name === 'woocommerce/store-notices'
-			)
-	);
-
-	if ( groupBlock ) {
-		selectBlock( groupBlock.clientId );
-	}
-};
+	__( 'Upgrade to Products block', 'woo-gutenberg-products-block' );
 
 export const blockifiedProductCatalogConfig = {
 	getBlockifiedTemplate,
 	isConversionPossible,
 	getDescription,
 	getButtonLabel,
-	onClickCallback,
 };
 
 export const blockifiedProductTaxonomyConfig = {
 	getBlockifiedTemplate: getBlockifiedTemplateWithTermDescription,
-	onClickCallback: onClickCallbackWithTermDescription,
 	isConversionPossible,
 	getDescription,
 	getButtonLabel,

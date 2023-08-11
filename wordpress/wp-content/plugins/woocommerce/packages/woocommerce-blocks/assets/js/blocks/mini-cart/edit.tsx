@@ -14,15 +14,13 @@ import {
 import { getSetting } from '@woocommerce/settings';
 import { __ } from '@wordpress/i18n';
 import Noninteractive from '@woocommerce/base-components/noninteractive';
-import { isSiteEditorPage } from '@woocommerce/utils';
 import type { ReactElement } from 'react';
-import { select } from '@wordpress/data';
+import { useSelect } from '@wordpress/data';
 
 /**
  * Internal dependencies
  */
 import QuantityBadge from './quantity-badge';
-import './editor.scss';
 
 interface Attributes {
 	addToCartBehaviour: string;
@@ -42,7 +40,7 @@ const Edit = ( { attributes, setAttributes }: Props ): ReactElement => {
 		className: `wc-block-mini-cart`,
 	} );
 
-	const isSiteEditor = isSiteEditorPage( select( 'core/edit-site' ) );
+	const isSiteEditor = useSelect( 'core/edit-site' ) !== undefined;
 
 	const templatePartEditUri = getSetting(
 		'templatePartEditUri',
@@ -56,18 +54,47 @@ const Edit = ( { attributes, setAttributes }: Props ): ReactElement => {
 		<div { ...blockProps }>
 			<InspectorControls>
 				<PanelBody
-					title={ __( 'Settings', 'woo-gutenberg-products-block' ) }
+					title={ __(
+						'Mini Cart Settings',
+						'woo-gutenberg-products-block'
+					) }
 				>
+					<BaseControl
+						id="wc-block-mini-cart__add-to-cart-behaviour-toggle"
+						label={ __(
+							'Add-to-Cart behaviour',
+							'woo-gutenberg-products-block'
+						) }
+					>
+						<ToggleControl
+							label={ __(
+								'Open cart in a drawer',
+								'woo-gutenberg-products-block'
+							) }
+							onChange={ ( value ) => {
+								setAttributes( {
+									addToCartBehaviour: value
+										? 'open_drawer'
+										: 'none',
+								} );
+							} }
+							help={ __(
+								'Select what happens when a customer adds a product to the cart.',
+								'woo-gutenberg-products-block'
+							) }
+							checked={ addToCartBehaviour === 'open_drawer' }
+						/>
+					</BaseControl>
 					<ToggleControl
 						label={ __(
-							'Display total price',
+							'Hide Cart Price',
 							'woo-gutenberg-products-block'
 						) }
 						help={ __(
-							'Toggle to display the total price of products in the shopping cart. If no products have been added, the price will not display.',
+							'Toggles the visibility of the Mini Cart price.',
 							'woo-gutenberg-products-block'
 						) }
-						checked={ ! hasHiddenPrice }
+						checked={ hasHiddenPrice }
 						onChange={ () =>
 							setAttributes( {
 								hasHiddenPrice: ! hasHiddenPrice,
@@ -76,9 +103,9 @@ const Edit = ( { attributes, setAttributes }: Props ): ReactElement => {
 					/>
 					{ isSiteEditor && (
 						<ToggleGroupControl
-							className="wc-block-editor-mini-cart__render-in-cart-and-checkout-toggle"
+							className="wc-block-mini-cart__render-in-cart-and-checkout-toggle"
 							label={ __(
-								'Mini-Cart in cart and checkout pages',
+								'Mini Cart in cart and checkout pages',
 								'woo-gutenberg-products-block'
 							) }
 							value={ cartAndCheckoutRenderStyle }
@@ -88,7 +115,7 @@ const Edit = ( { attributes, setAttributes }: Props ): ReactElement => {
 								} );
 							} }
 							help={ __(
-								'Select how the Mini-Cart behaves in the Cart and Checkout pages. This might affect the header layout.',
+								'Select how the Mini Cart behaves in the Cart and Checkout pages. This might affect the header layout.',
 								'woo-gutenberg-products-block'
 							) }
 						>
@@ -109,62 +136,27 @@ const Edit = ( { attributes, setAttributes }: Props ): ReactElement => {
 						</ToggleGroupControl>
 					) }
 				</PanelBody>
-				<PanelBody
-					title={ __(
-						'Cart Drawer',
-						'woo-gutenberg-products-block'
-					) }
-				>
-					{ templatePartEditUri && (
-						<>
-							<img
-								className="wc-block-editor-mini-cart__drawer-image"
-								src="/wp-content/plugins/woocommerce-blocks/images/blocks/mini-cart/cart-drawer.svg"
-								alt=""
-							/>
-							<p>
-								{ __(
-									'When opened, the Mini-Cart drawer gives shoppers quick access to view their selected products and checkout.',
-									'woo-gutenberg-products-block'
-								) }
-							</p>
-							<p className="wc-block-editor-mini-cart__drawer-link">
-								<ExternalLink href={ templatePartEditUri }>
-									{ __(
-										'Edit Mini-Cart Drawer template',
-										'woo-gutenberg-products-block'
-									) }
-								</ExternalLink>
-							</p>
-						</>
-					) }
-					<BaseControl
-						id="wc-block-mini-cart__add-to-cart-behaviour-toggle"
-						label={ __(
-							'Behavior',
+				{ templatePartEditUri && (
+					<PanelBody
+						title={ __(
+							'Template settings',
 							'woo-gutenberg-products-block'
 						) }
 					>
-						<ToggleControl
-							label={ __(
-								'Open drawer when adding',
+						<p>
+							{ __(
+								'Edit the appearance of the Mini Cart.',
 								'woo-gutenberg-products-block'
 							) }
-							onChange={ ( value ) => {
-								setAttributes( {
-									addToCartBehaviour: value
-										? 'open_drawer'
-										: 'none',
-								} );
-							} }
-							help={ __(
-								'Toggle to open the Mini-Cart drawer when a shopper adds a product to their cart.',
+						</p>
+						<ExternalLink href={ templatePartEditUri }>
+							{ __(
+								'Edit Mini Cart template part',
 								'woo-gutenberg-products-block'
 							) }
-							checked={ addToCartBehaviour === 'open_drawer' }
-						/>
-					</BaseControl>
-				</PanelBody>
+						</ExternalLink>
+					</PanelBody>
+				) }
 			</InspectorControls>
 			<Noninteractive>
 				<button className="wc-block-mini-cart__button">

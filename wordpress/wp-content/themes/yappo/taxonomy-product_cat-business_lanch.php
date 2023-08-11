@@ -13,8 +13,8 @@ get_header( 'shop' ); ?>
 
 					<div class="col-3 pe-0">
                         <?php if ( function_exists( 'yoast_breadcrumb' ) ) {
-                            if(get_locale() == 'ru_RU') echo str_replace('Головна','Главная',yoast_breadcrumb( '<ul class="breadcrumbs">', '</ul>', false));
-                            else echo yoast_breadcrumb( '<ul class="breadcrumbs">', '</ul>');
+                            if(get_locale() == 'ru_RU') echo str_replace('Головна','Главная',yoast_breadcrumb( '<ul class="breadcrumbs"  itemscope itemtype="https://schema.org/BreadcrumbList">', '</ul>', false));
+                            else echo yoast_breadcrumb( '<ul class="breadcrumbs"  itemscope itemtype="https://schema.org/BreadcrumbList">', '</ul>');
                         } ?>
 					</div>
 

@@ -5,13 +5,11 @@ import { useStoreCart } from '@woocommerce/base-context/hooks';
 import { CartLineItemsTable } from '@woocommerce/base-components/cart-checkout';
 import classNames from 'classnames';
 
-type MiniCartProductsTableBlockProps = {
+type MiniCartContentsBlockProps = {
 	className: string;
 };
 
-const Block = ( {
-	className,
-}: MiniCartProductsTableBlockProps ): JSX.Element => {
+const Block = ( { className }: MiniCartContentsBlockProps ): JSX.Element => {
 	const { cartItems, cartIsLoading } = useStoreCart();
 	return (
 		<div

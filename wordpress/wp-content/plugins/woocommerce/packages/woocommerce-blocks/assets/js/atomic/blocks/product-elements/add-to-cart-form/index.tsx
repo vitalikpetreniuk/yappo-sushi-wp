@@ -30,5 +30,4 @@ registerBlockSingleProductTemplate( {
 	blockName: metadata.name,
 	blockMetadata: metadata,
 	blockSettings,
-	isAvailableOnPostEditor: true,
 } );

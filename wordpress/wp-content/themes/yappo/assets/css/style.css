@@ -4879,7 +4879,7 @@ body .helpcrunch-iframe-wrapper {
 
 .section-delivery {
   padding: 40px 0;
-  background: url(../img/bg-delivery.png);
+  background: url(../img/bg-delivery.webp);
   background-repeat: no-repeat;
   color: #ffff;
   background-size: cover;
@@ -13643,7 +13643,7 @@ body .helpcrunch-iframe-wrapper {
   .section-delivery {
     padding: 65px 40px 25px;
     text-align: center;
-    background: url(../img/bg-delivery-mob.png);
+    background: url(../img/bg-delivery-mob.webp);
   }
 
   .section-delivery h3 {

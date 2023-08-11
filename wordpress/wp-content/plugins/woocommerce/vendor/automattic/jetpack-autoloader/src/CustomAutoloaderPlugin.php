@@ -123,6 +123,7 @@ class CustomAutoloaderPlugin implements PluginInterface, EventSubscriberInterfac
 
 		$generator = new AutoloadGenerator( $this->io );
 		$generator->dump( $this->composer, $config, $localRepo, $package, $installationManager, 'composer', $optimize, $suffix );
+		$this->generated = true;
 	}
 
 	/**
@@ -144,6 +145,7 @@ class CustomAutoloaderPlugin implements PluginInterface, EventSubscriberInterfac
 
 		// Reuse our own suffix, if any.
 		if ( is_readable( $vendorPath . '/autoload_packages.php' ) ) {
+			// phpcs:ignore WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents
 			$content = file_get_contents( $vendorPath . '/autoload_packages.php' );
 			if ( preg_match( '/^namespace Automattic\\\\Jetpack\\\\Autoloader\\\\jp([^;\s]+);/m', $content, $match ) ) {
 				return $match[1];
@@ -152,6 +154,7 @@ class CustomAutoloaderPlugin implements PluginInterface, EventSubscriberInterfac
 
 		// Reuse Composer's suffix, if any.
 		if ( is_readable( $vendorPath . '/autoload.php' ) ) {
+			// phpcs:ignore WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents
 			$content = file_get_contents( $vendorPath . '/autoload.php' );
 			if ( preg_match( '{ComposerAutoloaderInit([^:\s]+)::}', $content, $match ) ) {
 				return $match[1];

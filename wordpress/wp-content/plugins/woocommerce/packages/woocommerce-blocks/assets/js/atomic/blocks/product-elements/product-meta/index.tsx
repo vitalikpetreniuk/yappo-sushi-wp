@@ -2,8 +2,7 @@
  * External dependencies
  */
 import { registerBlockSingleProductTemplate } from '@woocommerce/atomic-utils';
-import { Icon } from '@wordpress/icons';
-import { productMeta } from '@woocommerce/icons';
+import { WC_BLOCKS_IMAGE_URL } from '@woocommerce/block-settings';
 
 /**
  * Internal dependencies
@@ -20,14 +19,13 @@ registerBlockSingleProductTemplate( {
 		edit,
 		save,
 		icon: {
-			src: (
-				<Icon
-					icon={ productMeta }
-					className="wc-block-editor-components-block-icon"
+			src: () => (
+				<img
+					src={ `${ WC_BLOCKS_IMAGE_URL }/blocks/product-meta/product-meta-icon.svg` }
+					alt=""
 				/>
 			),
 		},
 		ancestor: [ 'woocommerce/single-product' ],
 	},
-	isAvailableOnPostEditor: true,
 } );
