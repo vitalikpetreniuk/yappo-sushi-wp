@@ -3995,89 +3995,82 @@ body .helpcrunch-iframe-wrapper {
   transition: 0.3s;
 }
 
+.filter-wrap .filter-options .column-one .filter__title {
+  margin-bottom: 0;
+}
+
 .range-slider {
   position: relative;
-  border: 1px solid #2A1A5E;
-  background: #fff;
+}
+
+.irs--round .irs-line {
   height: 6px;
-  border-radius: 10px;
+  background: white;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #2a1a5e;
 }
 
-.range-selected {
-  height: 100%;
-  left: 0%;
-  right: 0%;
-  position: absolute;
-  border-radius: 5px;
-  background-color: #2A1A5E;
+.irs-from,
+.irs-to,
+.irs-min,
+.irs-max,
+.irs-single,
+.irs-grid {
+  display: none;
 }
 
-.range-selected:before {
+span.irs--round .irs-bar {
+  background-color: #2a1a5e;
+  height: 6px;
+}
+
+span.irs-handle.from:before,
+span.irs-handle.to:before {
+  width: 20px;
+  height: 33px;
   content: "";
   position: absolute;
-  width: 20px;
-  height: 33px;
   background: url(../img/fish-tail.svg) 50% 50% no-repeat;
-  left: 0px;
-  top: 50%;
-  -webkit-transform: translate(-67%, -50%);
-      -ms-transform: translate(-67%, -50%);
-          transform: translate(-67%, -50%);
 }
 
-.range-selected::after {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 33px;
-  background: url(../img/fish-tail.svg) 50% 50% no-repeat;
-  -webkit-transform: rotate(180deg) translate(-67%, 50%);
-      -ms-transform: rotate(180deg) translate(-67%, 50%);
-          transform: rotate(180deg) translate(-67%, 50%);
-  left: auto;
-  right: 0;
-  top: 50%;
+span.irs-handle.from:before {
+  left: -13px;
+  top: -4px;
 }
 
-.range-input {
-  position: relative;
+span.irs-handle.to:before {
+  left: 2.7px;
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  top: -5px;
 }
 
-.range-input input {
-  position: absolute;
-  width: 100%;
-  height: 5px;
-  top: -7px;
-  background: none;
-  pointer-events: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+.irs--round .irs-handle {
+  background: transparent;
+  width: 10px;
+  height: 25px;
 }
 
-.range-input input::-webkit-slider-thumb {
-  width: 20px;
-  height: 33px;
-  background: none;
-  cursor: pointer;
-  pointer-events: auto;
-  -webkit-appearance: none;
-  position: relative;
-  -webkit-transform: translateX(-30%);
-          transform: translateX(-30%);
+.irs--round .irs-handle.state_hover,
+.irs--round .irs-handle:hover {
+  background-color: initial;
 }
 
-.range-input .range-two::-webkit-slider-thumb {
-  width: 20px;
-  height: 33px;
-  background: none;
-  cursor: pointer;
-  pointer-events: auto;
-  -webkit-appearance: none;
-  -webkit-transform: rotate(180deg) translateX(-40%);
-          transform: rotate(180deg) translateX(-40%);
+.irs--round .irs-handle {
+  border: none;
+  background-color: initial;
+  border-radius: initial;
+  -webkit-box-shadow: initial;
+          box-shadow: initial;
 }
 
-.range-price {
+.irs--round .irs-handle > i:first-child {
+  display: none;
+}
+
+.extra-controls {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4087,11 +4080,11 @@ body .helpcrunch-iframe-wrapper {
   margin: 23px 0;
 }
 
-.range-price label {
+.extra-controls label {
   margin-right: 5px;
 }
 
-.range-price input {
+.extra-controls input {
   width: 115px;
   height: 30px;
   border: none;
@@ -4102,7 +4095,7 @@ body .helpcrunch-iframe-wrapper {
   border-radius: 0;
 }
 
-.range-price input:first-of-type {
+.extra-controls input:first-of-type {
   margin-right: 15px;
 }
 
@@ -13513,25 +13506,11 @@ body .helpcrunch-iframe-wrapper {
     margin-right: 0rem;
   }
 
-  .range-slider {
-    width: 90%;
-  }
-
-  .range-input input::-webkit-slider-thumb {
-    -webkit-transform: translateX(-80%);
-            transform: translateX(-80%);
-  }
-
-  .range-input .range-two::-webkit-slider-thumb {
-    -webkit-transform: rotate(180deg) translateX(100%);
-            transform: rotate(180deg) translateX(100%);
-  }
-
-  .range-price {
+  .extra-controls {
     margin: 24px 0;
   }
 
-  .range-price input {
+  .extra-controls input {
     width: 120px;
   }
 
