@@ -24,7 +24,7 @@ let path = {
 	// Список робочих папок/файлів
 	src: {
 		html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
-		css: source_folder + "/scss/style.scss",
+		css: source_folder + "/scss/styles.scss",
 		js: source_folder + "/js/scripts.js",
 		fonts: source_folder + "/fonts/*",
 		images: source_folder + "/img/**/**",
