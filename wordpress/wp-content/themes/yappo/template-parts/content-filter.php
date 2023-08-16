@@ -207,7 +207,9 @@
                                                                            value="<?= $term->slug ?>">
                                                                     <!-- <span class="checkmark"></span>     -->
 
-                                                                    <?= $term->name ?>
+                                                                    <span>
+                                                                        <?= $term->name ?>
+                                                                    </span>
 
                                                                     <div class="img-wrap">
                                                                         <?= wp_get_attachment_image(get_field('image', $term)) ?>
@@ -260,7 +262,9 @@
                                                                            id="<?= $term->slug ?>">
                                                                     <!-- <span class="checkmark"></span>     -->
 
-                                                                    <?= $term->name ?>
+                                                                    <span>
+                                                                        <?= $term->name ?>
+                                                                    </span>
 
                                                                     <div class="img-wrap">
                                                                         <div class="default-img">
