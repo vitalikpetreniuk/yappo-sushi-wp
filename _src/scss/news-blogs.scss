@@ -37,16 +37,16 @@
       
         .item2 {
             @include media-for (null, 1025px){
-                grid-row: 2 / span 1;
-                grid-column: 1 / span 1;
+                grid-row: 3 / span 4;
+                grid-column: 1 / span 2;
             }
     
         }
       
         .item3 {
           @include media-for (null, 1025px){
-            grid-row: 2 / span 1;
-            grid-column: 2 / span 1;
+            grid-row: 5 / span 6;
+            grid-column: 1 / span 2;
           }
     
         }
@@ -54,7 +54,7 @@
         .item4 {
 
           @include media-for (null, 1025px){
-            grid-row: 3 / span 1;
+            grid-row: 7 / span 8;
             grid-column: 1 / span 2;
           }
     
@@ -62,31 +62,31 @@
       
         .item5 {
             @include media-for (null, 1025px){
-                grid-row: 4 / span 1;
-                grid-column: 1 / span 1;
+                grid-row: 9 / span 10;
+                grid-column: 1 / span 2;
               }
     
         }
       
         .item6 {
             @include media-for (null, 1025px){
-                grid-row: 4 / span 1;
-                grid-column: 2 / span 1;
+                grid-row: 10 / span 11;
+                grid-column: 1 / span 2;
             }
     
         }
     
         .item7 {
             @include media-for (null, 1025px){
-                grid-row: 5 / span 1;
-                grid-column: 1 / span 2;
+                // grid-row: 5 / span 1;
+                // grid-column: 1 / span 2;
             }
         }
     
         .item8 {
             @include media-for (null, 1025px){
-                grid-row: 6 / span 1;
-                grid-column: 1 / span 1;
+                // grid-row: 6 / span 1;
+                // grid-column: 1 / span 1;
             }
         }
     

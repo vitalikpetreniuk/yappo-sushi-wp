@@ -47,7 +47,7 @@ defined( 'ABSPATH' ) || exit;
 	          <?php esc_html_e( 'Вартість доставки', 'yappo' ); ?>
           </span>
 
-			<span class="text-span">
+			<span style="text-align:right" class="text-span">
 				<?php
 				 
 				 	if(get_locale() == 'uk') esc_html_e( 'Розраховується оператором', 'yappo' );
