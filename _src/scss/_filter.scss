@@ -280,7 +280,7 @@
       min-width: 170px;
       height: 70px;
       display: block;
-      padding: 14px 15px;
+      padding: 7px 15px;
       font-family: 'DelaGothicOne';
       font-size: 13px;
       font-weight: 400;
@@ -307,6 +307,13 @@
 
       @include media-for(null, 387px) {
         width: 166px;
+      }
+
+
+      span{
+        width: 92px;
+        display: block;
+        overflow-wrap: break-word;
       }
     }
 

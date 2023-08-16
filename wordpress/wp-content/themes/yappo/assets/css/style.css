@@ -3797,7 +3797,7 @@ body .helpcrunch-iframe-wrapper {
   min-width: 170px;
   height: 70px;
   display: block;
-  padding: 14px 15px;
+  padding: 7px 15px;
   font-family: "DelaGothicOne";
   font-size: 13px;
   font-weight: 400;
@@ -3813,6 +3813,12 @@ body .helpcrunch-iframe-wrapper {
       -ms-flex-align: center;
           align-items: center;
   line-height: 1.2;
+}
+
+.filter-wrap .col-two label span {
+  width: 92px;
+  display: block;
+  overflow-wrap: break-word;
 }
 
 .filter-wrap .col-two .category-offers label .img-wrap {
