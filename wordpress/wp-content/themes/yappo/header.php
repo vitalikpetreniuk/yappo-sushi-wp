@@ -38,7 +38,7 @@
       <div class="row justify-content-between align-items-center">
 
         <div class="col-lg-4 col-md-3 d-md-block d-none">
-          <a class="tel-header-top"
+          <a class="tel-header-top"  itemprop="telephone"
              href="tel:<?php the_field('phone_number', 'option') ?>"><?php the_field('phone_number', 'option') ?></a>
         </div>
 
@@ -115,9 +115,10 @@
         <div class="col-lg-2 col-md-4 col-6 pe-0 pe-md-3 me-lg-5 me-md-0">
           <div class="logo">
             <a href="<?= rtrim(home_url(), '/') ?>/<?= yappo_get_chosen_city_slug() ?>" itemprop="url">
-              <div itemprop="name">
+              <div itemprop="image">
                   <?= wp_get_attachment_image(get_field('logo', 'option'), 'full') ?>
               </div>
+              <div itemprop="name" hidden> <?php bloginfo('name') ?> </div>
             </a>
           </div>
         </div>
@@ -323,26 +324,28 @@
               <?php
               $terms = get_field('categories_in_header', 'option');
               foreach ($terms as $term) {
-                  $categoryUrl = '/product-category/' . $term->slug;
+                  $categoryUrl = rtrim(home_url(), '/') . '/product-category/' . $term->slug;
                   $categoryID = get_queried_object_id();
                   if (yappo_get_chosen_city_slug()) {
                       $categoryUrl = rtrim(home_url(), '/') . '/' . yappo_get_chosen_city_slug() . '/' . $term->slug;
                   }
+                  $url = explode("/", rtrim(get_page_uri(), "/"));
+                  $lastWord = end($url);
                   ?>
 
                 <li>
-                  <a class="link-category <?php if ($categoryID === $term->term_id){ echo 'link-category-active';} ?>"
+                  <a class="link-category <?php if ($categoryID === $term->term_id || $lastWord === $term->slug){ echo 'link-category-active';} ?>"
                      href="<?= $categoryUrl ?>">
                     <div class="cotegory_img">
                         <?php if (get_field('image', $term)) : ?>
                           <img class="image-category"
                                src="<?= wp_get_attachment_image_url(get_field('image', $term)); ?>"
-                               alt="<?= $term->name ?>" loading="lazy" width="30" height="30">
+                               alt="<?= $term->name ?>" loading="lazy" >
                         <?php endif; ?>
                         <?php if (get_field('hover_image', $term)) : ?>
                           <img class="image-category-active"
                                src="<?= wp_get_attachment_image_url(get_field('hover_image', $term)); ?>"
-                               alt="<?= $term->name ?>" loading="lazy" width="30" height="30">
+                               alt="<?= $term->name ?>" loading="lazy" >
                         <?php endif; ?>
                     </div>
 

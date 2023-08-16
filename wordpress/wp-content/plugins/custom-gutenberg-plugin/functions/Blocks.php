@@ -17,3 +17,4 @@ new ProductCategory\ProductCategory();
 new SaleCategories\SaleCategories();
 new Menu\Menu();
 new Sale\Sale();
+new BusinessLanchBanner\BusinessLanchBanner();
