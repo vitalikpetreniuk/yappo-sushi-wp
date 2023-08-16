@@ -277,9 +277,8 @@
 
     label {
       border: 1px solid $accent;
-      min-width: 170px;
+      width: 175px;
       height: 70px;
-      display: block;
       padding: 7px 15px;
       font-family: 'DelaGothicOne';
       font-size: 13px;
@@ -311,9 +310,13 @@
 
 
       span{
-        width: 92px;
+        width: 97px;
         display: block;
         overflow-wrap: break-word;
+
+        @include media-for(null, 387px) {
+          width: 89px;
+        }
       }
     }
 
@@ -342,7 +345,6 @@
         .vegeterianske {
           border: 1px solid $green;
           color: $green;
-          min-width: 200px;
         }
 
         .gostre {
@@ -437,6 +439,7 @@
     margin-left: .5rem !important;
     width: 37px;
     height: 36px;
+    display: contents;
 
     img{
         width: 100%;
