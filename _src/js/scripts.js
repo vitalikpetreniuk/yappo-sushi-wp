@@ -812,7 +812,7 @@ $(window).on('load resize', function () {
 
         $(".header__category ul").scrollLeft(scrollLeft);
     } else {
-        $(".header__category ul").scrollLeft(0);
+        
     }
 
 
