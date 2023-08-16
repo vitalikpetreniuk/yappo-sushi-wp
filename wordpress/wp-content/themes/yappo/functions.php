@@ -80,7 +80,7 @@ function yappo_styles()
     );
     wp_enqueue_style(
         'yappo-css',
-        get_theme_file_uri('assets/css/styles1.min.css'),
+        get_theme_file_uri('assets/css/styles.min.css'),
         [],
         time()
     );

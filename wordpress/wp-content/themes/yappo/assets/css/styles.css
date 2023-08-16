@@ -3796,9 +3796,8 @@ body .helpcrunch-iframe-wrapper {
 
 .filter-wrap .col-two label {
   border: 1px solid #2A1A5E;
-  min-width: 170px;
+  width: 175px;
   height: 70px;
-  display: block;
   padding: 7px 15px;
   font-family: "DelaGothicOne";
   font-size: 13px;
@@ -3818,7 +3817,7 @@ body .helpcrunch-iframe-wrapper {
 }
 
 .filter-wrap .col-two label span {
-  width: 92px;
+  width: 97px;
   display: block;
   overflow-wrap: break-word;
 }
@@ -3844,7 +3843,6 @@ body .helpcrunch-iframe-wrapper {
 .filter-wrap .col-two .category-offers .filter__properties-item .vegeterianske {
   border: 1px solid #507849;
   color: #507849;
-  min-width: 200px;
 }
 
 .filter-wrap .col-two .category-offers .filter__properties-item .gostre {
@@ -3925,6 +3923,7 @@ body .helpcrunch-iframe-wrapper {
   margin-left: 0.5rem !important;
   width: 37px;
   height: 36px;
+  display: contents;
 }
 
 .radio-button-container .img-wrap img,
@@ -13182,6 +13181,19 @@ span.irs-handle.to:before {
   }
 }
 
+@media (max-width: 766px) {
+  .header__location {
+    text-align: center !important;
+    width: 100% !important;
+  }
+
+  .header__location .local {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+}
+
 @media (max-width: 600px) {
   .cart-page .woocommerce-error {
     margin-left: 0%;
@@ -14527,6 +14539,10 @@ span.irs-handle.to:before {
 @media (max-width: 386px) {
   .filter-wrap .col-two label {
     width: 166px;
+  }
+
+  .filter-wrap .col-two label span {
+    width: 89px;
   }
 }
 

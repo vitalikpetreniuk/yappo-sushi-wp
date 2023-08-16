@@ -6,6 +6,17 @@
     transition: .2s ease-in-out;
     z-index: 100;
 
+    &__location {
+        @include media-for (null, 767px){
+            text-align: center!important;
+            width: 100% !important;
+
+            .local {
+                justify-content: center!important;
+            }
+        }
+    }
+
     .header-top{
         position: relative;
         background-color: $accent;

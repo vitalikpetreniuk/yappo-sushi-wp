@@ -21,8 +21,8 @@
   <link rel="dns-prefetch" href="https://fonts.gstatic.com" crossorigin>
 
     <?php
-    if ( strpos($_SERVER['REQUEST_URI'], '&pa_ingredients') || strpos($_SERVER['REQUEST_URI'], '&max_price')|| strpos($_SERVER['REQUEST_URI'], '&min_price') ||  strpos($_SERVER['REQUEST_URI'], '&product_tag') ) { ?>
-      <link rel="canonical" href="<?php echo $_SERVER['REQUEST_URI'] ?>" />
+    if (strpos($_SERVER['REQUEST_URI'], '&pa_ingredients') || strpos($_SERVER['REQUEST_URI'], '&max_price') || strpos($_SERVER['REQUEST_URI'], '&min_price') || strpos($_SERVER['REQUEST_URI'], '&product_tag')) { ?>
+      <link rel="canonical" href="<?php echo $_SERVER['REQUEST_URI'] ?>"/>
     <?php }
     ?>
     <?php wp_head(); ?>
@@ -38,11 +38,11 @@
       <div class="row justify-content-between align-items-center">
 
         <div class="col-lg-4 col-md-3 d-md-block d-none">
-          <a class="tel-header-top"  itemprop="telephone"
+          <a class="tel-header-top" itemprop="telephone"
              href="tel:<?php the_field('phone_number', 'option') ?>"><?php the_field('phone_number', 'option') ?></a>
         </div>
 
-        <div class="col-lg-4 col-md-5">
+        <div class="col-lg-4 col-md-5 d-none" >
             <?php if (get_field('top_sticky_text', 'option')) : ?>
               <p>
                   <?php the_field('top_sticky_text', 'option') ?>
@@ -53,11 +53,12 @@
             <?php endif; ?>
         </div>
 
-        <div class="col-xxl-3 col-lg-3 col-md-4 col-3 d-md-block d-none  p-0">
+        <div class="col-xxl-3 col-lg-3 col-md-4 col-3 d-md-block p-0 header__location">
           <div class="local-wrap">
             <a class="local" href="#" target="_blank">
                 <?php if (function_exists('yappo_get_chosen_header_adress')) { ?>
-                  <img src="<?= get_theme_file_uri('assets/img/white-location.svg') ?>" alt="location" width="10" height="20">
+                  <img src="<?= get_theme_file_uri('assets/img/white-location.svg') ?>" alt="location" width="10"
+                       height="20">
                 <?php } ?>
                 <?= yappo_get_chosen_header_adress(); ?>
             </a>
@@ -334,18 +335,20 @@
                   ?>
 
                 <li>
-                  <a class="link-category <?php if ($categoryID === $term->term_id || $lastWord === $term->slug){ echo 'link-category-active';} ?>"
+                  <a class="link-category <?php if (($categoryID === $term->term_id || $lastWord === $term->slug) && !is_checkout()) {
+                      echo 'link-category-active';
+                  } ?>"
                      href="<?= $categoryUrl ?>">
                     <div class="cotegory_img">
                         <?php if (get_field('image', $term)) : ?>
                           <img class="image-category"
                                src="<?= wp_get_attachment_image_url(get_field('image', $term)); ?>"
-                               alt="<?= $term->name ?>" loading="lazy" >
+                               alt="<?= $term->name ?>" loading="lazy">
                         <?php endif; ?>
                         <?php if (get_field('hover_image', $term)) : ?>
                           <img class="image-category-active"
                                src="<?= wp_get_attachment_image_url(get_field('hover_image', $term)); ?>"
-                               alt="<?= $term->name ?>" loading="lazy" >
+                               alt="<?= $term->name ?>" loading="lazy">
                         <?php endif; ?>
                     </div>
 
@@ -372,50 +375,6 @@
 
 
   <div id="menu">
-
-    <div class="menu-header">
-      <div class="local-wrap">
-        <a class="local" href="#" target="_blank">
-
-          <img src="<?= get_theme_file_uri('assets/img/white-location.svg') ?>" alt="location" width="10" height="20">
-
-            <?php if (function_exists('yappo_get_chosen_header_adress')) : ?>
-                <?= yappo_get_chosen_header_adress(); ?>
-            <?php endif; ?>
-        </a>
-
-        <div class="city-list">
-          <h6>
-              <?php esc_html_e('Оберіть місто', 'yappo'); ?>
-          </h6>
-
-          <div>
-            <ul>
-                <?php
-                $cities = get_terms(array(
-                    'taxonomy' => 'cities',
-                    'hide_empty' => false
-                ));
-                if (count($cities)) {
-                    foreach ($cities as $city) {
-                        ?>
-                      <li>
-                        <a href="<?php the_field('link', $city) ?>" data-id="<?= $city->slug ?>">
-                            <?php the_field('city', $city) ?> <span class="adress">
-													<?php the_field('adress', $city); ?>
-												 </span>
-                        </a>
-                      </li>
-                        <?php
-                    }
-                }
-                ?>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <div class="menu-body">
       <div class="time-wrap d-flex align-items-center">
         <div>
