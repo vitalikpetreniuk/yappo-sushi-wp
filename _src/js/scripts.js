@@ -96,19 +96,25 @@ $(function () {
 
         $('.modal-search').toggleClass('modal-search-active');
         $('main').toggleClass('for-main-overflow');
+       
 
+        
 
         if ($('.modal-search').hasClass('modal-search-active')) {
             $(".btn-open-search").css('display', 'none'),
                 $(".close-open-search").css('display', 'block')
             $("html, body").animate({scrollTop: 0}, "slow");
             $('.fix-cart').css('right', '-200px');
+            
+          
 
         } else {
             $(".btn-open-search").css('display', 'block')
             $(".close-open-search").css('display', 'none')
             $('main').removeClass('for-main-overflow');
             $('.fix-cart').css('right', '20px');
+
+        
         }
     })
 
@@ -882,13 +888,13 @@ setInterval(function () {
 //for chat
 function checkElement() {
     if ($('.helpcrunch-iframe-wrapper iframe').length > 0) {
-
-        $('.header').css('z-index', 20);
+        // $('.header').css('z-index', 20);
     } else {
 
-        $('.header').css('z-index', 100);
+        // $('.header').css('z-index', 100);
     }
 }
+
 
 
 $(window).on('load resize', function () {

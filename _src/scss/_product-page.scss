@@ -203,6 +203,25 @@
             font-weight: 300;
             font-size: 14px;
             text-decoration: line-through;
+            
+            @include media-for (null, $sm){
+                display: flex;
+            }
+        }
+        span{
+            
+            @include media-for (null, $sm){
+                display: flex !important;
+                width: 17px;
+                align-items: center;
+                margin-bottom: 5px;
+
+                .price{
+                    display: flex !important;
+                    margin-left: .4rem !important;
+                }
+            }
+
         }
     }
 

@@ -153,7 +153,11 @@
                     -ms-overflow-style: none; 
                 }
                 
-                
+                li{
+                    @include media-for (null, $sm){
+                        padding: 0 .5rem;
+                    } 
+                }
                 a{
                     position: relative;
                     display: flex;

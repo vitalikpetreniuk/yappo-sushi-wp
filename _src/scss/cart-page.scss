@@ -486,6 +486,10 @@
       font-size: 14px;
       font-weight: 400;
 
+      &:nth-of-type(even) {
+        text-align: right;
+      }
+
       @include media-for(null, $tablet) {
         height: 10px;
       }

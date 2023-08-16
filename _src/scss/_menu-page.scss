@@ -31,6 +31,29 @@
         align-items: start;
     }
 
+    .row{
+        .col-md-4{
+            &:nth-of-type(5) {
+                .img-wrap{
+                    @include media-for (null, $sm){
+                        width: 2rem;
+        
+                    }
+                }
+            }
+
+            &:nth-of-type(8) {
+                .img-wrap{
+                    @include media-for (null, $sm){
+                        width: 1.7rem;
+        
+                    }
+                }
+            }
+        }
+       
+    }
+
     .menu-item{
         display: flex;
         align-items: center;
@@ -50,6 +73,7 @@
             height: 68px;
         }
 
+
         .img-wrap{
             margin-left: 15px;
 
@@ -61,7 +85,13 @@
                     height: 100%;
                 }
             }
+
+            
         }
+
+        
+        
+
 
         &:hover{
             border: 1px solid #FF671D;
