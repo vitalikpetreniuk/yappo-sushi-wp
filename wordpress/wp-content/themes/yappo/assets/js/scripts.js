@@ -664,6 +664,7 @@ $(document).ready(function () {
     $(document).on('click', '.close-cart', toggleCart);
     $(document).on('click', '.added-success > .orange-btn', function () {
         toggleCart;
+        cartAdaptive() 
 
         $('.added-success').removeClass('added-success-active');
     });
@@ -903,9 +904,7 @@ $(window).on('load resize', function () {
     }
 });
 
-$(window).on('scroll', function() {
-    cartAdaptive(); 
-});
+
 
 
 
