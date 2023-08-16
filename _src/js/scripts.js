@@ -802,18 +802,22 @@ $(window).on('load resize', function () {
 
     if ($(window).width() <= 1024) {
         var $activeElement = $(".link-category-active");
-        if ($activeElement.length === 0) {
-            return;
+    
+        if ($activeElement.length > 0) {
+            var containerWidth = $(".header__category ul").width();
+            var activeElementWidth = $activeElement.outerWidth();
+            var activeElementLeft = $activeElement.position().left;
+            var scrollLeft = activeElementLeft - (containerWidth / 2) + (activeElementWidth / 2);
+            
+            var currentScrollLeft = $(".header__category ul").scrollLeft();
+            var maxScrollLeft = $(".header__category ul")[0].scrollWidth - containerWidth;
+    
+            
+            if (scrollLeft > currentScrollLeft && scrollLeft < maxScrollLeft) {
+                $(".header__category ul").css("scroll-behavior", "smooth");
+                $(".header__category ul").scrollLeft(scrollLeft);
+            }
         }
-
-        var containerWidth = $(".header__category ul").width();
-        var activeElementWidth = $activeElement.outerWidth();
-        var activeElementLeft = $activeElement.position().left;
-        var scrollLeft = activeElementLeft - (containerWidth / 2) + (activeElementWidth / 2);
-
-        $(".header__category ul").scrollLeft(scrollLeft);
-    } else {
-        $(".header__category ul").scrollLeft(0);
     }
 
 
