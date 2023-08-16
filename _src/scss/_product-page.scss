@@ -214,11 +214,15 @@
                 display: flex !important;
                 width: 17px;
                 align-items: center;
-                margin-bottom: 5px;
+                margin-bottom: 10px;
 
                 .price{
                     display: flex !important;
                     margin-left: .4rem !important;
+                    
+                }
+                span{
+                    margin-bottom: 0px;
                 }
             }
 
@@ -280,6 +284,12 @@
 
         @include media-for (null, $sm){
             padding-left: 0rem;
+        }
+
+        .cart{
+            @include media-for (null, $sm){
+                margin-top: 20px;
+            }
         }
     }
 
@@ -446,6 +456,16 @@
         
     }
 
+    .quantity{
+
+    
+        @include media-for (null, $sm){
+            position: absolute;
+            right: 0;
+            top: 0;
+            margin: 0 !important;
+        }
+    }
 }
 
 .quantity{
