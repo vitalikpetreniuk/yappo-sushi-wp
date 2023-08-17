@@ -425,6 +425,21 @@
         font-size: 14px;
         font-weight: 400;
       }
+      .text-span-price{
+        margin-right: 1.3rem;
+        @include media-for(null, 1450px) {
+          margin-right: 1.1rem;
+        }
+
+
+        @include media-for(null, 1400px) {
+          margin-right: .5rem;
+        }
+
+        @include media-for(null, 1200px) {
+          margin-right: 1.6rem;
+        }
+      }
       @include media-for(null, $sm) {
 
         width: 6rem;
@@ -478,10 +493,11 @@
 
         .price {
           color: #FF671D !important;
-          margin-left: .5rem;
+          
           @include media-for(null, $sm) {
             display: flex;
             width: 45%;
+            
           }
 
 
@@ -500,10 +516,12 @@
         font-size: 14px;
         text-decoration: line-through;
         color: rgba($color: #323549, $alpha: .7);
-
+        margin-left: auto;
+        width: 45px;
         @include media-for(null, $sm) {
           font-size: 10px;
           padding-top: .3rem;
+          width: 55px;
         }
 
         span{
@@ -516,6 +534,10 @@
           @include media-for(null, $sm) {
             font-size: 10px;
           }
+        }
+
+        .woocommerce-Price-currencySymbol{
+          width: 10px;
         }
 
       }

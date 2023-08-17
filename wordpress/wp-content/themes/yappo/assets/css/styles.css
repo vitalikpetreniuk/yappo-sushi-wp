@@ -6518,7 +6518,7 @@ span.irs-handle.to:before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 1rem;
+  padding: 1rem 0;
 }
 
 .cart-modal .cart__preview-item .sale-bage-wrap {
@@ -7017,6 +7017,10 @@ span.irs-handle.to:before {
   font-weight: 400;
 }
 
+.cart-page .cart__preview-item .product__cart__info .text-span-price {
+  margin-right: 1.3rem;
+}
+
 .cart-page .cart__preview-item .product__cart__info .price {
   font-weight: 700;
   font-size: 20px;
@@ -7039,7 +7043,6 @@ span.irs-handle.to:before {
 
 .cart-page .cart__preview-item .product__cart__info-discount .price {
   color: #FF671D !important;
-  margin-left: 0.5rem;
 }
 
 .cart-page .cart__preview-item .product__cart__info-discount .price span {
@@ -7057,6 +7060,8 @@ span.irs-handle.to:before {
   font-size: 14px;
   text-decoration: line-through;
   color: rgba(50, 53, 73, 0.7);
+  margin-left: auto;
+  width: 45px;
 }
 
 .cart-page .cart__preview-item .product__cart__info-discount .regular-price span {
@@ -7065,6 +7070,10 @@ span.irs-handle.to:before {
   font-size: 14px;
   text-decoration: line-through;
   color: rgba(50, 53, 73, 0.7);
+}
+
+.cart-page .cart__preview-item .product__cart__info-discount .regular-price .woocommerce-Price-currencySymbol {
+  width: 10px;
 }
 
 .cart-page .cart__preview-item .product-subtotal {
@@ -12193,6 +12202,10 @@ span.irs-handle.to:before {
 }
 
 @media (max-width: 1449px) {
+  .cart-page .cart__preview-item .product__cart__info .text-span-price {
+    margin-right: 1.1rem;
+  }
+
   .cart-page .resault-block .pay label {
     font-size: 13px;
   }
@@ -12270,6 +12283,10 @@ span.irs-handle.to:before {
 
   .cart-page .product-list-cart ul .first-li {
     top: -7%;
+  }
+
+  .cart-page .cart__preview-item .product__cart__info .text-span-price {
+    margin-right: 0.5rem;
   }
 }
 
@@ -12379,6 +12396,10 @@ span.irs-handle.to:before {
 
   .cart-page .cart__preview-item .sale-bage-wrap {
     left: 1rem;
+  }
+
+  .cart-page .cart__preview-item .product__cart__info .text-span-price {
+    margin-right: 1.6rem;
   }
 }
 
@@ -14627,6 +14648,7 @@ span.irs-handle.to:before {
   .cart-page .cart__preview-item .product__cart__info-discount .regular-price {
     font-size: 10px;
     padding-top: 0.3rem;
+    width: 55px;
   }
 
   .cart-page .cart__preview-item .product__cart__info-discount .regular-price span {
