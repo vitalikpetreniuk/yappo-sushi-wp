@@ -6483,6 +6483,9 @@ span.irs-handle.to:before {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   margin: 0 1rem;
   margin-top: 15px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .cart-modal .sum-wrap span {
@@ -6493,8 +6496,14 @@ span.irs-handle.to:before {
 
 .cart-modal .sum-wrap span:first-child {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
   color: #262730;
+}
+
+.cart-modal .sum-wrap span .woocommerce-Price-currencySymbol {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2A1A5E;
 }
 
 .cart-modal .weight {
@@ -13769,7 +13778,11 @@ span.irs-handle.to:before {
 
   .top-slider .banner-slider {
     padding: 60px 0 30px;
-    margin-top: -35px;
+    margin-top: 0px;
+  }
+
+  .top-slider .banner-slider__slide {
+    height: 184px;
   }
 
   .top-slider .banner-slider__slide img {
@@ -14369,7 +14382,11 @@ span.irs-handle.to:before {
   }
 
   .cart-modal .sum-wrap span {
-    font-size: 16px;
+    font-size: 20px;
+  }
+
+  .cart-modal .sum-wrap span .woocommerce-Price-currencySymbol {
+    font-size: 20px;
   }
 
   .cart-modal .cart__preview-item .cart__detail .cart__detail__header .remove-button {

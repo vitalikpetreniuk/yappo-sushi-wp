@@ -869,7 +869,7 @@ function cartAdaptive() {
 
     if ($(window).width() <= 600) {
         $('.cart-modal').outerHeight(cartModalHeight + 95 + 'px');
-        $('.cart-modal').css('padding-bottom','5rem');
+        $('.cart-modal').css('padding-bottom','6rem');
     }
     else{
         $('.cart-modal').outerHeight(cartModalHeight + 4 + 'px');
