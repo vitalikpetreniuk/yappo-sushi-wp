@@ -82,7 +82,7 @@
 
         @include media-for (null, $sm){
             margin: 10px 0rem 0;
-            padding: 0 1rem;
+            padding: 0 1rem 10px;
         }
 
         span{

@@ -462,18 +462,31 @@
     }
 
     .product__cart__info-discount {
-
-      .price {
-        color: #FF671D !important;
-        margin-left: .5rem;
-
         span{
-          font-weight: 300;
-          font-size: 14px;
-          text-decoration: line-through;
-          color: #FF671D !important;
+          @include media-for(null, $sm) {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+          }
         }
-      }
+
+        .price {
+          color: #FF671D !important;
+          margin-left: .5rem;
+          @include media-for(null, $sm) {
+            display: flex;
+            width: 45%;
+          }
+
+
+          span{
+            font-weight: 300;
+            font-size: 14px;
+            text-decoration: line-through;
+            color: #FF671D !important;
+
+          }
+        }
 
       .regular-price {
         display:flex;
@@ -484,6 +497,7 @@
 
         @include media-for(null, $sm) {
           font-size: 10px;
+          padding-top: .3rem;
         }
 
         span{
