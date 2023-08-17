@@ -208,17 +208,13 @@ function yappo_get_chosen_region()
 
 function yappo_get_chosen_adress()
 {
-    if (WC()->customer->get_billing_state()) {
-        $arr = get_choosed_city_data();
-
-        if (!$arr) {
-            return '';
-        }
-
-        return $_COOKIE['choosedaddress'];
+    $address = $_COOKIE['choosedaddress'];
+    if (!$address) {
+        return;
     }
-    $text = __('Оберіть Місто', 'yappo');
-    return "<span>$text</span>";
+    $addressArr = explode("/", $address);
+    $addressId= get_field('adresy', get_term_by('id', $addressArr[0], 'cities'));
+    return $addressId[$addressArr[1]]['item']['name'];
 }
 
 function yappo_get_chosen_header_adress()

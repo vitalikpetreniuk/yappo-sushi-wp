@@ -9,6 +9,12 @@ function setCookie(name, value) {
     d.setTime(d.getTime() + 86400000 * 10);
     document.cookie = name + "=" + value + "; expires=" + d.toUTCString() + "; path=/";
 }
+function setCookieAddress(name, value) {
+    let d = new Date();
+    d.setTime(d.getTime() + 85400000 * 11);
+    alert(name + "=" + value + "; expires=" + d.toUTCString() + "; path=/");
+    document.cookie = name + "=" + value + "; expires=" + d.toUTCString() + "; path=/";
+}
 
 jQuery(function ($) {
     window.dataLayer = window.dataLayer || [];
@@ -141,7 +147,8 @@ jQuery(function ($) {
     $('.city-list a').on('click', function (e) {
         e.preventDefault();
         let cityid = $(this).data('id');
-        let cityAddress = $(this).data('address');
+        let cityAddress = String($(this).data('address'));
+
         setCookie('choosedcity', cityid);
         setCookie('choosedaddress', cityAddress);
         if ($(this).attr("href")) {
