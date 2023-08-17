@@ -20,7 +20,7 @@
 
         @include media-for (null, $sm){
             padding: 60px 0 30px;
-            margin-top: -35px;
+            margin-top: 0px;
         } 
 
         a{
@@ -32,6 +32,24 @@
         &__slide {
 
             max-height: 500px;
+
+            @include media-for (null, $sm){
+                height: 184px;
+
+                a{
+                    display: block;
+                    height: 184px;
+                    width: 100%;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        display: block;
+                    }
+                }
+
+            }
 
             img {
                 width: 100%;

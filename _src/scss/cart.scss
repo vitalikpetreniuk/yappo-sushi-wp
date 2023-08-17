@@ -78,6 +78,7 @@
         border-bottom: 1px solid rgba($color: #000000, $alpha: .1);
         margin: 0 1rem;
         margin-top: 15px;
+        align-items: flex-end;
 
         @include media-for (null, $sm){
             margin: 10px 1rem 0;
@@ -89,13 +90,24 @@
             color: $accent;
 
             @include media-for (null, $sm){
-                font-size: 16px;
+                font-size: 20px;
             }
+            
 
             &:first-child{
                 font-weight: 300;
-                font-size: 14px;
+                font-size: 16px;
                 color: $text-black;
+            }
+
+            .woocommerce-Price-currencySymbol{
+                font-size: 20px;
+                font-weight: 700;
+                color: $accent;
+
+                @include media-for (null, $sm){
+                    font-size: 20px;
+                }
             }
         }
     }

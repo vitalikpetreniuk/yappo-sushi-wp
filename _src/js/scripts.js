@@ -664,7 +664,7 @@ $(document).ready(function () {
     $(document).on('click', '.close-cart', toggleCart);
     $(document).on('click', '.added-success > .orange-btn', function () {
         toggleCart;
-        cartAdaptive() 
+       
 
         $('.added-success').removeClass('added-success-active');
     });
@@ -802,18 +802,22 @@ $(window).on('load resize', function () {
 
     if ($(window).width() <= 1024) {
         var $activeElement = $(".link-category-active");
-        if ($activeElement.length === 0) {
-            return;
+    
+        if ($activeElement.length > 0) {
+            var containerWidth = $(".header__category ul").width();
+            var activeElementWidth = $activeElement.outerWidth();
+            var activeElementLeft = $activeElement.position().left;
+            var scrollLeft = activeElementLeft - (containerWidth / 2) + (activeElementWidth / 2);
+            
+            var currentScrollLeft = $(".header__category ul").scrollLeft();
+            var maxScrollLeft = $(".header__category ul")[0].scrollWidth - containerWidth;
+    
+            
+            if (scrollLeft > currentScrollLeft && scrollLeft < maxScrollLeft) {
+                $(".header__category ul").css("scroll-behavior", "smooth");
+                $(".header__category ul").scrollLeft(scrollLeft);
+            }
         }
-
-        var containerWidth = $(".header__category ul").width();
-        var activeElementWidth = $activeElement.outerWidth();
-        var activeElementLeft = $activeElement.position().left;
-        var scrollLeft = activeElementLeft - (containerWidth / 2) + (activeElementWidth / 2);
-
-        $(".header__category ul").scrollLeft(scrollLeft);
-    } else {
-        $(".header__category ul").scrollLeft(0);
     }
 
 
@@ -861,7 +865,16 @@ function cartAdaptive() {
     const productListHeight = cartModalHeight - (resaulBottomHeight + modatTitleHeight)
 
     $('body').css('padding-top', headerHeight + 'px');
-    $('.cart-modal').outerHeight(cartModalHeight + 4 + 'px');
+    
+
+    if ($(window).width() <= 600) {
+        $('.cart-modal').outerHeight(cartModalHeight + 95 + 'px');
+        $('.cart-modal').css('padding-bottom','6rem');
+    }
+    else{
+        $('.cart-modal').outerHeight(cartModalHeight + 4 + 'px');
+    }
+
     $('.cart-modal').css('top', headerHeight + -4 + 'px');
     // $('.cart-list').outerHeight(productListHeight - 125);
     // console.log($('.cart-list').outerHeight())
