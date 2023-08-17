@@ -13217,6 +13217,13 @@ span.irs-handle.to:before {
         -ms-flex-pack: center !important;
             justify-content: center !important;
   }
+
+  .lanch-banner .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 
 @media (max-width: 600px) {
