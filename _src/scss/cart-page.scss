@@ -436,10 +436,24 @@
         @include media-for(null, $sm) {
           font-size: 14px;
           margin-left: 0;
-          margin-left: .3rem;
           text-align: left;
         }
 
+
+      }
+
+      span{
+        font-weight: 700;
+        font-size: 20px;
+        color: $accent;
+        width: 100%;
+        text-align: right;
+        @include media-for(null, $sm) {
+          font-size: 14px;
+          margin-left: 0;
+          
+          text-align: left;
+        }
       }
 
       .regular-price {
@@ -452,10 +466,17 @@
       .price {
         color: #FF671D !important;
         margin-left: .5rem;
+
+        span{
+          font-weight: 300;
+          font-size: 14px;
+          text-decoration: line-through;
+          color: #FF671D !important;
+        }
       }
 
       .regular-price {
-        display: block;
+        display:flex;
         font-weight: 300;
         font-size: 14px;
         text-decoration: line-through;
@@ -463,6 +484,18 @@
 
         @include media-for(null, $sm) {
           font-size: 10px;
+        }
+
+        span{
+          display: block;
+          font-weight: 300;
+          font-size: 14px;
+          text-decoration: line-through;
+          color: rgba($color: #323549, $alpha: .7);
+  
+          @include media-for(null, $sm) {
+            font-size: 10px;
+          }
         }
 
       }
@@ -474,10 +507,12 @@
       font-weight: 700;
       color: $accent;
       width: 6rem;
+      
 
       @include media-for(null, $sm) {
         font-size: 14px;
         width: 4rem;
+       
       }
     }
 
