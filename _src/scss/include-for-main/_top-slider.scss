@@ -36,6 +36,19 @@
             @include media-for (null, $sm){
                 height: 184px;
 
+                a{
+                    display: block;
+                    height: 184px;
+                    width: 100%;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        display: block;
+                    }
+                }
+
             }
 
             img {

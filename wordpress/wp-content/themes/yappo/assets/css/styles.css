@@ -13785,6 +13785,20 @@ span.irs-handle.to:before {
     height: 184px;
   }
 
+  .top-slider .banner-slider__slide a {
+    display: block;
+    height: 184px;
+    width: 100%;
+  }
+
+  .top-slider .banner-slider__slide a img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: block;
+  }
+
   .top-slider .banner-slider__slide img {
     border-radius: 20px;
   }
