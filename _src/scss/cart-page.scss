@@ -420,6 +420,11 @@
       margin-right: auto;
       justify-content: center;
 
+      .text-span{
+        color: rgba(50,53,73,.7);
+        font-size: 14px;
+        font-weight: 400;
+      }
       @include media-for(null, $sm) {
 
         width: 6rem;
@@ -454,6 +459,7 @@
           
           text-align: left;
         }
+
       }
 
       .regular-price {

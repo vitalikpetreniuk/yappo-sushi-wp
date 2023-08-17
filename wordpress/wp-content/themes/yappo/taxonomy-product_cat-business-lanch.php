@@ -52,7 +52,7 @@ get_header('shop'); ?>
       do_action('woocommerce_archive_description');
       ?>
 
-    <div class="container-fluid">
+    <div class="container-fluid banner-lanch">
       <div class="row">
           <?php global $wp_query;
           $query = new WP_Query(array(
