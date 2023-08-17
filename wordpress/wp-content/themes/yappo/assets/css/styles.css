@@ -4154,7 +4154,6 @@ span.irs-handle.to:before {
   overflow-y: scroll;
   z-index: 50;
   text-align: center;
-  padding: 142px 0 0;
   opacity: 0;
   z-index: -100;
   display: none;
@@ -4164,9 +4163,21 @@ span.irs-handle.to:before {
   width: 0;
 }
 
+.modal-search .probox {
+  position: relative;
+  overflow: visible !important;
+}
+
+.modal-search .probox .close-open-search {
+  position: absolute;
+  right: -100%;
+  right: -4%;
+  top: 0.2rem;
+}
+
 .modal-search .form-wrap {
   position: fixed;
-  top: 7rem;
+  top: 2rem;
   width: 100%;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -4240,7 +4251,6 @@ span.irs-handle.to:before {
 .asp_w.asp_r .results {
   width: 100% !important;
   margin-top: 30px !important;
-  padding: 0 100px !important;
   -webkit-box-sizing: border-box !important;
           box-sizing: border-box !important;
   background: #f3f3f3 !important;
@@ -4255,12 +4265,13 @@ span.irs-handle.to:before {
   -webkit-column-gap: 30px;
      -moz-column-gap: 30px;
           column-gap: 30px;
-  max-height: calc(100vh - 293px);
+  padding-bottom: 2rem;
   overflow-y: scroll;
   -ms-overflow-style: none;
   /* IE and Edge */
   scrollbar-width: none;
   /* Firefox */
+  padding: 0 100px !important;
 }
 
 .asp_w.asp_r .results .resdrg::-webkit-scrollbar {
@@ -4619,6 +4630,7 @@ span.irs-handle.to:before {
   opacity: 1;
   z-index: 50;
   display: block;
+  overflow: hidden;
 }
 
 .form-search-btn {
@@ -12393,7 +12405,7 @@ span.irs-handle.to:before {
     padding: 16px 5px 5px 13px;
   }
 
-  .asp_w.asp_r .results {
+  .asp_w.asp_r .results .resdrg {
     padding: 0 50px !important;
     margin-top: 30px !important;
   }
@@ -13656,6 +13668,10 @@ span.irs-handle.to:before {
     padding-bottom: 0 !important;
   }
 
+  .modal-search .probox .close-open-search {
+    display: none !important;
+  }
+
   .modal-search .form-wrap {
     top: 5.5rem;
   }
@@ -13670,7 +13686,7 @@ span.irs-handle.to:before {
     display: none;
   }
 
-  .asp_w.asp_r .results {
+  .asp_w.asp_r .results .resdrg {
     padding: 0 15px !important;
   }
 

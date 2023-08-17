@@ -5,7 +5,7 @@
     overflow-y: scroll;
     z-index: 50;
     text-align: center;
-    padding: 142px 0 0;
+    // padding: 142px 0 0;
     opacity: 0;
     z-index: -100;
     display: none;
@@ -26,9 +26,25 @@
         width: 0;
     }
 
+    .probox{
+        position: relative;
+        overflow: visible !important;
+
+        .close-open-search{
+            position: absolute;
+            right: -100%;
+            right: -4%;
+            top: 0.2rem;
+
+            @include media-for (null, $sm){
+                display: none !important;
+            }
+        }
+    }
+
     .form-wrap{
         position: fixed;
-        top: 7rem;
+        top: 2rem;
         width: 100%;
         left: 50%;
         -webkit-transform: translateX(-50%);
@@ -151,28 +167,29 @@
 .asp_w.asp_r .results{
     width: 100% !important;
     margin-top: 30px !important;
-    padding: 0 100px !important;
     box-sizing: border-box !important;
     background: #f3f3f3 !important;
-
-    @include media-for (null, $desktop){
-        padding: 0 50px !important;
-        margin-top: 30px !important;
-    }
-
-    @include media-for (null, $sm){
-        padding: 0 15px !important;
-    }
 
     .resdrg {
         display: flex;
         flex-wrap: wrap;
         column-gap: 30px;
-
-        max-height: calc(100vh - 293px);
+        padding-bottom: 2rem;
+        // max-height: 76vh;
         overflow-y: scroll;
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
+        padding: 0 100px!important;
+
+        @include media-for (null, $desktop){
+            padding: 0 50px !important;
+            margin-top: 30px !important;
+        }
+    
+        @include media-for (null, $sm){
+            padding: 0 15px !important;
+        }
+    
 
         @include media-for (null, $sm){
             max-height: calc(100vh - 268px);
@@ -765,6 +782,7 @@
     opacity: 1;
     z-index: 50;
     display: block;
+    overflow: hidden;
 }
 
 .form-search-btn{
