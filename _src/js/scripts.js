@@ -82,6 +82,19 @@ $(function () {
         previousScroll = currentScroll;
     });
 
+
+            //add close btm to modal search
+            var newContent = `
+            <div class="close-open-search form-search-btn">
+                <svg class="hover-effect-svg" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 2L20.5 20.5" stroke="#2A1A5E" stroke-width="3" stroke-linecap="round"></path>
+                    <path d="M2 20.5005L20.5 2.00051" stroke="#2A1A5E" stroke-width="3" stroke-linecap="round"></path>
+                </svg>
+            </div>
+        `;
+        
+        $('.probox').append(newContent);
+
     //modal search
 
     $('.form-search-btn').on('click', function () {
