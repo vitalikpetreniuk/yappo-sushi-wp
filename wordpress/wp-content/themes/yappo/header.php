@@ -329,13 +329,13 @@
                   if (yappo_get_chosen_city_slug()) {
                       $categoryUrl = rtrim(home_url(), '/') . '/' . yappo_get_chosen_city_slug() . '/' . $term->slug;
                   }
-                  $url = explode("/", rtrim(get_page_uri(), "/"));
+                  $url = explode("/", rtrim($_SERVER['REQUEST_URI'], "/"));
                   $lastWord = end($url);
                   ?>
 
                 <li>
                   <a class="link-category <?php if (($categoryID === $term->term_id || $lastWord === $term->slug) && !is_checkout()) {
-                      echo 'link-category-active';
+                      echo 'link-category-active'; 
                   } ?>"
                      href="<?= $categoryUrl ?>">
                     <div class="cotegory_img">
