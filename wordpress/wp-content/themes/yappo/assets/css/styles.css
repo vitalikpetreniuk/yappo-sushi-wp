@@ -5662,6 +5662,20 @@ span.irs-handle.to:before {
   background-color: #d53939;
 }
 
+.cheked-wrap .chaked-box-popular {
+  border: 1px solid #6775d0;
+  color: #6775d0;
+}
+
+.cheked-wrap .chaked-box-popular .close-btn-wrap {
+  border: 1px solid #6775d0;
+}
+
+.cheked-wrap .chaked-box-popular .close-btn-wrap::before,
+.cheked-wrap .chaked-box-popular .close-btn-wrap::after {
+  background-color: #6775d0;
+}
+
 .resault-search .section__title:after {
   right: 104%;
 }
@@ -12731,6 +12745,13 @@ span.irs-handle.to:before {
   .category-page .section__title:after,
   .resault-search .section__title:after {
     right: 98%;
+  }
+
+  .term-business-lanch .filter-wrap .btn-blue {
+    width: 211px;
+    margin-bottom: 3rem !important;
+    margin: auto;
+    padding: 15px 0;
   }
 
   .resault-search {
