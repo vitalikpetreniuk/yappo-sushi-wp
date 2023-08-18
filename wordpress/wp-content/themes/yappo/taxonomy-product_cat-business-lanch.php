@@ -19,9 +19,14 @@ get_header('shop'); ?>
             </div>
 
             <div class="col-6">
-              <h2 class="section__title">
-                  <?php woocommerce_page_title(); ?>
-              </h2>
+              <h1 class="section__title">
+                  <?php
+                  $postIdLang = apply_filters( 'wpml_object_id', 42, 'product_tag' );
+
+                  $name = get_term_by('id', $postIdLang, 'product_cat');
+                  echo $name->name;
+                  ?>
+              </h1>
             </div>
 
           </div>
@@ -51,6 +56,16 @@ get_header('shop'); ?>
        */
       do_action('woocommerce_archive_description');
       ?>
+
+      <?php
+      $min_max = get_product_category_min_max();
+      $min = $min_max['min'];
+      $max = $min_max['max'];
+      get_template_part('template-parts/content', 'filter', array(
+          'min' => $min,
+          'max' => $max,
+      )) ?>
+
       <?php global $wp_query;
       $query = new WP_Query(array(
           'post__in' => [$wp_query->posts[0]->ID],
@@ -64,7 +79,6 @@ get_header('shop'); ?>
               <?php
               while ($query->have_posts()) :
                   $query->the_post();
-
                   wc_get_template_part('content', 'product');
               endwhile;
               ?>

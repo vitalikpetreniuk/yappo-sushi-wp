@@ -339,8 +339,10 @@
                   if (yappo_get_chosen_city_slug()) {
                       $categoryUrl = rtrim(home_url(), '/') . '/' . yappo_get_chosen_city_slug() . '/' . $term->slug;
                   }
-                  $url = explode("/", rtrim($_SERVER['REQUEST_URI'], "/"));
-                  $lastWord = end($url);
+                  $urlParts = explode('?', $_SERVER['REQUEST_URI']);
+                  $basePart = $urlParts[0];
+                  $basePartWords = explode('/', rtrim($basePart, '/'));
+                  $lastWord = end($basePartWords);
                   ?>
 
                 <li>

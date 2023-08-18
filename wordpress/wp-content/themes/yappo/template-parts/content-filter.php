@@ -311,7 +311,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-12">
-            <div class="cheked-wrap">
+            <div class="cheked-wrap"  style="margin-top: 6rem">
                 <?php if (!empty($_GET)) : ?>
 
                     <?php if (isset($_GET['orderby'])) : ?>
@@ -325,10 +325,7 @@
                                     break;
                             } ?>
 
-
-                            <div class="close-btn-wrap">
-
-                            </div>
+                            <div class="close-btn-wrap"></div>
                         </div>
                     <?php endif; ?>
 
@@ -350,7 +347,12 @@
                             ?>
                             <div class="chaked-box <?= $class ?>" data-slug="<?= $term->slug ?>"
                                  data-tax="product_tag">
-                                <?= $term->name ?>
+                                <?php
+                                $postIdLang = apply_filters( 'wpml_object_id', $term->term_id, 'product_tag' );
+
+                                $name = get_term_by('id', $postIdLang, 'product_tag');
+                                echo $name->name ;
+                                ?>
 
                                 <div class="close-btn-wrap">
 
@@ -368,9 +370,13 @@
                             ?>
                             <div class="chaked-box" data-slug="<?= $term->slug ?>"
                                  data-tax="pa_ingredients">
-                                <?= $term->name ?>
+                                <?php
+                                $postIdLang = apply_filters( 'wpml_object_id', $term->term_id, 'pa_ingredients' );
 
-                                <div class="close-btn-wrap">
+                                $name = get_term_by('id', $postIdLang, 'pa_ingredients');
+                                echo $name->name ;
+                                ?>
+                              <div class="close-btn-wrap">
 
                                 </div>
                             </div>
