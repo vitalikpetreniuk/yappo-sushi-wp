@@ -4148,7 +4148,7 @@ span.irs-handle.to:before {
 }
 
 .modal-search {
-  position: absolute;
+  position: fixed;
   width: 100%;
   background: #F3F3F3;
   overflow-y: scroll;
@@ -4157,6 +4157,8 @@ span.irs-handle.to:before {
   opacity: 0;
   z-index: -100;
   display: none;
+  min-height: 100vh !important;
+  height: 100vh !important;
 }
 
 .modal-search::-webkit-scrollbar {
@@ -4631,7 +4633,6 @@ span.irs-handle.to:before {
   z-index: 50;
   display: block;
   overflow: hidden;
-  min-height: 100vh !important;
 }
 
 .form-search-btn {
@@ -4647,6 +4648,11 @@ span.irs-handle.to:before {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+#ajaxsearchprores1_1 {
+  display: none;
+  width: 100% !important;
 }
 
 .added-success {
@@ -12562,6 +12568,12 @@ span.irs-handle.to:before {
     margin-top: -300%;
   }
 
+  .modal-search .form-wrap #ajaxsearchpro1_1,
+  .modal-search .form-wrap div.asp_m.asp_m_1 {
+    width: 95% !important;
+    overflow: visible !important;
+  }
+
   .modal-search .probox {
     width: 95% !important;
   }
@@ -13063,10 +13075,6 @@ span.irs-handle.to:before {
     padding-bottom: 430px;
   }
 
-  .modal-search .form-wrap {
-    top: 8.5rem;
-  }
-
   .asp_w.asp_r .results .no-product-wrap .no-product {
     width: 250px;
   }
@@ -13292,7 +13300,7 @@ span.irs-handle.to:before {
 @media (max-width: 575px) {
   body {
     overflow-x: hidden;
-    padding-top: 175px !important;
+    padding-top: 130px !important;
     overscroll-behavior-block: none;
   }
 
@@ -13677,12 +13685,12 @@ span.irs-handle.to:before {
     padding-bottom: 0 !important;
   }
 
-  .modal-search .probox .close-open-search {
+  .modal-search .probox .proclose {
     display: none !important;
   }
 
-  .modal-search .form-wrap {
-    top: 5.5rem;
+  .modal-search .probox .proloading {
+    margin-right: 1.5rem;
   }
 
   .modal-search .form-wrap button {
@@ -13695,12 +13703,12 @@ span.irs-handle.to:before {
     display: none;
   }
 
-  .asp_w.asp_r .results .resdrg {
-    padding: 0 15px !important;
+  .asp_w.asp_r .results {
+    margin-top: 0px !important;
   }
 
   .asp_w.asp_r .results .resdrg {
-    max-height: calc(100vh - 268px);
+    padding: 0 15px !important;
   }
 
   .asp_w.asp_r .results .resdrg > div {

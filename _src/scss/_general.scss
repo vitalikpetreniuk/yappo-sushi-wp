@@ -29,7 +29,7 @@ body{
 
     @include media-for (null, $sm){
         overflow-x: hidden;
-        padding-top: 175px !important;
+        padding-top: 130px !important;
         overscroll-behavior-block: none;
     }
 }
