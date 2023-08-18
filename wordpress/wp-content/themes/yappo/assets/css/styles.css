@@ -4631,6 +4631,7 @@ span.irs-handle.to:before {
   z-index: 50;
   display: block;
   overflow: hidden;
+  min-height: 100vh !important;
 }
 
 .form-search-btn {
