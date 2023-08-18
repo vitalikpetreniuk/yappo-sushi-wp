@@ -42,7 +42,7 @@
              href="tel:<?php the_field('phone_number', 'option') ?>"><?php the_field('phone_number', 'option') ?></a>
         </div>
 
-        <div class="col-lg-4 col-md-5 d-none" >
+        <div class="col-lg-4 col-md-5 d-none">
             <?php if (get_field('top_sticky_text', 'option')) : ?>
               <p>
                   <?php the_field('top_sticky_text', 'option') ?>
@@ -74,6 +74,7 @@
                     $cities = getCities();
                     $cityLink = '';
 
+
                     if (count($cities)) {
                         foreach ($cities as $city) {
                             if (!is_checkout()) {
@@ -82,17 +83,17 @@
                             $sityArr = get_field('adresy', $city);
                             ?>
 
-                            <?php foreach ($sityArr as $index=>$item) { ?>
-                              <li>
-                                <a href="<?= $cityLink ?>"
-                                   data-id="<?= $city->slug ?>"
-                                   data-address="<?= $city->slug . '/' . $index  ?>">
-                                  <div itemprop="addressLocality">
-                                      <?php the_field('city', $city) ?>
-                                  </div>
-                                  <span class="adress" itemprop="streetAddress"><?= $item['item']['name'] ?></span>
-                                </a>
-                              </li>
+                            <?php foreach ($sityArr as $index => $item) { ?>
+                            <li>
+                              <a href="<?= $cityLink ?>"
+                                 data-id="<?= $city->slug ?>"
+                                 data-address="<?= $city->slug . '/' . $index ?>">
+                                <div itemprop="addressLocality">
+                                    <?php the_field('city', $city) ?>
+                                </div>
+                                <span class="adress" itemprop="streetAddress"><?= $item['item']['name'] ?></span>
+                              </a>
+                            </li>
                             <?php }
                         }
                     }
@@ -323,6 +324,15 @@
           <ul>
               <?php
               $terms = get_field('categories_in_header', 'option');
+              $singleCategorySlug = '';
+              if (is_single()) {
+                  $singleCategory = get_the_terms(get_the_ID(), 'product_cat');
+                  $singleCategorySlug = [];
+                  foreach ($singleCategory as $item) {
+                      $singleCategorySlug[] = $item->slug;
+                  }
+
+              }
               foreach ($terms as $term) {
                   $categoryUrl = rtrim(home_url(), '/') . '/product-category/' . $term->slug;
                   $categoryID = get_queried_object_id();
@@ -334,9 +344,16 @@
                   ?>
 
                 <li>
-                  <a class="link-category <?php if (($categoryID === $term->term_id || $lastWord === $term->slug) && !is_checkout()) {
-                      echo 'link-category-active'; 
-                  } ?>"
+                  <a class="link-category
+                  <?php if (($categoryID === $term->term_id || $lastWord === $term->slug) && !is_checkout()) {
+                      echo 'link-category-active';
+                  }
+                  foreach ($singleCategorySlug as $item){
+                    if($item === $term->slug) {
+                        echo 'link-category-active';
+                    }
+                  }
+                  ?>"
                      href="<?= $categoryUrl ?>">
                     <div class="cotegory_img">
                         <?php if (get_field('image', $term)) : ?>

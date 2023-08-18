@@ -21,7 +21,6 @@ function topScroll() {
 
 $(function () {
 // custom scripts
-
     //scroll up
 
     $(window).scroll(function () {

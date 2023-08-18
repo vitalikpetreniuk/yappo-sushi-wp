@@ -14,7 +14,11 @@
 
 get_header();
 global $post;
-$post_id = $post->ID; ?>
+$post_id = $post->ID;
+$product = wc_get_product();
+$attributes = $product->get_attributes();
+print_r($attributes);
+?> 
 
 
   <section class="news-page">
