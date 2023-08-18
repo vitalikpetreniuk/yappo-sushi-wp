@@ -115,8 +115,6 @@ $(function () {
             $('.header-center').addClass('header-center-scroll');
             $('body').css('padding-top', '126.5px');
             $('.modal-search').css('min-height', pageHeight + 70 + 'px');
-            
-            
             var resaultSearch = windowHeight - $('.modal-search .form-wrap').outerHeight();
             $('.results .resdrg').css('max-height', resaultSearch - 60 + 'px');
         }
@@ -127,9 +125,6 @@ $(function () {
             $(".close-open-search").css('display', 'block')
             $("html, body").animate({scrollTop: 0}, "slow");
             $('.fix-cart').css('right', '-200px');
-            
-          
-
         } else {
             $(".btn-open-search").css('display', 'block')
             $(".close-open-search").css('display', 'none')
