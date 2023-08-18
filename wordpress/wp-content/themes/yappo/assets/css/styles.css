@@ -12414,6 +12414,14 @@ span.irs-handle.to:before {
     height: 332px;
   }
 
+  .lanch-banner > .row,
+  .banner-lanch > .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
   .cart-page .cart__preview-item .sale-bage-wrap {
     left: 1rem;
   }
