@@ -114,7 +114,7 @@ $(function () {
         if ($(window).width() >= 600) {
             $('.header-center').addClass('header-center-scroll');
             $('body').css('padding-top', '126.5px');
-            $('.modal-search').css('min-height', pageHeight + 70 + 'px');
+            $('.modal-search').css('min-height', pageHeight + 90 + 'px');
             var resaultSearch = windowHeight - $('.modal-search .form-wrap').outerHeight();
             $('.results .resdrg').css('max-height', resaultSearch - 60 + 'px');
         }
