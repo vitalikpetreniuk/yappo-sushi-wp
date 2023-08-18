@@ -36,8 +36,6 @@ $(function () {
                 $('.header-center').addClass('header-center-scroll');
                 $(".btns-wrap-header-menu").removeClass('btns-wrap-header-menu-active');
                 $('.burger-desck').removeClass('burger-active');
-
-
                 $('.resault-block').css('top', '8rem');
 
 
@@ -51,16 +49,23 @@ $(function () {
             }
 
         } else if (scrollTop < lastScrollTop && lastScrollTop - scrollTop > 10) {
-            $(".header-center").removeClass("header-center-scroll");
+        
             $('.resault-block').css('top', '14rem');
 
+                if ($('.modal-search').hasClass('modal-search-active')) {
+
+                    $('.header-center').addClass('header-center-scroll');
+        
+                } else {
+                    $(".header-center").removeClass("header-center-scroll");
+                }
 
             if ($(window).width() <= 600) {
-                $('.form-wrap').css('top', '5.5rem');
+                $('.form-wrap').css('top', '2rem');
             } else if ($(window).width() <= 822) {
-                $('.form-wrap').css('top', '8.5rem');
+                $('.form-wrap').css('top', '2rem');
             } else {
-                $('.form-wrap').css('top', '7rem');
+                $('.form-wrap').css('top', '2rem');
             }
         }
 
@@ -83,17 +88,16 @@ $(function () {
     });
 
 
-            //add close btm to modal search
-            var newContent = `
-            <div class="close-open-search form-search-btn">
-                <svg class="hover-effect-svg" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M2 2L20.5 20.5" stroke="#2A1A5E" stroke-width="3" stroke-linecap="round"></path>
-                    <path d="M2 20.5005L20.5 2.00051" stroke="#2A1A5E" stroke-width="3" stroke-linecap="round"></path>
-                </svg>
-            </div>
-        `;
+    //add close btm to modal search
+    var newContent = `
+        <div class="close-open-search form-search-btn">
+            <svg class="hover-effect-svg" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 2L20.5 20.5" stroke="#2A1A5E" stroke-width="3" stroke-linecap="round"></path>
+                <path d="M2 20.5005L20.5 2.00051" stroke="#2A1A5E" stroke-width="3" stroke-linecap="round"></path>
+            </svg>
+        </div>`;
         
-        $('.probox').append(newContent);
+    $('.probox').append(newContent);
 
     //modal search
 
@@ -101,41 +105,33 @@ $(function () {
         var windowHeight = $(window).height();
         var headerHeight = $('.header').outerHeight();
         var footerHeight = $('.footer-modal').outerHeight();
-
         var pageHeight = windowHeight - headerHeight;
 
-        $('.modal-search').css('min-height', pageHeight + 4 + 'px');
-
-
+        // $('.modal-search').css('min-height', pageHeight + 4 + 'px');
         $('.modal-search').toggleClass('modal-search-active');
         $('body').css('overflow','hidden');
         
-
-        if ($(window).width() >= 600) {
-            $('.header-center').addClass('header-center-scroll');
-            $('body').css('padding-top', '126.5px');
-            // $('.modal-search').css('min-height', pageHeight + 90 + 'px');
-            var resaultSearch = windowHeight - $('.modal-search .form-wrap').outerHeight();
-            $('.results .resdrg').css('max-height', resaultSearch - 60 + 'px');
-        }
+        $('body').css('padding-top', '56.5px');
+        // $('.modal-search').css('min-height', pageHeight + 90 + 'px');
+        var resaultSearch = windowHeight - $('.modal-search .form-wrap').outerHeight();
+        $('.results .resdrg').css('max-height', resaultSearch - 50 + 'px');
+     
         if ($('.modal-search').hasClass('modal-search-active')) {
             $(".btn-open-search").css('display', 'none'),
             $(".close-open-search").css('display', 'block')
             $("html, body").animate({scrollTop: 0}, "slow");
             $('.fix-cart').css('right', '-200px');
+            $('.header-center').addClass('header-center-scroll');
+            $('#ajaxsearchprores1_1').css('display', 'block');
+
         } else {
             $(".btn-open-search").css('display', 'block')
             $(".close-open-search").css('display', 'none')
             $('body').css('overflow','scroll');
-            
             $('.fix-cart').css('right', '20px');
-
-            if ($(window).width() >= 600) {
-                $('.header-center').removeClass('header-center-scroll');
-                $('body').css('padding-top', '201.5px');
-                
-            }
-        
+            $('.header-center').removeClass('header-center-scroll');
+            $('body').css('padding-top', '201.5px');
+            $('#ajaxsearchprores1_1').css('display', 'none');
         }
     })
 
