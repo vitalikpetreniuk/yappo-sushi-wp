@@ -7041,13 +7041,29 @@ span.irs-handle.to:before {
   display: none;
 }
 
+.cart-page .cart__preview-item .product__cart__info-discount span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .cart-page .cart__preview-item .product__cart__info-discount .price {
   color: #FF671D !important;
+  max-width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .cart-page .cart__preview-item .product__cart__info-discount .price span {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 20px;
   text-decoration: line-through;
   color: #FF671D !important;
 }
@@ -14643,6 +14659,10 @@ span.irs-handle.to:before {
     display: -ms-flexbox;
     display: flex;
     width: 45%;
+  }
+
+  .cart-page .cart__preview-item .product__cart__info-discount .price span {
+    font-size: 14px;
   }
 
   .cart-page .cart__preview-item .product__cart__info-discount .regular-price {

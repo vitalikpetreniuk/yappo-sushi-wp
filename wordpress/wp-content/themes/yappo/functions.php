@@ -381,6 +381,7 @@ function seo_robots_modify_search($robots)
 function yappo_faq_row($question, $answer)
 {
     ?>
+
   <div class="slide-wrap">
     <div class="slide-header">
       <span class="glyphicon glyphicon-chevron-down"></span>

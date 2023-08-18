@@ -213,7 +213,7 @@ function yappo_get_chosen_adress()
         return;
     }
     $addressArr = explode("/", $address);
-    $addressId= get_field('adresy', get_term_by('id', $addressArr[0], get_locale() == 'uk' ? 'cities' : 'cities_ru'));
+    $addressId= get_field('adresy', get_term_by('slug', $addressArr[0], get_locale() == 'uk' ? 'cities' : 'cities_ru'));
     return $addressId[$addressArr[1]]['item']['name'];
 }
 

@@ -484,6 +484,9 @@
 
     .product__cart__info-discount {
         span{
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
           @include media-for(null, $sm) {
             display: flex;
             flex-direction: row-reverse;
@@ -493,7 +496,8 @@
 
         .price {
           color: #FF671D !important;
-          
+          max-width: 50px;
+          display: flex;
           @include media-for(null, $sm) {
             display: flex;
             width: 45%;
@@ -503,10 +507,12 @@
 
           span{
             font-weight: 300;
-            font-size: 14px;
+            font-size: 20px;
             text-decoration: line-through;
             color: #FF671D !important;
-
+            @include media-for(null, $sm) {
+              font-size: 14px; 
+            }
           }
         }
 

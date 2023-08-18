@@ -82,15 +82,11 @@
                             $sityArr = get_field('adresy', $city);
                             ?>
 
-                            <?php
-                            foreach ($sityArr as $index=>$item) {
-
-                                ?>
-
+                            <?php foreach ($sityArr as $index=>$item) { ?>
                               <li>
                                 <a href="<?= $cityLink ?>"
                                    data-id="<?= $city->slug ?>"
-                                   data-address="<?= $city->term_id . '/' . $index  ?>">
+                                   data-address="<?= $city->slug . '/' . $index  ?>">
                                   <div itemprop="addressLocality">
                                       <?php the_field('city', $city) ?>
                                   </div>

@@ -185,9 +185,9 @@
               foreach ($cities as $city) {
                   $sityArr = get_field('adresy', $city);
                   if (isset($sityArr)) {
-                      foreach ($sityArr as $item) { ?>
+                      foreach ($sityArr as $index=>$item) { ?>
                         <li>
-                          <a href="#" data-id="<?= $city->slug ?>" data-address="<?= $item['item']['name'] ?>"
+                          <a href="#" data-id="<?= $city->slug ?>" data-address="<?= $city->slug . '/' . $index  ?>"
                              class="active">
                               <?php the_field('city', $city) ?>&nbsp;
                             <span class="adress"> <?= $item['item']['name'] ?>  </span>
