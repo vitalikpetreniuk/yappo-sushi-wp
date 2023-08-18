@@ -118,8 +118,6 @@ $(function () {
             var resaultSearch = windowHeight - $('.modal-search .form-wrap').outerHeight();
             $('.results .resdrg').css('max-height', resaultSearch - 60 + 'px');
         }
-        
-
         if ($('.modal-search').hasClass('modal-search-active')) {
             $(".btn-open-search").css('display', 'none'),
             $(".close-open-search").css('display', 'block')
