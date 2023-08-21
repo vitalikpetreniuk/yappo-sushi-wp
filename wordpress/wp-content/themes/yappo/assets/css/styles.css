@@ -12968,6 +12968,10 @@ span.irs-handle.to:before {
 }
 
 @media (max-width: 821px) {
+  html {
+    margin-top: 46px !important;
+  }
+
   .section__title {
     font-size: 20px;
   }
