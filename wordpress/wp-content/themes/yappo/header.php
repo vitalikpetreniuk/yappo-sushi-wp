@@ -324,7 +324,7 @@
           <ul>
               <?php
               $terms = get_field('categories_in_header', 'option');
-              $singleCategorySlug = '';
+              $singleCategorySlug = [];
               if (is_single()) {
                   $singleCategory = get_the_terms(get_the_ID(), 'product_cat');
                   $singleCategorySlug = [];
@@ -350,10 +350,12 @@
                   <?php if (($categoryID === $term->term_id || $lastWord === $term->slug) && !is_checkout()) {
                       echo 'link-category-active';
                   }
-                  foreach ($singleCategorySlug as $item){
-                    if($item === $term->slug) {
-                        echo 'link-category-active';
-                    }
+                  if (count($singleCategorySlug)) {
+                      foreach ($singleCategorySlug as $item){
+                          if($item === $term->slug) {
+                              echo 'link-category-active';
+                          }
+                      }
                   }
                   ?>"
                      href="<?= $categoryUrl ?>">
