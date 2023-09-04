@@ -687,9 +687,15 @@
       font-weight: 400;
     }
 
-    .product-total, .price-delivery {
+    .price-delivery {
       font-size: 20px;
-      font-weight: 400;
+      font-weight: 700;
+      color: $accent;
+    }
+
+    .product-total{
+      font-size: 20px;
+      font-weight: 700;
       color: $accent;
     }
 
@@ -699,7 +705,7 @@
 
     .order-total {
       font-size: 24px;
-      font-weight: 700;
+      font-weight: 700 !important;
       color: $accent;
     }
 

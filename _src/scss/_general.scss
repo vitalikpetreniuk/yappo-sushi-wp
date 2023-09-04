@@ -1,4 +1,9 @@
-
+html {
+    @include media-for (null, $tablet){
+        margin-top: 46px !important;
+    }
+    
+}
 
 body{
     // font-family: 'DelaGothicOne';

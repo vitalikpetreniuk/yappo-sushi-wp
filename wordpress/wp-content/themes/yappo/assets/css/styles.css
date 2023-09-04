@@ -5662,6 +5662,20 @@ span.irs-handle.to:before {
   background-color: #d53939;
 }
 
+.cheked-wrap .chaked-box-popular {
+  border: 1px solid #6775d0;
+  color: #6775d0;
+}
+
+.cheked-wrap .chaked-box-popular .close-btn-wrap {
+  border: 1px solid #6775d0;
+}
+
+.cheked-wrap .chaked-box-popular .close-btn-wrap::before,
+.cheked-wrap .chaked-box-popular .close-btn-wrap::after {
+  background-color: #6775d0;
+}
+
 .resault-search .section__title:after {
   right: 104%;
 }
@@ -6495,12 +6509,6 @@ span.irs-handle.to:before {
   color: #2A1A5E;
 }
 
-.cart-modal .sum-wrap span:first-child {
-  font-weight: 300;
-  font-size: 16px;
-  color: #262730;
-}
-
 .cart-modal .sum-wrap span .woocommerce-Price-currencySymbol {
   font-size: 20px;
   font-weight: 700;
@@ -7202,10 +7210,15 @@ span.irs-handle.to:before {
   font-weight: 400;
 }
 
-.cart-page .resault-block .product-total,
 .cart-page .resault-block .price-delivery {
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 700;
+  color: #2A1A5E;
+}
+
+.cart-page .resault-block .product-total {
+  font-size: 20px;
+  font-weight: 700;
   color: #2A1A5E;
 }
 
@@ -7215,7 +7228,7 @@ span.irs-handle.to:before {
 
 .cart-page .resault-block .order-total {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 700 !important;
   color: #2A1A5E;
 }
 
@@ -12733,6 +12746,13 @@ span.irs-handle.to:before {
     right: 98%;
   }
 
+  .term-business-lanch .filter-wrap .btn-blue {
+    width: 211px;
+    margin-bottom: 3rem !important;
+    margin: auto;
+    padding: 15px 0;
+  }
+
   .resault-search {
     padding: 60px 0 90px;
   }
@@ -12947,6 +12967,10 @@ span.irs-handle.to:before {
 }
 
 @media (max-width: 821px) {
+  html {
+    margin-top: 46px !important;
+  }
+
   .section__title {
     font-size: 20px;
   }
