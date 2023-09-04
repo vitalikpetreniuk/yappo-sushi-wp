@@ -7228,7 +7228,7 @@ span.irs-handle.to:before {
 
 .cart-page .resault-block .order-total {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 700 !important;
   color: #2A1A5E;
 }
 
