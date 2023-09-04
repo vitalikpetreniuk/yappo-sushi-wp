@@ -341,6 +341,14 @@
                                 case $term->term_id === apply_filters('wpml_object_id', 63, 'product_tag') :
                                     $class = 'chaked-box-vegaterian';
                                     break;
+
+                                    case $term->term_id === apply_filters('wpml_object_id', 62, 'product_tag') :
+                                        $class = 'chaked-box-hot';
+                                        break;
+
+                                    case $term->term_id === apply_filters('wpml_object_id', 59, 'product_tag') :
+                                        $class = 'chaked-box-popular';
+                                        break;
                                 default:
                                     $class = '';
                             }
