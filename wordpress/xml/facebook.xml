@@ -1,34 +1,3772 @@
 <?xml version="1.0"?>
 <rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
     <channel>
-        <title>Yapposushi</title>
+        <g:title>Yapposushi</g:title>
         <link>https://yapposushi.com/</link>
         <description>Yappo…</description>
-        -
-        <item>- начало описания суши
-            <g:id>12345</g:id>
-            - id товара
-            <g:title>ЧІЗ-ФІШ</g:title>
+        <item>
+            <g:id>140</g:id>
+            <g:title>3 сири</g:title>
+            <g:description>сир вершковий, омлет, сирний соус, гауда, рис, норі, унагі соус</g:description>
+            <g:link>https://dev.yapposushi.com/product/3-syry/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/3syry.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>159</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>142</g:id>
+            <g:title>7 up 0.33л</g:title>
+            <g:description></g:description>
+            <g:link>https://dev.yapposushi.com/product/7up-zh-b-033l/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/7up-300x300-1.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>25</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>143</g:id>
+            <g:title>YAPPO</g:title>
+            <g:description>краб-крем, омлет, Yappo соус, унагі соус, рис, норі, кунжут</g:description>
+            <g:link>https://dev.yapposushi.com/product/yappo/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/Yappo-1.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>99</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>145</g:id>
+            <g:title>YAPPO з вугрем</g:title>
+            <g:description>краб-крем, вугор, Yappo соус, рис, норі, унагі соус, кунжут</g:description>
+            <g:link>https://dev.yapposushi.com/product/yappo-z-vugrem/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/yappo_z_krevetkoi.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>169</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>147</g:id>
+            <g:title>YAPPO з креветкою</g:title>
+            <g:description>креветка, сир вершковий,  які соус, рис, норі, унагі соус, кунжут</g:description>
+            <g:link>https://dev.yapposushi.com/product/yappo-z-krevetkoyu/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/yappo_z_krevetkoi.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>159</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>148</g:id>
+            <g:title>YAPPO набір</g:title>
+            <g:description>Філадельфія блек, Каліфорнія в ікрі, Мідія Хот міні рол, Yappo рол</g:description>
+            <g:link>https://dev.yapposushi.com/product/yappo-nabir/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/yappo_nabir.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>449</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>150</g:id>
+            <g:title>Авокадо міні рол</g:title>
+            <g:description>авокадо, рис, норі</g:description>
+            <g:link>https://dev.yapposushi.com/product/avokado-mini-rol/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/Авокадо-міні-рол.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>79</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>152</g:id>
+            <g:title>Бінго</g:title>
+            <g:description>Філадельфія в ікрі, Дежавю, Фелікс креветка, Маямі</g:description>
+            <g:link>https://dev.yapposushi.com/product/bingo/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/bingo_nabir.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>499</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>154</g:id>
+            <g:title>Вітамінний салат</g:title>
+            <g:description>капуста, морква, селера, яблуко, заправка до салату, кунжут</g:description>
+            <g:link>https://dev.yapposushi.com/product/vitaminnyj-salat/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/vitaminuy.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>59</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>156</g:id>
+            <g:title>Вегетаріанський</g:title>
+            <g:description>авокадо, огірок, салат айсберг, перець болгарський, чука, рис, норі</g:description>
+            <g:link>https://dev.yapposushi.com/product/vegetarianskyj/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/Вегетаріанський-2.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>99</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>158</g:id>
+            <g:title>Вегетаріанський набір</g:title>
+            <g:description>Вегетаріанський рол, Авокадо міні рол, Огірок міні рол, Чука класичні суші</g:description>
+            <g:link>https://dev.yapposushi.com/product/vegetarianskyj-nabir/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/vegetarian_nabir.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>229</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>160</g:id>
+            <g:title>Вершковий з лососем</g:title>
+            <g:description>Місо бульйон, вершки, лосось, водорості вакаме, рис, цибуля зелена</g:description>
+            <g:link>https://dev.yapposushi.com/product/vershkovyj-z-lososem/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/sup_vershkoviy_z_lososem.jpg
+            </g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>119</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>162</g:id>
+            <g:title>Весела Вечірка</g:title>
+            <g:description>Пінкі, Філадельфія Фреш, Дежавю, Каліфорнія в кунжуті, Ніндзя, Мідія Хот міні рол, Yappo, 3
+                сири,
+                Маямі, Фелікс креветка, Філадельфія Блек
+            </g:description>
+            <g:link>https://dev.yapposushi.com/product/vesela-vechirka/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/veselavechirka_nabir.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>1299</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>164</g:id>
+            <g:title>Вишневий</g:title>
+            <g:description>тісто рисове, сир вершковий, вишня, банан, сироп, цукрова пудра</g:description>
+            <g:link>https://dev.yapposushi.com/product/vyshnevyj/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/vyshnevyi-1.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>109</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>165</g:id>
+            <g:title>Вугор класичні суші</g:title>
+            <g:description>вугор, унагі соус, кунжут, рис, норі</g:description>
+            <g:link>https://dev.yapposushi.com/product/vugor-klasychni-sushi/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/vugor_sushi.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>59</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>166</g:id>
+            <g:title>Вугор гострі суші</g:title>
+            <g:description>вугор, спайсі соус, рис, норі</g:description>
+            <g:link>https://dev.yapposushi.com/product/vugor-gostri-sushi/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/vugor-gostri-sushi.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>59</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>168</g:id>
+            <g:title>Вугор міні рол</g:title>
+            <g:description>вугор, рис, норі, унагі соус, кунжут</g:description>
+            <g:link>https://dev.yapposushi.com/product/vugor-mini-rol/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/Вугор-міні-рол.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>139</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>170</g:id>
+            <g:title>Вугор Хот</g:title>
+            <g:description>краб-крем, омлет, вугор, курка, рис, норі, спайсі соус, медовий соус, кунжут</g:description>
+            <g:link>https://dev.yapposushi.com/product/vugor-hot/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/vugor-hot.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>199</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>172</g:id>
+            <g:title>Гранд</g:title>
+            <g:description>Смайл, Лососік хот міні рол, Самурай, Yappo, Краб-Фіш</g:description>
+            <g:link>https://dev.yapposushi.com/product/grand/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/grand_nabir.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>619</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>174</g:id>
+            <g:title>Дежавю</g:title>
+            <g:description>сир вершковий, краб-крем, салат айсберг, спайсі соус, яєчний млинець, унагі соус, кунжут,
+                рис,
+                норі
+            </g:description>
+            <g:link>https://dev.yapposushi.com/product/dezhavyu/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/dezhavyu-2.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>119</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>176</g:id>
+            <g:title>Делюкс</g:title>
+            <g:description>Шейх, Маямі, Крабік Хот міні рол, Вугор Хот, Yappo з креветками</g:description>
+            <g:link>https://dev.yapposushi.com/product/delyuks/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/delux_nabir.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>599</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>178</g:id>
+            <g:title>Джинджер</g:title>
+            <g:description>креветка тигрова, сир вершковий, лосось, ікра, авокадо, рис, норі.</g:description>
+            <g:link>https://dev.yapposushi.com/product/dzhyndzher/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/dzhyndzher.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>259</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>180</g:id>
+            <g:title>Екзотік</g:title>
+            <g:description>тісто рисове, сир вершковий, ківі, банан, ананас, сироп, цукрова пудра</g:description>
+            <g:link>https://dev.yapposushi.com/product/ekzotik/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/ekzotik-1.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>109</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>181</g:id>
+            <g:title>Запечений міні набір</g:title>
+            <g:description>Крабік Хот міні рол, Лососік Хот міні рол, Мідія запечені суші</g:description>
+            <g:link>https://dev.yapposushi.com/product/zapechenyj-mini-nabir/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/zapecheniy_nabir.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>249</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>183</g:id>
+            <g:title>Зелений Дракон</g:title>
+            <g:description>сир вершковий, авокадо, вугор, тигрова креветка, унагі соус, кунжут, рис, норі.
+            </g:description>
+            <g:link>https://dev.yapposushi.com/product/zelenyj-drakon/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/zelenyj-drakon.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>279</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>185</g:id>
+            <g:title>Золотий Дракон</g:title>
+            <g:description>сир вершковий, вугор, лосось, тигрова креветка, ікра, унагі соус, кунжут, рис, норі
+            </g:description>
+            <g:link>https://dev.yapposushi.com/product/zolotyj-drakon/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/zolotyj-drakon.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>319</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>187</g:id>
+            <g:title>Кімчі</g:title>
+            <g:description>Місо бульйон, яйце, соус кімчі, сир тофу, водорості вакаме, кунжут</g:description>
+            <g:link>https://dev.yapposushi.com/product/kimchi/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/sup_kimchi.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>69</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>189</g:id>
+            <g:title>Каліфорнія в ікрі</g:title>
+            <g:description>краб-крем, ікра, авокадо, огірок, рис, норі</g:description>
+            <g:link>https://dev.yapposushi.com/product/kaliforniya-v-ikri/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/kaliforniya-v-ikri-2.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>159</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>191</g:id>
+            <g:title>Каліфорнія в кунжуті</g:title>
+            <g:description>краб-крем, авокадо, огірок, кунжут, рис, норі</g:description>
+            <g:link>https://dev.yapposushi.com/product/kaliforniya-v-kunzhuti/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/kaliforniya-u-kunzhuti.png
+            </g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>99</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>193</g:id>
+            <g:title>Каліфорнія з креветками</g:title>
+            <g:description>краб-крем, креветки, ікра, авокадо, огірок, рис, норі</g:description>
+            <g:link>https://dev.yapposushi.com/product/kaliforniya-z-krevetkamy/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/kaliforniya-z-krevetkoyu-2.png
+            </g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>179</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>195</g:id>
+            <g:title>Каліфорнія з курчам</g:title>
+            <g:description>курча копчене, краб-крем, авокадо, огірок, ікра, рис, норі</g:description>
+            <g:link>https://dev.yapposushi.com/product/kaliforniya-z-kurcham/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/kaliforniya-z-kurcham-2.png
+            </g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>159</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>197</g:id>
+            <g:title>Каорі</g:title>
+            <g:description>Чікен-Чіз Хот, Лососік Хот міні рол, 3 сири, Фудзі</g:description>
+            <g:link>https://dev.yapposushi.com/product/kaori/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/kaori_nabir.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>449</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>199</g:id>
+            <g:title>Карпатська джерельна н/г 0.5л</g:title>
+            <g:description></g:description>
+            <g:link>https://dev.yapposushi.com/product/karpatska-dzherelna-05-negazovana/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/karpatska_negazovana.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>20</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>200</g:id>
+            <g:title>Карпатська джерельна газ 0.5л</g:title>
+            <g:description></g:description>
+            <g:link>https://dev.yapposushi.com/product/karpatska-dzherelna-05l-gazovana/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/karpatska_gazovana.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>20</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>201</g:id>
+            <g:title>Копчений лосось міні рол</g:title>
+            <g:description>лосось копчений, рис, норі</g:description>
+            <g:link>https://dev.yapposushi.com/product/kopchenyj-losos-mini-rol/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/losos-mini-rol-1.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>109</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>203</g:id>
+            <g:title>Краб запечені суші</g:title>
+            <g:description>краб-крем, які соус, рис, норі</g:description>
+            <g:link>https://dev.yapposushi.com/product/krab-zapecheni-sushi/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/krabmidiya-zapecheni-sczshi.jpg
+            </g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>30</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>205</g:id>
+            <g:title>Краб-Фіш</g:title>
+            <g:description>краб-крем, лосось, салат айсберг, ікра, рис, норі</g:description>
+            <g:link>https://dev.yapposushi.com/product/krab-fish/</g:link>
+            <g:image_link>
+                https://dev.yapposushi.com/wp-content/uploads/2023/06/krab-fish-2.png|https://dev.yapposushi.com/wp-content/uploads/2023/06/krab-fish-2.png
+            </g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>179</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>208</g:id>
+            <g:title>Крабік міні рол</g:title>
+            <g:description>краб-крем, рис, норі</g:description>
+            <g:link>https://dev.yapposushi.com/product/krabik-mini-rol/</g:link>
+            <g:image_link>
+                https://dev.yapposushi.com/wp-content/uploads/2023/06/krab-mini-rol.png|https://dev.yapposushi.com/wp-content/uploads/2023/06/krab-mini-rol.png
+            </g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>79</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>211</g:id>
+            <g:title>Крабік Хот запечений міні рол</g:title>
+            <g:description>краб-крем, сирний соус, рис, норі</g:description>
+            <g:link>https://dev.yapposushi.com/product/krabik-hot-zapechenyj-mini-rol/</g:link>
+            <g:image_link>
+                https://dev.yapposushi.com/wp-content/uploads/2023/06/kribikmidiya-lososik-hot-mini-roly.jpg|https://dev.yapposushi.com/wp-content/uploads/2023/06/kribikmidiya-lososik-hot-mini-roly-2.jpg
+            </g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>99</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>216</g:id>
+            <g:title>Креветка гострі суші</g:title>
+            <g:description>креветка, спайсі соус, рис, норі</g:description>
+            <g:link>https://dev.yapposushi.com/product/krevetka-gostri-sushi/</g:link>
+            <g:image_link>
+                https://dev.yapposushi.com/wp-content/uploads/2023/06/krevetka-gostri-sushi.jpg|https://dev.yapposushi.com/wp-content/uploads/2023/06/krevetka-gostri-sushi-1.jpg
+            </g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>59</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>221</g:id>
+            <g:title>Креветка класичні суші</g:title>
+            <g:description>креветка, рис</g:description>
+            <g:link>https://dev.yapposushi.com/product/krevetka-klasychni-sushi/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/krevetka-klasychni-sushi.jpg
+            </g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>59</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>223</g:id>
+            <g:title>Креветка Хот</g:title>
+            <g:description>ікра, сир вершковий, тигрова креветка, сирний соус, рис, норі, унагі соус</g:description>
+            <g:link>https://dev.yapposushi.com/product/krevetka-hot/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/krevetka-hot.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>249</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>225</g:id>
+            <g:title>Лососік Хот запечений міні рол</g:title>
+            <g:description>лосось теріякі, сирний соус, рис, норі</g:description>
+            <g:link>https://dev.yapposushi.com/product/lososik-hot-zapechenyj-mini-rol/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/kribikmidiya-lososik-hot-mini-roly.jpg
+            </g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>109</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>226</g:id>
+            <g:title>Лосось гострі суші</g:title>
+            <g:description>лосось, спайсі соус, рис, норі</g:description>
+            <g:link>https://dev.yapposushi.com/product/losos-gostri-sushi/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/losos-gostri-sushi.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>59</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>228</g:id>
+            <g:title>Лосось класичні суші</g:title>
+            <g:description>лосось, рис</g:description>
+            <g:link>https://dev.yapposushi.com/product/losos-klasychni-sushi/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/losos-klasychni-sushi.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>59</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>230</g:id>
+            <g:title>Лосось міні рол</g:title>
+            <g:description>лосось, рис, норі</g:description>
+            <g:link>https://dev.yapposushi.com/product/losos-mini-rol/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/losos-mini-rol.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>109</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>232</g:id>
+            <g:title>Лосось Унагі</g:title>
+            <g:description>ікра, сир вершковий, омлет, краб-крем, Yappo соус, лосось, норі, рис, унагі соус
+            </g:description>
+            <g:link>https://dev.yapposushi.com/product/losos-unagi/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/losos-unagi.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>229</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>234</g:id>
+            <g:title>Мідія запечені суші</g:title>
+            <g:description>мідія, які соус, рис, норі</g:description>
+            <g:link>https://dev.yapposushi.com/product/midiya-zapecheni-sushi/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/krabmidiya-zapecheni-sczshi.jpg
+            </g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>30</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>235</g:id>
+            <g:title>Мідія Хот міні рол</g:title>
+            <g:description>мідії, сирний соус, рис, норі</g:description>
+            <g:link>https://dev.yapposushi.com/product/midiya-hot-zapechenyj-mini-rol/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/kribikmidiya-lososik-hot-mini-roly.jpg
+            </g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>99</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>236</g:id>
+            <g:title>Мікадо</g:title>
+            <g:description>чорнила каракатиці, сир вершковий, омлет, краб-крем, курча, вугор, спайсі соус, Yappo соус,
+                рис,
+                норі, медовий соус
+            </g:description>
+            <g:link>https://dev.yapposushi.com/product/mikado/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/mikado.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>249</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+
+        <item>
+            <g:id>238</g:id>
+            <g:title>Міні Фіш</g:title>
+            <g:description>Філадельфія фреш, Чіз-Фіш, Ніндзя, Маямі</g:description>
+            <g:link>https://dev.yapposushi.com/product/mini-fish/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/mini-fish1.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>549</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>240</g:id>
+            <g:title>Мірінда 0,33л</g:title>
+            <g:description></g:description>
+            <g:link>https://dev.yapposushi.com/product/mirinda-zh-b-033l/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/mirinda.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>25</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>241</g:id>
+            <g:title>Місо суп</g:title>
+            <g:description>Місо бульйон, водорості вакаме, сир тофу, гриби намеко, зелена цибуля</g:description>
+            <g:link>https://dev.yapposushi.com/product/miso-sup/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/sup_miso.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>59</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>243</g:id>
+            <g:title>Максі Фіш</g:title>
+            <g:description>Філадельфія фреш, Чіз-Фіш, Ніндзя, Маямі, Фудзі, Yappo рол</g:description>
+            <g:link>https://dev.yapposushi.com/product/maksi-fish/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/maksi-fish1.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>799</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>245</g:id>
+            <g:title>Маямі</g:title>
+            <g:description>ікра, кунжут, огірок, омлет, краб-крем, сир вершковий, лосось теріякі, рис, норі.
+            </g:description>
+            <g:link>https://dev.yapposushi.com/product/mayami/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/mayami-2.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>159</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>247</g:id>
+            <g:title>Море Філадельфій</g:title>
+            <g:description>Філадельфія, Філадельфія блек, Філадельфія в ікрі, Філадельфія у вугрі</g:description>
+            <g:link>https://dev.yapposushi.com/product/more-filadelfij/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/more_filadelfiy_nabir.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>699</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>249</g:id>
+            <g:title>Морс зі смородини 0,5л</g:title>
+            <g:description></g:description>
+            <g:link>https://dev.yapposushi.com/product/mors-zi-smorodyny-05l/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/mors_zi_smorodiny.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>35</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>250</g:id>
+            <g:title>Ніндзя</g:title>
+            <g:description>лосось копчений, сир вершковий, краб-крем, ікра, цибуля зелена, кунжут, рис, норі
+            </g:description>
+            <g:link>https://dev.yapposushi.com/product/nindzya/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/nindzya.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>169</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>252</g:id>
+            <g:title>Насолода набір</g:title>
+            <g:description>Вишневий рол, Екзотік рол, Тропік рол</g:description>
+            <g:link>https://dev.yapposushi.com/product/nasoloda-nabir/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/nabir_nasoloda-1.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>279</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>253</g:id>
+            <g:title>Овочевий</g:title>
+            <g:description>огірок, авокадо, салат айсберг, перець болгарський, рис, норі</g:description>
+            <g:link>https://dev.yapposushi.com/product/ovochevyj/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/ovochevyj-3.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>95</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>254</g:id>
+            <g:title>Огірок міні рол</g:title>
+            <g:description>огірок, рис, норі.</g:description>
+            <g:link>https://dev.yapposushi.com/product/ogirok-mini-rol/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/ogirok-mini-rol-2.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>59</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>256</g:id>
+            <g:title>Freedom</g:title>
+            <g:description>Yappo з вугрем, Філадельфія Блек, 3 сири, Мідія Хот міні рол, Маямі, унагі соус
+            </g:description>
+            <g:link>https://dev.yapposushi.com/product/osinnij-miks/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/freedom-1-scaled-1.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>599</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>257</g:id>
+            <g:title>Пікантний лосось</g:title>
+            <g:description>лосось теріякі, сир вершковий, ікра, салат айсберг, медовий соус, рис, норі</g:description>
+            <g:link>https://dev.yapposushi.com/product/pikantnyj-losos/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/pikantnyj-losos-2.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>169</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>259</g:id>
+            <g:title>Пінкі</g:title>
+            <g:description>ікра, сир вершковий, краб-крем, огірок, омлет, шинка, спайсі соус, рис, норі.</g:description>
+            <g:link>https://dev.yapposushi.com/product/pinki/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/filadelfiya-v-ikri-3.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>169</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>261</g:id>
+            <g:title>Пепсі 0,5л</g:title>
+            <g:description></g:description>
+            <g:link>https://dev.yapposushi.com/product/pepsi-05l/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/pepsi05.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>30</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>262</g:id>
+            <g:title>Пепсі 1л</g:title>
+            <g:description></g:description>
+            <g:link>https://dev.yapposushi.com/product/pepsi-1l/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/pepsi05-1.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>45</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>263</g:id>
+            <g:title>Пепсі блек 0,33л</g:title>
+            <g:description></g:description>
+            <g:link>https://dev.yapposushi.com/product/pepsi-blek-zh-b-033l/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/pepsi03.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>25</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>264</g:id>
+            <g:title>Пепсі 0,33л</g:title>
+            <g:description></g:description>
+            <g:link>https://dev.yapposushi.com/product/pepsi-zh-b-033l/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/pepsi03_1.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>25</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>265</g:id>
+            <g:title>Пепсі 0,33л скло</g:title>
+            <g:description></g:description>
+            <g:link>https://dev.yapposushi.com/product/pepsi-sklo-033l/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/pepsi03_2.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>30</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>266</g:id>
+            <g:title>Рамен з курчам</g:title>
+            <g:description>
+                <![CDATA[локшина удон, м'ясний бульйон, яйце, водорості вакаме, курка, морква, місо паста, бекон, норі, цибуля зелена, олія кунжутна]]></g:description>
+            <g:link>https://dev.yapposushi.com/product/ramen-z-kurcham/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/sup_ramen_z_kurcham.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>149</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>268</g:id>
+            <g:title>Рамен з яловичиною</g:title>
+            <g:description>
+                <![CDATA[локшина удон, м'ясний бульйон, яйце, водорості вакаме, яловичина, бекон, місо паста, морква, норі, цибуля зелена, олія кунжутна]]></g:description>
+            <g:link>https://dev.yapposushi.com/product/ramen-z-yalovychynoyu/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/sup_ramen_z_yalovichinoy.jpg
+            </g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>159</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>270</g:id>
+            <g:title>Рис з морепродуктами</g:title>
+            <g:description>рис, креветка, лосось, мідії, вершковий соуc, кукурудза, перець болгарський, цибуля ріпчаста,
+                олія,
+                цибуля зелена
+            </g:description>
+            <g:link>https://dev.yapposushi.com/product/rys-z-moreproduktamy/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/rys_z_moreproduktamy.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>199</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>272</g:id>
+            <g:title>Рис з яйцем та курчам</g:title>
+            <g:description>рис, яйце, курка, квасоля стручкова, перець болгарський, цибуля ріпчаста, часник, соєвий
+                соус,
+                олія, кунжут, цибуля зелена
+            </g:description>
+            <g:link>https://dev.yapposushi.com/product/rys-z-yajczem-ta-kurcham/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/rys_z_yaytsem_ta_kurkoiy.jpg
+            </g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>179</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>274</g:id>
+            <g:title>Рис з яйцем та яловичиною</g:title>
+            <g:description>рис, яйце, яловичина, квасоля стручкова, перець болгарський, часник, соєвий соус, цибуля
+                ріпчаста,
+                олія, кунжут, цибуля зелена
+            </g:description>
+            <g:link>https://dev.yapposushi.com/product/rys-z-yajczem-ta-yalovychynoyu/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/rys_z_yaytsem_ta_kurkoiy-1.jpg
+            </g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>189</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>276</g:id>
+            <g:title>Сік Сандора 1л</g:title>
+            <g:description></g:description>
+            <g:link>https://dev.yapposushi.com/product/sik-sandora-1l/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/sandora.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>80</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>277</g:id>
+            <g:title>Сікоку</g:title>
+            <g:description>ікра, сир вершковий, вугор, лосось, тигрова креветка, які соус, рис, норі</g:description>
+            <g:link>https://dev.yapposushi.com/product/sikoku/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/sikoku.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>319</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>279</g:id>
+            <g:title>Сакура</g:title>
+            <g:description>сир вершковий, креветка тигрова, лосось, манго, авокадо, рис, норі</g:description>
+            <g:link>https://dev.yapposushi.com/product/sakura/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/sakura-2.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>249</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>281</g:id>
+            <g:title>Сакура набір</g:title>
+            <g:description>Сакура, Філадельфія з копченим лососем, Філадельфія у вугрі, Самурай</g:description>
+            <g:link>https://dev.yapposushi.com/product/sakura-nabir/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/sakura_nabir.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>779</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>283</g:id>
+            <g:title>Самурай</g:title>
+            <g:description>вугор, сир вершковий, водорості Чука, ікра, медовий соус, рис, норі</g:description>
+            <g:link>https://dev.yapposushi.com/product/samuraj/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/samuraj-2.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>249</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>285</g:id>
+            <g:title>Смайл</g:title>
+            <g:description>краб-крем, огірок, лосось теріякі, кунжут, медовий соус, унагі соус, рис, норі
+            </g:description>
+            <g:link>https://dev.yapposushi.com/product/smajl/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/smajl-2.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>139</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>300</g:id>
+            <g:title>Суп курячий з локшиною</g:title>
+            <g:description>бульйон курячий, курка, яйце, локшина удон, цибуля зелена</g:description>
+            <g:link>https://dev.yapposushi.com/product/sup-kuryachyj-z-lokshynoyu/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/sup_kurachiy_z_lokshinoy.jpg
+            </g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>99</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>302</g:id>
+            <g:title>Суп курячий з рисом</g:title>
+            <g:description>бульйон курячий, курка,яйце, рис, цибуля зелена</g:description>
+            <g:link>https://dev.yapposushi.com/product/sup-kuryachyj-z-rysom/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/sup_kurachiy_z_risom.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>99</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>304</g:id>
+            <g:title>Том Ям з креветкою</g:title>
+            <g:description>Том Ям бульйон, креветка, вершки, шампіньйони, томати черрі, кінза</g:description>
+            <g:link>https://dev.yapposushi.com/product/tom-yam-z-krevetkoyu/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/sup_tomyam_z_krevetkoy.jpg
+            </g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>159</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>306</g:id>
+            <g:title>Том Ям з курчам</g:title>
+            <g:description>Том Ям бульйон, курка, вершки, шампіньйони, томати черрі, кінза</g:description>
+            <g:link>https://dev.yapposushi.com/product/tom-yam-z-kurcham/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/sup_tomyam_z_kurcham.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>139</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>308</g:id>
+            <g:title>Тріумф</g:title>
+            <g:description>Філадельфія, Пікантний лосось, Каліфорнія з курчам, Пінкі, Чіз-Фіш, Філадельфія в ікрі,
+                Yappo,
+                Мікадо, Крабік Хот міні рол
+            </g:description>
+            <g:link>https://dev.yapposushi.com/product/triumf/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/triumf_nabir.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>1099</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>310</g:id>
+            <g:title>Тропік</g:title>
+            <g:description>тісто рисове, сир вершковий, манго, банан, ківі, сироп, цукрова пудра</g:description>
+            <g:link>https://dev.yapposushi.com/product/tropik/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/tropik-1.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>109</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>312</g:id>
+            <g:title>Удон з морепродуктами</g:title>
+            <g:description>локшина удон, креветка, лосось, мідії, вершковий соус, перець болгарський, цибуля ріпчаста,
+                олія,
+                кунжут
+            </g:description>
+            <g:link>https://dev.yapposushi.com/product/udon-z-moreproduktamy/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/udon_z_moreproduktamy.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>209</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>314</g:id>
+            <g:title>Удон з курчам</g:title>
+            <g:description>локшина удон, курка, перець болгарський, морква, кукурудза, капуста пекінська, яйце, цибуля
+                ріпчаста, соєвий соус, олія, цибуля зелена
+            </g:description>
+            <g:link>https://dev.yapposushi.com/product/udon-z-kurcham/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/udon_z_kurcham.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>179</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>316</g:id>
+            <g:title>Удон з яловичиною</g:title>
+            <g:description>локшина удон, яловичина, перець болгарський, морква, кукурудза, капуста пекінська, яйце,
+                цибуля
+                ріпчаста, соєвий соус, олія, цибуля зелена
+            </g:description>
+            <g:link>https://dev.yapposushi.com/product/udon-z-yalovychynoyu/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/udon_z_kurcham-1.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>189</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>318</g:id>
+            <g:title>Удон на вершковому соусі</g:title>
+            <g:description>локшина удон, бекон, курка, шампіньйони, перець болгарський, квасоля стручкова, цибуля
+                ріпчаста,
+                вершковий соус, олія, часник, цибуля зелена
+            </g:description>
+            <g:link>https://dev.yapposushi.com/product/udon-na-vershkovomu-sousi/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/udon-_na-vershkovomu_sousi.jpg
+            </g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>179</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>320</g:id>
+            <g:title>Філадельфія</g:title>
+            <g:description>сир вершковий, огірок, лосось, рис, норі.</g:description>
+            <g:link>https://dev.yapposushi.com/product/filadelfiya/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/filadelfiya-2.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>189</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>322</g:id>
+            <g:title>Філадельфія Блек</g:title>
+            <g:description>сир вершковий, огірок, лосось, чорнила каракатиці, рис, норі.</g:description>
+            <g:link>https://dev.yapposushi.com/product/filadelfiya-blek/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/filadelfiya-blek-2.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>189</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>324</g:id>
+            <g:title>Філадельфія в ікрі</g:title>
+            <g:description>сир вершковий, ікра, лосось, огірок, рис, норі.</g:description>
+            <g:link>https://dev.yapposushi.com/product/filadelfiya-v-ikri/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/filadelfiya-v-ikri-2.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>189</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>326</g:id>
+            <g:title>Філадельфія гриль</g:title>
+            <g:description>сир вершковий, лосось, огірок, авокадо, рис, норі, унагі соус, кунжут</g:description>
+            <g:link>https://dev.yapposushi.com/product/filadelfiya-gryl/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/filadelfiya-gryl.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>209</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>328</g:id>
+            <g:title>Філадельфія з копченим лососем</g:title>
+            <g:description>сир вершковий, огірок, лосось копчений, рис, норі.</g:description>
+            <g:link>https://dev.yapposushi.com/product/filadelfiya-z-kopchenym-lososem/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/filadelfiya-3.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>189</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>330</g:id>
+            <g:title>Філадельфія з креветками</g:title>
+            <g:description>креветка тигрова, сир вершковий, краб-крем, огірок, ікра, рис, норі, медовий соус
+            </g:description>
+            <g:link>https://dev.yapposushi.com/product/filadelfiya-z-krevetkoyu/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/filadelfiya-z-krevetkoyu-2.png
+            </g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>189</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>332</g:id>
+            <g:title>Філадельфія ланч місо</g:title>
+            <g:description>суп Місо, Удон з курчам, рол Філадельфія</g:description>
+            <g:link>https://dev.yapposushi.com/product/filadelfiya-lanch-miso/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/filadelfia_bl.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>outofstock</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>219</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>333</g:id>
+            <g:title>Філадельфія мікс</g:title>
+            <g:description>лосось, вугор, сир вершковий, огірок, унагі соус, кунжут, рис, норі</g:description>
+            <g:link>https://dev.yapposushi.com/product/filadelfiya-miks/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/filadelfiya-miks-2.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>249</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>335</g:id>
+            <g:title>Філадельфія Максі</g:title>
+            <g:description>лосось, сир вершковий, авокадо, рис, норі</g:description>
+            <g:link>https://dev.yapposushi.com/product/filadelfiya-maksi/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/filadelfiya-maksymum.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>219</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>337</g:id>
+            <g:title>Філадельфія у вугрі</g:title>
+            <g:description>сир вершковий, авокадо, вугор, рис, норі, унагі соус, кунжут</g:description>
+            <g:link>https://dev.yapposushi.com/product/filadelfiya-u-vugri/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/filadelfiya-u-vugri-2.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>219</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+
+        <item>
+            <g:id>339</g:id>
+            <g:title>Філадельфія Фреш</g:title>
+            <g:description>сир вершковий, манго, лосось, рис, норі</g:description>
+            <g:link>https://dev.yapposushi.com/product/filadelfiya-fresh/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/filadelfiya-fresh.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>189</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>341</g:id>
+            <g:title>Філадельфія Хот</g:title>
+            <g:description>ікра, сир вершковий, огірок, лосось, сирний соус, рис, норі, унагі соус</g:description>
+            <g:link>https://dev.yapposushi.com/product/filadelfiya-hot/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/filadelfiya-hot.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>209</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>343</g:id>
+            <g:title>Фелікс креветка</g:title>
+            <g:description>креветка, краб-крем, салат Айсберг, спайсі соус, чорний кунжут, ікра, рис, норі
+            </g:description>
+            <g:link>https://dev.yapposushi.com/product/feliks-krevetka/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/feliks-krevetka.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>159</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>345</g:id>
+            <g:title>Фелікс лосось</g:title>
+            <g:description>краб-крем, огірок, лосось, чілі солодкий, ікра, рис, норі</g:description>
+            <g:link>https://dev.yapposushi.com/product/feliks-losos/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/feliks-losos.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>159</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>347</g:id>
+            <g:title>Фудзі</g:title>
+            <g:description>сир вершковий, огірок, мідія, сирний соус, рис, норі, медовий соус</g:description>
+            <g:link>https://dev.yapposushi.com/product/fudzi/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/fudzi.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>199</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>349</g:id>
+            <g:title>Фунчоза з курчам</g:title>
+            <g:description>локшина фунчоза, цибуля, перець болгарський, морква, капуста пекінська, курка, цибуля зелена,
+                кукурудза, чилі солодкий, соєвий соус, олія, кунжут
+            </g:description>
+            <g:link>https://dev.yapposushi.com/product/funchoza-z-kurcham/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/funchoza_z_kurcham.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>179</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>351</g:id>
+            <g:title>Фунчоза з яловичиною</g:title>
+            <g:description>локшина фунчоза, цибуля, перець болгарський, морква, капуста пекінська, яловичина, цибуля
+                зелена,
+                кукурудза, чилі солодкий, соєвий соус, олія, кунжут
+            </g:description>
+            <g:link>https://dev.yapposushi.com/product/funchoza-z-yalovychynoyu/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/funchoza_z_kurcham-1.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>189</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>353</g:id>
+            <g:title>Хотто</g:title>
+            <g:description>Yappo, Yappo з креветками, Чікен-Чіз Хот міні рол, Крабік Хот міні рол, 3 сири, Фудзі
+            </g:description>
+            <g:link>https://dev.yapposushi.com/product/hotto/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/hotto_nabir.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>599</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>355</g:id>
+            <g:title>Цезар з креветкою</g:title>
+            <g:description>салат айсберг, креветки, яйце, соус Цезар, грінки, томати черрі, пармезан</g:description>
+            <g:link>https://dev.yapposushi.com/product/czezar-z-krevetkoyu/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/cezar_s_krevetkoi.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>169</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>357</g:id>
+            <g:title>Цезар з курчам</g:title>
+            <g:description>салат айсберг, курка, яйце, соус Цезар, грінки, томати черрі, пармезан</g:description>
+            <g:link>https://dev.yapposushi.com/product/czezar-z-kurcham/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/cezar_s_kurkoy.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>139</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>359</g:id>
+            <g:title>Чіз-Фіш</g:title>
             <g:description>лосось теріякі, чука, сир вершковий, перець болгарський, чорний кунжут, медовий соус, рис,
                 норі
             </g:description>
-            <g:link>https://yapposushi.com/product/chiz-fish/</g:link>
-            - URL адрес лодки
-            <g:image_link>https://yapposushi.com/wp-content/uploads/2023/06/chiz-fish-2.png</g:image_link>
-            <g:additional_image_link>
-            <g:additional_image_link>
-            - дополнительные фото товара суши. перечисляем все URL фото кроме первого основного через «,». Максимальной
-            кол-во фото – 10 шт
+            <g:link>https://dev.yapposushi.com/product/chiz-fish/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/chiz-fish-2.png</g:image_link>
             <g:brand>Yapposushi</g:brand>
-            -
-            <g:condition>used</g:condition>
-            - статический параметр.
+            <g:condition>new</g:condition>
             <g:availability>available for order</g:availability>
-            - статический параметр. <g:price>139.00 UAH</g:price> - цена лодки в РУБ
-            <g:sale_price>120.00 UAH</g:price>
-            - цена со скидкой.
-            <g:google_product_category>5644</g:google_product_category>
-            - статический параметр.
+            <g:price>139</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>361</g:id>
+            <g:title>Чікен-Чіз Хот</g:title>
+            <g:description>сир вершковий, курка, салат айсберг, сирний соус, рис, норі, унагі соус</g:description>
+            <g:link>https://dev.yapposushi.com/product/chiken-chiz-hot/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/chiken-chiz-hot.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>159</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>363</g:id>
+            <g:title>Чікен-Чіз Хот запечений міні рол</g:title>
+            <g:description>курка, сирний соус, рис, норі</g:description>
+            <g:link>https://dev.yapposushi.com/product/chiken-chiz-hot-zapechenyj-mini-rol/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/kribikmidiya-lososik-hot-mini-roly.jpg
+            </g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>99</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>364</g:id>
+            <g:title>Червоний Дракон</g:title>
+            <g:description>сир вершковий, вугор, авокадо, лосось, спайсі соус, рис, норі</g:description>
+            <g:link>https://dev.yapposushi.com/product/chervonyj-drakon/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/chervonyj-drakon.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>279</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>366</g:id>
+            <g:title>Чука класичні суші</g:title>
+            <g:description>водорості чука, рис, норі, кунжут</g:description>
+            <g:link>https://dev.yapposushi.com/product/chuka-klasychni-sushi/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/chuka-klasychni-sushi.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>25</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>368</g:id>
+            <g:title>Чука міні рол</g:title>
+            <g:description>водорості чука, рис, норі</g:description>
+            <g:link>https://dev.yapposushi.com/product/chuka-mini-rol/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/chuka-mini-rol.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>69</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>370</g:id>
+            <g:title>Чука салат</g:title>
+            <g:description>водорості Чука, горіховий соус, кунжут, лимон</g:description>
+            <g:link>https://dev.yapposushi.com/product/chuka-salat/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/chuka.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>139</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>372</g:id>
+            <g:title>Шейх</g:title>
+            <g:description>лосось теріякі, сир вершковий, краб-крем,  омлет, ікра, чорнила каракатиці, рис, норі
+            </g:description>
+            <g:link>https://dev.yapposushi.com/product/shejh/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/shejh-2.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>169</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>373</g:id>
+            <g:title>Імбир (комплектація)</g:title>
+            <g:description></g:description>
+            <g:link>https://dev.yapposushi.com/product/imbyr-komplektacziya/</g:link>
+            <g:image_link></g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>0</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>374</g:id>
+            <g:title>Васабі (комплектація)</g:title>
+            <g:description></g:description>
+            <g:link>https://dev.yapposushi.com/product/vasabi-komplektacziya/</g:link>
+            <g:image_link></g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>0</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>375</g:id>
+            <g:title>Палички (комплектація)</g:title>
+            <g:description></g:description>
+            <g:link>https://dev.yapposushi.com/product/palychky-komplektacziya/</g:link>
+            <g:image_link></g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>0</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>376</g:id>
+            <g:title>YAPPO суп Кімчі</g:title>
+            <g:description>суп Кімчі, рол Yappo,  Удон з курчам, морс</g:description>
+            <g:link>https://dev.yapposushi.com/product/yappo-b-l-2/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/yappo_bl-4.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>outofstock</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>179</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>377</g:id>
+            <g:title>Філадельфія ланч кімчі</g:title>
+            <g:description>суп Кімчі , Удон з курчам, рол Філадельфія</g:description>
+            <g:link>https://dev.yapposushi.com/product/filadelfiya-lanch-kimchi/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/filadelfia_bl_kimchi.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>outofstock</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>219</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>379</g:id>
+            <g:title>Ситий день суп з локшиною</g:title>
+            <g:description>суп Курячий з локшиною, Рис з яйцем та курчам, салат Вітамінний, рол Дежавю</g:description>
+            <g:link>https://dev.yapposushi.com/product/biznes-lanch/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/sitiy_den.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>outofstock</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>179</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>381</g:id>
+            <g:title>YAPPO суп Місо</g:title>
+            <g:description>суп Місо, рол Yappo, Удон з курчам, морс</g:description>
+            <g:link>https://dev.yapposushi.com/product/biznes-lanch-2/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/yappo_bl_miso.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>outofstock</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>179</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>383</g:id>
+            <g:title>Ситий день суп з рисом</g:title>
+            <g:description>суп Курячий з рисом, Рис з яйцем та курчам, салат Вітамінний, рол Дежавю</g:description>
+            <g:link>https://dev.yapposushi.com/product/kopiyasytyj-den-lanch-sup-z-rysom/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/sitiy_den_ris.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>outofstock</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>179</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>385</g:id>
+            <g:title>Мікс</g:title>
+            <g:description>Yappo з креветкою, Фелікс лосось, Краб-Фіш, Самурай, Дежавю, Чікен-Чіз Хот</g:description>
+            <g:link>https://dev.yapposushi.com/product/miks/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/osinnij-miks1-768x768-1.png
+            </g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>729</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>390</g:id>
+            <g:title>Навчальні фіксатори</g:title>
+            <g:description></g:description>
+            <g:link>https://dev.yapposushi.com/product/navchalni-fiksatory/</g:link>
+            <g:image_link></g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>5</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>391</g:id>
+            <g:title>Токіо</g:title>
+            <g:description>Шейх, Філадельфія в ікрі, Кіото, Теріякі Хот, Лососік Хот міні рол, соус Унагі
+            </g:description>
+            <g:link>https://dev.yapposushi.com/product/tokio/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/tokio.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>549</g:price>
+            <g:sale_price>549</g:sale_price>
+        </item>
+        <item>
+            <g:id>393</g:id>
+            <g:title>Cold Fish</g:title>
+            <g:description>Кіото, Тайфун, Делайт, Шанхай</g:description>
+            <g:link>https://dev.yapposushi.com/product/cold-fish/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/img_5018.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>499</g:price>
+            <g:sale_price>499</g:sale_price>
+        </item>
+        <item>
+            <g:id>395</g:id>
+            <g:title>Hot Fish</g:title>
+            <g:description>Теріякі Хот, Yappo з лососем, Лосось Унагі, 3 сири</g:description>
+            <g:link>https://dev.yapposushi.com/product/hot-fish/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/img_5057.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>499</g:price>
+            <g:sale_price>499</g:sale_price>
+        </item>
+        <item>
+            <g:id>397</g:id>
+            <g:title>Банзай</g:title>
+            <g:description>Тайфун, Філадельфія Чедер, 3 сири, Yappo з лососем</g:description>
+            <g:link>https://dev.yapposushi.com/product/banzaj/</g:link>
+            <g:image_link>
+                https://dev.yapposushi.com/wp-content/uploads/2023/06/photo_2023-05-23_13-42-20-1.png|https://dev.yapposushi.com/wp-content/uploads/2023/06/photo_2023-05-23_13-42-20.jpg
+            </g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>399</g:price>
+            <g:sale_price>399</g:sale_price>
+        </item>
+        <item>
+            <g:id>398</g:id>
+            <g:title>Сенсей</g:title>
+            <g:description>Тунець Боніто, Філадельфія Чедер, Філадельфія з тунцем, Теріякі Хот, Yappo, унагі соус
+            </g:description>
+            <g:link>https://dev.yapposushi.com/product/sensej/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/img_8530.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>549</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>473</g:id>
+            <g:title>Палички навчальні (комплектація)</g:title>
+            <g:description></g:description>
+            <g:link>https://dev.yapposushi.com/product/palychky-navchalni-komplektacziya/</g:link>
+            <g:image_link></g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>0</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>859</g:id>
+            <g:title>Незламні</g:title>
+            <g:description>Філадельфія, Філадельфія з тунцем, Спайсі креветка, Тартар мікс</g:description>
+            <g:link>https://dev.yapposushi.com/product/nezlamni/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/img_8722-copy-1-1.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>529</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>972</g:id>
+            <g:title>Пакування (комплектація)</g:title>
+            <g:description></g:description>
+            <g:link>https://dev.yapposushi.com/product/pakuvannya-komplektacziya/</g:link>
+            <g:image_link></g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>5</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>973</g:id>
+            <g:title>Доставка (комплектація)</g:title>
+            <g:description></g:description>
+            <g:link>https://dev.yapposushi.com/product/dostavka-komplektacziya/</g:link>
+            <g:image_link></g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>50</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1138</g:id>
+            <g:title>Тандем</g:title>
+            <g:description>Делайт, Шанхай, Кіото, Yappo з лососем, Невада</g:description>
+            <g:link>https://dev.yapposushi.com/product/tandem/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/07/img_8669.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>549</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1787</g:id>
+            <g:title>Филадельфия в икре</g:title>
+            <g:description>сыр сливочный, икра, лосось, огурец, рис, нори.</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/filadelfiya-v-ikri/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/filadelfiya-v-ikri-2.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>189</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1880</g:id>
+            <g:title>Тандем</g:title>
+            <g:description>Делайт, Шанхай, Киото, Yappo с лососем, Невада</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/tandem/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/07/img_8669.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>549</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1883</g:id>
+            <g:title>Доставка (комплектация)</g:title>
+            <g:description></g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/dostavka-komplektacziya/</g:link>
+            <g:image_link></g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>50</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1884</g:id>
+            <g:title>Cold Fish</g:title>
+            <g:description>Киото, Тайфун, Делайт, Шанхай</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/cold-fish/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/img_5018.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>499</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1885</g:id>
+            <g:title>Микс</g:title>
+            <g:description>Yappo с креветкой, Феликс лосось, Краб-Фиш, Самурай, Дежавю, Чикен-Чиз Хот</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/miks/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/osinnij-miks1-768x768-1.png
+            </g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>729</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1886</g:id>
+            <g:title>YAPPO суп Кимчи</g:title>
+            <g:description>суп Кимчи, ролл Yappo, Удон с курицей, морс</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/yappo-b-l-2/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/yappo_bl-4.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>outofstock</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>179</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1889</g:id>
+            <g:title>Упаковка (комплектация)</g:title>
+            <g:description></g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/pakuvannya-komplektacziya/</g:link>
+            <g:image_link></g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>5</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1890</g:id>
+            <g:title>Hot Fish</g:title>
+            <g:description>Терияки Хот, Yappo с лососем, Лосось Унаги, 3 сыра</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/hot-fish/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/img_5057.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>499</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1892</g:id>
+            <g:title>Филадельфия ланч кимчи</g:title>
+            <g:description>суп Кимчи, Удон с курицей, ролл Филадельфия</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/filadelfiya-lanch-kimchi/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/filadelfia_bl_kimchi.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>outofstock</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>219</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1893</g:id>
+            <g:title>Учебные фиксаторы</g:title>
+            <g:description></g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/navchalni-fiksatory/</g:link>
+            <g:image_link></g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>5</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1895</g:id>
+            <g:title>Несокрушимые</g:title>
+            <g:description>Филадельфия, Филадельфия с тунцом, Спайси креветка, Тартар микс</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/nezlamni/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/img_8722-copy-1-1.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>529</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1896</g:id>
+            <g:title>Банзай</g:title>
+            <g:description>Тайфун, Филадельфия Чедер, 3 сыра, Yappo с лососем</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/banzaj/</g:link>
+            <g:image_link>
+                https://dev.yapposushi.com/wp-content/uploads/2023/06/photo_2023-05-23_13-42-20-1.png|https://dev.yapposushi.com/wp-content/uploads/2023/06/photo_2023-05-23_13-42-20.jpg
+            </g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>399</g:price>
+            <g:sale_price>399</g:sale_price>
+        </item>
+
+        <item>
+            <g:id>1897</g:id>
+            <g:title>Чиз-Фиш</g:title>
+            <g:description>лосось терияки, чука, сыр сливочный, перец болгарский, черный кунжут, медовый соус, рис, нори
+            </g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/chiz-fish/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/chiz-fish-2.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>139</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1899</g:id>
+            <g:title>Сытый день суп с лапшой</g:title>
+            <g:description>суп Куриный с лапшой, Рис с яйцом и курицей, салат Витаминный, ролл Дежавю</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/biznes-lanch/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/sitiy_den.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>outofstock</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>179</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1900</g:id>
+            <g:title>Сенсей</g:title>
+            <g:description>Тунец Бонито, Филадельфия Чедер, Филадельфия с тунцом, Терияки Хот, Yappo, унаги соус
+            </g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/sensej/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/img_8530.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>549</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1903</g:id>
+            <g:title>Палички додаткові</g:title>
+            <g:description></g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/palychky-navchalni-komplektacziya/</g:link>
+            <g:image_link></g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>1</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1904</g:id>
+            <g:title>Палички</g:title>
+            <g:description></g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/palychky-komplektacziya/</g:link>
+            <g:image_link></g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>0</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1905</g:id>
+            <g:title>Токіо</g:title>
+            <g:description>Шейх, Филадельфия в икре, Киото, Терияки Хот, Лососик Хот мини ролл, соус Унаги
+            </g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/tokio/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/tokio.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>549</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1906</g:id>
+            <g:title>YAPPO суп Мисо</g:title>
+            <g:description>суп Мисо, ролл Yappo, Удон с курицей, морс</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/biznes-lanch-2/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/yappo_bl_miso.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>outofstock</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>179</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1909</g:id>
+            <g:title>Сытый день суп с рисом</g:title>
+            <g:description>суп Куриный с рисом, Рис с яйцом и курицей, салат Витаминный, ролл Дежавю</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/kopiyasytyj-den-lanch-sup-z-rysom/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/sitiy_den_ris.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>outofstock</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>179</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1911</g:id>
+            <g:title>Филадельфия Хот</g:title>
+            <g:description>икра, сыр сливочный, огурец, лосось, сырный соус, рис, нори, унаги соус</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/filadelfiya-hot/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/filadelfiya-hot.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>209</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1912</g:id>
+            <g:title>Чикен-Чиз Хот</g:title>
+            <g:description>сыр сливочный, курица, салат айсберг, сырный соус, рис, нори, унаги соус</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/chiken-chiz-hot/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/chiken-chiz-hot.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>159</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1913</g:id>
+            <g:title>Чука салат</g:title>
+            <g:description>водоросли Чука, ореховый соус, кунжут, лимон</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/chuka-salat/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/chuka.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>139</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1914</g:id>
+            <g:title>Фунчоза с говядиной</g:title>
+            <g:description>лапша фунчоза, лук, перец болгарский, морковь, капуста пекинская, говядина, лук зеленый,
+                кукуруза,
+                чили сладкий, соевый соус, масло, кунжут
+            </g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/funchoza-z-yalovychynoyu/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/funchoza_z_kurcham-1.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>189</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1919</g:id>
+            <g:title>Шейх</g:title>
+            <g:description>лосось терияки, сыр сливочный, краб-крем, омлет, икра, чернила каракатицы, рис, нори
+            </g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/shejh/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/shejh-2.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>169</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1920</g:id>
+            <g:title>Мідія Хот запечений міні рол</g:title>
+            <g:description>курица, сырный соус, рис, нори</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/chiken-chiz-hot-zapechenyj-mini-rol/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/kribikmidiya-lososik-hot-mini-roly.jpg
+            </g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>99</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1921</g:id>
+            <g:title>Феликс креветка</g:title>
+            <g:description>креветка, краб-крем, салат Айсберг, спайси соус, черный кунжут, икра, рис, нори
+            </g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/feliks-krevetka/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/feliks-krevetka.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>159</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1922</g:id>
+            <g:title>Хотто</g:title>
+            <g:description>Yappo, Yappo с креветками, Чикен-Чиз Хот мини ролл, Крабик Хот мини ролл, 3 сыра, Фудзи
+            </g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/hotto/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/hotto_nabir.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>599</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1925</g:id>
+            <g:title>Феликс Лосось</g:title>
+            <g:description>краб-крем, огурец, лосось, чили сладкий, икра, рис, нори</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/feliks-losos/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/feliks-losos.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>159</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1926</g:id>
+            <g:title>Имбирь (комплектация)</g:title>
+            <g:description></g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/imbyr-komplektacziya/</g:link>
+            <g:image_link></g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>0</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1927</g:id>
+            <g:title>Філадельфія Фреш</g:title>
+            <g:description>сыр сливочный, угорь, авокадо, лосось, спайси соус, рис, нори</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/chervonyj-drakon/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/chervonyj-drakon.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>279</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1928</g:id>
+            <g:title>Цезарь с креветкой</g:title>
+            <g:description>салат айсберг, креветки, яйцо, соус Цезарь, гренки, томаты черри, пармезан</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/czezar-z-krevetkoyu/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/cezar_s_krevetkoi.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>169</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1932</g:id>
+            <g:title>Васаби (комплектация)</g:title>
+            <g:description></g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/vasabi-komplektacziya/</g:link>
+            <g:image_link></g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>0</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1933</g:id>
+            <g:title>Фудзи</g:title>
+            <g:description>сыр сливочный, огурец, мидия, сырный соус, рис, нори, медовый соус</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/fudzi/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/fudzi.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>199</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1935</g:id>
+            <g:title>Цезарь с курицей</g:title>
+            <g:description>салат айсберг, курица, яйцо, соус Цезарь, гренки, томаты черри, пармезан</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/czezar-z-kurcham/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/cezar_s_kurkoy.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>139</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1936</g:id>
+            <g:title>Креветка класичні суші</g:title>
+            <g:description>водоросли чука, рис, нори, кунжут</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/chuka-klasychni-sushi/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/chuka-klasychni-sushi.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>25</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1939</g:id>
+            <g:title>Филадельфия Фреш</g:title>
+            <g:description>сыр сливочный, манго, лосось, рис, нори</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/filadelfiya-fresh/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/filadelfiya-fresh.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>189</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1941</g:id>
+            <g:title>Фунчоза с курицей</g:title>
+            <g:description>лапша фунчоза, лук, перец болгарский, морковь, капуста пекинская, курица, лук зеленый,
+                кукуруза,
+                чили сладкий, соевый соус, масло, кунжут
+            </g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/funchoza-z-kurcham/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/funchoza_z_kurcham.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>179</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1943</g:id>
+            <g:title>Чука мини ролл</g:title>
+            <g:description>водоросли чука, рис, нори</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/chuka-mini-rol/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/chuka-mini-rol.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>69</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1944</g:id>
+            <g:title>Филадельфия</g:title>
+            <g:description>сыр сливочный, огурец, лосось, рис, нори.</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/filadelfiya/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/filadelfiya-2.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>189</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1972</g:id>
+            <g:title>Филадельфия микс</g:title>
+            <g:description>лосось, угорь, сыр сливочный, огурец, унаги соус, кунжут, рис, нори</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/filadelfiya-miks/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/filadelfiya-miks-2.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>249</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1973</g:id>
+            <g:title>Филадельфия Блэк</g:title>
+            <g:description>сыр сливочный, огурец, лосось, чернила каракатицы, рис, нори.</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/filadelfiya-blek/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/filadelfiya-blek-2.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>189</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1976</g:id>
+            <g:title>Филадельфия гриль</g:title>
+            <g:description>сыр сливочный, лосось, огурец, авокадо, рис, нори, унаги соус, кунжут</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/filadelfiya-gryl/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/filadelfiya-gryl.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>209</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1977</g:id>
+            <g:title>Филадельфия Макси</g:title>
+            <g:description>лосось, сыр сливочный, авокадо, рис, нори</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/filadelfiya-maksi/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/filadelfiya-maksymum.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>219</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1980</g:id>
+            <g:title>Филадельфия с копченым лососем</g:title>
+            <g:description>сыр сливочный, огурец, лосось копченый, рис, нори.</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/filadelfiya-z-kopchenym-lososem/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/filadelfiya-3.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>189</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1981</g:id>
+            <g:title>Филадельфия в угре</g:title>
+            <g:description>сыр сливочный, авокадо, угорь, рис, нори, унаги соус, кунжут</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/filadelfiya-u-vugri/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/filadelfiya-u-vugri-2.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>219</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1984</g:id>
+            <g:title>Суп куриный с лапшой</g:title>
+            <g:description>бульон куриный, курица, яйцо, лапша удон, лук зеленый</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/sup-kuryachyj-z-lokshynoyu/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/sup_kurachiy_z_lokshinoy.jpg
+            </g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>99</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1985</g:id>
+            <g:title>Филадельфия с креветками</g:title>
+            <g:description>креветка тигровая, сыр сливочный, краб-крем, огурец, икра, рис, нори, медовый соус
+            </g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/filadelfiya-z-krevetkoyu/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/filadelfiya-z-krevetkoyu-2.png
+            </g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>189</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1988</g:id>
+            <g:title>Суп куриный с рисом</g:title>
+            <g:description>бульон куриный, курица, яйцо, рис, лук зеленый</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/sup-kuryachyj-z-rysom/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/sup_kurachiy_z_risom.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>99</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>1989</g:id>
+            <g:title>Филадельфия ланч мисо</g:title>
+            <g:description>суп Мисо, Удон с курицей, ролл Филадельфия</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/filadelfiya-lanch-miso/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/filadelfia_bl.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>outofstock</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>219</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2041</g:id>
+            <g:title>Том Ям с креветкой</g:title>
+            <g:description>Том Ям бульон, креветка, сливки, шампиньоны, томаты черри, кинза</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/tom-yam-z-krevetkoyu/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/sup_tomyam_z_krevetkoy.jpg
+            </g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>159</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2043</g:id>
+            <g:title>Том Ям с курицей</g:title>
+            <g:description>Том Ям бульон, курица, сливки, шампиньоны, томаты черри, кинза</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/tom-yam-z-kurcham/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/sup_tomyam_z_kurcham.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>139</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2045</g:id>
+            <g:title>Триумф</g:title>
+            <g:description>Филадельфия, Пикантный лосось, Калифорния с цыпленком, Пинки, Чиз-Фиш, Филадельфия в икре,
+                Yappo,
+                Микадо, Крабик Хот мини ролл
+            </g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/triumf/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/triumf_nabir.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>1099</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2047</g:id>
+            <g:title>Тропик</g:title>
+            <g:description>тесто рисовое, сливочный сыр, манго, банан, киви, сироп, сахарная пудра</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/tropik/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/tropik-1.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>109</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2049</g:id>
+            <g:title>Рис з морепродуктами</g:title>
+            <g:description>лапша удон, креветка, лосось, мидии, сливочный соус, перец болгарский, лук репчатый, масло
+                подсолнечное, кунжут
+            </g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/udon-z-moreproduktamy/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/udon_z_moreproduktamy.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>199</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2051</g:id>
+            <g:title>Удон с курицей</g:title>
+            <g:description>лапша удон, курица, перец болгарский, морковь, кукуруза, капуста пекинская, яйцо, лук
+                репчатый,
+                соевый соус, масло, лук зеленый
+            </g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/udon-z-kurcham/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/udon_z_kurcham.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>179</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2053</g:id>
+            <g:title>Удон на сливочном соусе</g:title>
+            <g:description>лапша удон, бекон, курица, шампиньоны, перец болгарский, фасоль стручковая, лук репчатый,
+                сливочный
+                соус, масло, чеснок, лук зеленый
+            </g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/udon-na-vershkovomu-sousi/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/udon-_na-vershkovomu_sousi.jpg
+            </g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>179</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2055</g:id>
+            <g:title>Удон с говядиной</g:title>
+            <g:description>лапша удон, говядина, перец болгарский, морковь, кукуруза, капуста пекинская, яйцо, лук
+                репчатый,
+                соевый соус, масло, лук зеленый
+            </g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/udon-z-yalovychynoyu/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/udon_z_kurcham-1.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>189</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2057</g:id>
+            <g:title>Смайл</g:title>
+            <g:description>краб-крем, огурец, лосось терияки, кунжут, медовый соус, унаги соус, рис, нори
+            </g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/smajl/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/smajl-2.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>139</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2058</g:id>
+            <g:title>Рамен с курицей</g:title>
+            <g:description>лапша удон, мясной бульон, яйцо, водоросли вакамэ, курица, морковь, мисо паста, бекон, нори,
+                лук
+                зеленый, масло кунжутное
+            </g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/ramen-z-kurcham/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/sup_ramen_z_kurcham.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>149</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2059</g:id>
+            <g:title>Сок Сандора 1л</g:title>
+            <g:description></g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/sik-sandora-1l/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/sandora.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>80</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2062</g:id>
+            <g:title>Пепси 0,33л стекло</g:title>
+            <g:description></g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/pepsi-sklo-033l/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/pepsi03_2.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>30</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+
+        <item>
+            <g:id>2063</g:id>
+            <g:title>Рис с яйцом и говядиной</g:title>
+            <g:description>рис, яйцо, говядина, фасоль стручковая, перец болгарский, чеснок, соевый соус, лук репчатый,
+                масло,
+                кунжут, лук зеленый
+            </g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/rys-z-yajczem-ta-yalovychynoyu/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/rys_z_yaytsem_ta_kurkoiy-1.jpg
+            </g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>189</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2064</g:id>
+            <g:title>Самурай</g:title>
+            <g:description>угорь, сыр сливочный, водоросли Чука, икра, медовый соус, рис, нори</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/samuraj/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/samuraj-2.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>249</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2067</g:id>
+            <g:title>Пепси 0,33л</g:title>
+            <g:description></g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/pepsi-zh-b-033l/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/pepsi03_1.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>25</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2068</g:id>
+            <g:title>Рис с яйцом и курицей</g:title>
+            <g:description>рис, яйцо, курица, фасоль стручковая, перец болгарский, лук репчатый, чеснок, соевый соус,
+                масло,
+                кунжут, лук зеленый
+            </g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/rys-z-yajczem-ta-kurcham/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/rys_z_yaytsem_ta_kurkoiy.jpg
+            </g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>179</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2069</g:id>
+            <g:title>Сакура набор</g:title>
+            <g:description>Сакура, Филадельфия с копченым лососем, Филадельфия в угре, Самурай</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/sakura-nabir/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/sakura_nabir.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>779</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2072</g:id>
+            <g:title>Пепси блэк 0,33л</g:title>
+            <g:description></g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/pepsi-blek-zh-b-033l/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/pepsi03.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>25</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2073</g:id>
+            <g:title>Сакура</g:title>
+            <g:description>сыр сливочный, креветка тигровая, лосось, манго, авокадо, рис, нори</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/sakura/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/sakura-2.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>249</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2074</g:id>
+            <g:title>Рис с морепродуктами</g:title>
+            <g:description>рис, креветка, лосось, мидии, сливочный соус, кукуруза, перец болгарский, лук репчатый,
+                масло, лук
+                зеленый
+            </g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/rys-z-moreproduktamy/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/rys_z_moreproduktamy.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>199</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2077</g:id>
+            <g:title>Сикоку</g:title>
+            <g:description>икра, сыр сливочный, угорь, лосось, тигровая креветка, которые соус, рис, нори
+            </g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/sikoku/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/sikoku.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>319</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2079</g:id>
+            <g:title>Рамен с говядиной</g:title>
+            <g:description>лапша удон, мясной бульон, яйцо, водоросли вакамэ, говядина, бекон, мисо паста, морковь,
+                нори, лук
+                зеленый, масло кунжутное
+            </g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/ramen-z-yalovychynoyu/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/sup_ramen_z_yalovichinoy.jpg
+            </g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>159</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2081</g:id>
+            <g:title>Пепси 1л</g:title>
+            <g:description></g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/pepsi-1l/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/pepsi05-1.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>45</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2082</g:id>
+            <g:title>Овощной</g:title>
+            <g:description>огурец, авокадо, салат айсберг, перец болгарский, рис, нори</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/ovochevyj/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/ovochevyj-3.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>95</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2083</g:id>
+            <g:title>Микадо</g:title>
+            <g:description>чернила каракатицы, сыр сливочный, омлет, краб-крем, цыпленок, угорь, спайси соус, Yappo
+                соус, рис,
+                нори, медовый соус
+            </g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/mikado/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/mikado.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>249</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2084</g:id>
+            <g:title>Майами</g:title>
+            <g:description>икра, кунжут, огурец, омлет, краб-крем, сыр сливочный, лосось терияки, рис, нори.
+            </g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/mayami/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/mayami-2.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>159</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2087</g:id>
+            <g:title>Макси Фиш</g:title>
+            <g:description>Филадельфия фреш, Чиз-Фиш, Ниндзя, Майами, Фудзи, Yappo ролл</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/maksi-fish/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/maksi-fish1.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>799</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2088</g:id>
+            <g:title>Пепси 0,5л</g:title>
+            <g:description></g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/pepsi-05l/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/pepsi05.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>30</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2089</g:id>
+            <g:title>Мидия Хот мини ролл</g:title>
+            <g:description>мидии, сырный соус, рис, нори</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/midiya-hot-zapechenyj-mini-rol/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/kribikmidiya-lososik-hot-mini-roly.jpg
+            </g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>99</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2090</g:id>
+            <g:title>Наслаждение набор</g:title>
+            <g:description>Вишневый ролл, Экзотик ролл, Тропик ролл</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/nasoloda-nabir/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/nabir_nasoloda-1.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>279</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2092</g:id>
+            <g:title>Пикантный лосось</g:title>
+            <g:description>лосось терияки, сыр сливочный, икра, салат айсберг, медовый соус, рис, нори</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/pikantnyj-losos/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/pikantnyj-losos-2.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>169</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2093</g:id>
+            <g:title>Ниндзя</g:title>
+            <g:description>лосось копченый, сыр сливочный, краб-крем, икра, лук зеленый, кунжут, рис, нори
+            </g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/nindzya/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/nindzya.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>169</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2094</g:id>
+            <g:title>Мисо суп</g:title>
+            <g:description>Мисо бульон, водоросли вакамэ, сыр тофу, грибы намеко, зеленый лук</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/miso-sup/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/sup_miso.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>59</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2095</g:id>
+            <g:title>Мидия запеченные суши</g:title>
+            <g:description>мидия, соус, рис, нори</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/midiya-zapecheni-sushi/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/krabmidiya-zapecheni-sczshi.jpg
+            </g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>30</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2100</g:id>
+            <g:title>Freedom</g:title>
+            <g:description>Yappo с угрем, Филадельфия Блэк, 3 сыра, Мидия Хот мини ролл, Майами, унаги соус
+            </g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/osinnij-miks/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/freedom-1-scaled-1.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>599</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2101</g:id>
+            <g:title>Морс из смородины 0,5л</g:title>
+            <g:description></g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/mors-zi-smorodyny-05l/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/mors_zi_smorodiny.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>35</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2102</g:id>
+            <g:title>Миринда 0,33л</g:title>
+            <g:description></g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/mirinda-zh-b-033l/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/mirinda.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>25</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2103</g:id>
+            <g:title>Лосось Унаги</g:title>
+            <g:description>икра, сыр сливочный, омлет, краб-крем, Yappo соус, лосось, нори, рис, унаги соус
+            </g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/losos-unagi/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/losos-unagi.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>229</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2105</g:id>
+            <g:title>Запечений міні набір</g:title>
+            <g:description>Филадельфия, Филадельфия блэк, Филадельфия в икре, Филадельфия в угре</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/more-filadelfij/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/more_filadelfiy_nabir.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>699</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2106</g:id>
+            <g:title>Огурец мини ролл</g:title>
+            <g:description>огурец, рис, нори.</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/ogirok-mini-rol/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/ogirok-mini-rol-2.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>59</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2107</g:id>
+            <g:title>Лосось мини ролл</g:title>
+            <g:description>лосось, рис, нори</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/losos-mini-rol/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/losos-mini-rol.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>109</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2108</g:id>
+            <g:title>Мини Фиш</g:title>
+            <g:description>Филадельфия фреш, Чиз-Фиш, Ниндзя, Майами</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/mini-fish/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/mini-fish1.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>549</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2113</g:id>
+            <g:title>Креветка острые суши</g:title>
+            <g:description>креветка, спайси соус, рис, нори</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/krevetka-gostri-sushi/</g:link>
+            <g:image_link>
+                https://dev.yapposushi.com/wp-content/uploads/2023/06/krevetka-gostri-sushi.jpg|https://dev.yapposushi.com/wp-content/uploads/2023/06/krevetka-gostri-sushi-1.jpg
+            </g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>59</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2114</g:id>
+            <g:title>Лосось классические суши</g:title>
+            <g:description>лосось, рис</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/losos-klasychni-sushi/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/losos-klasychni-sushi.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>59</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2115</g:id>
+            <g:title>Карпатская родниковая 0,5л негазированная</g:title>
+            <g:description></g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/karpatska-dzherelna-05-negazovana/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/karpatska_negazovana.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>20</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2116</g:id>
+            <g:title>Калифорния с креветками</g:title>
+            <g:description>краб-крем, креветки, икра, авокадо, огурец, рис, нори</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/kaliforniya-z-krevetkamy/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/kaliforniya-z-krevetkoyu-2.png
+            </g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>179</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2120</g:id>
+            <g:title>Крабик Хот запеченный мини ролл</g:title>
+            <g:description>краб-крем, сырный соус, рис, нори</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/krabik-hot-zapechenyj-mini-rol/</g:link>
+            <g:image_link>
+                https://dev.yapposushi.com/wp-content/uploads/2023/06/kribikmidiya-lososik-hot-mini-roly.jpg|https://dev.yapposushi.com/wp-content/uploads/2023/06/kribikmidiya-lososik-hot-mini-roly-2.jpg
+            </g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>99</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2121</g:id>
+            <g:title>Краб запеченные суши</g:title>
+            <g:description>краб-крем, соус, рис, нори</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/krab-zapecheni-sushi/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/krabmidiya-zapecheni-sczshi.jpg
+            </g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>30</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2122</g:id>
+            <g:title>Калифорния в кунжуте</g:title>
+            <g:description>краб-крем, авокадо, огурец, кунжут, рис, нори</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/kaliforniya-v-kunzhuti/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/kaliforniya-u-kunzhuti.png
+            </g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>99</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2123</g:id>
+            <g:title>Лосось острые суши</g:title>
+            <g:description>лосось, спайси соус, рис, нори</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/losos-gostri-sushi/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/losos-gostri-sushi.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>59</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2127</g:id>
+            <g:title>Копченый лосось мини ролл</g:title>
+            <g:description>копченый лосось, рис, нори</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/kopchenyj-losos-mini-rol/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/losos-mini-rol-1.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>109</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2128</g:id>
+            <g:title>Крабик мини ролл</g:title>
+            <g:description>краб-крем, рис, нори</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/krabik-mini-rol/</g:link>
+            <g:image_link>
+                https://dev.yapposushi.com/wp-content/uploads/2023/06/krab-mini-rol.png|https://dev.yapposushi.com/wp-content/uploads/2023/06/krab-mini-rol.png
+            </g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>79</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2130</g:id>
+            <g:title>Лососик Хот запеченный мини ролл</g:title>
+            <g:description>лосось терияки, сырный соус, рис, нори</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/lososik-hot-zapechenyj-mini-rol/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/kribikmidiya-lososik-hot-mini-roly.jpg
+            </g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>109</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2133</g:id>
+            <g:title>Дежавю</g:title>
+            <g:description>краб-крем, икра, авокадо, огурец, рис, нори</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/kaliforniya-v-ikri/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/kaliforniya-v-ikri-2.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>159</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2135</g:id>
+            <g:title>Каори</g:title>
+            <g:description>Чикен-Чиз Хот, Лососик Хот мини ролл, 3 сыра, Фудзи</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/kaori/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/kaori_nabir.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>449</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2137</g:id>
+            <g:title>Креветка Хот</g:title>
+            <g:description>икра, сыр сливочный, тигровая креветка, сырный соус, рис, нори, унаги соус</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/krevetka-hot/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/krevetka-hot.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>249</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2138</g:id>
+            <g:title>Краб-Фиш</g:title>
+            <g:description>краб-крем, лосось, салат айсберг, икра, рис, нори</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/krab-fish/</g:link>
+            <g:image_link>
+                https://dev.yapposushi.com/wp-content/uploads/2023/06/krab-fish-2.png|https://dev.yapposushi.com/wp-content/uploads/2023/06/krab-fish-2.png
+            </g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>179</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2142</g:id>
+            <g:title>Кимчи</g:title>
+            <g:description>Мисо бульон, яйцо, соус кимчи, сыр тофу, водоросли вакаме, кунжут</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/kimchi/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/sup_kimchi.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>69</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2144</g:id>
+            <g:title>Калифорния с курицей</g:title>
+            <g:description>курица копченая, краб-крем, авокадо, огурец, икра, рис, нори</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/kaliforniya-z-kurcham/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/kaliforniya-z-kurcham-2.png
+            </g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>159</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2146</g:id>
+            <g:title>Карпатская родниковая 0,5л газированная</g:title>
+            <g:description></g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/karpatska-dzherelna-05l-gazovana/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/karpatska_gazovana.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>20</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2147</g:id>
+            <g:title>Креветка классические суши</g:title>
+            <g:description>креветка, рис</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/krevetka-klasychni-sushi/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/krevetka-klasychni-sushi.jpg
+            </g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>59</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2149</g:id>
+            <g:title>Золотой Дракон</g:title>
+            <g:description>сыр сливочный, угорь, лосось, тигровая креветка, икра, унаги соус, кунжут, рис, нори
+            </g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/zolotyj-drakon/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/zolotyj-drakon.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>319</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+
+        <item>
+            <g:id>2151</g:id>
+            <g:title>Угорь классические суши</g:title>
+            <g:description>угорь, унаги соус, кунжут, рис, нори</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/vugor-klasychni-sushi/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/vugor_sushi.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>59</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2152</g:id>
+            <g:title>Вегетарианский</g:title>
+            <g:description>авокадо, огурец, салат айсберг, перец болгарский, чука, рис, нори</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/vegetarianskyj/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/Вегетаріанський-2.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>99</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2153</g:id>
+            <g:title>Дежавю</g:title>
+            <g:description>сыр сливочный, краб-крем, салат айсберг, спайси соус, яичный блинчик, унаги соус, кунжут,
+                рис,
+                нори
+            </g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/dezhavyu/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/dezhavyu-2.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>119</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2154</g:id>
+            <g:title>Зелёный Дракон</g:title>
+            <g:description>сыр сливочный, авокадо, угорь, тигровая креветка, унаги соус, кунжут, рис, нори.
+            </g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/zelenyj-drakon/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/zelenyj-drakon.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>279</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2157</g:id>
+            <g:title>Витаминный салат</g:title>
+            <g:description>капуста, морковь, сельдерей, яблоко, заправка к салату, кунжут</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/vitaminnyj-salat/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/vitaminuy.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>59</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2158</g:id>
+            <g:title>Запеченный мини набор</g:title>
+            <g:description>Крабик Хот мини ролл, Лососик Хот мини ролл, Мидия запеченные суши</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/zapechenyj-mini-nabir/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/zapecheniy_nabir.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>249</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2159</g:id>
+            <g:title>Вишневый</g:title>
+            <g:description>тесто рисовое, сливочный сыр, вишня, банан, сироп, сахарная пудра</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/vyshnevyj/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/vyshnevyi-1.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>109</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2160</g:id>
+            <g:title>Гранд</g:title>
+            <g:description>Смайл, Лососик хот мини ролл, Самурай, Yappo, Краб-Фиш</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/grand/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/grand_nabir.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>619</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2162</g:id>
+            <g:title>Бинго</g:title>
+            <g:description>Филидельфия в икре, Дежавю, Феликс креветка, Майами</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/bingo/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/bingo_nabir.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>499</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2163</g:id>
+            <g:title>Экзотик</g:title>
+            <g:description>тесто рисовое, сливочный сыр, киви, банан, ананас, сироп, сахарная пудра</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/ekzotik/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/ekzotik-1.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>109</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2164</g:id>
+            <g:title>Веселая Вечеринка</g:title>
+            <g:description>Пинки, Филадельфия Фреш, Дежавю, Калифорния в кунжуте, Ниндзя, Мидия Хот мини ролл, Yappo, 3
+                сыра,
+                Майами, Феликс креветка, Филадельфия Блэк
+            </g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/vesela-vechirka/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/veselavechirka_nabir.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>1299</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2165</g:id>
+            <g:title>Угорь Хот</g:title>
+            <g:description>краб-крем, омлет, угорь, курица, рис, нори, спайси соус, медовый соус, кунжут</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/vugor-hot/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/vugor-hot.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>199</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2168</g:id>
+            <g:title>Авокадо мини ролл</g:title>
+            <g:description>авокадо, рис, нори</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/avokado-mini-rol/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/Авокадо-міні-рол.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>79</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2169</g:id>
+            <g:title>Джинджер</g:title>
+            <g:description>креветка тигровая, сыр сливочный, лосось, икра, авокадо, рис, нори.</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/dzhyndzher/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/dzhyndzher.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>259</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2170</g:id>
+            <g:title>Сливочный с лососем</g:title>
+            <g:description>Мисо бульон, сливки, лосось, водоросли вакаме, рис, лук зеленый</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/vershkovyj-z-lososem/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/sup_vershkoviy_z_lososem.jpg
+            </g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>119</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2171</g:id>
+            <g:title>Угорь мини ролл</g:title>
+            <g:description>угорь, рис, нори, унаги соус, кунжут</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/vugor-mini-rol/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/Вугор-міні-рол.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>139</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2174</g:id>
+            <g:title>Вегетарианский набор</g:title>
+            <g:description>Вегетарианский ролл, Авокадо мини ролл, Огурец мини ролл, Чука классические суши
+            </g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/vegetarianskyj-nabir/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/vegetarian_nabir.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>229</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2175</g:id>
+            <g:title>YAPPO набор</g:title>
+            <g:description>Филадельфия блек, Калифорния в икре, Мидия Хот мини ролл, Yappo ролл</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/yappo-nabir/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/yappo_nabir.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>449</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2176</g:id>
+            <g:title>Делюкс</g:title>
+            <g:description>Шейх, Майами, Крабик Хот мини ролл, Вугор Хот, Yappo с креветками</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/delyuks/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/delux_nabir.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>599</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2177</g:id>
+            <g:title>Угорь острые суши</g:title>
+            <g:description>угорь, спайси соус, рис, нори</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/vugor-gostri-sushi/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/vugor-gostri-sushi.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>59</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2180</g:id>
+            <g:title>YAPPO с креветками</g:title>
+            <g:description>креветка, сыр сливочный, яки соус, рис, нори, унаги соус, кунжут</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/yappo-z-krevetkoyu/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/yappo_z_krevetkoi.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>159</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2182</g:id>
+            <g:title>YAPPO с угрем</g:title>
+            <g:description>краб-крем, угорь, Yappo соус, рис, нори, унаги соус, кунжут</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/yappo-z-vugrem/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/yappo_z_krevetkoi.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>169</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2183</g:id>
+            <g:title>YAPPO</g:title>
+            <g:description>краб-крем, омлет, Yappo соус, унаги соус, рис, нори, кунжут</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/yappo/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/Yappo-1.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>99</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2184</g:id>
+            <g:title>7UP 0,33л</g:title>
+            <g:description></g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/7up-zh-b-033l/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/7up-300x300-1.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>25</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2185</g:id>
+            <g:title>3 сыра</g:title>
+            <g:description>сыр сливочный, омлет, сырный соус, гауда, рис, нори, унаги соус</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/3-syry/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/3syry.jpg</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>159</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2523</g:id>
+            <g:title>Унагі соус 50г</g:title>
+            <g:description></g:description>
+            <g:link><![CDATA[https://dev.yapposushi.com/?post_type=product&p=2523]]></g:link>
+            <g:image_link></g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>20</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2604</g:id>
+            <g:title>Філадельфія Чедер</g:title>
+            <g:description>лосось, сир Чедер, сир вершковий, огірок, спайсі соус, рис, норі</g:description>
+            <g:link>https://dev.yapposushi.com/product/filadelfiya-cheder/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/07/img_8872.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>189</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2620</g:id>
+            <g:title>Унагі 100г</g:title>
+            <g:description></g:description>
+            <g:link><![CDATA[https://dev.yapposushi.com/?post_type=product&p=2620]]></g:link>
+            <g:image_link></g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>35</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2719</g:id>
+            <g:title>Імбир маринований 50г</g:title>
+            <g:description></g:description>
+            <g:link><![CDATA[https://dev.yapposushi.com/?post_type=product&p=2719]]></g:link>
+            <g:image_link></g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>39</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2793</g:id>
+            <g:title>Вугор до ролів 30г</g:title>
+            <g:description></g:description>
+            <g:link><![CDATA[https://dev.yapposushi.com/?post_type=product&p=2793]]></g:link>
+            <g:image_link></g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>79</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2795</g:id>
+            <g:title>Соевий соус</g:title>
+            <g:description></g:description>
+            <g:link><![CDATA[https://dev.yapposushi.com/?post_type=product&p=2795]]></g:link>
+            <g:image_link></g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>5</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2957</g:id>
+            <g:title>Лосось теріякі 50г</g:title>
+            <g:description></g:description>
+            <g:link><![CDATA[https://dev.yapposushi.com/?post_type=product&p=2957]]></g:link>
+            <g:image_link></g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>89</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2958</g:id>
+            <g:title>День захисту дітей</g:title>
+            <g:description></g:description>
+            <g:link><![CDATA[https://dev.yapposushi.com/?post_type=product&p=2958]]></g:link>
+            <g:image_link></g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>0</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2962</g:id>
+            <g:title>Лосось до ролів 100г</g:title>
+            <g:description></g:description>
+            <g:link><![CDATA[https://dev.yapposushi.com/?post_type=product&p=2962]]></g:link>
+            <g:image_link></g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>149</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2963</g:id>
+            <g:title>Лосось до ролів 50г</g:title>
+            <g:description></g:description>
+            <g:link><![CDATA[https://dev.yapposushi.com/?post_type=product&p=2963]]></g:link>
+            <g:image_link></g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>89</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>2981</g:id>
+            <g:title>Пінкі</g:title>
+            <g:description></g:description>
+            <g:link><![CDATA[https://dev.yapposushi.com/?post_type=product&p=2981]]></g:link>
+            <g:image_link></g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>169</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>3036</g:id>
+            <g:title>Филадельфия Чедер</g:title>
+            <g:description>лосось, сыр Чедер, сыр сливочный, огурец, спайси соус, рис, нори</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/filadelfiya-cheder/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/07/img_8872.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>189</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>3056</g:id>
+            <g:title>Пинки</g:title>
+            <g:description>икра, сыр сливочный, краб-крем, огурец, омлет, ветчина, спайси соус, рис, нори.
+            </g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/pinki/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/06/filadelfiya-v-ikri-3.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>169</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>3061</g:id>
+            <g:title>Хатамото</g:title>
+            <g:description>Філадельфія з тунцем, Тартар мікс, Фудзі, Філадельфія, Лососік Хот міні рол</g:description>
+            <g:link>https://dev.yapposushi.com/product/hatamoto/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/07/img_8906.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>589</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>3165</g:id>
+            <g:title>Хатамото</g:title>
+            <g:description>Филадельфия с тунцом, Тартар микс, Фудзи, Филадельфия, Лососик Хот мини ролл</g:description>
+            <g:link>https://dev.yapposushi.com/ru/product/hatamoto/</g:link>
+            <g:image_link>https://dev.yapposushi.com/wp-content/uploads/2023/07/img_8906.png</g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>589</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>3298</g:id>
+            <g:title>Васабі 10г</g:title>
+            <g:description></g:description>
+            <g:link><![CDATA[https://dev.yapposushi.com/?post_type=product&p=3298]]></g:link>
+            <g:image_link></g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>19</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>3301</g:id>
+            <g:title>Сирний соус</g:title>
+            <g:description></g:description>
+            <g:link><![CDATA[https://dev.yapposushi.com/?post_type=product&p=3301]]></g:link>
+            <g:image_link></g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>49</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>3303</g:id>
+            <g:title>Делайт</g:title>
+            <g:description></g:description>
+            <g:link><![CDATA[https://dev.yapposushi.com/?post_type=product&p=3303]]></g:link>
+            <g:image_link></g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>159</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>3307</g:id>
+            <g:title>Удон до супу</g:title>
+            <g:description></g:description>
+            <g:link><![CDATA[https://dev.yapposushi.com/?post_type=product&p=3307]]></g:link>
+            <g:image_link></g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>10</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>3308</g:id>
+            <g:title>Спайсі соус 50г</g:title>
+            <g:description></g:description>
+            <g:link><![CDATA[https://dev.yapposushi.com/?post_type=product&p=3308]]></g:link>
+            <g:image_link></g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>25</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>3309</g:id>
+            <g:title>Шрирачі 10г</g:title>
+            <g:description></g:description>
+            <g:link><![CDATA[https://dev.yapposushi.com/?post_type=product&p=3309]]></g:link>
+            <g:image_link></g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>15</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>3638</g:id>
+            <g:title>Соус Горіховий 50г</g:title>
+            <g:description></g:description>
+            <g:link><![CDATA[https://dev.yapposushi.com/?post_type=product&p=3638]]></g:link>
+            <g:image_link></g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>40</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>3660</g:id>
+            <g:title>7 up 0.5л</g:title>
+            <g:description></g:description>
+            <g:link><![CDATA[https://dev.yapposushi.com/?post_type=product&p=3660]]></g:link>
+            <g:image_link></g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>30</g:price>
+            <g:sale_price></g:sale_price>
+        </item>
+        <item>
+            <g:id>3710</g:id>
+            <g:title>Сир вершковий 20г</g:title>
+            <g:description></g:description>
+            <g:link><![CDATA[https://dev.yapposushi.com/?post_type=product&p=3710]]></g:link>
+            <g:image_link></g:image_link>
+            <g:brand>Yapposushi</g:brand>
+            <g:condition>new</g:condition>
+            <g:availability>available for order</g:availability>
+            <g:price>25</g:price>
+            <g:sale_price></g:sale_price>
         </item>
     </channel>
 </rss>
