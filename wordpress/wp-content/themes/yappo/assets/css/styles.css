@@ -6509,12 +6509,6 @@ span.irs-handle.to:before {
   color: #2A1A5E;
 }
 
-.cart-modal .sum-wrap span:first-child {
-  font-weight: 300;
-  font-size: 16px;
-  color: #262730;
-}
-
 .cart-modal .sum-wrap span .woocommerce-Price-currencySymbol {
   font-size: 20px;
   font-weight: 700;
@@ -7220,6 +7214,12 @@ span.irs-handle.to:before {
 .cart-page .resault-block .price-delivery {
   font-size: 20px;
   font-weight: 400;
+  color: #2A1A5E;
+}
+
+.cart-page .resault-block .product-total {
+  font-size: 20px;
+  font-weight: 700 !important;
   color: #2A1A5E;
 }
 
