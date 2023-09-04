@@ -4,9 +4,8 @@
 import { __, sprintf } from '@wordpress/i18n';
 import { speak } from '@wordpress/a11y';
 import classNames from 'classnames';
-import { useCallback, useLayoutEffect, useRef } from '@wordpress/element';
+import { useCallback, useLayoutEffect } from '@wordpress/element';
 import { DOWN, UP } from '@wordpress/keycodes';
-import { usePrevious } from '@woocommerce/base-hooks';
 import { useDebouncedCallback } from 'use-debounce';
 
 /**
@@ -68,52 +67,9 @@ const QuantitySelector = ( {
 		className
 	);
 
-	const inputRef = useRef< HTMLInputElement | null >( null );
-	const decreaseButtonRef = useRef< HTMLButtonElement | null >( null );
-	const increaseButtonRef = useRef< HTMLButtonElement | null >( null );
 	const hasMaximum = typeof maximum !== 'undefined';
-	const canDecrease = ! disabled && quantity - step >= minimum;
-	const canIncrease =
-		! disabled && ( ! hasMaximum || quantity + step <= maximum );
-	const previousCanDecrease = usePrevious( canDecrease );
-	const previousCanIncrease = usePrevious( canIncrease );
-
-	// When the increase or decrease buttons get disabled, the focus
-	// gets moved to the `<body>` element. This was causing weird
-	// issues in the Mini-Cart block, as the drawer expects focus to be
-	// inside.
-	// To fix this, we move the focus to the text input after the
-	// increase or decrease buttons get disabled. We only do that if
-	// the focus is on the button or the body element.
-	// See https://github.com/woocommerce/woocommerce-blocks/pull/9345
-	useLayoutEffect( () => {
-		// Refs are not available yet, so abort.
-		if (
-			! inputRef.current ||
-			! decreaseButtonRef.current ||
-			! increaseButtonRef.current
-		) {
-			return;
-		}
-
-		const currentDocument = inputRef.current.ownerDocument;
-		if (
-			previousCanDecrease &&
-			! canDecrease &&
-			( currentDocument.activeElement === decreaseButtonRef.current ||
-				currentDocument.activeElement === currentDocument.body )
-		) {
-			inputRef.current.focus();
-		}
-		if (
-			previousCanIncrease &&
-			! canIncrease &&
-			( currentDocument.activeElement === increaseButtonRef.current ||
-				currentDocument.activeElement === currentDocument.body )
-		) {
-			inputRef.current.focus();
-		}
-	}, [ previousCanDecrease, previousCanIncrease, canDecrease, canIncrease ] );
+	const canDecrease = quantity - step >= minimum;
+	const canIncrease = ! hasMaximum || quantity + step <= maximum;
 
 	/**
 	 * The goal of this function is to normalize what was inserted,
@@ -198,7 +154,6 @@ const QuantitySelector = ( {
 	return (
 		<div className={ classes }>
 			<input
-				ref={ inputRef }
 				className="wc-block-components-quantity-selector__input"
 				disabled={ disabled }
 				type="number"
@@ -231,7 +186,6 @@ const QuantitySelector = ( {
 				) }
 			/>
 			<button
-				ref={ decreaseButtonRef }
 				aria-label={ sprintf(
 					/* translators: %s refers to the item name in the cart. */
 					__(
@@ -241,7 +195,7 @@ const QuantitySelector = ( {
 					itemName
 				) }
 				className="wc-block-components-quantity-selector__button wc-block-components-quantity-selector__button--minus"
-				disabled={ ! canDecrease }
+				disabled={ disabled || ! canDecrease }
 				onClick={ () => {
 					const newQuantity = quantity - step;
 					onChange( newQuantity );
@@ -261,7 +215,6 @@ const QuantitySelector = ( {
 				&#65293;
 			</button>
 			<button
-				ref={ increaseButtonRef }
 				aria-label={ sprintf(
 					/* translators: %s refers to the item's name in the cart. */
 					__(
@@ -270,7 +223,7 @@ const QuantitySelector = ( {
 					),
 					itemName
 				) }
-				disabled={ ! canIncrease }
+				disabled={ disabled || ! canIncrease }
 				className="wc-block-components-quantity-selector__button wc-block-components-quantity-selector__button--plus"
 				onClick={ () => {
 					const newQuantity = quantity + step;

@@ -867,7 +867,7 @@ class ListTable extends WP_List_Table {
 	public function column_cb( $item ) {
 		ob_start();
 		?>
-		<input id="cb-select-<?php echo esc_attr( $item->get_id() ); ?>" type="checkbox" name="<?php echo esc_attr( $this->_args['singular'] ); ?>[]" value="<?php echo esc_attr( $item->get_id() ); ?>" />
+		<input id="cb-select-<?php echo esc_attr( $item->get_id() ); ?>" type="checkbox" name="<?php echo esc_attr( $this->_args['singular'] ); ?>" value="<?php echo esc_attr( $item->get_id() ); ?>" />
 
 		<div class="locked-indicator">
 			<span class="locked-indicator-icon" aria-hidden="true"></span>
@@ -1217,9 +1217,8 @@ class ListTable extends WP_List_Table {
 			exit;
 		}
 
-		$report_action  = '';
-		$changed        = 0;
-		$action_handled = true;
+		$report_action = '';
+		$changed       = 0;
 
 		if ( 'remove_personal_data' === $action ) {
 			$report_action = 'removed_personal_data';
@@ -1240,15 +1239,8 @@ class ListTable extends WP_List_Table {
 
 			if ( isset( $order_statuses[ 'wc-' . $new_status ] ) ) {
 				$changed = $this->do_bulk_action_mark_orders( $ids, $new_status );
-			} else {
-				$action_handled = false;
 			}
 		} else {
-			$action_handled = false;
-		}
-
-		// Custom action.
-		if ( ! $action_handled ) {
 			$screen = get_current_screen()->id;
 
 			/**

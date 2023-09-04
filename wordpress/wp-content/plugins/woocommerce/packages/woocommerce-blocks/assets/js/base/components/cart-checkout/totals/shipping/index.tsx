@@ -19,11 +19,7 @@ import { useSelect } from '@wordpress/data';
  * Internal dependencies
  */
 import ShippingCalculator from '../../shipping-calculator';
-import {
-	hasShippingRate,
-	getTotalShippingValue,
-	areShippingMethodsMissing,
-} from './utils';
+import { hasShippingRate, getTotalShippingValue } from './utils';
 import ShippingPlaceholder from './shipping-placeholder';
 import ShippingAddress from './shipping-address';
 import ShippingRateSelector from './shipping-rate-selector';
@@ -78,12 +74,8 @@ export const TotalsShipping = ( {
 				.flatMap( ( rate ) => rate.name );
 		}
 	);
+
 	const addressComplete = isAddressComplete( shippingAddress );
-	const shippingMethodsMissing = areShippingMethodsMissing(
-		hasRates,
-		prefersCollection,
-		shippingRates
-	);
 
 	return (
 		<div
@@ -95,10 +87,10 @@ export const TotalsShipping = ( {
 			<TotalsItem
 				label={ __( 'Shipping', 'woo-gutenberg-products-block' ) }
 				value={
-					! shippingMethodsMissing && cartHasCalculatedShipping
-						? // if address is not complete, display the link to add an address.
-						  totalShippingValue
-						: ( ! addressComplete || isCheckout ) && (
+					hasRates && cartHasCalculatedShipping
+						? totalShippingValue
+						: // if address is not complete, display the link to add an address.
+						  ! addressComplete && (
 								<ShippingPlaceholder
 									showCalculator={ showCalculator }
 									isCheckout={ isCheckout }
@@ -112,9 +104,9 @@ export const TotalsShipping = ( {
 						  )
 				}
 				description={
-					( ! shippingMethodsMissing && cartHasCalculatedShipping ) ||
 					// If address is complete, display the shipping address.
-					( addressComplete && ! isCheckout ) ? (
+					( hasRates && cartHasCalculatedShipping ) ||
+					addressComplete ? (
 						<>
 							<ShippingVia
 								selectedShippingRates={ selectedShippingRates }

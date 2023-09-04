@@ -292,13 +292,7 @@ class WC_Session_Handler extends WC_Session {
 			return false;
 		}
 
-		$parsed_cookie = explode( '||', $cookie_value );
-
-		if ( count( $parsed_cookie ) < 4 ) {
-			return false;
-		}
-
-		list( $customer_id, $session_expiration, $session_expiring, $cookie_hash ) = $parsed_cookie;
+		list( $customer_id, $session_expiration, $session_expiring, $cookie_hash ) = explode( '||', $cookie_value );
 
 		if ( empty( $customer_id ) ) {
 			return false;

@@ -420,6 +420,26 @@
       margin-right: auto;
       justify-content: center;
 
+      .text-span{
+        color: rgba(50,53,73,.7);
+        font-size: 14px;
+        font-weight: 400;
+      }
+      .text-span-price{
+        margin-right: 1.3rem;
+        @include media-for(null, 1450px) {
+          margin-right: 1.1rem;
+        }
+
+
+        @include media-for(null, 1400px) {
+          margin-right: .5rem;
+        }
+
+        @include media-for(null, 1200px) {
+          margin-right: 1.6rem;
+        }
+      }
       @include media-for(null, $sm) {
 
         width: 6rem;
@@ -436,7 +456,22 @@
         @include media-for(null, $sm) {
           font-size: 14px;
           margin-left: 0;
-          margin-left: .3rem;
+          text-align: left;
+        }
+
+
+      }
+
+      span{
+        font-weight: 700;
+        font-size: 20px;
+        color: $accent;
+        width: 100%;
+        text-align: right;
+        @include media-for(null, $sm) {
+          font-size: 14px;
+          margin-left: 0;
+          
           text-align: left;
         }
 
@@ -448,21 +483,67 @@
     }
 
     .product__cart__info-discount {
+        span{
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          @include media-for(null, $sm) {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+          }
+        }
 
-      .price {
-        color: #FF671D !important;
-        margin-left: .5rem;
-      }
+        .price {
+          color: #FF671D !important;
+          max-width: 50px;
+          display: flex;
+          @include media-for(null, $sm) {
+            display: flex;
+            width: 45%;
+            
+          }
+
+
+          span{
+            font-weight: 300;
+            font-size: 20px;
+            text-decoration: line-through;
+            color: #FF671D !important;
+            @include media-for(null, $sm) {
+              font-size: 14px; 
+            }
+          }
+        }
 
       .regular-price {
-        display: block;
+        display:flex;
         font-weight: 300;
         font-size: 14px;
         text-decoration: line-through;
         color: rgba($color: #323549, $alpha: .7);
-
+        margin-left: auto;
+        width: 45px;
         @include media-for(null, $sm) {
           font-size: 10px;
+          padding-top: .3rem;
+          width: 55px;
+        }
+
+        span{
+          display: block;
+          font-weight: 300;
+          font-size: 14px;
+          text-decoration: line-through;
+          color: rgba($color: #323549, $alpha: .7);
+  
+          @include media-for(null, $sm) {
+            font-size: 10px;
+          }
+        }
+
+        .woocommerce-Price-currencySymbol{
+          width: 10px;
         }
 
       }
@@ -474,10 +555,12 @@
       font-weight: 700;
       color: $accent;
       width: 6rem;
+      
 
       @include media-for(null, $sm) {
         font-size: 14px;
         width: 4rem;
+       
       }
     }
 
@@ -485,6 +568,10 @@
       color: rgba($color: #323549, $alpha: .7);
       font-size: 14px;
       font-weight: 400;
+
+      &:nth-of-type(even) {
+        text-align: right;
+      }
 
       @include media-for(null, $tablet) {
         height: 10px;

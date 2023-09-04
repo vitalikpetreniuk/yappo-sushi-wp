@@ -1,14 +1,16 @@
 .modal-search{
-    position: absolute;
+    position: fixed;
     width: 100%;
     background: #F3F3F3;
     overflow-y: scroll;
     z-index: 50;
     text-align: center;
-    padding: 142px 0 0;
+    // padding: 142px 0 0;
     opacity: 0;
     z-index: -100;
     display: none;
+    min-height: 100vh!important;
+    height: 100vh !important;
 
     @include media-for (null, $tablet){
         padding-bottom: 430px;
@@ -22,13 +24,43 @@
     }
 
 
+    
+
+
     &::-webkit-scrollbar {
         width: 0;
     }
 
+    .probox{
+        position: relative;
+        overflow: visible !important;
+
+        .close-open-search{
+            position: absolute;
+            right: -100%;
+            right: -4%;
+            top: 0.2rem;
+
+            // @include media-for (null, $sm){
+            //     display: none !important;
+            // }
+        }
+        .proclose {
+            @include media-for (null, $sm){
+                display: none!important;
+            }
+        }
+        .proloading{
+            @include media-for (null, $sm){
+                // display: none!important;
+                margin-right: 1.5rem;
+            }
+        }
+    }
+
     .form-wrap{
         position: fixed;
-        top: 7rem;
+        top: 2rem;
         width: 100%;
         left: 50%;
         -webkit-transform: translateX(-50%);
@@ -40,18 +72,26 @@
         padding-top: 6.5rem;
         transition: all .1s ease-in;
 
-        @include media-for (null, $tablet){
-            top:8.5rem;
-        }
+        // @include media-for (null, $tablet){
+        //     top:8.5rem;
+        // }
 
-        @include media-for (null, $sm){
-            top:5.5rem;
-        }
+        // @include media-for (null, $sm){
+        //     top:5.5rem;
+        // }
 
         button{
             @include media-for (null, $sm){
                 display: none;
             }
+        }
+
+        #ajaxsearchpro1_1,  div.asp_m.asp_m_1 {
+            @include media-for (null, 1025px){
+                width: 95% !important;
+                overflow: visible !important;
+            }
+            
         }
 
     }
@@ -151,32 +191,41 @@
 .asp_w.asp_r .results{
     width: 100% !important;
     margin-top: 30px !important;
-    padding: 0 100px !important;
     box-sizing: border-box !important;
     background: #f3f3f3 !important;
-
-    @include media-for (null, $desktop){
-        padding: 0 50px !important;
-        margin-top: 30px !important;
-    }
-
     @include media-for (null, $sm){
-        padding: 0 15px !important;
+        margin-top: 0px !important;
     }
-
     .resdrg {
         display: flex;
         flex-wrap: wrap;
         column-gap: 30px;
-
-        max-height: calc(100vh - 293px);
+        padding-bottom: 2rem;
+        // max-height: 76vh;
         overflow-y: scroll;
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
+        padding: 0 100px!important;
+        
 
-        @include media-for (null, $sm){
-            max-height: calc(100vh - 268px);
+        @include media-for (null, $desktop){
+            padding: 0 50px !important;
+            margin-top: 30px !important;
         }
+
+        @include media-for (null, 1025px){
+            // max-height: 80vh !important;
+        }
+
+        @include media-for (null, $tablet){
+            // max-height: 73vh !important;
+        }
+    
+        @include media-for (null, $sm){
+            padding: 0 15px !important;
+            // max-height: 66vh !important;
+        }
+
 
         &::-webkit-scrollbar {
             display: none;
@@ -765,6 +814,8 @@
     opacity: 1;
     z-index: 50;
     display: block;
+    overflow: hidden;
+
 }
 
 .form-search-btn{
@@ -778,5 +829,10 @@
         top: 50%;
         transform: translate(-50%,-50%);
     }
+}
+
+#ajaxsearchprores1_1{
+    display: none ;
+    width: 100% !important;
 }
 

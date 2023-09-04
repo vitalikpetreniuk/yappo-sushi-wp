@@ -26,12 +26,10 @@ export const registerBlockSingleProductTemplate = ( {
 	blockSettings,
 	isVariationBlock = false,
 	variationName,
-	isAvailableOnPostEditor,
 }: {
 	blockName: string;
 	blockMetadata: Partial< BlockConfiguration >;
 	blockSettings: Partial< BlockConfiguration >;
-	isAvailableOnPostEditor: boolean;
 	isVariationBlock?: boolean;
 	variationName?: string;
 } ) => {
@@ -99,7 +97,7 @@ export const registerBlockSingleProductTemplate = ( {
 		// This subscribe callback could be invoked with the core/blocks store
 		// which would cause infinite registration loops because of the `registerBlockType` call.
 		// This local cache helps prevent that.
-		if ( ! isBlockRegistered && isAvailableOnPostEditor ) {
+		if ( ! isBlockRegistered ) {
 			if ( isVariationBlock ) {
 				blocksRegistered.add( variationName );
 				registerBlockVariation(

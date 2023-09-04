@@ -49,11 +49,15 @@
 .is-large {
 	.wc-block-components-sidebar {
 		.wc-block-components-totals-item,
-		.wc-block-components-panel,
-		.wc-block-components-totals-coupon {
+		.wc-block-components-panel {
 			padding-left: $gap;
 			padding-right: $gap;
 		}
+		.wc-block-components-totals-coupon-link {
+			margin-left: $gap;
+			margin-right: $gap;
+		}
+
 		.wc-block-components-panel {
 			.wc-block-components-totals-item {
 				padding: 0;

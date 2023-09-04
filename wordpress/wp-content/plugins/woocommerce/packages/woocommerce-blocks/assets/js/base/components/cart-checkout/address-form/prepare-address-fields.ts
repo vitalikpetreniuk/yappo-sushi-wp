@@ -8,12 +8,20 @@ import {
 	AddressFields,
 	CountryAddressFields,
 	defaultAddressFields,
+	getSetting,
 	KeyedAddressField,
 	LocaleSpecificAddressField,
 } from '@woocommerce/settings';
 import { __, sprintf } from '@wordpress/i18n';
 import { isNumber, isString } from '@woocommerce/types';
-import { COUNTRY_LOCALE } from '@woocommerce/block-settings';
+
+/**
+ * This is locale data from WooCommerce countries class. This doesn't match the shape of the new field data blocks uses,
+ * but we can import part of it to set which fields are required.
+ *
+ * This supports new properties such as optionalLabel which are not used by core (yet).
+ */
+const coreLocale = getSetting< CountryAddressFields >( 'countryLocale', {} );
 
 /**
  * Gets props from the core locale, then maps them to the shape we require in the client.
@@ -64,15 +72,7 @@ const getSupportedCoreLocaleProps = (
 	return fields;
 };
 
-/**
- * COUNTRY_LOCALE is locale data from WooCommerce countries class. This doesn't match the shape of the new field data blocks uses,
- * but we can import part of it to set which fields are required.
- *
- * This supports new properties such as optionalLabel which are not used by core (yet).
- */
-const countryAddressFields: CountryAddressFields = Object.entries(
-	COUNTRY_LOCALE
-)
+const countryAddressFields: CountryAddressFields = Object.entries( coreLocale )
 	.map( ( [ country, countryLocale ] ) => [
 		country,
 		Object.entries( countryLocale )

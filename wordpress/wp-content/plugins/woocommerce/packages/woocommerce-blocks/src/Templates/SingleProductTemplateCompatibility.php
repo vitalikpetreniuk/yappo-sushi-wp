@@ -241,11 +241,10 @@ class SingleProductTemplateCompatibility extends AbstractTemplateCompatibility {
 			),
 			'woocommerce_after_single_product_summary'  => array(
 				'block_name' => 'woocommerce/product-details',
-				'position'   => 'after',
+				'position'   => 'before',
 				'hooked'     => array(
 					'woocommerce_output_product_data_tabs' => 10,
-					// We want to display the upsell products after the last block that belongs to the Single Product.
-					// 'woocommerce_upsell_display'           => 15.
+					'woocommerce_upsell_display'           => 15,
 					'woocommerce_output_related_products'  => 20,
 				),
 			),

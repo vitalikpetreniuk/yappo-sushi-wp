@@ -60,11 +60,10 @@ class ProductRating extends AbstractBlock {
 	private function parse_attributes( $attributes ) {
 		// These should match what's set in JS `registerBlockType`.
 		$defaults = array(
-			'productId'                           => 0,
-			'isDescendentOfQueryLoop'             => false,
-			'textAlign'                           => '',
-			'isDescendentOfSingleProductBlock'    => false,
-			'isDescendentOfSingleProductTemplate' => false,
+			'productId'               => 0,
+			'isDescendentOfQueryLoop' => false,
+			'textAlign'         => '',
+			'isDescendentOfSingleProductBlock'           => false,
 		);
 
 		return wp_parse_args( $attributes, $defaults );
@@ -106,11 +105,10 @@ class ProductRating extends AbstractBlock {
 		$product = wc_get_product( $post_id );
 
 		if ( $product ) {
-			$product_reviews_count                    = $product->get_review_count();
-			$product_rating                           = $product->get_average_rating();
-			$parsed_attributes                        = $this->parse_attributes( $attributes );
-			$is_descendent_of_single_product_block    = $parsed_attributes['isDescendentOfSingleProductBlock'];
-			$is_descendent_of_single_product_template = $parsed_attributes['isDescendentOfSingleProductTemplate'];
+			$product_reviews_count = $product->get_review_count();
+			$product_rating = $product->get_average_rating();
+			$parsed_attributes = $this->parse_attributes( $attributes );
+			$is_descendent_of_single_product_block = $parsed_attributes['isDescendentOfSingleProductBlock'];
 
 			$styles_and_classes            = StyleAttributesUtils::get_classes_and_styles_by_attributes( $attributes );
 			$text_align_styles_and_classes = StyleAttributesUtils::get_text_align_class_and_style( $attributes );
@@ -123,10 +121,10 @@ class ProductRating extends AbstractBlock {
 			 * @param int    $count  Total number of ratings.
 			 * @return string
 			 */
-			$filter_rating_html = function( $html, $rating, $count ) use ( $product_rating, $product_reviews_count, $is_descendent_of_single_product_block, $is_descendent_of_single_product_template ) {
+			$filter_rating_html = function( $html, $rating, $count ) use ( $product_rating, $product_reviews_count, $is_descendent_of_single_product_block ) {
 				$product_permalink = get_permalink();
-				$reviews_count     = $count;
-				$average_rating    = $rating;
+				$reviews_count = $count;
+				$average_rating = $rating;
 
 				if ( $product_rating ) {
 					$average_rating = $product_rating;
@@ -138,7 +136,7 @@ class ProductRating extends AbstractBlock {
 
 				if ( 0 < $average_rating || false === $product_permalink ) {
 					/* translators: %s: rating */
-					$label                  = sprintf( __( 'Rated %s out of 5', 'woocommerce' ), $average_rating );
+					$label = sprintf( __( 'Rated %s out of 5', 'woocommerce' ), $average_rating );
 					$customer_reviews_count = sprintf(
 						/* translators: %s is referring to the total of reviews for a product */
 						_n(
@@ -149,15 +147,13 @@ class ProductRating extends AbstractBlock {
 						),
 						esc_html( $reviews_count )
 					);
-
-					if ( $is_descendent_of_single_product_block ) {
-						$customer_reviews_count = '<a href="' . esc_url( $product_permalink ) . '#reviews">' . $customer_reviews_count . '</a>';
-					} elseif ( $is_descendent_of_single_product_template ) {
-						$customer_reviews_count = '<a class="woocommerce-review-link" rel="nofollow" href="#reviews">' . $customer_reviews_count . '</a>';
-					}
-
-					$reviews_count_html = sprintf( '<span class="wc-block-components-product-rating__reviews_count">%1$s</span>', $customer_reviews_count );
-					$html               = sprintf(
+					$reviews_count_html = sprintf(
+						'<span class="wc-block-components-product-rating__reviews_count">
+							%1$s
+						</span>',
+						$customer_reviews_count
+					);
+					$html  = sprintf(
 						'<div class="wc-block-components-product-rating__container">
 							<div class="wc-block-components-product-rating__stars wc-block-grid__product-rating__stars" role="img" aria-label="%1$s">
 								%2$s
@@ -167,10 +163,11 @@ class ProductRating extends AbstractBlock {
 						',
 						esc_attr( $label ),
 						wc_get_star_rating_html( $average_rating, $reviews_count ),
-						$is_descendent_of_single_product_block || $is_descendent_of_single_product_template ? $reviews_count_html : ''
+						$is_descendent_of_single_product_block ? $reviews_count_html : ''
 					);
 				} else {
-					$html = '';
+					$product_review_url = esc_url( $product_permalink . '#reviews' );
+					$html               = '<a class="wc-block-components-product-rating__link" href="' . $product_review_url . '">' . __( 'Add review', 'woocommerce' ) . '</a>';
 				}
 
 				return $html;
@@ -187,7 +184,7 @@ class ProductRating extends AbstractBlock {
 
 			remove_filter(
 				'woocommerce_product_get_rating_html',
-				$filter_rating_html,
+				[ $this, 'filter_rating_html' ],
 				10
 			);
 

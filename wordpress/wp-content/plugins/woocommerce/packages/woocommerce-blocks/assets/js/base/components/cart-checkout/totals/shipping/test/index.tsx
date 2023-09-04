@@ -192,7 +192,7 @@ describe( 'TotalsShipping', () => {
 					} }
 					showCalculator={ true }
 					showRateSelector={ true }
-					isCheckout={ false }
+					isCheckout={ true }
 					className={ '' }
 				/>
 			</SlotFillProvider>
@@ -237,7 +237,7 @@ describe( 'TotalsShipping', () => {
 					} }
 					showCalculator={ true }
 					showRateSelector={ true }
-					isCheckout={ false }
+					isCheckout={ true }
 					className={ '' }
 				/>
 			</SlotFillProvider>
@@ -282,7 +282,7 @@ describe( 'TotalsShipping', () => {
 					} }
 					showCalculator={ true }
 					showRateSelector={ true }
-					isCheckout={ false }
+					isCheckout={ true }
 					className={ '' }
 				/>
 			</SlotFillProvider>

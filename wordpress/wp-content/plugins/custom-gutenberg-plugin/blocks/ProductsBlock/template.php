@@ -61,6 +61,7 @@ if ( @$block['data']['preview_image_help'] ) : ?>
 
 				$loop = new WP_Query( $args );
 				?>
+
 				<?php if ( isset( $loop ) && $loop->have_posts() ) {
 					$i = 0;
 					while ( $loop->have_posts() ) {

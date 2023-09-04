@@ -14,7 +14,11 @@
 
 get_header();
 global $post;
-$post_id = $post->ID; ?>
+$post_id = $post->ID;
+$product = wc_get_product();
+$attributes = $product->get_attributes();
+print_r($attributes);
+?> 
 
 
   <section class="news-page">
@@ -22,8 +26,8 @@ $post_id = $post->ID; ?>
       <div class="row align-items-start mb-md-5 mb-3">
         <div class="col-3 pe-0  d-none d-lg-block">
             <?php if (function_exists('yoast_breadcrumb')) {
-                if (get_locale() == 'ru_RU') echo str_replace('Головна', 'Главная', yoast_breadcrumb('<ul class="breadcrumbs">', '</ul>', false));
-                else echo yoast_breadcrumb('<ul class="breadcrumbs">', '</ul>');
+                if (get_locale() == 'ru_RU') echo str_replace('Головна', 'Главная', yoast_breadcrumb('<ul class="breadcrumbs"  itemscope itemtype="https://schema.org/BreadcrumbList">', '</ul>', false));
+                else echo yoast_breadcrumb('<ul class="breadcrumbs"  itemscope itemtype="https://schema.org/BreadcrumbList">', '</ul>');
             } ?>
         </div>
       </div>

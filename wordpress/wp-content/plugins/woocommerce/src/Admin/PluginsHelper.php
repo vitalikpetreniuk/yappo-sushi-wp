@@ -33,7 +33,7 @@ class PluginsHelper {
 	 */
 	public static function init() {
 		add_action( 'woocommerce_plugins_install_callback', array( __CLASS__, 'install_plugins' ), 10, 2 );
-		add_action( 'woocommerce_plugins_install_and_activate_async_callback', array( __CLASS__, 'install_and_activate_plugins_async_callback' ), 10, 2 );
+		add_action( 'woocommerce_plugins_install_async_callback', array( __CLASS__, 'install_plugins_async_callback' ), 10, 2 );
 		add_action( 'woocommerce_plugins_activate_callback', array( __CLASS__, 'activate_plugins' ), 10, 2 );
 	}
 
@@ -318,19 +318,18 @@ class PluginsHelper {
 	}
 
 	/**
-	 * Callback regsitered by OnboardingPlugins::install_and_activate_async.
+	 * Callback regsitered by OnboardingPlugins::install_async.
 	 *
-	 * It is used to call install_plugins and activate_plugins with a custom logger.
+	 * It is used to call install_plugins with a custom logger.
 	 *
 	 * @param array  $plugins A list of plugins to install.
 	 * @param string $job_id An unique job I.D.
 	 * @return bool
 	 */
-	public static function install_and_activate_plugins_async_callback( array $plugins, string $job_id ) {
-		$option_name = 'woocommerce_onboarding_plugins_install_and_activate_async_' . $job_id;
+	public function install_plugins_async_callback( array $plugins, string $job_id ) {
+		$option_name = 'woocommerce_onboarding_plugins_install_async_' . $job_id;
 		$logger      = new AsyncPluginsInstallLogger( $option_name );
 		self::install_plugins( $plugins, $logger );
-		self::activate_plugins( $plugins, $logger );
 		return true;
 	}
 
@@ -359,12 +358,11 @@ class PluginsHelper {
 	/**
 	 * Activate the requested plugins.
 	 *
-	 * @param array                     $plugins Plugins.
-	 * @param PluginsInstallLogger|null $logger Logger.
+	 * @param array $plugins Plugins.
 	 *
 	 * @return WP_Error|array Plugin Status
 	 */
-	public static function activate_plugins( $plugins, PluginsInstallLogger $logger = null ) {
+	public static function activate_plugins( $plugins ) {
 		if ( empty( $plugins ) || ! is_array( $plugins ) ) {
 			return new WP_Error(
 				'woocommerce_plugins_invalid_plugins',
@@ -396,13 +394,11 @@ class PluginsHelper {
 			$path = isset( $plugin_paths[ $slug ] ) ? $plugin_paths[ $slug ] : false;
 
 			if ( ! $path ) {
-				/* translators: %s: plugin slug (example: woocommerce-services) */
-				$message = sprintf( __( 'The requested plugin `%s`. is not yet installed.', 'woocommerce' ), $slug );
 				$errors->add(
 					$plugin,
-					$message
+					/* translators: %s: plugin slug (example: woocommerce-services) */
+					sprintf( __( 'The requested plugin `%s`. is not yet installed.', 'woocommerce' ), $slug )
 				);
-				$logger && $logger->add_error( $plugin, $message );
 				continue;
 			}
 
@@ -418,19 +414,15 @@ class PluginsHelper {
 				 */
 				do_action( 'woocommerce_plugins_activate_error', $slug, $result );
 
-				/* translators: %s: plugin slug (example: woocommerce-services) */
-				$message = sprintf( __( 'The requested plugin `%s` could not be activated.', 'woocommerce' ), $slug );
 				$errors->add(
 					$plugin,
-					$message
+					/* translators: %s: plugin slug (example: woocommerce-services) */
+					sprintf( __( 'The requested plugin `%s` could not be activated.', 'woocommerce' ), $slug )
 				);
-				$logger && $logger->add_error( $plugin, $message );
-
 				continue;
 			}
 
 			$activated_plugins[] = $plugin;
-			$logger && $logger->activated( $plugin );
 		}
 
 		$data = array(

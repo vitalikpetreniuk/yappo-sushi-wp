@@ -20,6 +20,7 @@ import isShallowEqual from '@wordpress/is-shallow-equal';
 import { STORE_KEY } from './constants';
 import { VALIDATION_STORE_KEY } from '../validation';
 import { processErrorResponse } from '../utils';
+import { shippingAddressHasValidationErrors } from './utils';
 
 type CustomerData = {
 	billingAddress: CartBillingAddress;
@@ -210,6 +211,11 @@ const updateCustomerData = debounce( (): void => {
 							customerDataToUpdate.shipping_address
 						) as BaseAddressKey[] ),
 					];
+				}
+			} )
+			.finally( () => {
+				if ( ! shippingAddressHasValidationErrors() ) {
+					dispatch( STORE_KEY ).setFullShippingAddressPushed( true );
 				}
 			} );
 	}

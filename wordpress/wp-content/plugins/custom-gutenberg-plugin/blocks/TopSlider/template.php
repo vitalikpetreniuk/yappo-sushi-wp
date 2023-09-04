@@ -30,9 +30,7 @@ if ( @$block['data']['preview_image_help'] ) : ?>
 								<?= wp_get_attachment_image( get_sub_field( 'image' ), 'full' ) ?>
 							</a>
 						</div>
-
 					<?php
-
 					endwhile;
 				endif; ?>
 

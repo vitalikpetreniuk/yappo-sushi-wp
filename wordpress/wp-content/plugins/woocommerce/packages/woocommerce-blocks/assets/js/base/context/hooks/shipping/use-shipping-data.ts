@@ -94,10 +94,6 @@ export const useShippingData = (): ShippingData => {
 		): void => {
 			let selectPromise;
 
-			if ( typeof newShippingRateId === 'undefined' ) {
-				return;
-			}
-
 			/**
 			 * Picking location handling
 			 *

@@ -479,6 +479,13 @@ export const updateCustomerData =
 		}
 	};
 
+export const setFullShippingAddressPushed = (
+	fullShippingAddressPushed: boolean
+) => ( {
+	type: types.SET_FULL_SHIPPING_ADDRESS_PUSHED,
+	fullShippingAddressPushed,
+} );
+
 type Actions =
 	| typeof addItemToCart
 	| typeof applyCoupon
@@ -499,6 +506,7 @@ type Actions =
 	| typeof setShippingAddress
 	| typeof shippingRatesBeingSelected
 	| typeof updateCustomerData
+	| typeof setFullShippingAddressPushed
 	| typeof updatingCustomerData;
 
 export type CartAction = ReturnOrGeneratorYieldUnion< Actions | Thunks >;

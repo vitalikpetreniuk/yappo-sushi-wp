@@ -13,14 +13,6 @@ defined( 'ABSPATH' ) || exit;
  * rule evaluates to false.
  */
 class RuleEvaluator {
-
-	/**
-	 * GetRuleProcessor to use.
-	 *
-	 * @var GetRuleProcessor
-	 */
-	private $get_rule_processor;
-
 	/**
 	 * Constructor.
 	 *

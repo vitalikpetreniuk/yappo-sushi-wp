@@ -20,7 +20,7 @@
 
         @include media-for (null, $sm){
             padding: 60px 0 30px;
-            margin-top: -35px;
+            margin-top: 0px;
         } 
 
         a{
@@ -33,6 +33,24 @@
 
             max-height: 500px;
 
+            @include media-for (null, $sm){
+                height: 184px;
+
+                a{
+                    display: block;
+                    height: 184px;
+                    width: 100%;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        display: block;
+                    }
+                }
+
+            }
+
             img {
                 width: 100%;
                 height: 100%;
@@ -43,6 +61,7 @@
                 border: 1px solid rgba($color: #000000, $alpha: .05);
                 border-radius: 55px;
                 overflow: hidden;
+                display: block;
 
                 @include media-for (null, $sm){
                     border-radius: 20px;

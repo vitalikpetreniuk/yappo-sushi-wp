@@ -73,8 +73,14 @@ function yappo_styles()
         YAPPO_VERSION
     );
     wp_enqueue_style(
+        'yappo-rangestyle',
+        get_theme_file_uri('assets/libs/ion.rangeSlider.min.css'),
+        [],
+        time()
+    );
+    wp_enqueue_style(
         'yappo-css',
-        get_theme_file_uri('assets/css/style.min.css'),
+        get_theme_file_uri('assets/css/styles.min.css'),
         [],
         time()
     );
@@ -85,7 +91,7 @@ function yappo_styles()
         time()
     );
 
-    $deps = ['jquery'];
+    $deps = ['jquery', 'yappo-rangeslider'];
 
     if (is_checkout()) {
         wp_enqueue_script('yappo-mask', get_theme_file_uri('assets/libs/jquery.mask.min.js'));
@@ -93,6 +99,7 @@ function yappo_styles()
     }
 
     wp_enqueue_script('yappo-swiper', get_theme_file_uri('assets/libs/swiper.min.js'));
+    wp_enqueue_script('yappo-rangeslider', get_theme_file_uri('assets/libs/ion.rangeSlider.min.js'));
 
     wp_enqueue_script('yappo-script', get_theme_file_uri('assets/js/scripts.min.js'), $deps, time());
     wp_enqueue_script('yappo-backend', get_theme_file_uri('assets/js/backend.js'), array('jquery'), time());
@@ -125,14 +132,13 @@ function theme_register_nav_menu()
 
 require_once 'inc/shop-functions.php';
 require_once 'inc/functions-sasha.php';
-require_once 'inc/functions-crm.php';
 
 function yappo_lang_opener($classes = '')
 { ?>
-    <div class="lang lang-desctop <?= $classes ?>">
+  <div class="lang lang-desctop <?= $classes ?>">
 
-        <div class="d-flex align-items-center justify-content-start">
-            <?php echo do_shortcode('[wpml_language_switcher]
+    <div class="d-flex align-items-center justify-content-start">
+        <?php echo do_shortcode('[wpml_language_switcher]
 			<div class="{{ css_classes }} lang-desctop-wrap">
 			
 			   {% for code, language in languages %}
@@ -145,17 +151,17 @@ function yappo_lang_opener($classes = '')
 			</div>
 			[/wpml_language_switcher]'); ?>
 
-            <div class="arrow-wrap">
-                <svg width="8" height="6" viewBox="0 0 8 6" fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 1L3.8 5L7 1" stroke="black" stroke-linecap="round"
-                          stroke-linejoin="round"/>
-                </svg>
-            </div>
-        </div>
+      <div class="arrow-wrap">
+        <svg width="8" height="6" viewBox="0 0 8 6" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 1L3.8 5L7 1" stroke="black" stroke-linecap="round"
+                stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </div>
 
 
-        <?php echo do_shortcode('[wpml_language_switcher]
+      <?php echo do_shortcode('[wpml_language_switcher]
 								<div class="{{ css_classes }} lang-list">
 
 								   {% for code, language in languages %}
@@ -168,7 +174,7 @@ function yappo_lang_opener($classes = '')
 								</div>
 								[/wpml_language_switcher]') ?>
 
-    </div>
+  </div>
 
     <?php
 }
@@ -218,12 +224,12 @@ add_action('loop_end', function ($q) {
  * @return string
  */
 function doublee_filter_yoast_breadcrumb_items($link_output, $link)
-{
-
-    $new_link_output = '<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">';
-    $new_link_output .= '<a href="' . $link['url'] . '" title="' . $link['text'] . '" itemprop="url">' . $link['text'] . '</a>';
+{ ?>
+    <?php
+    $new_link_output = '<li   itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">';
+    $new_link_output .= '<a href="' . $link['url'] . '" title="' . $link['text'] . '" itemprop="item"> <span itemprop="name">' . $link['text'] . '</span>
+            <meta itemprop="position" content=""></a>';
     $new_link_output .= '</li>';
-
     return $new_link_output;
 }
 
@@ -257,7 +263,7 @@ add_filter('wpseo_breadcrumb_output', 'doublee_filter_yoast_breadcrumb_output');
 function doublee_breadcrumbs()
 {
     if (function_exists('yoast_breadcrumb')) {
-        yoast_breadcrumb('<ul class="breadcrumbs">', '</ul>');
+        yoast_breadcrumb('<ul class="breadcrumbs"  itemscope itemtype="https://schema.org/BreadcrumbList">', '</ul>');
     }
 }
 
@@ -363,7 +369,8 @@ add_filter('wpseo_robots', 'seo_robots_modify_search');
 
 function seo_robots_modify_search($robots)
 {
-    if (is_checkout() || is_search() || is_cart() || strpos($_SERVER['REQUEST_URI'], 'add-to-cart') || strpos($_SERVER['REQUEST_URI'], '/feed')) {
+    if (is_checkout() || is_search() || is_cart() || strpos($_SERVER['REQUEST_URI'], 'add-to-cart') ||  strpos($_SERVER['REQUEST_URI'], '?') || strpos($_SERVER['REQUEST_URI'], '/feed')
+    || strpos($_SERVER['REQUEST_URI'], '&pa_ingredients') || strpos($_SERVER['REQUEST_URI'], '&max_price')|| strpos($_SERVER['REQUEST_URI'], '&min_price') ||  strpos($_SERVER['REQUEST_URI'], '&product_tag') ) {
         return "noindex, nofollow";
     } else {
         return $robots;
@@ -374,27 +381,28 @@ function seo_robots_modify_search($robots)
 function yappo_faq_row($question, $answer)
 {
     ?>
-    <div class="slide-wrap">
-        <div class="slide-header">
-            <span class="glyphicon glyphicon-chevron-down"></span>
-            <h4>
-                <?= $question ?>
-            </h4>
 
-            <span class="span-plus"></span>
-        </div>
-        <div class="slide-content">
-            <?= $answer ?>
-        </div>
+  <div class="slide-wrap">
+    <div class="slide-header">
+      <span class="glyphicon glyphicon-chevron-down"></span>
+      <h4>
+          <?= $question ?>
+      </h4>
+
+      <span class="span-plus"></span>
     </div>
+    <div class="slide-content">
+        <?= $answer ?>
+    </div>
+  </div>
     <?php
 }
 
-add_filter( 'wpml_hreflangs', 'removeDefHreflangs' );
-function removeDefHreflangs($hreflangs){
-    foreach ($hreflangs as $key => $lang)
-    {
-        if ($key == "x-default"){
+add_filter('wpml_hreflangs', 'removeDefHreflangs');
+function removeDefHreflangs($hreflangs)
+{
+    foreach ($hreflangs as $key => $lang) {
+        if ($key == "x-default") {
             unset ($hreflangs[$key]);
         }
     }
@@ -402,3 +410,14 @@ function removeDefHreflangs($hreflangs){
 }
 
 
+//function add_custom_attr($tag, $handle, $src)
+//{
+//    $scriptArr = array('yappo-swiper', 'jquery-core');
+//
+//    if (in_array($handle, $scriptArr)) {
+//        $tag = str_replace('src=', 'sync="false" src=', $tag);
+//    }
+//    return $tag;
+//}
+//
+//add_filter('script_loader_tag', 'add_custom_attr', 10, 3);

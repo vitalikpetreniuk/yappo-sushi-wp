@@ -119,8 +119,6 @@ class AutoloadProcessor {
 			}
 		}
 
-		ksort( $processed );
-
 		return $processed;
 	}
 

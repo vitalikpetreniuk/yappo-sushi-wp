@@ -781,9 +781,7 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 	 * @param  string $visibility Options: 'hidden', 'visible', 'search' and 'catalog'.
 	 */
 	public function set_catalog_visibility( $visibility ) {
-		$options    = array_keys( wc_get_product_visibility_options() );
-		$visibility = in_array( $visibility, $options, true ) ? $visibility : strtolower( $visibility );
-
+		$options = array_keys( wc_get_product_visibility_options() );
 		if ( ! in_array( $visibility, $options, true ) ) {
 			$this->error( 'product_invalid_catalog_visibility', __( 'Invalid catalog visibility option.', 'woocommerce' ) );
 		}
@@ -912,8 +910,6 @@ class WC_Product extends WC_Abstract_Legacy_Product {
 		if ( empty( $status ) ) {
 			$status = 'taxable';
 		}
-
-		$status = strtolower( $status );
 
 		if ( ! in_array( $status, $options, true ) ) {
 			$this->error( 'product_invalid_tax_status', __( 'Invalid product tax status.', 'woocommerce' ) );

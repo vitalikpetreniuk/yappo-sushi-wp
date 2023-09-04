@@ -8,6 +8,7 @@
 	 * Set hero content dimensions / layout
 	 * Run adaptive backgrounds and set colors
 	 */
+	// eslint-disable-next-line @wordpress/no-global-event-listener
 	document.addEventListener( 'DOMContentLoaded', function () {
 		const homepageContent = document.querySelector(
 			'.page-template-template-homepage .type-page.has-post-thumbnail'
@@ -37,6 +38,7 @@
 				updateDimensions._tick = null;
 
 				// Make the homepage content full width and centrally aligned.
+				// eslint-disable-next-line @wordpress/no-global-event-listener
 				homepageContent.style.width = window.innerWidth + 'px';
 
 				if ( htmlDirValue !== 'rtl' ) {
@@ -50,6 +52,7 @@
 		};
 
 		// On window resize, set hero content dimensions / layout.
+		// eslint-disable-next-line @wordpress/no-global-event-listener
 		window.addEventListener( 'resize', updateDimensions );
 		updateDimensions();
 	} );

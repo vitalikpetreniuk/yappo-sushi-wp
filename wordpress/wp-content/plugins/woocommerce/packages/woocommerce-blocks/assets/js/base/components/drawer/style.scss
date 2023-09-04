@@ -111,57 +111,44 @@ $drawer-animation-duration: 0.3s;
 	}
 }
 
-// Important rules are needed to reset button styles.
-.wc-block-components-drawer__close {
-	@include reset-box();
-	background: transparent !important;
-	color: inherit !important;
-	position: absolute !important;
-	top: $gap-small;
-	right: $gap-small;
-	opacity: 0.6;
-	z-index: 2;
-	// Increase clickable area.
-	padding: 1em !important;
-	margin: -1em;
-
-	&:hover,
-	&:focus,
-	&:active {
-		opacity: 1;
-	}
-
-	// Don't show focus styles if the close button hasn't been focused by the
-	// user directly. This is done to prevent focus styles to appear when
-	// opening the drawer with the mouse, as the focus is moved inside
-	// programmatically.
-	&:focus:not(:focus-visible) {
-		box-shadow: none;
-		outline: none;
-	}
-
-	> span {
-		@include visually-hidden();
-	}
-	svg {
-		fill: currentColor;
-		display: block;
-	}
+.wc-block-components-drawer .components-modal__content {
+	padding: $gap-largest $gap;
 }
 
-.wc-block-components-drawer__content {
-	height: 100dvh;
+.wc-block-components-drawer .components-modal__header {
 	position: relative;
-}
 
-.admin-bar .wc-block-components-drawer__content {
-	margin-top: 46px;
-	height: calc(100dvh - 46px);
-}
+	// Close button.
+	.components-button {
+		@include reset-box();
+		background: transparent;
+		color: inherit;
+		position: absolute;
+		opacity: 0.6;
+		z-index: 2;
+		// The SVG has some white spacing around, thus we have to set this magic number.
+		right: 8px;
+		top: 0;
+		// Increase clickable area.
+		padding: 1em;
+		margin: -1em;
 
-@media only screen and (min-width: 783px) {
-	.admin-bar .wc-block-components-drawer__content {
-		margin-top: 32px;
-		height: calc(100dvh - 32px);
+		&:hover,
+		&:focus,
+		&:active {
+			opacity: 1;
+		}
+
+		> span {
+			@include visually-hidden();
+		}
 	}
+}
+
+// Same styles as `Title` component.
+.wc-block-components-drawer .components-modal__header-heading {
+	@include reset-box();
+	// We need the font size to be in rem so it doesn't change depending on the parent element.
+	@include font-size(large, 1rem);
+	word-break: break-word;
 }

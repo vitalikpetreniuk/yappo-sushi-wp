@@ -20,68 +20,17 @@
   <link rel="dns-prefetch" href="https://fonts.googleapis.com">
   <link rel="dns-prefetch" href="https://fonts.gstatic.com" crossorigin>
 
-
+    <?php
+    if (strpos($_SERVER['REQUEST_URI'], '&pa_ingredients') || strpos($_SERVER['REQUEST_URI'], '&max_price') || strpos($_SERVER['REQUEST_URI'], '&min_price') || strpos($_SERVER['REQUEST_URI'], '&product_tag')) { ?>
+      <link rel="canonical" href="<?php echo $_SERVER['REQUEST_URI'] ?>"/>
+    <?php }
+    ?>
     <?php wp_head(); ?>
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-          w[l] = w[l] || [];
-          w[l].push({
-              'gtm.start':
-                  new Date().getTime(), event: 'gtm.js'
-          });
-          let f = d.getElementsByTagName(s)[0],
-              j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-          j.async = true;
-          j.src =
-              'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-          f.parentNode.insertBefore(j, f);
-      })(window, document, 'script', 'dataLayer', 'GTM-5GVTP5D');</script>
-  <!-- End Google Tag Manager -->
 
-  <!-- Meta Pixel Code -->
-  <script type="c731a9971cd8d55081298037-text/javascript">
-		!function (f, b, e, v, n, t, s) {
-			if (f.fbq) return;
-			n = f.fbq = function () {
-				n.callMethod ?
-					n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-			};
-			if (!f._fbq) f._fbq = n;
-			n.push = n;
-			n.loaded = !0;
-			n.version = '2.0';
-			n.queue = [];
-			t = b.createElement(e);
-			t.async = !0;
-			t.src = v;
-			s = b.getElementsByTagName(e)[0];
-			s.parentNode.insertBefore(t, s)
-		}(window, document, 'script',
-			'https://connect.facebook.net/en_US/fbevents.js');
-		fbq('init', '488055693044741');
-		fbq('track', 'PageView');
-
-
-
-
-
-
-
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-                 src="https://www.facebook.com/tr?id=488055693044741&ev=PageView&noscript=1"
-    /></noscript>
-  <!-- End Meta Pixel Code -->
 </head>
 
 <body <?php body_class(); ?>>
 
-<!-- Google Tag Manager (noscript) -->
-<noscript>
-  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GVTP5D"
-          height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
-<!-- End Google Tag Manager (noscript) -->
 <?php wp_body_open(); ?>
 <header class="header">
   <div class="header-top">
@@ -89,11 +38,11 @@
       <div class="row justify-content-between align-items-center">
 
         <div class="col-lg-4 col-md-3 d-md-block d-none">
-          <a class="tel-header-top"
+          <a class="tel-header-top" itemprop="telephone"
              href="tel:<?php the_field('phone_number', 'option') ?>"><?php the_field('phone_number', 'option') ?></a>
         </div>
 
-        <div class="col-lg-4 col-md-5">
+        <div class="col-lg-4 col-md-5 d-none">
             <?php if (get_field('top_sticky_text', 'option')) : ?>
               <p>
                   <?php the_field('top_sticky_text', 'option') ?>
@@ -104,11 +53,12 @@
             <?php endif; ?>
         </div>
 
-        <div class="col-xxl-3 col-lg-3 col-md-4 col-3 d-md-block d-none  p-0">
+        <div class="col-xxl-3 col-lg-3 col-md-4 col-3 d-md-block p-0 header__location">
           <div class="local-wrap">
             <a class="local" href="#" target="_blank">
                 <?php if (function_exists('yappo_get_chosen_header_adress')) { ?>
-                  <img src="<?= get_theme_file_uri('assets/img/white-location.svg') ?>" alt="location">
+                  <img src="<?= get_theme_file_uri('assets/img/white-location.svg') ?>" alt="location" width="10"
+                       height="20">
                 <?php } ?>
                 <?= yappo_get_chosen_header_adress(); ?>
             </a>
@@ -124,6 +74,7 @@
                     $cities = getCities();
                     $cityLink = '';
 
+
                     if (count($cities)) {
                         foreach ($cities as $city) {
                             if (!is_checkout()) {
@@ -132,18 +83,17 @@
                             $sityArr = get_field('adresy', $city);
                             ?>
 
-                            <?php
-                            foreach ($sityArr as $item) { ?>
-                              <li>
-                                <a href="<?= $cityLink ?>"
-                                   data-id="<?= $city->slug ?>"
-                                   data-address="<?= $item['item']['name'] ?>">
-                                  <div itemprop="addressLocality">
-                                      <?php the_field('city', $city) ?>
-                                  </div>
-                                  <span class="adress" itemprop="streetAddress"><?= $item['item']['name'] ?></span>
-                                </a>
-                              </li>
+                            <?php foreach ($sityArr as $index => $item) { ?>
+                            <li>
+                              <a href="<?= $cityLink ?>"
+                                 data-id="<?= $city->slug ?>"
+                                 data-address="<?= $city->slug . '/' . $index ?>">
+                                <div itemprop="addressLocality">
+                                    <?php the_field('city', $city) ?>
+                                </div>
+                                <span class="adress" itemprop="streetAddress"><?= $item['item']['name'] ?></span>
+                              </a>
+                            </li>
                             <?php }
                         }
                     }
@@ -166,9 +116,10 @@
         <div class="col-lg-2 col-md-4 col-6 pe-0 pe-md-3 me-lg-5 me-md-0">
           <div class="logo">
             <a href="<?= rtrim(home_url(), '/') ?>/<?= yappo_get_chosen_city_slug() ?>" itemprop="url">
-              <div itemprop="name">
+              <div itemprop="image">
                   <?= wp_get_attachment_image(get_field('logo', 'option'), 'full') ?>
               </div>
+              <div itemprop="name" hidden> <?php bloginfo('name') ?> </div>
             </a>
           </div>
         </div>
@@ -373,27 +324,49 @@
           <ul>
               <?php
               $terms = get_field('categories_in_header', 'option');
+              $singleCategorySlug = '';
+              if (is_single()) {
+                  $singleCategory = get_the_terms(get_the_ID(), 'product_cat');
+                  $singleCategorySlug = [];
+                  foreach ($singleCategory as $item) {
+                      $singleCategorySlug[] = $item->slug;
+                  }
+
+              }
               foreach ($terms as $term) {
-                  $categoryUrl = '/product-category/' . $term->slug;
+                  $categoryUrl = rtrim(home_url(), '/') . '/product-category/' . $term->slug;
                   $categoryID = get_queried_object_id();
                   if (yappo_get_chosen_city_slug()) {
                       $categoryUrl = rtrim(home_url(), '/') . '/' . yappo_get_chosen_city_slug() . '/' . $term->slug;
                   }
+                  $urlParts = explode('?', $_SERVER['REQUEST_URI']);
+                  $basePart = $urlParts[0];
+                  $basePartWords = explode('/', rtrim($basePart, '/'));
+                  $lastWord = end($basePartWords);
                   ?>
 
                 <li>
-                  <a class="link-category <?php if ($categoryID === $term->term_id){ echo 'link-category-active';} ?>"
+                  <a class="link-category
+                  <?php if (($categoryID === $term->term_id || $lastWord === $term->slug) && !is_checkout()) {
+                      echo 'link-category-active';
+                  }
+                  foreach ($singleCategorySlug as $item){
+                    if($item === $term->slug) {
+                        echo 'link-category-active';
+                    }
+                  }
+                  ?>"
                      href="<?= $categoryUrl ?>">
                     <div class="cotegory_img">
                         <?php if (get_field('image', $term)) : ?>
                           <img class="image-category"
                                src="<?= wp_get_attachment_image_url(get_field('image', $term)); ?>"
-                               alt="<?= $term->name ?>">
+                               alt="<?= $term->name ?>" loading="lazy">
                         <?php endif; ?>
                         <?php if (get_field('hover_image', $term)) : ?>
                           <img class="image-category-active"
                                src="<?= wp_get_attachment_image_url(get_field('hover_image', $term)); ?>"
-                               alt="<?= $term->name ?>">
+                               alt="<?= $term->name ?>" loading="lazy">
                         <?php endif; ?>
                     </div>
 
@@ -420,50 +393,6 @@
 
 
   <div id="menu">
-
-    <div class="menu-header">
-      <div class="local-wrap">
-        <a class="local" href="#" target="_blank">
-
-          <img src="<?= get_theme_file_uri('assets/img/white-location.svg') ?>" alt="location">
-
-            <?php if (function_exists('yappo_get_chosen_header_adress')) : ?>
-                <?= yappo_get_chosen_header_adress(); ?>
-            <?php endif; ?>
-        </a>
-
-        <div class="city-list">
-          <h6>
-              <?php esc_html_e('Оберіть місто', 'yappo'); ?>
-          </h6>
-
-          <div>
-            <ul>
-                <?php
-                $cities = get_terms(array(
-                    'taxonomy' => 'cities',
-                    'hide_empty' => false
-                ));
-                if (count($cities)) {
-                    foreach ($cities as $city) {
-                        ?>
-                      <li>
-                        <a href="<?php the_field('link', $city) ?>" data-id="<?= $city->slug ?>">
-                            <?php the_field('city', $city) ?> <span class="adress">
-													<?php the_field('adress', $city); ?>
-												 </span>
-                        </a>
-                      </li>
-                        <?php
-                    }
-                }
-                ?>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <div class="menu-body">
       <div class="time-wrap d-flex align-items-center">
         <div>
@@ -580,7 +509,7 @@
       </nav>
 
       <div class="img-wrap">
-        <img width="72px" height="25" src="<?= get_theme_file_uri('assets/img/visa-black.svg') ?>"
+        <img width="72px" height="25" src="<?= get_theme_file_uri('assets/img/visa-black.svg') ?>" loading="lazy"
              alt="visa-card">
       </div>
 

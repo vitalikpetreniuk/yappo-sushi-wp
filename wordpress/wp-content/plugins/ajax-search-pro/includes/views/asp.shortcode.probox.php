@@ -66,8 +66,11 @@ $asp_loaders = array(
                    aria-hidden="true"
 				   tabindex="-1"
 				   autocomplete="off" disabled/>
+
+
         </form>
     </div>
+
 
     <?php do_action('asp_layout_after_input', $id); ?>
 
@@ -89,6 +92,8 @@ $asp_loaders = array(
 		</span>
 		<span class="asp_clear"></span>
 	</button>
+
+
 
 	<?php do_action('asp_layout_after_magnifier', $id); ?>
 

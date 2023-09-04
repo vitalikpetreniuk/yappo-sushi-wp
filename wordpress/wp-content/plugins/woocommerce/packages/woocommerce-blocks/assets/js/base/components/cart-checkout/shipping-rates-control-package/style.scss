@@ -43,6 +43,7 @@
 	}
 	.wc-block-components-radio-control__description-group {
 		@include font-size(smaller);
+		color: $gray-700;
 	}
 }
 

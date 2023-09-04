@@ -10,5 +10,4 @@ export * from './use-customer-data';
 export * from './use-checkout-address';
 export * from './use-checkout-submit';
 export * from './use-checkout-extension-data';
-export * from './use-show-shipping-total-warning';
 export * from './use-validation';
