@@ -825,3 +825,8 @@ add_action('pre_get_posts', function ($q) {
     }
     return $q;
 });
+
+/* На прохання сеошників змінюємо символ гривні на грн */
+add_filter('woocommerce_currency_symbol', function ($symbol) {
+    return "грн";
+});
