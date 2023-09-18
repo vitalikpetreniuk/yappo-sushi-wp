@@ -4051,7 +4051,7 @@ body .helpcrunch-iframe-wrapper {
   position: relative;
 }
 
-.irs--round .irs-line {
+.range-slider .irs--round .irs-line {
   height: 6px;
   background: white;
   border-width: 1px;
@@ -4059,22 +4059,22 @@ body .helpcrunch-iframe-wrapper {
   border-color: #2a1a5e;
 }
 
-.irs-from,
-.irs-to,
-.irs-min,
-.irs-max,
-.irs-single,
-.irs-grid {
+.range-slider .irs-from,
+.range-slider .irs-to,
+.range-slider .irs-min,
+.range-slider .irs-max,
+.range-slider .irs-single,
+.range-slider .irs-grid {
   display: none;
 }
 
-span.irs--round .irs-bar {
+.range-slider span.irs--round .irs-bar {
   background-color: #2a1a5e;
   height: 6px;
 }
 
-span.irs-handle.from:before,
-span.irs-handle.to:before {
+.range-slider span.irs-handle.from:before,
+.range-slider span.irs-handle.to:before {
   width: 20px;
   height: 33px;
   content: "";
@@ -4082,12 +4082,12 @@ span.irs-handle.to:before {
   background: url(../img/fish-tail.svg) 50% 50% no-repeat;
 }
 
-span.irs-handle.from:before {
+.range-slider span.irs-handle.from:before {
   left: -13px;
   top: -4px;
 }
 
-span.irs-handle.to:before {
+.range-slider span.irs-handle.to:before {
   left: 2.7px;
   -webkit-transform: rotate(-180deg);
       -ms-transform: rotate(-180deg);
@@ -4095,18 +4095,18 @@ span.irs-handle.to:before {
   top: -5px;
 }
 
-.irs--round .irs-handle {
+.range-slider .irs--round .irs-handle {
   background: transparent;
   width: 10px;
   height: 25px;
 }
 
-.irs--round .irs-handle.state_hover,
-.irs--round .irs-handle:hover {
+.range-slider .irs--round .irs-handle.state_hover,
+.range-slider .irs--round .irs-handle:hover {
   background-color: initial;
 }
 
-.irs--round .irs-handle {
+.range-slider .irs--round .irs-handle {
   border: none;
   background-color: initial;
   border-radius: initial;
@@ -4114,7 +4114,7 @@ span.irs-handle.to:before {
           box-shadow: initial;
 }
 
-.irs--round .irs-handle > i:first-child {
+.range-slider .irs--round .irs-handle > i:first-child {
   display: none;
 }
 
@@ -13048,7 +13048,7 @@ span.irs-handle.to:before {
 
   .footer .social-wrap,
   .footer-modal .social-wrap {
-    width: 10rem;
+    width: 14rem;
     margin: 22px auto 40px;
   }
 
@@ -14089,7 +14089,9 @@ span.irs-handle.to:before {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
-    width: 17px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;

@@ -442,9 +442,9 @@
     display: contents;
 
     img{
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
     }
   }
 }
@@ -501,20 +501,20 @@
     display: block;
   }
 
-  
-  
-  .filter__checkgroup-title .img-wrap{
-        margin-left: .5rem;
-        width: 37px;
-        height: 36px;
 
-        img{
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }
+
+  .filter__checkgroup-title .img-wrap{
+    margin-left: .5rem;
+    width: 37px;
+    height: 36px;
+
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
     }
-  
+  }
+
   /* Create the indicator (the dot/circle - hidden when not checked) */
   .checkmark:after {
     content: "";
@@ -659,7 +659,7 @@
   //height: 80px;
 }
 
-.irs--round .irs-line {
+.range-slider .irs--round .irs-line {
   height: 6px;
   background: rgb(255, 255, 255);
   border-width: 1px;
@@ -667,18 +667,18 @@
   border-color: #2a1a5e;
 }
 
-.irs-from, .irs-to, .irs-min, .irs-max, .irs-single, .irs-grid {
+.range-slider .irs-from, .range-slider .irs-to, .range-slider .irs-min, .range-slider .irs-max, .range-slider .irs-single, .range-slider .irs-grid {
   display: none;
 }
 
-span.irs--round .irs-bar {
+.range-slider span.irs--round .irs-bar {
   background-color: #2a1a5e;
   height: 6px;
 }
 
 
-span.irs-handle.from:before,
-span.irs-handle.to:before {
+.range-slider span.irs-handle.from:before,
+.range-slider span.irs-handle.to:before {
   width: 20px;
   height: 33px;
   content: "";
@@ -686,34 +686,34 @@ span.irs-handle.to:before {
   background: url(../img/fish-tail.svg) 50% 50% no-repeat;
 }
 
-span.irs-handle.from:before {
+.range-slider span.irs-handle.from:before {
   left: -13px;
   top: -4px;
 }
-span.irs-handle.to:before {
+.range-slider span.irs-handle.to:before {
   left: 2.7px;
   transform: rotate(-180deg);
   top: -5px;
 }
 
-.irs--round .irs-handle {
+.range-slider .irs--round .irs-handle {
   background: transparent;
   width: 10px;
   height: 25px;
 }
 
-.irs--round .irs-handle.state_hover, .irs--round .irs-handle:hover {
+.range-slider .irs--round .irs-handle.state_hover,.range-slider .irs--round .irs-handle:hover {
   background-color: initial;
 }
 
-.irs--round .irs-handle {
+.range-slider .irs--round .irs-handle {
   border: none;
   background-color: initial;
   border-radius: initial;
   box-shadow: initial;
 }
 
-.irs--round .irs-handle > i:first-child {
+.range-slider .irs--round .irs-handle > i:first-child {
   display: none;
 }
 
@@ -738,7 +738,7 @@ span.irs-handle.to:before {
   justify-content: space-between;
   margin: 23px 0;
   @include media-for (null, $sm){
-      margin: 24px 0;
+    margin: 24px 0;
   }
 }
 .extra-controls label {
@@ -755,10 +755,9 @@ span.irs-handle.to:before {
   border-radius: 0;
 
   @include media-for (null, $sm){
-      width: 120px;
+    width: 120px;
   }
 }
 .extra-controls input:first-of-type {
   margin-right: 15px;
 }
-

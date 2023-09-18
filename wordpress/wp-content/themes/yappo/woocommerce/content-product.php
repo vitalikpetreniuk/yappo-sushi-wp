@@ -53,10 +53,12 @@ if (empty($product) || !$product->is_visible()) {
 
     <div class="product__image class">
       <a href="<?php the_permalink(); ?>">
-          <?= wp_get_attachment_image( get_post_thumbnail_id( $product->get_id() ), 'large' ) ?>
-<!--          --><?php //woocommerce_template_loop_product_thumbnail(); ?>
+        <?php
+        $image_attributes = wp_get_attachment_image_src( get_post_thumbnail_id( $product->get_id() ) , 'medium');
+        if ( $image_attributes ) : ?>
+          <img src="<?php echo $image_attributes[0]; ?>" width="<?php echo $image_attributes[1]; ?>" height="<?php echo $image_attributes[2]; ?>" />
+        <?php endif; ?>
       </a>
-      <?php //= $product->get_image(); ?>
     </div>
 
     <div class="product__detail">

@@ -212,7 +212,7 @@
             
             @include media-for (null, $sm){
                 display: flex !important;
-                width: 17px;
+                width: fit-content;
                 align-items: center;
                 margin-bottom: 10px;
 

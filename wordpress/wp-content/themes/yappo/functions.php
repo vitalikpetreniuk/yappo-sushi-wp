@@ -22,6 +22,20 @@ define('YAPPO_VERSION', wp_get_theme()->get('Version'));
  * @since 1.0.0
  *
  */
+
+remove_action('wp_head','feed_links_extra', 3);
+remove_action('wp_head','feed_links', 2);
+remove_action('wp_head','rsd_link');
+remove_action('wp_head','wlwmanifest_link');
+remove_action('wp_head','wp_generator');
+remove_action('wp_head','start_post_rel_link',10,0);
+remove_action('wp_head','index_rel_link');
+remove_action('wp_head','adjacent_posts_rel_link_wp_head', 10, 0 );
+remove_action('wp_head','wp_shortlink_wp_head', 10, 0 );
+remove_action( 'wp_head', 'rest_output_link_wp_head');
+remove_action( 'wp_head', 'wp_oembed_add_discovery_links');
+remove_action( 'template_redirect', 'rest_output_link_header', 11, 0 );
+
 function yappo_setup()
 {
     add_editor_style('./assets/css/style-shared.min.css');
@@ -52,61 +66,110 @@ add_action('after_setup_theme', 'yappo_setup');
  * @since 1.0.0
  *
  */
-function yappo_styles()
-{
-    wp_enqueue_style(
-        'yappo-shared-styles',
-        get_theme_file_uri('assets/css/style-shared.min.css'),
-        [],
-        YAPPO_VERSION
-    );
-    wp_enqueue_style(
-        'yappo-fonts',
-        'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap',
-        [],
-        YAPPO_VERSION
-    );
-    wp_enqueue_style(
-        'yappo-swiper',
-        get_theme_file_uri('assets/libs/swiper.min.css'),
-        [],
-        YAPPO_VERSION
-    );
-    wp_enqueue_style(
-        'yappo-rangestyle',
-        get_theme_file_uri('assets/libs/ion.rangeSlider.min.css'),
-        [],
-        time()
-    );
+function yappo_styles_header(){
     wp_enqueue_style(
         'yappo-css',
         get_theme_file_uri('assets/css/styles.min.css'),
         [],
         time()
     );
+
     wp_enqueue_style(
-        'yappo-style',
-        get_stylesheet_uri(),
+        'yappo-fonts',
+        'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap',
         [],
-        time()
+        YAPPO_VERSION,
+        'all',
     );
+
+    wp_enqueue_style(
+        'yappo-fonts',
+        'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap',
+        [],
+        YAPPO_VERSION,
+        'all',
+    );
+}
+add_action('wp_enqueue_scripts', 'yappo_styles_header');
+function yappo_scripts_header(){
 
     $deps = ['jquery', 'yappo-rangeslider'];
 
     if (is_checkout()) {
-        wp_enqueue_script('yappo-mask', get_theme_file_uri('assets/libs/jquery.mask.min.js'));
+        wp_enqueue_script('yappo-mask', get_theme_file_uri('assets/libs/jquery.mask.min.js'), [],time(), true);
         $deps[] = 'yappo-mask';
     }
 
-    wp_enqueue_script('yappo-swiper', get_theme_file_uri('assets/libs/swiper.min.js'));
-    wp_enqueue_script('yappo-rangeslider', get_theme_file_uri('assets/libs/ion.rangeSlider.min.js'));
+    wp_enqueue_script('yappo-swiper', get_theme_file_uri('assets/libs/swiper.min.js'), [],time(), true);
+    wp_enqueue_script('yappo-rangeslider', get_theme_file_uri('assets/libs/ion.rangeSlider.min.js'), [],time(), true, true);
 
-    wp_enqueue_script('yappo-script', get_theme_file_uri('assets/js/scripts.min.js'), $deps, time());
-    wp_enqueue_script('yappo-backend', get_theme_file_uri('assets/js/backend.js'), array('jquery'), time());
+    wp_enqueue_script('yappo-script', get_theme_file_uri('assets/js/scripts.min.js'), $deps, time(), true);
+    wp_enqueue_script('yappo-backend', get_theme_file_uri('assets/js/backend.js'), array('jquery'), time(),true);
+
+}
+add_action('wp_footer', 'yappo_scripts_header');
+
+function yappo_styles()
+{
+
+
+    wp_enqueue_style(
+        'yappo-shared-styles',
+        get_theme_file_uri('assets/css/style-shared.min.css'),
+        [],
+        YAPPO_VERSION,
+        'all',
+        true
+    );
+    wp_enqueue_style(
+        'yappo-swiper',
+        get_theme_file_uri('assets/libs/swiper.min.css'),
+        [],
+        YAPPO_VERSION,
+        'all'
+        ,true
+    );
+    wp_enqueue_style(
+        'yappo-rangestyle',
+        get_theme_file_uri('assets/libs/ion.rangeSlider.min.css'),
+        [],
+        time(),
+        'all',true
+    );
+    wp_enqueue_style(
+        'yappo-style',
+        get_stylesheet_uri(),
+        [],
+        time(),
+        'all',true
+    );
 
 }
 
-add_action('wp_enqueue_scripts', 'yappo_styles');
+add_action('wp_footer', 'yappo_styles');
+
+//function move_styles_to_footer() {
+//    // Получаем подключенные стили
+//    global $wp_styles;
+//
+//    // Перебираем каждый зарегистрированный стиль
+//    foreach ($wp_styles->queue as $handle) {
+//        // Выводим стиль в футер
+//        wp_dequeue_style($handle);
+//        wp_enqueue_style($handle);
+//    }
+//}
+//add_action('wp_footer', 'move_styles_to_footer');
+
+
+//function custom_use_print_block_library( $html, $handle ) {
+//    $handles = array( 'yappo-rangestyle','yappo-swiper','query-monitor','wp-block-library');
+//    if ( in_array( $handle, $handles ) ) {
+//        $html = str_replace( 'media=\'all\'', 'media=\'print\' onload="this.onload=null;this.media=\'all\'"', $html );
+//    }
+//    return $html;
+//}
+//add_filter( 'style_loader_tag', 'custom_use_print_block_library', 10, 2 );
 
 // Block style examples.
 require_once get_theme_file_path('inc/register-block-styles.php');
@@ -410,14 +473,3 @@ function removeDefHreflangs($hreflangs)
 }
 
 
-//function add_custom_attr($tag, $handle, $src)
-//{
-//    $scriptArr = array('yappo-swiper', 'jquery-core');
-//
-//    if (in_array($handle, $scriptArr)) {
-//        $tag = str_replace('src=', 'sync="false" src=', $tag);
-//    }
-//    return $tag;
-//}
-//
-//add_filter('script_loader_tag', 'add_custom_attr', 10, 3);
