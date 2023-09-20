@@ -96,9 +96,8 @@ add_filter('wc_price', function ($return, $price, $args, $unformatted_price, $or
     if (apply_filters('woocommerce_price_trim_zeros', false) && $args['decimals'] > 0) {
         $price = wc_trim_zeros($price);
     }
-    $symbol =  '<span class="woocommerce-Price-currencySymbol"><meta itemprop="priceCurrency" content="980">
-    ' . get_woocommerce_currency_symbol($args['currency']) . '</span>';
-    $formatted_price = ($negative ? '-' : '') . sprintf('%2$s%1$s', $symbol , str_replace(" ", '', $price));
+    $symbol =  '<span class="woocommerce-Price-currencySymbol"><meta itemprop="priceCurrency" content="UAH">' . trim(get_woocommerce_currency_symbol($args['currency'])) . '</span>';
+    $formatted_price = ($negative ? '-' : '') . sprintf('<span itemprop="price">' . '%2$s'. '</span>' . '%1$s', $symbol , str_replace(" ", '', $price));
     return $formatted_price;
 }, 10, 5);
 
