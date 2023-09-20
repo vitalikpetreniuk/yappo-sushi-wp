@@ -342,7 +342,7 @@ function bogika_validate_phone_number_length($fields, $errors)
         $fee_label = esc_html__('Минимальная длина мобильного номера - 10 символов.', 'yappo');
     }
 
-    if (mb_strlen($fields['billing_phone']) < 18) {
+    if (mb_strlen($fields['billing_phone']) < 19) {
         $errors->add('validation', sprintf(__('%s', 'yappo'), $fee_label));
     }
 }

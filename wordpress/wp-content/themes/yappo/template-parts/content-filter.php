@@ -212,7 +212,10 @@
                                                                     </span>
 
                                                                     <div class="img-wrap">
-                                                                        <?= wp_get_attachment_image(get_field('image', $term)) ?>
+                                                                        <?= wp_get_attachment_image(get_field('image', $term), 'thumbnail', false, array(
+                                                                            'loading' => 'lazy',
+                                                                            'fetchpriority' => 'low',
+                                                                        )) ?>
                                                                     </div>
 
                                                                 </label>
@@ -268,11 +271,17 @@
 
                                                                     <div class="img-wrap">
                                                                         <div class="default-img">
-                                                                            <?= wp_get_attachment_image(get_field('image', $term), 'full') ?>
+                                                                            <?= wp_get_attachment_image(get_field('image', $term), 'full', false, array(
+                                                                                'loading' => 'lazy',
+                                                                                'fetchpriority' => 'low',
+                                                                            )) ?>
                                                                         </div>
 
                                                                         <div class="img-active">
-                                                                            <?= wp_get_attachment_image(get_field('hover_image', $term), 'full') ?>
+                                                                            <?= wp_get_attachment_image(get_field('hover_image', $term), 'full', false, array(
+                                                                                'loading' => 'lazy',
+                                                                                'fetchpriority' => 'low',
+                                                                            )) ?>
                                                                         </div>
                                                                     </div>
 
@@ -311,7 +320,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-12">
-            <div class="cheked-wrap"  style="margin-top: 6rem">
+            <div class="cheked-wrap" style="margin-top: 6rem">
                 <?php if (!empty($_GET)) : ?>
 
                     <?php if (isset($_GET['orderby'])) : ?>
@@ -342,13 +351,13 @@
                                     $class = 'chaked-box-vegaterian';
                                     break;
 
-                                    case $term->term_id === apply_filters('wpml_object_id', 62, 'product_tag') :
-                                        $class = 'chaked-box-hot';
-                                        break;
+                                case $term->term_id === apply_filters('wpml_object_id', 62, 'product_tag') :
+                                    $class = 'chaked-box-hot';
+                                    break;
 
-                                    case $term->term_id === apply_filters('wpml_object_id', 59, 'product_tag') :
-                                        $class = 'chaked-box-popular';
-                                        break;
+                                case $term->term_id === apply_filters('wpml_object_id', 59, 'product_tag') :
+                                    $class = 'chaked-box-popular';
+                                    break;
                                 default:
                                     $class = '';
                             }
@@ -356,10 +365,10 @@
                             <div class="chaked-box <?= $class ?>" data-slug="<?= $term->slug ?>"
                                  data-tax="product_tag">
                                 <?php
-                                $postIdLang = apply_filters( 'wpml_object_id', $term->term_id, 'product_tag' );
+                                $postIdLang = apply_filters('wpml_object_id', $term->term_id, 'product_tag');
 
                                 $name = get_term_by('id', $postIdLang, 'product_tag');
-                                echo $name->name ;
+                                echo $name->name;
                                 ?>
 
                                 <div class="close-btn-wrap">
@@ -379,12 +388,12 @@
                             <div class="chaked-box" data-slug="<?= $term->slug ?>"
                                  data-tax="pa_ingredients">
                                 <?php
-                                $postIdLang = apply_filters( 'wpml_object_id', $term->term_id, 'pa_ingredients' );
+                                $postIdLang = apply_filters('wpml_object_id', $term->term_id, 'pa_ingredients');
 
                                 $name = get_term_by('id', $postIdLang, 'pa_ingredients');
-                                echo $name->name ;
+                                echo $name->name;
                                 ?>
-                              <div class="close-btn-wrap">
+                                <div class="close-btn-wrap">
 
                                 </div>
                             </div>

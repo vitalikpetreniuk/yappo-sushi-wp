@@ -16,7 +16,6 @@ function setCookieAddress(name, value) {
     document.cookie = name + "=" + value + "; expires=" + d.toUTCString() + "; path=/";
 }
 
-jQuery(function ($) {
     window.dataLayer = window.dataLayer || [];
 
     $('body').on('added_to_cart', function (e, fragments, hash, button) {
@@ -115,7 +114,7 @@ jQuery(function ($) {
 
 
     $('body').on('updated_checkout', function () {
-        checkoutFields();
+        checkoutFields(); 
     })
 
     $("#city-chooser ul li a").on('click', function () {
@@ -340,7 +339,6 @@ jQuery(function ($) {
             $('.filter__slider-form').submit();
         }, 300)
     })
-})
 
 function add_to_cart_ads(id, price) {
     dataLayer.push({

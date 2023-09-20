@@ -4,40 +4,39 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInita81d810f0289f52d7aaa7f160169fd04
+class ComposerStaticInit6b92dd7f5dc202ac09abeec839141def
 {
     public static $files = array (
-        '344a0f93a05b8ca362c22e39586db500' => __DIR__ . '/../..' . '/lib/polyfill-mbstring/bootstrap.php',
+        '08eca214f4d3690babeee667e1bd7ede' => __DIR__ . '/../..' . '/src/php/includes/deprecated.php',
+    );
+
+    public static $prefixLengthsPsr4 = array (
+        'C' => 
+        array (
+            'CyrToLat\\' => 9,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'CyrToLat\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/php',
+        ),
     );
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-        'Cyr_To_Lat\\ACF' => __DIR__ . '/../..' . '/src/php/class-acf.php',
-        'Cyr_To_Lat\\Admin_Notices' => __DIR__ . '/../..' . '/src/php/class-admin-notices.php',
-        'Cyr_To_Lat\\Conversion_Process' => __DIR__ . '/../..' . '/src/php/background-processes/class-conversion-process.php',
-        'Cyr_To_Lat\\Conversion_Tables' => __DIR__ . '/../..' . '/src/php/class-conversion-tables.php',
-        'Cyr_To_Lat\\Converter' => __DIR__ . '/../..' . '/src/php/class-converter.php',
-        'Cyr_To_Lat\\KAGG\\WP_Background_Processing\\WP_Async_Request' => __DIR__ . '/../..' . '/lib/wp-background-processing/class-wp-async-request.php',
-        'Cyr_To_Lat\\KAGG\\WP_Background_Processing\\WP_Background_Process' => __DIR__ . '/../..' . '/lib/wp-background-processing/class-wp-background-process.php',
-        'Cyr_To_Lat\\Main' => __DIR__ . '/../..' . '/src/php/class-main.php',
-        'Cyr_To_Lat\\Post_Conversion_Process' => __DIR__ . '/../..' . '/src/php/background-processes/class-post-conversion-process.php',
-        'Cyr_To_Lat\\Request' => __DIR__ . '/../..' . '/src/php/class-request.php',
-        'Cyr_To_Lat\\Requirements' => __DIR__ . '/../..' . '/src/php/class-requirements.php',
-        'Cyr_To_Lat\\Settings\\Abstracts\\SettingsBase' => __DIR__ . '/../..' . '/src/php/Settings/Abstracts/SettingsBase.php',
-        'Cyr_To_Lat\\Settings\\Abstracts\\SettingsInterface' => __DIR__ . '/../..' . '/src/php/Settings/Abstracts/SettingsInterface.php',
-        'Cyr_To_Lat\\Settings\\Converter' => __DIR__ . '/../..' . '/src/php/Settings/Converter.php',
-        'Cyr_To_Lat\\Settings\\PluginSettingsBase' => __DIR__ . '/../..' . '/src/php/Settings/PluginSettingsBase.php',
-        'Cyr_To_Lat\\Settings\\Settings' => __DIR__ . '/../..' . '/src/php/Settings/Settings.php',
-        'Cyr_To_Lat\\Settings\\Tables' => __DIR__ . '/../..' . '/src/php/Settings/Tables.php',
-        'Cyr_To_Lat\\Symfony\\Polyfill\\Mbstring\\Mbstring' => __DIR__ . '/../..' . '/lib/polyfill-mbstring/Mbstring.php',
-        'Cyr_To_Lat\\Term_Conversion_Process' => __DIR__ . '/../..' . '/src/php/background-processes/class-term-conversion-process.php',
-        'Cyr_To_Lat\\WP_CLI' => __DIR__ . '/../..' . '/src/php/class-wp-cli.php',
+        'CyrToLat\\Symfony\\Polyfill\\Mbstring\\Mbstring' => __DIR__ . '/../..' . '/libs/polyfill-mbstring/Mbstring.php',
+        'CyrToLat\\WP_Background_Processing\\WP_Async_Request' => __DIR__ . '/../..' . '/libs/wp-background-processing/wp-async-request.php',
+        'CyrToLat\\WP_Background_Processing\\WP_Background_Process' => __DIR__ . '/../..' . '/libs/wp-background-processing/wp-background-process.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->classMap = ComposerStaticInita81d810f0289f52d7aaa7f160169fd04::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit6b92dd7f5dc202ac09abeec839141def::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit6b92dd7f5dc202ac09abeec839141def::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit6b92dd7f5dc202ac09abeec839141def::$classMap;
 
         }, null, ClassLoader::class);
     }

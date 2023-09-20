@@ -3,9 +3,9 @@
 Plugin Name: Payment Gateway for LiqPay for Woocommerce
 Plugin URI:
 Description: Plugin for paying for products through the LiqPay service. Works in conjunction with the Woocommerce plugin
-Version: 1.2
+Version: 1.4
 Requires at least: 5.7.2
-Requires PHP: 7.3
+Requires PHP: 7.4
 Author: komanda.dev
 License: GPL v2 or later
 Text Domain: wc-liqpay
@@ -36,7 +36,7 @@ function liqpay_payment_gateway_init() {
         wp_register_style('kmnd-liqpay-style', plugins_url( '/assets/css/styles.css', __FILE__ ), false);
         wp_enqueue_style( 'kmnd-liqpay-style'); 
 
-        wp_register_script("kmnd-liqpay-js", plugins_url( '/assets/js/main.js', __FILE__ ), '', '1.2',  true);
+        wp_register_script("kmnd-liqpay-js", plugins_url( '/assets/js/main.js', __FILE__ ), '', '1.3',  true);
         wp_enqueue_script( "kmnd-liqpay-js");
     }
 

@@ -3,8 +3,8 @@ Contributors: Komanda
 Tags: LiqPay, liqpay, payment, gateway, wc, Woocommerce, Woo,
 Requires at least: 5.7.2
 Tested up to: 6.1.0
-Requires PHP: 7.3
-Stable tag: 1.2
+Requires PHP: 7.4
+Stable tag: 1.4
 License: GPL-2.0+
 License URI: http://www.gnu.org/licenses/gpl-2.0.txt
 
@@ -30,9 +30,12 @@ After installing and activating the plugin, go to the admin panel in the left me
 Automatic redirection to Liqpay page
 Added a field for redirection when the payment has not been made
 Ukrainian translation added
-Fixed notices
 = 1.2 =
-Fixed notices
+Small changes
+= 1.3 =
+Changes php version
+= 1.4 =
+Tested wordpress 6.3.1
 
 == Translations ==
 
