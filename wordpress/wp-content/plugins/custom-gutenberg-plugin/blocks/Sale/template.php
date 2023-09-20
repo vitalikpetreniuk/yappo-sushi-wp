@@ -41,7 +41,7 @@ else:
               <div class="banner-slider__slide swiper-slide slide-<?= $i ?>">
                 <a href=" <?= $link ?>">
                   <img src="<?= wp_get_attachment_image_url($thumbnail_id, 'full') ?>"
-                       alt="<?= $subcategory->name ?>">
+                       alt="<?= $subcategory->name ?>" loading="lazy">
                 </a>
               </div>
             </div>

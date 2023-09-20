@@ -27,7 +27,7 @@ if ( @$block['data']['preview_image_help'] ) : ?>
 						?>
 						<div class="banner-slider__slide swiper-slide slide-<?= $i ?>">
 							<a href="<?php the_sub_field( 'link' ) ?>">
-								<?= wp_get_attachment_image( get_sub_field( 'image' ), 'full' ) ?>
+								<?= wp_get_attachment_image( get_sub_field( 'image' ), 'large' ) ?>
 							</a>
 						</div>
 					<?php
