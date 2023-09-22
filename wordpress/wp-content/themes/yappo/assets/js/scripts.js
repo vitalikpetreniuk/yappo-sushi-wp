@@ -209,67 +209,6 @@ $(function () {
 
     });
 
-    // $('.category-wrap-filter  .filter__checkgroup-title').on('change',function() {
-    // 	var radioButton = $(this);
-    // 	if (radioButton.hasClass('label-active')) {
-    // 		radioButton.find('.img-wrap .default-img').css('display', 'none');
-    // 		radioButton.find('.img-wrap .img-active').css('display', 'block');
-    // 	} else {
-    // 		radioButton.find('.img-wrap .default-img').css('display', 'none');
-    // 		radioButton.find('.img-wrap .img-active').css('display', 'none');
-    // 	}
-    // });
-
-
-    //range
-
-    // let rangeMin = 0;
-    // /* Виділений рендж */
-    // const range = document.querySelector(".range-selected");
-    // /* Інпути мінімуму і максимуму */
-    // const rangeInput = document.querySelectorAll(".range-input input");
-    // /* Інпути куди людина може вводити мінімум і максимум */
-    // const rangePrice = document.querySelectorAll(".range-price input");
-    //
-    // rangeInput.forEach((input) => {
-    //     input.addEventListener("input", (e) => {
-    //         /* Мінімально вибране значення */
-    //         let minRange = parseInt(rangeInput[0].value);
-    //         /* Максимально вибране значення */
-    //         let maxRange = parseInt(rangeInput[1].value);
-    //         console.log('if', maxRange - minRange < rangeMin)
-    //         if (maxRange - minRange < rangeMin) {
-    //             if (e.target.className === "min") {
-    //                 rangeInput[0].value = maxRange - rangeMin;
-    //             } else {
-    //                 rangeInput[1].value = minRange + rangeMin;
-    //             }
-    //         } else {
-    //             rangePrice[0].value = minRange;
-    //             rangePrice[1].value = maxRange;
-    //             console.log("left", (minRange / rangeInput[0].max) * 100 + "%")
-    //             console.log("right", 100 - (maxRange / rangeInput[1].max) * 100 + "%")
-    //             range.style.left = (minRange / rangeInput[0].max) * 100 + "%";
-    //             range.style.right = 100 - (maxRange / rangeInput[1].max) * 100 + "%";
-    //         }
-    //     });
-    // });
-    // rangePrice.forEach((input) => {
-    //     input.addEventListener("input", (e) => {
-    //         let minPrice = rangePrice[0].value;
-    //         let maxPrice = rangePrice[1].value;
-    //         if (maxPrice - minPrice >= rangeMin && maxPrice <= rangeInput[1].max) {
-    //             if (e.target.className === "min") {
-    //                 rangeInput[0].value = minPrice;
-    //                 range.style.left = (minPrice / rangeInput[0].max) * 100 + "%";
-    //             } else {
-    //                 rangeInput[1].value = maxPrice;
-    //                 range.style.right = 100 - (maxPrice / rangeInput[1].max) * 100 + "%";
-    //             }
-    //         }
-    //     });
-    // });
-
     var $range = $(".js-range-slider"),
         $inputFrom = $(".js-input-from"),
         $inputTo = $(".js-input-to"),
@@ -278,8 +217,6 @@ $(function () {
         max = $('.range').data('max'),
         from = $('.range').data('minchoosed'),
         to = $('.range').data('maxchoosed');
-
-    console.log($range, $inputFrom)
 
     $range.ionRangeSlider({
         skin: "round",
@@ -917,27 +854,3 @@ setInterval(function () {
         $('.speech').removeClass('speech-active');
     }
 }, 1000);
-
-
-//for chat
-function checkElement() {
-    if ($('.helpcrunch-iframe-wrapper iframe').length > 0) {
-        // $('.header').css('z-index', 20);
-    } else {
-
-        // $('.header').css('z-index', 100);
-    }
-}
-
-
-
-$(window).on('load resize', function () {
-    if ($(window).width() <= 768) {
-        setInterval(checkElement, 500);
-    }
-});
-
-
-
-
-

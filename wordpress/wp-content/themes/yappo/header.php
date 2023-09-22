@@ -37,12 +37,13 @@
     <div class="container-fluid">
       <div class="row justify-content-between align-items-center">
 
-        <div class="col-lg-4 col-md-3">
-          <a class="tel-header-top" itemprop="telephone"
-             href="tel:<?php the_field('phone_number', 'option') ?>">
-              <?php the_field('phone_number', 'option') ?>
-          </a>
-        </div>
+                <div class="col-lg-4 col-md-3">
+                    <a class="tel-header-top" itemprop="telephone"
+                       aria-label="Call us"
+                       href="tel:<?php the_field('phone_number', 'option') ?>">
+                        <?php the_field('phone_number', 'option') ?>
+                    </a>
+                </div>
 
         <div class="col-lg-4 col-md-5 d-none">
             <?php if (get_field('top_sticky_text', 'option')) : ?>
@@ -240,15 +241,16 @@
 
               <?php yappo_lang_opener('d-md-block d-none'); ?>
 
-            <a href="tel:<?php the_field('phone_number', 'option') ?>"
-               class="tel  mt-1 ">
-              <svg class="hover-effect-svg" width="29" height="29" viewBox="0 0 29 29" fill="none"
-                   xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M7.78604 16.2733C4.10831 12.5956 3.62849 6.79807 6.65157 2.56576C7.60693 1.22825 9.53463 1.06871 10.6969 2.23096L12.9085 4.44254C14.3011 5.83521 14.146 8.13635 12.5791 9.32953C11.0121 10.5227 10.857 12.8239 12.2497 14.2165L14.7559 16.7228C16.1486 18.1154 18.4497 17.9603 19.6429 16.3934C20.8361 14.8264 23.1372 14.6713 24.5299 16.064L26.7415 18.2756C27.9037 19.4378 27.7442 21.3655 26.4067 22.3209C22.1744 25.344 16.3768 24.8641 12.6991 21.1864L7.78604 16.2733Z"
-                    fill="#2A1A5E"/>
-              </svg>
-            </a>
+                        <a aria-label="Call us"
+                           href="tel:<?php the_field('phone_number', 'option') ?>"
+                           class="tel  mt-1 ">
+                            <svg class="hover-effect-svg" width="29" height="29" viewBox="0 0 29 29" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                        d="M7.78604 16.2733C4.10831 12.5956 3.62849 6.79807 6.65157 2.56576C7.60693 1.22825 9.53463 1.06871 10.6969 2.23096L12.9085 4.44254C14.3011 5.83521 14.146 8.13635 12.5791 9.32953C11.0121 10.5227 10.857 12.8239 12.2497 14.2165L14.7559 16.7228C16.1486 18.1154 18.4497 17.9603 19.6429 16.3934C20.8361 14.8264 23.1372 14.6713 24.5299 16.064L26.7415 18.2756C27.9037 19.4378 27.7442 21.3655 26.4067 22.3209C22.1744 25.344 16.3768 24.8641 12.6991 21.1864L7.78604 16.2733Z"
+                                        fill="#2A1A5E"/>
+                            </svg>
+                        </a>
 
             <div class="cart cart-header order-md-1 order-2">
 							<span class="mini-cart-count <?php if (WC()->cart->get_cart_contents_count()) {
@@ -319,32 +321,32 @@
     </div>
   </div>
 
-  <div class="header-bottom">
-    <div class="container-fluid">
-      <nav>
-        <div class="header__category">
-          <ul>
-              <?php
-              $terms = get_field('categories_in_header', 'option');
+    <div class="header-bottom">
+        <div class="container-fluid">
+            <nav>
+                <div class="header__category">
+                    <ul>
+                        <?php
+                        $terms = get_field('categories_in_header', 'option');
 
-              $singleCategorySlug = [];
-              if (is_product()) {
-                  $singleCategory = get_the_terms(get_the_ID(), 'product_cat');
-                  foreach ($singleCategory as $item) {
-                      $singleCategorySlug[] = $item->slug;
-                  }
-              }
-              foreach ($terms as $term) {
-                  $categoryUrl = rtrim(home_url(), '/') . '/product-category/' . $term->slug;
-                  $categoryID = get_queried_object_id();
-                  if (yappo_get_chosen_city_slug()) {
-                      $categoryUrl = rtrim(home_url(), '/') . '/' . yappo_get_chosen_city_slug() . '/' . $term->slug;
-                  }
-                  $urlParts = explode('?', $_SERVER['REQUEST_URI']);
-                  $basePart = $urlParts[0];
-                  $basePartWords = explode('/', rtrim($basePart, '/'));
-                  $lastWord = end($basePartWords);
-                  ?>
+                        $singleCategorySlug = [];
+                        if (is_product()) {
+                            $singleCategory = get_the_terms(get_the_ID(), 'product_cat');
+                            foreach ($singleCategory as $item) {
+                                $singleCategorySlug[] = $item->slug;
+                            }
+                        }
+                        foreach ($terms as $term) {
+                            $categoryUrl = rtrim(home_url(), '/') . '/product-category/' . $term->slug;
+                            $categoryID = get_queried_object_id();
+                            if (yappo_get_chosen_city_slug()) {
+                                $categoryUrl = rtrim(home_url(), '/') . '/' . yappo_get_chosen_city_slug() . '/' . $term->slug;
+                            }
+                            $urlParts = explode('?', $_SERVER['REQUEST_URI']);
+                            $basePart = $urlParts[0];
+                            $basePartWords = explode('/', rtrim($basePart, '/'));
+                            $lastWord = end($basePartWords);
+                            ?>
 
                 <li>
                   <a class="link-category
@@ -423,28 +425,29 @@
         <?php yappo_lang_opener(); ?>
 
 
-      <div class="social-wrap d-flex justify-content-center align-items-center">
+            <div class="social-wrap d-flex justify-content-center align-items-center">
 
-        <a href="tel:<?php the_field('phone_number', 'option') ?>"
-           class="tel mt-1 ">
-          <svg class="hover-effect-svg" width="29" height="29" viewBox="0 0 29 29" fill="none"
-               xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="M7.78604 16.2733C4.10831 12.5956 3.62849 6.79807 6.65157 2.56576C7.60693 1.22825 9.53463 1.06871 10.6969 2.23096L12.9085 4.44254C14.3011 5.83521 14.146 8.13635 12.5791 9.32953C11.0121 10.5227 10.857 12.8239 12.2497 14.2165L14.7559 16.7228C16.1486 18.1154 18.4497 17.9603 19.6429 16.3934C20.8361 14.8264 23.1372 14.6713 24.5299 16.064L26.7415 18.2756C27.9037 19.4378 27.7442 21.3655 26.4067 22.3209C22.1744 25.344 16.3768 24.8641 12.6991 21.1864L7.78604 16.2733Z"
-                fill="#2A1A5E"/>
-          </svg>
-        </a>
-          <?php if (get_field('instagram_link', 'option')) : ?>
-            <a href="<?php the_field('instagram_link', 'option') ?>" rel="nofollow" target="_blank">
-              <svg class="hover-effect-svg" width="23" height="24" viewBox="0 0 23 24"
-                   fill="none"
-                   xmlns="http://www.w3.org/2000/svg">
-                <rect width="23" height="24" rx="5" fill="#2A1A5E"/>
-                <circle cx="11.5" cy="12.5" r="4.5" stroke="white" stroke-width="4"/>
-                <circle cx="17" cy="5" r="2" fill="white"/>
-              </svg>
-            </a>
-          <?php endif; ?>
+                <a aria-label="Call us"
+                   href="tel:<?php the_field('phone_number', 'option') ?>"
+                   class="tel mt-1 ">
+                    <svg class="hover-effect-svg" width="29" height="29" viewBox="0 0 29 29" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path
+                                d="M7.78604 16.2733C4.10831 12.5956 3.62849 6.79807 6.65157 2.56576C7.60693 1.22825 9.53463 1.06871 10.6969 2.23096L12.9085 4.44254C14.3011 5.83521 14.146 8.13635 12.5791 9.32953C11.0121 10.5227 10.857 12.8239 12.2497 14.2165L14.7559 16.7228C16.1486 18.1154 18.4497 17.9603 19.6429 16.3934C20.8361 14.8264 23.1372 14.6713 24.5299 16.064L26.7415 18.2756C27.9037 19.4378 27.7442 21.3655 26.4067 22.3209C22.1744 25.344 16.3768 24.8641 12.6991 21.1864L7.78604 16.2733Z"
+                                fill="#2A1A5E"/>
+                    </svg>
+                </a>
+                <?php if (get_field('instagram_link', 'option')) : ?>
+                    <a href="<?php the_field('instagram_link', 'option') ?>" rel="nofollow" target="_blank">
+                        <svg class="hover-effect-svg" width="23" height="24" viewBox="0 0 23 24"
+                             fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <rect width="23" height="24" rx="5" fill="#2A1A5E"/>
+                            <circle cx="11.5" cy="12.5" r="4.5" stroke="white" stroke-width="4"/>
+                            <circle cx="17" cy="5" r="2" fill="white"/>
+                        </svg>
+                    </a>
+                <?php endif; ?>
 
           <?php if (get_field('facebook_link', 'option')) : ?>
             <a href="<?php the_field('facebook_link', 'option') ?>" rel="nofollow" target="_blank">

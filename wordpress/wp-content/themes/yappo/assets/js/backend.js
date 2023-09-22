@@ -114,7 +114,7 @@ function setCookieAddress(name, value) {
 
 
     $('body').on('updated_checkout', function () {
-        checkoutFields();
+        checkoutFields(); 
     })
 
     $("#city-chooser ul li a").on('click', function () {

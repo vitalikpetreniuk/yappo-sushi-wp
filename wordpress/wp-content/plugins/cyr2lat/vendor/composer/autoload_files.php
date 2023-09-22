@@ -6,5 +6,5 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    '344a0f93a05b8ca362c22e39586db500' => $baseDir . '/lib/polyfill-mbstring/bootstrap.php',
+    '08eca214f4d3690babeee667e1bd7ede' => $baseDir . '/src/php/includes/deprecated.php',
 );

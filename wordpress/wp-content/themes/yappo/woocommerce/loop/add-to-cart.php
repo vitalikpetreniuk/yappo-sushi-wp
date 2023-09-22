@@ -29,7 +29,7 @@ $seo = load_template_part( 'template-parts/seo/product', 'item-json', [
 echo apply_filters(
 	'woocommerce_loop_add_to_cart_link', // WPCS: XSS ok.
 	sprintf(
-		'<button data-quantity="%s" onclick="add_to_cart_ads(' . $product->get_id() . ',' .  $product->get_price() . ')" data-name="%s" data-index="%s" data-seo=\'%s\' class="btn btn-primary %s" %s><span>%s</span><svg width="25" height="28" viewBox="0 0 25 28" fill="none"
+		'<button aria-label="%s" data-quantity="%s" onclick="add_to_cart_ads(' . $product->get_id() . ',' .  $product->get_price() . ')" data-name="%s" data-index="%s" data-seo=\'%s\' class="btn btn-primary %s" %s><span>%s</span><svg width="25" height="28" viewBox="0 0 25 28" fill="none"
 					 xmlns="http://www.w3.org/2000/svg">
 					<path
 						d="M0 10.8458C0 8.7218 1.7218 7 3.84575 7H19.1542C21.2782 7 23 8.7218 23 10.8458C23 14.2744 22.679 17.6955 22.0413 21.0643L22.0016 21.2741C21.5925 23.4354 19.7039 25 17.5042 25H11.5H5.49576C3.29612 25 1.40752 23.4354 0.998393 21.2741L0.958675 21.0643C0.320958 17.6955 0 14.2744 0 10.8458Z"
@@ -39,7 +39,8 @@ echo apply_filters(
 					<path d="M7 7V6.5C7 4.01472 9.01472 2 11.5 2V2C13.9853 2 16 4.01472 16 6.5V7"
 						  stroke="white" stroke-width="3"/>
 				</svg></button>',
-		esc_attr( isset( $args['quantity'] ) ? $args['quantity'] : 1 ),
+        esc_html( $product->add_to_cart_text() ),
+        esc_attr( isset( $args['quantity'] ) ? $args['quantity'] : 1 ),
 		$product->get_title(),
 		$args['i'],
 		$seo,

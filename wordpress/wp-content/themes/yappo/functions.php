@@ -23,18 +23,18 @@ define('YAPPO_VERSION', wp_get_theme()->get('Version'));
  *
  */
 
-remove_action('wp_head','feed_links_extra', 3);
-remove_action('wp_head','feed_links', 2);
-remove_action('wp_head','rsd_link');
-remove_action('wp_head','wlwmanifest_link');
-remove_action('wp_head','wp_generator');
-remove_action('wp_head','start_post_rel_link',10,0);
-remove_action('wp_head','index_rel_link');
-remove_action('wp_head','adjacent_posts_rel_link_wp_head', 10, 0 );
-remove_action('wp_head','wp_shortlink_wp_head', 10, 0 );
-remove_action( 'wp_head', 'rest_output_link_wp_head');
-remove_action( 'wp_head', 'wp_oembed_add_discovery_links');
-remove_action( 'template_redirect', 'rest_output_link_header', 11, 0 );
+remove_action('wp_head', 'feed_links_extra', 3); // убирает ссылки на rss категорий
+remove_action('wp_head', 'feed_links', 2); // минус ссылки на основной rss и комментарии
+remove_action('wp_head', 'rsd_link');  // сервис Really Simple Discovery
+remove_action('wp_head', 'wlwmanifest_link'); // Windows Live Writer
+remove_action('wp_head', 'wp_generator');  // скрыть версию wordpress
+remove_action('wp_head', 'start_post_rel_link', 10, 0);
+remove_action('wp_head', 'index_rel_link');
+remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
+remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0);
+remove_action('wp_head', 'rest_output_link_wp_head');
+remove_action('wp_head', 'wp_oembed_add_discovery_links');
+remove_action('template_redirect', 'rest_output_link_header', 11, 0);
 
 function yappo_setup()
 {
@@ -66,47 +66,35 @@ add_action('after_setup_theme', 'yappo_setup');
  * @since 1.0.0
  *
  */
-function yappo_styles_header(){
+function yappo_styles_header()
+{
     wp_enqueue_style(
         'yappo-css',
         get_theme_file_uri('assets/css/styles.min.css'),
         [],
         time()
     );
-
-    wp_enqueue_style(
-        'yappo-fonts',
-        'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap',
-        [],
-        YAPPO_VERSION,
-        'all',
-    );
-
-    wp_enqueue_style(
-        'yappo-fonts',
-        'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap',
-        [],
-        YAPPO_VERSION,
-        'all',
-    );
 }
+
 add_action('wp_enqueue_scripts', 'yappo_styles_header');
-function yappo_scripts_header(){
+function yappo_scripts_header()
+{
 
     $deps = ['jquery', 'yappo-rangeslider'];
 
     if (is_checkout()) {
-        wp_enqueue_script('yappo-mask', get_theme_file_uri('assets/libs/jquery.mask.min.js'), [],time(), true);
+        wp_enqueue_script('yappo-mask', get_theme_file_uri('assets/libs/jquery.mask.min.js'), [], YAPPO_VERSION, true);
         $deps[] = 'yappo-mask';
     }
 
-    wp_enqueue_script('yappo-swiper', get_theme_file_uri('assets/libs/swiper.min.js'), [],time(), true);
-    wp_enqueue_script('yappo-rangeslider', get_theme_file_uri('assets/libs/ion.rangeSlider.min.js'), [],time(), true, true);
+    wp_enqueue_script('yappo-swiper', get_theme_file_uri('assets/libs/swiper.min.js'), [], YAPPO_VERSION, true);
+    wp_enqueue_script('yappo-rangeslider', get_theme_file_uri('assets/libs/ion.rangeSlider.min.js'), [], YAPPO_VERSION, true, true);
 
     wp_enqueue_script('yappo-script', get_theme_file_uri('assets/js/scripts.min.js'), $deps, time(), true);
-    wp_enqueue_script('yappo-backend', get_theme_file_uri('assets/js/backend.js'), array('jquery'), time(),true);
+    wp_enqueue_script('yappo-backend', get_theme_file_uri('assets/js/backend.js'), array('jquery'), time(), true);
 
 }
+
 add_action('wp_footer', 'yappo_scripts_header');
 
 function yappo_styles()
@@ -127,21 +115,21 @@ function yappo_styles()
         [],
         YAPPO_VERSION,
         'all'
-        ,true
+        , true
     );
     wp_enqueue_style(
         'yappo-rangestyle',
         get_theme_file_uri('assets/libs/ion.rangeSlider.min.css'),
         [],
-        time(),
-        'all',true
+        YAPPO_VERSION,
+        'all', true
     );
     wp_enqueue_style(
         'yappo-style',
         get_stylesheet_uri(),
         [],
         time(),
-        'all',true
+        'all', true
     );
 
 }
@@ -161,6 +149,7 @@ add_action('wp_footer', 'yappo_styles');
 //}
 //add_action('wp_footer', 'move_styles_to_footer');
 
+}
 
 //function custom_use_print_block_library( $html, $handle ) {
 //    $handles = array( 'yappo-rangestyle','yappo-swiper','query-monitor','wp-block-library');
@@ -472,4 +461,49 @@ function removeDefHreflangs($hreflangs)
     return $hreflangs;
 }
 
+/* Старт оптимізації */
+// disable gutenberg frontend styles
+function disable_gutenberg_wp_enqueue_scripts()
+{
 
+    wp_dequeue_style('wp-block-library');
+    wp_dequeue_style('wp-block-library-theme');
+    wp_dequeue_style('wc-blocks-style');
+    wp_dequeue_style('wc-all-blocks-style');
+    wp_dequeue_style('wc-block-style'); // disable woocommerce frontend block styles
+
+}
+
+add_filter('wp_enqueue_scripts', 'disable_gutenberg_wp_enqueue_scripts', 100);
+
+// Disable the emoji's
+function disable_emojis()
+{
+    remove_action('wp_head', 'print_emoji_detection_script', 7);
+    remove_action('admin_print_scripts', 'print_emoji_detection_script');
+    remove_action('wp_print_styles', 'print_emoji_styles');
+    remove_action('admin_print_styles', 'print_emoji_styles');
+    remove_filter('the_content_feed', 'wp_staticize_emoji');
+    remove_filter('comment_text_rss', 'wp_staticize_emoji');
+    remove_filter('wp_mail', 'wp_staticize_emoji_for_email');
+
+    // Remove from TinyMCE
+    add_filter('tiny_mce_plugins', 'disable_emojis_tinymce');
+}
+
+add_action('init', 'disable_emojis');
+
+// Filter out the tinymce emoji plugin
+function disable_emojis_tinymce($plugins)
+{
+    if (is_array($plugins)) {
+        return array_diff($plugins, array('wpemoji'));
+    } else {
+        return array();
+    }
+}
+
+/* Вимкнути дефолтні wpml стилі */
+define('ICL_DONT_LOAD_LANGUAGE_SELECTOR_CSS', true);
+
+/* Кінець оптимізації */

@@ -51,15 +51,16 @@ if (empty($product) || !$product->is_visible()) {
         });
     </script>
 
-    <div class="product__image class">
-      <a href="<?php the_permalink(); ?>">
-        <?php
-        $image_attributes = wp_get_attachment_image_src( get_post_thumbnail_id( $product->get_id() ) , 'medium');
-        if ( $image_attributes ) : ?>
-          <img src="<?php echo $image_attributes[0]; ?>" width="<?php echo $image_attributes[1]; ?>" height="<?php echo $image_attributes[2]; ?>" />
-        <?php endif; ?>
-      </a>
-    </div>
+        <div class="product__image class">
+            <a href="<?php the_permalink(); ?>">
+                <?php
+                $image_attributes = wp_get_attachment_image_src(get_post_thumbnail_id($product->get_id()), 'medium');
+                if ($image_attributes) : ?>
+                    <img src="<?php echo $image_attributes[0]; ?>" alt="<?php the_title(); ?>"
+                         width="<?php echo $image_attributes[1]; ?>" height="<?php echo $image_attributes[2]; ?>"/>
+                <?php endif; ?>
+            </a>
+        </div>
 
     <div class="product__detail">
 
