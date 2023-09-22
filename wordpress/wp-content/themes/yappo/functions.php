@@ -149,7 +149,6 @@ add_action('wp_footer', 'yappo_styles');
 //}
 //add_action('wp_footer', 'move_styles_to_footer');
 
-}
 
 //function custom_use_print_block_library( $html, $handle ) {
 //    $handles = array( 'yappo-rangestyle','yappo-swiper','query-monitor','wp-block-library');
@@ -421,8 +420,19 @@ add_filter('wpseo_robots', 'seo_robots_modify_search');
 
 function seo_robots_modify_search($robots)
 {
-    if (is_checkout() || is_search() || is_cart() || strpos($_SERVER['REQUEST_URI'], 'add-to-cart') ||  strpos($_SERVER['REQUEST_URI'], '?') || strpos($_SERVER['REQUEST_URI'], '/feed')
-    || strpos($_SERVER['REQUEST_URI'], '&pa_ingredients') || strpos($_SERVER['REQUEST_URI'], '&max_price')|| strpos($_SERVER['REQUEST_URI'], '&min_price') ||  strpos($_SERVER['REQUEST_URI'], '&product_tag') ) {
+    /* Фікс бага що може закешуватись noindex коли не треба */
+    if (is_user_logged_in()) return $robots;
+
+    if (is_checkout()
+        || is_search()
+        || is_cart()
+        || strpos($_SERVER['REQUEST_URI'], 'add-to-cart')
+        || strpos($_SERVER['REQUEST_URI'], '?')
+        || strpos($_SERVER['REQUEST_URI'], '/feed')
+        || strpos($_SERVER['REQUEST_URI'], '&pa_ingredients')
+        || strpos($_SERVER['REQUEST_URI'], '&max_price')
+        || strpos($_SERVER['REQUEST_URI'], '&min_price')
+        || strpos($_SERVER['REQUEST_URI'], '&product_tag')) {
         return "noindex, nofollow";
     } else {
         return $robots;
