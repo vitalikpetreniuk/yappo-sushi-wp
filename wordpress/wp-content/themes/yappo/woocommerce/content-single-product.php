@@ -34,78 +34,78 @@ if (post_password_required()) {
 ?>
 <div id="product-<?php the_ID(); ?>" <?php wc_product_class('', $product); ?>>
 
-  <div class="summary entry-summary product-top" itemscope itemtype="http://schema.org/Product">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-xxl-10 col-xl-11 col-lg-12">
+    <div class="summary entry-summary product-top" itemscope itemtype="http://schema.org/Product">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xxl-10 col-xl-11 col-lg-12">
 
-            <?php if (function_exists('yoast_breadcrumb')) {
-                if (get_locale() == 'ru_RU') {
-                    echo str_replace('Головна', 'Главная', yoast_breadcrumb('<ul class="breadcrumbs"  itemscope itemtype="https://schema.org/BreadcrumbList">', '</ul>', false));
-                } else {
-                    echo yoast_breadcrumb('<ul class="breadcrumbs"  itemscope itemtype="https://schema.org/BreadcrumbList">', '</ul>');
-                }
-            } ?>
-        </div>
-      </div>
-
-      <div class="card-produc-block">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-xxl-5 col-xl-5 col-lg-5  col-md-12">
-            <div class="product-img-wrap" data-columns="4">
-
-                <?php yappo_product_badges(); ?>
-
-              <a href="<?php the_permalink(); ?>" class="" itemprop="image">
-                  <?php the_post_thumbnail('full'); ?>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12">
-
-            <div class="column-right">
-
-                <?php woocommerce_template_single_title(); ?>
-
-              <div class="description" itemprop="description">
-                <p><?php woocommerce_template_single_excerpt(); ?></p>
-              </div>
-
-              <div class="inform">
-                <p>
-                    <?php yappo_product_params($product); ?>
-                </p>
-              </div>
-
-              <div class="row">
-                <div class="col-md-7">
-                    <?php
-                    woocommerce_template_single_add_to_cart(); ?>
+                    <?php if (function_exists('yoast_breadcrumb')) {
+                        if (get_locale() == 'ru_RU') {
+                            echo str_replace('Головна', 'Главная', yoast_breadcrumb('<ul class="breadcrumbs"  itemscope itemtype="https://schema.org/BreadcrumbList">', '</ul>', false));
+                        } else {
+                            echo yoast_breadcrumb('<ul class="breadcrumbs"  itemscope itemtype="https://schema.org/BreadcrumbList">', '</ul>');
+                        }
+                    } ?>
                 </div>
-              </div>
-
-
             </div>
-          </div>
 
+            <div class="card-produc-block">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-xxl-5 col-xl-5 col-lg-5  col-md-12">
+                        <div class="product-img-wrap" data-columns="4">
+
+                            <?php yappo_product_badges(); ?>
+
+                            <a href="<?php the_permalink(); ?>" class="" itemprop="image">
+                                <?php the_post_thumbnail('full'); ?>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12">
+
+                        <div class="column-right">
+
+                            <?php woocommerce_template_single_title(); ?>
+
+                            <div class="description" itemprop="description">
+                                <p><?php woocommerce_template_single_excerpt(); ?></p>
+                            </div>
+
+                            <div class="inform">
+                                <p>
+                                    <?php yappo_product_params($product); ?>
+                                </p>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <?php
+                                    woocommerce_template_single_add_to_cart(); ?>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <script>
-        dataLayer.push({
-            'event': 'view_item_ads',
-            'value': <?= $product->get_price(); ?>,
-            'items': [
-                {
-                    'id': <?= $product->get_id(); ?>,
-                    'google_business_vertical': 'retail'
-                },
-            ]
-        });
-    </script>
+        <script>
+            dataLayer.push({
+                'event': 'view_item_ads',
+                'value': <?= $product->get_price(); ?>,
+                'items': [
+                    {
+                        'id': <?= $product->get_id(); ?>,
+                        'google_business_vertical': 'retail'
+                    },
+                ]
+            });
+        </script>
 
-  </div>
+    </div>
 
     <?php
     /**
@@ -117,38 +117,53 @@ if (post_password_required()) {
      */
     do_action('woocommerce_after_single_product_summary');
     ?>
-  <section class="product-section news-product">
-    <div class="container-fluid">
-      <h2 class="section__title">
-          <?php _e('НАПОЇ', 'yappo') ?>
-      </h2>
-    </div>
+    <section class="product-section news-product">
+        <div class="container-fluid">
+            <h2 class="section__title">
+                <?php _e('НАПОЇ', 'yappo') ?>
+            </h2>
+        </div>
 
 
-      <?php $query = new WP_Query(array(
-          'post_type' => 'product',
-          'posts_per_page' => 6,
-          'tax_query' => [
-              [
-                  'taxonomy' => 'product_cat',
-                  'field' => 'id',
-                  'terms' => [
-                      apply_filters('wpml_object_id', 101, 'product_cat'),
-                      apply_filters('wpml_object_id', 102, 'product_cat')
-                  ]
-              ]
-          ]
-      ));
-      ?>
+        <?php $query = new WP_Query(array(
+            'post_type' => 'product',
+            'posts_per_page' => 6,
+            'tax_query' => [
+                [
+                    'taxonomy' => 'product_cat',
+                    'field' => 'id',
+                    'terms' => [
+                        apply_filters('wpml_object_id', 101, 'product_cat'),
+                        apply_filters('wpml_object_id', 102, 'product_cat')
+                    ]
+                ]
+            ]
+        ));
+        ?>
 
-      <?php woocommerce_product_loop_start(); ?>
-      <?php if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
-          <?php wc_get_template_part('content', 'product'); ?>
-      <?php
-      endwhile; endif; ?>
+        <?php woocommerce_product_loop_start(); ?>
+        <?php if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
+            <?php wc_get_template_part('content', 'product'); ?>
+        <?php
+        endwhile; endif;
+        wp_reset_query();
+        ?>
 
-      <?php woocommerce_product_loop_end(); ?>
-  </section>
+        <?php woocommerce_product_loop_end(); ?>
+    </section>
+    <?php if (have_rows('questions', get_the_ID())): ?>
+        <section class="accordion-section">
+            <div class="container-fluid">
+                <div class="accordeon">
+                    <?php
+                    while (have_rows('questions', get_the_ID())) : the_row();
+                        yappo_faq_row(get_sub_field('question'), get_sub_field('answer'));
+                    endwhile;
+                    ?>
+                </div>
+            </div>
+        </section>
+    <?php endif; ?>
 </div>
 
 <?php do_action('woocommerce_after_single_product'); ?>
