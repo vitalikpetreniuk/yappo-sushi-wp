@@ -517,3 +517,29 @@ function disable_emojis_tinymce($plugins)
 define('ICL_DONT_LOAD_LANGUAGE_SELECTOR_CSS', true);
 
 /* Кінець оптимізації */
+// Функция для очистки кэша W3 Total Cache
+function clear_w3tc_cache() {
+    if (function_exists('w3tc_pgcache_flush')) {
+        w3tc_pgcache_flush(); // Очистка кэша страниц
+    }
+    if (function_exists('w3tc_minify_flush')) {
+        w3tc_minify_flush(); // Очистка кэша минификации
+    }
+    // Дополнительно можно добавить другие функции очистки кэша, если необходимо
+}
+
+// Запланировать выполнение очистки кэша каждый день в 11:00 и 16:00
+add_action('wp', 'schedule_cache_clear');
+function schedule_cache_clear() {
+    if (!wp_next_scheduled('clear_w3tc_cache')) {
+        // Указываем желаемое время выполнения (в формате 'G:i', 24-часовой формат)
+        $clear_times = array('11:00', '16:00');
+
+        foreach ($clear_times as $time) {
+            wp_schedule_event(strtotime('today ' . $time), 'daily', 'clear_w3tc_cache');
+        }
+    }
+}
+
+// Добавить хук для выполнения функции очистки кэша
+add_action('clear_w3tc_cache', 'clear_w3tc_cache');
