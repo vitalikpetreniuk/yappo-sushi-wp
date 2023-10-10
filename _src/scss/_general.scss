@@ -302,6 +302,7 @@ p{
     font-size: 16px;
     font-weight: 700;
     background-color: $accent;
+    display: inline-block;
 
     &:hover{
         background-color: #3F2E77; 
@@ -484,7 +485,13 @@ p{
     }
 }
 
+.text-center {
+    text-align: center;
+}
 
+.block_pdngs {
+    padding: 50px 0 150px;
+}
 
 //line
 
@@ -834,3 +841,9 @@ body .helpcrunch-iframe-wrapper{
 }
 
 @media (max-width:822px){.footer .social-wrap{z-index: 28 !important;}}
+
+@media (max-width: 575px) {
+    .block_pdngs {
+        padding: 35px 0 50px;
+    }
+}

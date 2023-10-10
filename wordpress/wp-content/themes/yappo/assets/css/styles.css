@@ -1798,6 +1798,7 @@ p {
   font-size: 16px;
   font-weight: 700;
   background-color: #2A1A5E;
+  display: inline-block;
 }
 
 .btn-blue:hover {
@@ -1954,6 +1955,14 @@ p {
 
 .breadcrumbs li:last-child:before {
   display: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.block_pdngs {
+  padding: 50px 0 150px;
 }
 
 .line {
@@ -13403,6 +13412,10 @@ body .helpcrunch-iframe-wrapper {
 
   .woocommerce-order .shop_table tfoot td {
     font-size: 14px;
+  }
+
+  .block_pdngs {
+    padding: 35px 0 50px;
   }
 
   .header .header-top {
