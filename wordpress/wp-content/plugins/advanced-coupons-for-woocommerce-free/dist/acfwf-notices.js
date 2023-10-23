@@ -1,0 +1,2 @@
+!function(){"use strict";jQuery(document).ready((function(i){i(".acfw-admin-notice").on("click","button.notice-dismiss,.acfw-notice-dismiss,.review-actions .snooze,.review-actions .dismissed,.action-button.with-response",(function(n){n.preventDefault();var t=i(this).closest(".acfw-admin-notice"),s=i(this).data("response");t.fadeOut("fast"),i.post(ajaxurl,{action:"acfw_dismiss_admin_notice",notice:t.data("notice"),response:s||"dismissed",nonce:t.data("nonce")})}))}))}();
+//# sourceMappingURL=acfwf-notices.js.map

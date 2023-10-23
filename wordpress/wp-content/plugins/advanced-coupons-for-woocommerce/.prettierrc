@@ -1,0 +1,25 @@
+{
+  "printWidth": 120,
+  "tabWidth": 2,
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "options": {
+        "tabWidth": 2,
+        "singleQuote": true
+      }
+    },
+    {
+      "files": ["*.json"],
+      "options": {
+        "tabWidth": 2
+      }
+    },
+    {
+      "files": ["*.php"],
+      "options": {
+        "tabWidth": 4
+      }
+    }
+  ]
+}

@@ -155,8 +155,18 @@
     padding: 0;
     margin-bottom: 10px;
     background-color: #ffffff;
-    border: 1px solid #eee;
+    border: 1px solid #eeeeee;
     position: relative;
+}
+
+.woopt_actions .woopt_action_placeholder {
+    display: block;
+    width: 100%;
+    height: 42px;
+    padding: 0;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border: 1px dashed #dddddd;
 }
 
 .woopt_action_heading {

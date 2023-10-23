@@ -141,7 +141,12 @@ function send_order_to_pipedrive($order_id) {
             $product = $item->get_product();
             $product_id = $item->get_product_id();
             $quantity = $item->get_quantity();
-            $price = $product->get_regular_price();
+            // Отримати звичайну ціну товару
+            $regular_price = $product->get_regular_price();
+            // Отримати ціну зі знижкою (якщо вона є)
+            $sale_price = $product->get_sale_price();
+            $price = (empty($sale_price)?$regular_price:$sale_price);
+
             $pipedrive_product_id = null;
             $shopPosterProductId = get_field('poster_product_id', $product_id);
             if(!empty($shopPosterProductId) && key_exists($shopPosterProductId, $product_mapping))

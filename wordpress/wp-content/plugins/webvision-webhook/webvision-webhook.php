@@ -1,22 +1,23 @@
 <?php
 /**
- * Plugin Name: Webvision webhook
- * Description: WebHook Poster for intergation with Pipedrive and Site
+ * Plugin Name: Webvision integrations
+ * Description: Integration webhooks for Pipedrive, Poster and Site
  * Version: 1.0.0
  * Author: Webvision
  */
 
-use Poster\Handler\Transaction;
 use Poster\Handler\PosterProduct;
 use Poster\Handler\SiteProduct;
+use Poster\Handler\Transaction;
+use Pipedrive\Base as BasePipedrive;
 
-add_action('rest_api_init', 'webvision_rest_api_init');
+add_action('rest_api_init', 'register_wv_integration_webhook_route');
 
 require_once(plugin_dir_path(__FILE__) . 'inc/order.php');
 
-function webvision_rest_api_init()
+function register_wv_integration_webhook_route()
 {
-    register_rest_route('webhook/v1', '/poster', [
+    register_rest_route('webhook/v1', 'poster', [
         'methods' => 'POST',
         'callback' => 'webvision_webhook_endpoint_callback_poster',
         'permission_callback' => 'webvision_webhook_endpoint_callback_poster_permissions_check',
@@ -26,7 +27,27 @@ function webvision_rest_api_init()
         'callback' => 'webvision_webhook_endpoint_callback_pipedrive',
         'permission_callback' => 'webvision_webhook_endpoint_callback_pipedrive_permissions_check',
     ]);
+    register_rest_route('pipedrive/payment', 'liqpay/result', [
+        'methods' => 'POST',
+        'callback' => 'wv_payment_liqpay_endpoint_cb',
+        'permission_callback' => 'wv_payment_liqpay_endpoint_permissions_check_cb',
+    ]);
 }
+
+
+function wv_payment_liqpay_endpoint_cb($request){
+    require_once __DIR__.'/lib/server_url.php';
+    $postData = $request->get_params();
+    $liqpayResult = new LiqPayServerUrl($postData);
+    $liqpayResult->init();
+}
+
+function wv_payment_liqpay_endpoint_permissions_check_cb(){
+
+    return true;
+}
+
+
 
 function webvision_webhook_endpoint_callback_poster_permissions_check($request)
 {
@@ -61,6 +82,7 @@ function webvision_webhook_endpoint_callback_poster_permissions_check($request)
 
 function webvision_webhook_endpoint_callback_pipedrive_permissions_check()
 {
+
     // немає технології перевірки прав
     return true;
 }
@@ -101,12 +123,10 @@ function webvision_webhook_endpoint_callback_poster($request)
 
 function webvision_webhook_endpoint_callback_pipedrive($request)
 {
-    global $pipedrive_request;
-    $pipedrive_request = $request;
-    require_once(plugin_dir_path(__FILE__) . 'inc/pipedrive-webhook.php');
+    require_once(plugin_dir_path(__FILE__) . 'handler/pipedrive_base.php');
+    $postData = $request->get_json_params();
+    $pipedriveBase = new BasePipedrive($postData);
+    $pipedriveBase->init();
     http_response_code(200);
 }
-
-
-
-
+require_once (__DIR__.'/options.php');

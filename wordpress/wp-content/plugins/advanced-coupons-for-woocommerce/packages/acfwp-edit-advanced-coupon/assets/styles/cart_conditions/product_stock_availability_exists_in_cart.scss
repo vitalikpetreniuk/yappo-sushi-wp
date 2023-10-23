@@ -1,0 +1,19 @@
+#acfw_cart_conditions {
+  .product-stock-availability-exists-in-cart-field {
+    .field-control.categories {
+      width: 100%;
+    }
+
+    .select2 {
+      width: 100% !important;
+    }
+
+    // buttons
+    .psaeic-btn-remove { color: #dc3332; }
+    .psaeic-btn-add-category-row {
+      color: #000;
+      font-weight: 700;
+      text-decoration: none;
+    }
+  }
+}

@@ -192,7 +192,8 @@
     var $timer = $(this).closest('.woopt_action').find('.woopt_timer');
     var data = {
       key: $(this).closest('.woopt_action').data('key'),
-      action: 'woopt_add_time', nonce: woopt_vars.woopt_nonce,
+      action: 'woopt_add_time',
+      nonce: woopt_vars.woopt_nonce,
     };
 
     $.post(ajaxurl, data, function(response) {
@@ -210,7 +211,8 @@
         find('.woopt_apply_combinations');
     var data = {
       key: $(this).closest('.woopt_action').data('key'),
-      action: 'woopt_add_apply_combination', nonce: woopt_vars.woopt_nonce,
+      action: 'woopt_add_apply_combination',
+      nonce: woopt_vars.woopt_nonce,
     };
 
     $.post(ajaxurl, data, function(response) {
@@ -407,7 +409,8 @@
     }).addClass('woopt_dpk_init');
 
     $('.woopt_dpk_date_range:not(.woopt_dpk_init)').wpcdpk({
-      range: true, multipleDatesSeparator: ' - ',
+      range: true,
+      multipleDatesSeparator: ' - ',
       onSelect: function(fd, d, dpk) {
         if (!d) {
           return;
@@ -509,8 +512,7 @@
           'apply_combination') {
         // for terms only
         if ((typeof $this.data(apply) === 'string' ||
-            $this.data(apply) instanceof
-            String) && $this.data(apply) !== '') {
+            $this.data(apply) instanceof String) && $this.data(apply) !== '') {
           $this.val($this.data(apply).split(',')).change();
         } else {
           $this.val([]).change();
@@ -568,6 +570,8 @@
         $val.val(products).trigger('change');
       }
     });
+
+    $(document.body).trigger('wc-enhanced-select-init');
   }
 
   function woopt_show_action($action) {
@@ -699,7 +703,10 @@
   }
 
   function woopt_sortable() {
-    $('.woopt_actions').sortable({handle: '.woopt_action_move'});
+    $('.woopt_actions').
+        sortable({
+          handle: '.woopt_action_move', placeholder: 'woopt_action_placeholder',
+        });
   }
 
   function woopt_build_label($select) {

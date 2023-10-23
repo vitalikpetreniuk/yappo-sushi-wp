@@ -186,10 +186,10 @@ require_once 'inc/functions-sasha.php';
 
 function yappo_lang_opener($classes = '')
 { ?>
-  <div class="lang lang-desctop <?= $classes ?>">
+    <div class="lang lang-desctop <?= $classes ?>">
 
-    <div class="d-flex align-items-center justify-content-start">
-        <?php echo do_shortcode('[wpml_language_switcher]
+        <div class="d-flex align-items-center justify-content-start">
+            <?php echo do_shortcode('[wpml_language_switcher]
 			<div class="{{ css_classes }} lang-desctop-wrap">
 			
 			   {% for code, language in languages %}
@@ -202,17 +202,17 @@ function yappo_lang_opener($classes = '')
 			</div>
 			[/wpml_language_switcher]'); ?>
 
-      <div class="arrow-wrap">
-        <svg width="8" height="6" viewBox="0 0 8 6" fill="none"
-             xmlns="http://www.w3.org/2000/svg">
-          <path d="M1 1L3.8 5L7 1" stroke="black" stroke-linecap="round"
-                stroke-linejoin="round"/>
-        </svg>
-      </div>
-    </div>
+            <div class="arrow-wrap">
+                <svg width="8" height="6" viewBox="0 0 8 6" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L3.8 5L7 1" stroke="black" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </div>
 
 
-      <?php echo do_shortcode('[wpml_language_switcher]
+        <?php echo do_shortcode('[wpml_language_switcher]
 								<div class="{{ css_classes }} lang-list">
 
 								   {% for code, language in languages %}
@@ -225,7 +225,7 @@ function yappo_lang_opener($classes = '')
 								</div>
 								[/wpml_language_switcher]') ?>
 
-  </div>
+    </div>
 
     <?php
 }
@@ -444,19 +444,19 @@ function yappo_faq_row($question, $answer)
 {
     ?>
 
-  <div class="slide-wrap">
-    <div class="slide-header">
-      <span class="glyphicon glyphicon-chevron-down"></span>
-      <h4>
-          <?= $question ?>
-      </h4>
+    <div class="slide-wrap">
+        <div class="slide-header">
+            <span class="glyphicon glyphicon-chevron-down"></span>
+            <h4>
+                <?= $question ?>
+            </h4>
 
-      <span class="span-plus"></span>
+            <span class="span-plus"></span>
+        </div>
+        <div class="slide-content">
+            <?= $answer ?>
+        </div>
     </div>
-    <div class="slide-content">
-        <?= $answer ?>
-    </div>
-  </div>
     <?php
 }
 
@@ -534,7 +534,7 @@ function schedule_cache_clear() {
     if (!wp_next_scheduled('clear_w3tc_cache')) {
         // Указываем желаемое время выполнения (в формате 'G:i', 24-часовой формат)
         $clear_times = array('11:00', '16:00');
-
+        
         foreach ($clear_times as $time) {
             wp_schedule_event(strtotime('today ' . $time), 'daily', 'clear_w3tc_cache');
         }
@@ -543,3 +543,4 @@ function schedule_cache_clear() {
 
 // Добавить хук для выполнения функции очистки кэша
 add_action('clear_w3tc_cache', 'clear_w3tc_cache');
+

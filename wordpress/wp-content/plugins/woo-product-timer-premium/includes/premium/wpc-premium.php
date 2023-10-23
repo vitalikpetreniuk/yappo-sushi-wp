@@ -22,11 +22,11 @@ if ( ! function_exists( 'woopt_update_checker' ) ) {
 
 		if ( ! wpc_get_update_key( 7452 ) ) {
 			?>
-			<div data-dismissible="woopt_update" class="wpc-notice notice notice-warning is-dismissible">
-				<p>Please verify <a href="<?php echo admin_url( 'admin.php?page=wpclever-keys' ); ?>">License Key</a> of
-					<strong>WPC Product Timer</strong> to enjoy unlimited update release and get the latest plugin update directly on the website backend.
-				</p>
-			</div>
+            <div data-dismissible="woopt_update" class="wpc-notice notice notice-warning is-dismissible">
+                <p>Please verify <a href="<?php echo admin_url( 'admin.php?page=wpclever-keys' ); ?>">License Key</a> of
+                    <strong>WPC Product Timer</strong> to enjoy unlimited update release and get the latest plugin update directly on the website backend.
+                </p>
+            </div>
 			<?php
 		}
 	}
@@ -82,39 +82,39 @@ if ( ! class_exists( 'WPCleverPremium' ) ) {
 
 		function admin_menu_content() {
 			?>
-			<div class="wpclever_page wpclever_update_keys_page wrap">
-				<h1>WPClever | License Keys</h1>
-				<div class="card">
-					<h2 class="title">Enter Your License Keys</h2>
-					<p>
-						<strong>Enter your License Key to verify the license you’re using and turn on the update notification. Verified licenses can enjoy unlimited update release and get the latest plugin update directly on our website.</strong>
-					</p>
-					<p>
-						Please check the purchase receipt to find your Receipt ID (old-type invoice) or License Key (new-type invoice) to verify your license(s). You can also access the
-						<a href="https://wpclever.net/my-account/" target="_blank">Membership page</a> to get the license key and enter it below for the verification of each purchase attached to your account.
-					</p>
-					<div class="wpclever_update_keys_form">
-						<input type="hidden" name="wpc_update_site" id="wpc_update_site" value="<?php echo esc_attr( get_bloginfo( 'url' ) ); ?>"/><input type="hidden" name="wpc_update_email" id="wpc_update_email" value="<?php echo esc_attr( get_bloginfo( 'admin_email' ) ); ?>"/><input type="text" name="wpc_update_key" id="wpc_update_key" class="regular-text" placeholder="Receipt ID or License Key"/>
-						<input type="button" value="Verify" id="wpc_add_update_key"/>
-					</div>
-				</div>
-				<div class="card wpclever_plugins">
-					<h2 class="title">Verified Keys</h2>
+            <div class="wpclever_page wpclever_update_keys_page wrap">
+                <h1>WPClever | License Keys</h1>
+                <div class="card">
+                    <h2 class="title">Enter Your License Keys</h2>
+                    <p>
+                        <strong>Enter your License Key to verify the license you’re using and turn on the update notification. Verified licenses can enjoy unlimited update release and get the latest plugin update directly on our website.</strong>
+                    </p>
+                    <p>
+                        Please check the purchase receipt to find your Receipt ID (old-type invoice) or License Key (new-type invoice) to verify your license(s). You can also access the
+                        <a href="https://wpclever.net/my-account/" target="_blank">Membership page</a> to get the license key and enter it below for the verification of each purchase attached to your account.
+                    </p>
+                    <div class="wpclever_update_keys_form">
+                        <input type="hidden" name="wpc_update_site" id="wpc_update_site" value="<?php echo esc_attr( get_bloginfo( 'url' ) ); ?>"/><input type="hidden" name="wpc_update_email" id="wpc_update_email" value="<?php echo esc_attr( get_bloginfo( 'admin_email' ) ); ?>"/><input type="text" name="wpc_update_key" id="wpc_update_key" class="regular-text" placeholder="Receipt ID or License Key"/>
+                        <input type="button" value="Verify" id="wpc_add_update_key"/>
+                    </div>
+                </div>
+                <div class="card wpclever_plugins">
+                    <h2 class="title">Verified Keys</h2>
 					<?php
 					$keys = (array) get_option( 'wpc_update_keys', [] );
 
 					if ( ! empty( $keys ) ) {
 						?>
-						<table class="wpc_update_keys">
-							<thead>
-							<tr>
-								<th>Key</th>
-								<th>Allowed plugins</th>
-								<th>Date</th>
-								<th>Action</th>
-							</tr>
-							</thead>
-							<tbody>
+                        <table class="wpc_update_keys">
+                            <thead>
+                            <tr>
+                                <th>Key</th>
+                                <th>Allowed plugins</th>
+                                <th>Date</th>
+                                <th>Action</th>
+                            </tr>
+                            </thead>
+                            <tbody>
 							<?php
 							foreach ( array_reverse( $keys ) as $key => $val ) {
 								echo '<tr>';
@@ -133,13 +133,13 @@ if ( ! class_exists( 'WPCleverPremium' ) ) {
 								echo '</tr>';
 							}
 							?>
-							</tbody>
-						</table>
+                            </tbody>
+                        </table>
 					<?php } else {
 						echo '<p>Have no keys was verified. Please add your first one!</p>';
 					} ?>
-				</div>
-			</div>
+                </div>
+            </div>
 			<?php
 		}
 

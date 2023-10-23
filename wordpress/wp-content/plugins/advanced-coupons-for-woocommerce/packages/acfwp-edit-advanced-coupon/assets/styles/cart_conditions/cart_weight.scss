@@ -1,0 +1,52 @@
+#acfw_cart_conditions {
+  .cart-weight-field {
+
+    &:after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+
+    label {
+      width: 100%;
+    }
+
+    .field-control {
+      float: left;
+      width: 150px;
+      margin: 5px 10px 0 0;
+
+      &.no-label {
+        margin-top: 28px;
+      }
+
+      input, select {
+        width: 100%;
+      }
+
+      input[type="checkbox"] {
+        width: 1rem;
+      }
+
+      &.wider {
+        width: 200px;
+      }
+
+      &.side-label {
+
+        input {
+          width: 80px;
+          margin-right: 5px;
+        }
+
+        label {
+          float: left !important;
+          width: auto !important;
+          position: relative;
+          top: 5px;
+        }
+      }
+    }
+
+  }
+}

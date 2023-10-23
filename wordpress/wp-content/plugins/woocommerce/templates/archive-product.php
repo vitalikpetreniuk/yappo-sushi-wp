@@ -1,188 +1,105 @@
 <?php
 /**
- * A class of utilities for dealing with orders.
+ * The Template for displaying product archives, including the main shop page which is a post type archive
+ *
+ * This template can be overridden by copying it to yourtheme/woocommerce/archive-product.php.
+ *
+ * HOWEVER, on occasion WooCommerce will need to update template files and you
+ * (the theme developer) will need to copy the new files to your theme to
+ * maintain compatibility. We try to do this as little as possible, but it does
+ * happen. When this occurs the version of the template file will be bumped and
+ * the readme will list any important changes.
+ *
+ * @see https://docs.woocommerce.com/document/template-structure/
+ * @package WooCommerce\Templates
+ * @version 3.4.0
  */
 
-namespace Automattic\WooCommerce\Utilities;
+defined( 'ABSPATH' ) || exit;
 
-use Automattic\WooCommerce\Caches\OrderCacheController;
-use Automattic\WooCommerce\Internal\Admin\Orders\PageController;
-use Automattic\WooCommerce\Internal\DataStores\Orders\CustomOrdersTableController;
-use Automattic\WooCommerce\Internal\Features\FeaturesController;
-use Automattic\WooCommerce\Internal\Utilities\COTMigrationUtil;
-use WC_Order;
-use WP_Post;
+get_header( 'shop' );
 
 /**
- * A class of utilities for dealing with orders.
+ * Hook: woocommerce_before_main_content.
+ *
+ * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
+ * @hooked woocommerce_breadcrumb - 20
+ * @hooked WC_Structured_Data::generate_website_data() - 30
  */
-final class OrderUtil {
+do_action( 'woocommerce_before_main_content' );
+
+?>
+<header class="woocommerce-products-header">
+	<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
+		<h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
+	<?php endif; ?>
+
+	<?php
+	/**
+	 * Hook: woocommerce_archive_description.
+	 *
+	 * @hooked woocommerce_taxonomy_archive_description - 10
+	 * @hooked woocommerce_product_archive_description - 10
+	 */
+	do_action( 'woocommerce_archive_description' );
+	?>
+</header>
+<?php
+if ( woocommerce_product_loop() ) {
 
 	/**
-	 * Helper function to get screen name of orders page in wp-admin.
+	 * Hook: woocommerce_before_shop_loop.
 	 *
-	 * @return string
+	 * @hooked woocommerce_output_all_notices - 10
+	 * @hooked woocommerce_result_count - 20
+	 * @hooked woocommerce_catalog_ordering - 30
 	 */
-	public static function get_order_admin_screen() : string {
-		return wc_get_container()->get( COTMigrationUtil::class )->get_order_admin_screen();
+	do_action( 'woocommerce_before_shop_loop' );
+
+	woocommerce_product_loop_start();
+
+	if ( wc_get_loop_prop( 'total' ) ) {
+		while ( have_posts() ) {
+			the_post();
+
+			/**
+			 * Hook: woocommerce_shop_loop.
+			 */
+			do_action( 'woocommerce_shop_loop' );
+
+			wc_get_template_part( 'content', 'product' );
+		}
 	}
 
-
-	/**
-	 * Helper function to get whether custom order tables are enabled or not.
-	 *
-	 * @return bool
-	 */
-	public static function custom_orders_table_usage_is_enabled() : bool {
-		return wc_get_container()->get( CustomOrdersTableController::class )->custom_orders_table_usage_is_enabled();
-	}
-
-	/**
-	 * Helper function to get whether the orders cache should be used or not.
-	 *
-	 * @return bool True if the orders cache should be used, false otherwise.
-	 */
-	public static function orders_cache_usage_is_enabled() : bool {
-		return wc_get_container()->get( OrderCacheController::class )->orders_cache_usage_is_enabled();
-	}
+	woocommerce_product_loop_end();
 
 	/**
-	 * Checks if posts and order custom table sync is enabled and there are no pending orders.
+	 * Hook: woocommerce_after_shop_loop.
 	 *
-	 * @return bool
+	 * @hooked woocommerce_pagination - 10
 	 */
-	public static function is_custom_order_tables_in_sync() : bool {
-		return wc_get_container()->get( COTMigrationUtil::class )->is_custom_order_tables_in_sync();
-	}
-
+	do_action( 'woocommerce_after_shop_loop' );
+} else {
 	/**
-	 * Gets value of a meta key from WC_Data object if passed, otherwise from the post object.
-	 * This helper function support backward compatibility for meta box functions, when moving from posts based store to custom tables.
+	 * Hook: woocommerce_no_products_found.
 	 *
-	 * @param WP_Post|null  $post Post object, meta will be fetched from this only when `$data` is not passed.
-	 * @param \WC_Data|null $data WC_Data object, will be preferred over post object when passed.
-	 * @param string        $key Key to fetch metadata for.
-	 * @param bool          $single Whether metadata is single.
-	 *
-	 * @return array|mixed|string Value of the meta key.
+	 * @hooked wc_no_products_found - 10
 	 */
-	public static function get_post_or_object_meta( ?WP_Post $post, ?\WC_Data $data, string $key, bool $single ) {
-		return wc_get_container()->get( COTMigrationUtil::class )->get_post_or_object_meta( $post, $data, $key, $single );
-	}
-
-	/**
-	 * Helper function to initialize the global $theorder object, mostly used during order meta boxes rendering.
-	 *
-	 * @param WC_Order|WP_Post $post_or_order_object Post or order object.
-	 *
-	 * @return bool|WC_Order|WC_Order_Refund WC_Order object.
-	 */
-	public static function init_theorder_object( $post_or_order_object ) {
-		return wc_get_container()->get( COTMigrationUtil::class )->init_theorder_object( $post_or_order_object );
-	}
-
-	/**
-	 * Helper function to id from an post or order object.
-	 *
-	 * @param WP_Post/WC_Order $post_or_order_object WP_Post/WC_Order object to get ID for.
-	 *
-	 * @return int Order or post ID.
-	 */
-	public static function get_post_or_order_id( $post_or_order_object ) : int {
-		return wc_get_container()->get( COTMigrationUtil::class )->get_post_or_order_id( $post_or_order_object );
-	}
-
-	/**
-	 * Checks if passed id, post or order object is a WC_Order object.
-	 *
-	 * @param int|WP_Post|WC_Order $order_id Order ID, post object or order object.
-	 * @param string[]             $types    Types to match against.
-	 *
-	 * @return bool Whether the passed param is an order.
-	 */
-	public static function is_order( $order_id, $types = array( 'shop_order' ) ) {
-		return wc_get_container()->get( COTMigrationUtil::class )->is_order( $order_id, $types );
-	}
-
-	/**
-	 * Returns type pf passed id, post or order object.
-	 *
-	 * @param int|WP_Post|WC_Order $order_id Order ID, post object or order object.
-	 *
-	 * @return string|null Type of the order.
-	 */
-	public static function get_order_type( $order_id ) {
-		return wc_get_container()->get( COTMigrationUtil::class )->get_order_type( $order_id );
-	}
-
-	/**
-	 * Helper method to generate admin url for an order.
-	 *
-	 * @param int $order_id Order ID.
-	 *
-	 * @return string Admin url for an order.
-	 */
-	public static function get_order_admin_edit_url( int $order_id ) : string {
-		return wc_get_container()->get( PageController::class )->get_edit_url( $order_id );
-	}
-
-	/**
-	 * Helper method to generate admin URL for new order.
-	 *
-	 * @return string Link for new order.
-	 */
-	public static function get_order_admin_new_url() : string {
-		return wc_get_container()->get( PageController::class )->get_new_page_url();
-	}
-
-	/**
-	 * Check if the current admin screen is an order list table.
-	 *
-	 * @param string $order_type Optional. The order type to check for. Default shop_order.
-	 *
-	 * @return bool
-	 */
-	public static function is_order_list_table_screen( $order_type = 'shop_order' ) : bool {
-		return wc_get_container()->get( PageController::class )->is_order_screen( $order_type, 'list' );
-	}
-
-	/**
-	 * Check if the current admin screen is for editing an order.
-	 *
-	 * @param string $order_type Optional. The order type to check for. Default shop_order.
-	 *
-	 * @return bool
-	 */
-	public static function is_order_edit_screen( $order_type = 'shop_order' ) : bool {
-		return wc_get_container()->get( PageController::class )->is_order_screen( $order_type, 'edit' );
-	}
-
-	/**
-	 * Check if the current admin screen is adding a new order.
-	 *
-	 * @param string $order_type Optional. The order type to check for. Default shop_order.
-	 *
-	 * @return bool
-	 */
-	public static function is_new_order_screen( $order_type = 'shop_order' ) : bool {
-		return wc_get_container()->get( PageController::class )->is_order_screen( $order_type, 'new' );
-	}
-
-	/**
-	 * Get the name of the database table that's currently in use for orders.
-	 *
-	 * @return string
-	 */
-	public static function get_table_for_orders() {
-		return wc_get_container()->get( COTMigrationUtil::class )->get_table_for_orders();
-	}
-
-	/**
-	 * Get the name of the database table that's currently in use for orders.
-	 *
-	 * @return string
-	 */
-	public static function get_table_for_order_meta() {
-		return wc_get_container()->get( COTMigrationUtil::class )->get_table_for_order_meta();
-	}
+	do_action( 'woocommerce_no_products_found' );
 }
+
+/**
+ * Hook: woocommerce_after_main_content.
+ *
+ * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
+ */
+do_action( 'woocommerce_after_main_content' );
+
+/**
+ * Hook: woocommerce_sidebar.
+ *
+ * @hooked woocommerce_get_sidebar - 10
+ */
+do_action( 'woocommerce_sidebar' );
+
+get_footer( 'shop' );

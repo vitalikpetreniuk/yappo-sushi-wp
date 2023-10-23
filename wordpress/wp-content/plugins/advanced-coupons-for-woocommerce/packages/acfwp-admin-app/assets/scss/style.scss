@@ -1,0 +1,13 @@
+/** Admin Setting Fields */
+#acfwp_store_credit_reminder_schedule_waiting_period_field {
+  .ant-input-affix-wrapper {
+    width: 25%;
+  }
+}
+#acfwp_store_credit_reminder_promotion_field {
+  .btn-preview-email, .btn-wc-email-setting {
+    text-decoration: underline;
+    padding-top: .25rem;
+    display: block;
+  }
+}

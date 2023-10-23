@@ -1,72 +1,19 @@
-<?php
+# Deprecations
 
-namespace League\Flysystem\Adapter;
+This document lists all the planned deprecations.
 
-use League\Flysystem\AdapterInterface;
+## Handlers will be removed in 2.0
 
-abstract class AbstractAdapter implements AdapterInterface
-{
-    /**
-     * @var string|null path prefix
-     */
-    protected $pathPrefix;
+The `Handler` type and associated calls will be removed in version 2.0.
 
-    /**
-     * @var string
-     */
-    protected $pathSeparator = '/';
+### Upgrade path
 
-    /**
-     * Set the path prefix.
-     *
-     * @param string $prefix
-     *
-     * @return void
-     */
-    public function setPathPrefix($prefix)
-    {
-        $prefix = (string) $prefix;
+You should create your own implementation for handling OOP usage,
+but it's recommended to move away from using an OOP-style wrapper entirely.
 
-        if ($prefix === '') {
-            $this->pathPrefix = null;
-
-            return;
-        }
-
-        $this->pathPrefix = rtrim($prefix, '\\/') . $this->pathSeparator;
-    }
-
-    /**
-     * Get the path prefix.
-     *
-     * @return string|null path prefix or null if pathPrefix is empty
-     */
-    public function getPathPrefix()
-    {
-        return $this->pathPrefix;
-    }
-
-    /**
-     * Prefix a path.
-     *
-     * @param string $path
-     *
-     * @return string prefixed path
-     */
-    public function applyPathPrefix($path)
-    {
-        return $this->getPathPrefix() . ltrim($path, '\\/');
-    }
-
-    /**
-     * Remove a path prefix.
-     *
-     * @param string $path
-     *
-     * @return string path without the prefix
-     */
-    public function removePathPrefix($path)
-    {
-        return substr($path, strlen($this->getPathPrefix()));
-    }
-}
+The reason for this is that it's too easy for implementation details (for
+your application this is Flysystem) to leak into the application. The most
+important part for Flysystem is that it improves portability and creates a
+solid boundary between your application core and the infrastructure you use.
+The OOP-style handling breaks this principle, therefore I want to stop
+promoting it. 

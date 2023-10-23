@@ -122,7 +122,6 @@ function setCookieAddress(name, value) {
     })
     const checkoutPage = document.querySelector('.woocommerce-checkout');
     if (!getCookie('choosedcity') && checkoutPage) {
-        console.log(checkoutPage);
         $('.modal-city-wrap').removeClass('modal-city-wrap-none');
     }
 
@@ -358,6 +357,61 @@ function add_to_cart_ads(id, price) {
         'content_ids': '1234',
         'content_type': 'product',
         'currency': 'UAH'
+    })
 
+    dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
+    dataLayer.push({
+        event: "select_item",
+        ecommerce: {
+            items: [{
+                item_name: id, // Name or ID is required.
+                price: price
+            }]
+        }
+    });
+
+    // Measure when a product is added to a shopping cart
+    dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
+    dataLayer.push({
+        event: "add_to_cart",
+        ecommerce: {
+            items: [{
+                item_name: id, // Name or ID is required.
+                item_id: id,
+                price: price,
+                item_category: "Apparel",
+                item_list_name: "Search Results",
+                item_list_id: "SR123",
+                index: 1,
+                quantity: 2
+            }]
+        }
+    });
+}
+
+let removeCartItem = document.querySelectorAll('.remove_from_cart_button');
+if(removeCartItem.length > 0){
+    removeCartItem.forEach((e) => {
+        e.addEventListener('click', function (){
+            let id = this.dataset.product_id;
+            // Measure the removal of a product from a shopping cart.
+            dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
+            dataLayer.push({
+                event: "remove_from_cart",
+                ecommerce: {
+                    items: [{
+                        item_name: id, // Name or ID is required.
+                        item_id: id,
+                        item_brand: "Google",
+                        item_category: "Apparel",
+                        item_variant: "Black",
+                        item_list_name: "Search Results",  // If associated with a list selection.
+                        item_list_id: "SR123",  // If associated with a list selection.
+                        index: 1,  // If associated with a list selection.
+                        quantity: 1
+                    }]
+                }
+            });
+        })
     })
 }

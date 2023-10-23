@@ -1,0 +1,2 @@
+!function(){"use strict";var n,a;n=jQuery,a=(a='<span class="update-plugins count-{count}"><span class="notices-count">{count}</span></span>').replace(/\{count\}/g,acfwAdmin.noticeCount),n("#toplevel_page_acfw-admin .wp-menu-name").append(" "+a)}();
+//# sourceMappingURL=acfwf-admin.js.map

@@ -73,12 +73,7 @@
 </head>
 
 <body <?php body_class(); ?> <?php if (is_product_category()) echo ' itemscope itemtype="http://schema.org/Product"'; ?>>
-<!-- Google Tag Manager (noscript) -->
-<noscript>
-  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GVTP5D"
-          height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
-<!-- End Google Tag Manager (noscript) -->
+
 <?php wp_body_open(); ?>
 <?php do_action('storefront_before_site'); ?>
 
